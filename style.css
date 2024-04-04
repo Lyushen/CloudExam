@@ -1,0 +1,10 @@
+#quiz-container {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#answers li {
+    list-style: none;
+    margin: 5px;
+}
