@@ -26,7 +26,7 @@ def parse_markdown_content(content):
 
     return questions
 
-def load_and_parse_md(url, local_file_path='resources/readme.md'):
+def load_and_parse_md(url, local_file_path='readme.md'):
     try:
         response = requests.get(url)
         response.raise_for_status()

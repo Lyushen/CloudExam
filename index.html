@@ -3,16 +3,20 @@
 <head>
     <title>Quiz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta charset="utf-8"/>
-    <link type="text/css" rel="stylesheet" href="css/style.css"/>
-    <script src="./script/script.js"></script>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+    
   </head>
 <body>
-    <div id="quiz-container">
-        <div id="question"></div>
-        <ul id="answers"></ul>
-        <button id="confirm-btn">Confirm</button>
+    <div id="setup-container">
+        <h1>Quiz Setup</h1>
+        <form id="setup-form">
+            <label for="num-questions">Number of questions (default 65):</label>
+            <input type="number" id="num-questions" name="num-questions" value="65" min="1">
+            <button type="submit">Start Quiz</button>
+        </form>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
