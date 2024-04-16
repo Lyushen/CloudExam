@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const url = 'https://raw.githubusercontent.com/Lyushen/CLF-C02-quiz/main/resources/README.md';
-    /* const url = 'https://raw.githubusercontent.com/Ditectrev/Amazon-Web-Services-AWS-Certified-Cloud-Practitioner-CLF-C02-Practice-Tests-Exams-Questions-Answers/main/README.md'; */
+    /* const url = 'https://raw.githubusercontent.com/Lyushen/CLF-C02-quiz/main/resources/README.md'; */
+    const url = 'https://raw.githubusercontent.com/Ditectrev/Amazon-Web-Services-AWS-Certified-Cloud-Practitioner-CLF-C02-Practice-Tests-Exams-Questions-Answers/main/README.md';
     fetchAndParseQuestions(url);
 
     document.querySelector('.theme-switcher').addEventListener('click', function() {
