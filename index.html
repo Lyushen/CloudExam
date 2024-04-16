@@ -8,13 +8,12 @@
     <link type="text/css" rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <div class="theme-switcher">☼</div>
-    
+    <div class="theme-switcher non-selectable">☼</div>
     <div class="question-box">
-        <p id="question-text"></p>
-        <div id="options-container"></div>
+        <p id="question-text" class="selectable"></p>
+        <div id="options-container" class="non-selectable"></div>
     </div>
-    <div class="controls">
+    <div class="controls non-selectable">
         <button id="prev-button" onclick="updateQuestionDisplay(currentIndex - 1)"><</button>
         <div class="question-navigator">
             <input type="number" id="question-number" placeholder="Question #">
@@ -24,4 +23,5 @@
     </div>
 </body>
 <script src="app.js"></script>
+<script src="swipe.js"></script>
 </html>

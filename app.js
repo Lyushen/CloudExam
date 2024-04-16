@@ -142,38 +142,3 @@ function handleInput() {
         updateQuestionDisplay(currentIndex);
     }
 }
-
-// Function to handle swipe gestures
-function handleSwipeEvent(e) {
-    const touchStartX = e.touches[0].clientX;
-    const touchStartY = e.touches[0].clientY;
-    const sensitivity = 50; // Adjust sensitivity as needed
-
-    function handleTouchMove(event) {
-        const touchEndX = event.touches[0].clientX;
-        const touchEndY = event.touches[0].clientY;
-        const deltaX = touchEndX - touchStartX;
-        const deltaY = touchEndY - touchStartY;
-
-        // Check if swipe is horizontal and meets sensitivity threshold
-        if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > sensitivity) {
-            // Swipe left
-            if (deltaX < 0) {
-                updateQuestionDisplay(currentIndex + 1);
-            }
-            // Swipe right
-            else if (deltaX > 0) {
-                updateQuestionDisplay(currentIndex - 1);
-            }
-        }
-
-        // Remove event listener after swipe
-        document.removeEventListener('touchmove', handleTouchMove);
-    }
-
-    // Add touch move event listener
-    document.addEventListener('touchmove', handleTouchMove);
-}
-
-// Add touch start event listener to the document
-document.addEventListener('touchstart', handleSwipeEvent);

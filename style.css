@@ -36,12 +36,18 @@ body {
     padding: 3px 3px;
     border-radius: 4px;
     transition: background-color 0.2s;
-    user-select: none;
 }
 
 .theme-switcher:hover {
     background-color: var(--button-hover-fill);
     transition: background-color 0.2s;
+}
+
+.selectable {
+    user-select: auto;
+}
+.non-selectable {
+    user-select: none;
 }
 
 .question-navigator {
@@ -89,7 +95,6 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.2s;
-    user-select: none;
 }
 
 .controls button:hover {
