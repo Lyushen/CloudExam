@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Quiz</title>
+    <title>AWS Certified CLF-C02 Quiz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta charset="utf-8"/>
     <link type="text/css" rel="stylesheet" href="style.css"/>
-    
-  </head>
+</head>
 <body>
-    <div id="setup-container">
-        <h1>Quiz Setup</h1>
-        <form id="setup-form">
-            <label for="num-questions">Number of questions (default 65):</label>
-            <input type="number" id="num-questions" name="num-questions" value="65" min="1">
-            <button type="submit">Start Quiz</button>
-        </form>
+    <div class="theme-switcher">Switch Theme</div>
+    <h1>AWS CERTIFIED CLF-C02</h1>
+    <div class="question-navigator">
+        <input type="number" id="question-number" placeholder="Question #">
+        <span id="total-questions">/ 523</span>
     </div>
-    <script src="script.js"></script>
+    <div class="question-box">
+        <p id="question-text"></p>
+        <div id="options-container"></div>
+    </div>
+    <div class="controls">
+        <button id="next-button" onclick="updateQuestionDisplay(currentIndex + 1)">Next</button>
+        <button id="prev-button" onclick="updateQuestionDisplay(currentIndex - 1)">Previous</button>        
+    </div>
 </body>
+<script src="./parser.js"></script>
+<script src="app.js"></script>
 </html>

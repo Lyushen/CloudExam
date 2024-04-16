@@ -1,0 +1,44 @@
+:root {
+    --background-color: #fff;
+    --text-color: #000;
+    --button-fill: #e0e0e0;
+}
+
+body.dark {
+    --background-color: #333;
+    --text-color: #fff;
+    --button-fill: #555;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+}
+
+.theme-switcher {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.question-box {
+    margin: 20px;
+    font-size: 1.2em;
+}
+
+.controls button {
+    background-color: var(--button-fill);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.controls #submit-button {
+    float: right;
+}
+
+.option-button.correct { background-color: lightgreen; }
+.option-button.wrong { background-color: lightcoral; }
