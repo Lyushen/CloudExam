@@ -142,3 +142,12 @@ function handleInput() {
         updateQuestionDisplay(currentIndex);
     }
 }
+
+
+document.addEventListener('mousedown', function(event) {
+    // Check if the mousedown event started within an element where selection is allowed
+    if (!event.target.matches('.selectable, .selectable *')) {
+      // Prevent default action if not within a selectable area
+      event.preventDefault();
+    }
+  }, {capture: true});
