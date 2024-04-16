@@ -14,18 +14,28 @@ function initializeSwipeHandling() {
         isSwiping = false;  // Reset swipe state on new gesture start
     };
 
-    const onMove = (currentX) => {
+    const onMove = (currentX, inputType) => {
         if (!isSwiping) {
             const deltaX = currentX - startCoord;
 
             if (Math.abs(deltaX) > sensitivity) {
                 isSwiping = true;
 
-                // Determine swipe direction and update display accordingly
-                if (deltaX > 0) {
-                    updateQuestionDisplay(currentIndex + 1); // Swipe left to right (next)
+                // Determine swipe direction based on input type and update the display accordingly
+                if (inputType === 'touch') {
+                    // Reversed swipe directions for touch input
+                    if (deltaX > 0) {
+                        updateQuestionDisplay(currentIndex - 1); // Swipe left to right (previous)
+                    } else {
+                        updateQuestionDisplay(currentIndex + 1); // Swipe right to left (next)
+                    }
                 } else {
-                    updateQuestionDisplay(currentIndex - 1); // Swipe right to left (previous)
+                    // Normal swipe directions for mouse input
+                    if (deltaX > 0) {
+                        updateQuestionDisplay(currentIndex + 1); // Swipe left to right (next)
+                    } else {
+                        updateQuestionDisplay(currentIndex - 1); // Swipe right to left (previous)
+                    }
                 }
             }
         }
@@ -43,7 +53,7 @@ function initializeSwipeHandling() {
     }, { passive: false });
 
     document.addEventListener('touchmove', (event) => {
-        onMove(event.touches[0].clientX);
+        onMove(event.touches[0].clientX, 'touch');
         event.preventDefault();
     }, { passive: false });
 
@@ -60,7 +70,7 @@ function initializeSwipeHandling() {
 
     const onPointerMove = (event) => {
         if (event.pointerType === 'mouse') {
-            onMove(event.clientX);
+            onMove(event.clientX, 'mouse');
             event.preventDefault();
         }
     };
