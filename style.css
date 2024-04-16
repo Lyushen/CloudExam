@@ -67,7 +67,7 @@ body {
     border: 1px solid var(--button-fill);
     border-radius: 4px;
     margin-bottom: 40px;
-    margin-top:0;
+    margin-top:2px;
 }
 
 .controls {
@@ -131,4 +131,8 @@ body {
 .option-button.wrong {
     background-color: var(--wrong-color);
     border-color: var(--wrong-color);
+}
+
+.transition-element {
+    transition: transform 0.2s ease; /* Adjust duration and timing function as needed */
 }

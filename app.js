@@ -147,6 +147,7 @@ function handleInput() {
 function handleSwipeEvent(e) {
     const touchStartX = e.touches[0].clientX;
     const touchStartY = e.touches[0].clientY;
+    const sensitivity = 50; // Adjust sensitivity as needed
 
     function handleTouchMove(event) {
         const touchEndX = event.touches[0].clientX;
@@ -154,8 +155,8 @@ function handleSwipeEvent(e) {
         const deltaX = touchEndX - touchStartX;
         const deltaY = touchEndY - touchStartY;
 
-        // Check if swipe is horizontal
-        if (Math.abs(deltaX) > Math.abs(deltaY)) {
+        // Check if swipe is horizontal and meets sensitivity threshold
+        if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > sensitivity) {
             // Swipe left
             if (deltaX < 0) {
                 updateQuestionDisplay(currentIndex + 1);
