@@ -37,6 +37,8 @@ function initializeSwipeHandling() {
                         updateQuestionDisplay(currentIndex - 1); // Swipe right to left (previous)
                     }
                 }
+                // Prevent default only for significant horizontal movements to not interfere with natural vertical scrolling
+                event.preventDefault();
             }
         }
     };
@@ -50,11 +52,10 @@ function initializeSwipeHandling() {
         if (event.target.closest('#question-text')) return;
         const touch = event.touches[0];
         onStart(touch.clientX);
-    }, { passive: false });
+    }, { passive: true });
 
     document.addEventListener('touchmove', (event) => {
         onMove(event.touches[0].clientX, 'touch');
-        event.preventDefault();
     }, { passive: false });
 
     document.addEventListener('touchend', onEnd);
@@ -71,7 +72,7 @@ function initializeSwipeHandling() {
     const onPointerMove = (event) => {
         if (event.pointerType === 'mouse') {
             onMove(event.clientX, 'mouse');
-            event.preventDefault();
+            event.preventDefault(); // Prevent default for mouse interactions to avoid selecting text or other mouse-specific behaviors
         }
     };
 
