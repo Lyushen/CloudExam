@@ -12,17 +12,16 @@
     <h1>AWS CERTIFIED CLF-C02</h1>
     <div class="question-navigator">
         <input type="number" id="question-number" placeholder="Question #">
-        <span id="total-questions">/ 523</span>
+        <span id="total-questions">/ 0</span>
     </div>
     <div class="question-box">
         <p id="question-text"></p>
         <div id="options-container"></div>
     </div>
     <div class="controls">
-        <button id="next-button" onclick="updateQuestionDisplay(currentIndex + 1)">Next</button>
-        <button id="prev-button" onclick="updateQuestionDisplay(currentIndex - 1)">Previous</button>        
+        <button id="prev-button" onclick="updateQuestionDisplay(currentIndex - 1)">Previous</button>     
+        <button id="next-button" onclick="updateQuestionDisplay(currentIndex + 1)">Next</button>  
     </div>
 </body>
-<script src="./parser.js"></script>
 <script src="app.js"></script>
 </html>
