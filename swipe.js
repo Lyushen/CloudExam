@@ -1,9 +1,8 @@
 function initializeSwipeHandling() {
     let touchStartX = 0;
-    let touchStartY = 0;
     let isSwiping = false;
-    let sens_percent_value = 0.2; // 20% of the screen
-    let sensitivity = visualViewport.width * sens_percent_value; // Use % of the visual viewport width
+    let sens_percent_value = 0.2; // 20% of the screen width
+    let sensitivity = visualViewport.width * sens_percent_value;
 
     // Update sensitivity on resize or zoom
     visualViewport.addEventListener('resize', () => {
@@ -11,25 +10,18 @@ function initializeSwipeHandling() {
     });
 
     const onPointerDown = (event) => {
-        if (event.pointerType === 'mouse' && event.button !== 0) {
-            return;
-        }
-
-        // Check if the event target is within #question-text area
-        if (event.target.closest('#question-text')) {
-            return; // Exit and do not track swipe if inside #question-text
+        if ((event.pointerType === 'mouse' && event.button !== 0) || event.target.closest('#question-text')) {
+            return; // Ignore mouse right clicks and interactions within #question-text
         }
 
         event.target.setPointerCapture(event.pointerId);
 
         touchStartX = event.clientX;
-        touchStartY = event.clientY;
         isSwiping = false;  // Reset swipe state on new gesture start
 
         document.addEventListener('pointermove', onPointerMove);
         document.addEventListener('pointerup', onPointerUp);
     };
-
 
     const onPointerMove = (event) => {
         if (!isSwiping) {
@@ -38,12 +30,13 @@ function initializeSwipeHandling() {
 
             if (Math.abs(deltaX) > sensitivity) {
                 isSwiping = true;
-                event.preventDefault();
+                event.preventDefault(); // Prevent scrolling and other interactions
 
+                // Determine swipe direction and update display accordingly
                 if (deltaX > 0) {
-                    updateQuestionDisplay(currentIndex + 1); // Swipe left
+                    updateQuestionDisplay(currentIndex + 1); // Swipe right to left
                 } else {
-                    updateQuestionDisplay(currentIndex - 1); // Swipe right
+                    updateQuestionDisplay(currentIndex - 1); // Swipe left to right
                 }
             }
         }
