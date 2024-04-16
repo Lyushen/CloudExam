@@ -22,7 +22,8 @@ body {
     margin: 0;
     padding: 0;
     transition: background-color 0.3s, color 0.3s;
-    overflow-x: hidden; /* Disable horizontal scrollbar */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    width: 100%; /* Ensure the body takes up the full viewport width */
 }
 
 .theme-switcher {
@@ -65,11 +66,12 @@ body {
     padding: 10px;
     border: 1px solid var(--button-fill);
     border-radius: 4px;
+    margin-bottom: 30px;
 }
 
 .controls {
     position: fixed;
-    bottom: 0;
+    bottom: 10px;
     width: 100%;
     display: flex;
     justify-content: space-between;
