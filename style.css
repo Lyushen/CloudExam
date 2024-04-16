@@ -51,6 +51,9 @@ body {
 .non-selectable {
     user-select: none;
 }
+.all-selectable {
+    user-select: all;
+}
 
 .question-navigator {
     display: flex;
