@@ -79,6 +79,10 @@ body {
     margin-top:2px;
 }
 
+#question-text {
+    margin-top:2px;
+}
+
 .controls {
     position: fixed;
     bottom: 10px;
