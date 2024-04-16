@@ -147,7 +147,7 @@ function handleInput() {
 function handleSwipeEvent(e) {
     const touchStartX = e.touches[0].clientX;
     const touchStartY = e.touches[0].clientY;
-    const sensitivity = 20; // Adjust sensitivity as needed
+    const sensitivity = 30; // Adjust sensitivity as needed
 
     function handleTouchMove(event) {
         const touchEndX = event.touches[0].clientX;
