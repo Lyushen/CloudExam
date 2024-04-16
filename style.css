@@ -139,6 +139,7 @@ body {
 
 .option-button:hover {
     background-color: var(--button-hover-fill);
+    cursor: pointer; /* Changes cursor to hand pointer on hover */
 }
 
 .option-button.correct {
