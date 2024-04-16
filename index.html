@@ -8,19 +8,19 @@
     <link type="text/css" rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <div class="theme-switcher">Theme</div>
+    <div class="theme-switcher">☼</div>
     
     <div class="question-box">
         <p id="question-text"></p>
         <div id="options-container"></div>
     </div>
     <div class="controls">
-        <button id="prev-button" onclick="updateQuestionDisplay(currentIndex - 1)">Previous</button>
+        <button id="prev-button" onclick="updateQuestionDisplay(currentIndex - 1)"><</button>
         <div class="question-navigator">
             <input type="number" id="question-number" placeholder="Question #">
             <span id="total-questions">/ 0</span>
         </div>
-        <button id="next-button" onclick="updateQuestionDisplay(currentIndex + 1)">Next</button>  
+        <button id="next-button" onclick="updateQuestionDisplay(currentIndex + 1)">></button>  
     </div>
 </body>
 <script src="app.js"></script>
