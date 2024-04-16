@@ -42,7 +42,6 @@ function updateQuestionLimits() {
     document.getElementById('total-questions').textContent = '/ ' + questionsLength; // Update the label showing the total number of questions
 }
 
-
 function parseQuestions(markdownText) {
     const questionBlocks = markdownText.split('### ').slice(1); // Split into blocks starting with "###"
     const parsedQuestions = questionBlocks.map(block => {
