@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const url = 'https://raw.githubusercontent.com/Lyushen/CLF-C02-quiz/main/resources/README_original.md';
+    /* const url = 'https://raw.githubusercontent.com/Lyushen/CLF-C02-quiz/main/resources/README.md'; */
+    const url = 'https://raw.githubusercontent.com/Ditectrev/Amazon-Web-Services-AWS-Certified-Cloud-Practitioner-CLF-C02-Practice-Tests-Exams-Questions-Answers/main/README.md';
     fetchAndParseQuestions(url);
 
-    document.getElementById('theme-switcher').addEventListener('click', function() {
+    document.querySelector('.theme-switcher').addEventListener('click', function() {
         document.body.classList.toggle('dark');
         console.log("Theme switched:", document.body.classList.contains('dark') ? "Dark mode" : "Light mode");
     });
@@ -75,7 +76,7 @@ function displayQuestion(question) {
 
     questionText.textContent = question.question;
     optionsContainer.innerHTML = ''; // Clear previous options
-    console.log("Displaying question:", question.question);
+    /* console.log("Displaying question:", question.question); */
 
     question.options.forEach(option => {
         const optionElement = document.createElement('button');
@@ -89,10 +90,10 @@ function displayQuestion(question) {
 function checkAnswer(option, optionElement) {
     if (option.isCorrect) {
         optionElement.classList.add('correct');
-        console.log("Correct answer selected:", option.text);
+        /* console.log("Correct answer selected:", option.text); */
     } else {
         optionElement.classList.add('wrong');
-        console.log("Wrong answer selected:", option.text);
+        /* console.log("Wrong answer selected:", option.text); */
     }
 }
 
@@ -142,7 +143,3 @@ function handleInput() {
         updateQuestionDisplay(currentIndex);
     }
 }
-
-document.querySelector('.theme-switcher').addEventListener('click', function() {
-    document.body.classList.toggle('dark');
-});
