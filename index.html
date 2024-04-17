@@ -6,23 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="./resources/favicon.ico">
     <meta charset="utf-8"/>
-    <link type="text/css" rel="stylesheet" href="style.css"/>
+    <link type="text/css" rel="stylesheet" href="./resources/css/style.css"/>
+    <script src="./resources/scripts/app.js"></script>
+    <script src="./resources/scripts/swipe.js"></script>
 </head>
 <body>
-    <div class="theme-switcher non-selectable">☼</div>
+    
+    <div id="menu-toggle" class="menu-button">☰</div>
+    <div id="menu" class="menu non-selectable">
+        <div class="menu-item theme-switcher">Theme ☼</div>
+        <div class="menu-item source-switcher">Source</div>
+        <div class="menu-item reset-cache">Reset Cache</div>
+        <div class="menu-item shuffle-questions-flag">Shuffle Q: No</div>
+        <div class="menu-item shuffle-answers-flag">Shuffle A: No</div>
+    </div>
     <div class="question-box">
         <p id="question-text" class="selectable"></p>
         <div id="options-container" class="non-selectable"></div>
     </div>
     <div class="controls non-selectable">
-        <button id="prev-button" onclick="updateQuestionDisplay(currentIndex - 1)"><</button>
+        <button id="prev-button">&lt;</button>
         <div class="question-navigator">
             <input type="number" id="question-number" placeholder="Question #">
             <span id="total-questions">/ 0</span>
         </div>
-        <button id="next-button" onclick="updateQuestionDisplay(currentIndex + 1)">></button>  
+        <button id="next-button">&gt;</button>
     </div>
 </body>
-<script src="app.js"></script>
-<script src="swipe.js"></script>
 </html>

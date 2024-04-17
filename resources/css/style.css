@@ -28,23 +28,6 @@ body {
 
 }
 
-.theme-switcher {
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: var(--button-fill);
-    color: var(--text-color);
-    padding: 3px 3px;
-    border-radius: 4px;
-    transition: background-color 0.2s;
-}
-
-.theme-switcher:hover {
-    background-color: var(--button-hover-fill);
-    transition: background-color 0.2s;
-}
-
 .selectable {
     user-select: text;
 }
@@ -154,4 +137,46 @@ body {
 
 .transition-element {
     transition: transform 0.2s ease; /* Adjust duration and timing function as needed */
+}
+
+
+/* Menu CSS */
+.menu-button {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.menu {
+    position: absolute;
+    top: 47px;
+    right: 5px;
+    background-color: transparent;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, border-color 0.3s ease-in-out; /* Add border-color transition */
+    max-height: 0;
+}
+
+.menu-button:hover {
+    background-color: var(--button-hover-fill);
+}
+
+.menu-item {
+    padding: 10px;
+    color: var(--text-color);
+    background-color: var(--button-fill);
+    transition: background-color 0.2s;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 2px;
+}
+
+.menu-item:hover {
+    background-color: var(--button-hover-fill);
 }

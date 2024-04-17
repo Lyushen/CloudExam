@@ -1,7 +1,7 @@
 function initializeSwipeHandling() {
     let startCoord = 0;
     let isSwiping = false;
-    let sens_percent_value = 0.2; // 20% of the screen
+    let sens_percent_value = 0.25; // 25% of the screen
     let sensitivity = visualViewport.width * sens_percent_value; // Use % of the visual viewport width
 
     // Update sensitivity on resize or zoom
@@ -14,29 +14,17 @@ function initializeSwipeHandling() {
         isSwiping = false;  // Reset swipe state on new gesture start
     };
 
-    const onMove = (currentX, inputType) => {
+    const onMove = (currentX) => {
         if (!isSwiping) {
             const deltaX = currentX - startCoord;
 
             if (Math.abs(deltaX) > sensitivity) {
                 isSwiping = true;
-
-                // Determine swipe direction based on input type and update the display accordingly
-                if (inputType === 'touch') {
-                    // Reversed swipe directions for touch input
                     if (deltaX > 0) {
                         updateQuestionDisplay(currentIndex - 1); // Swipe left to right (previous)
                     } else {
                         updateQuestionDisplay(currentIndex + 1); // Swipe right to left (next)
                     }
-                } else {
-                    // Normal swipe directions for mouse input
-                    if (deltaX > 0) {
-                        updateQuestionDisplay(currentIndex + 1); // Swipe left to right (next)
-                    } else {
-                        updateQuestionDisplay(currentIndex - 1); // Swipe right to left (previous)
-                    }
-                }
                 // Prevent default only for significant horizontal movements to not interfere with natural vertical scrolling
                 event.preventDefault();
             }
@@ -49,13 +37,12 @@ function initializeSwipeHandling() {
 
     // Touch Event Handlers
     document.addEventListener('touchstart', (event) => {
-        if (event.target.closest('#question-text')) return;
         const touch = event.touches[0];
         onStart(touch.clientX);
     }, { passive: true });
 
     document.addEventListener('touchmove', (event) => {
-        onMove(event.touches[0].clientX, 'touch');
+        onMove(event.touches[0].clientX);
     }, { passive: false });
 
     document.addEventListener('touchend', onEnd);
@@ -71,7 +58,7 @@ function initializeSwipeHandling() {
 
     const onPointerMove = (event) => {
         if (event.pointerType === 'mouse') {
-            onMove(event.clientX, 'mouse');
+            onMove(event.clientX);
             event.preventDefault(); // Prevent default for mouse interactions to avoid selecting text or other mouse-specific behaviors
         }
     };
