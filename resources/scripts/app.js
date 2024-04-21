@@ -20,7 +20,6 @@ document.addEventListener("DOMContentLoaded", async function() {
 // Initialize settings from storage
 async function initializeAppSettings() {
     appSettings.isExternalSource = (localStorage.getItem('source') === 'external') || appSettings.isExternalSource;
-    appSettings.theme = localStorage.getItem('theme') || appSettings.theme;
     appSettings.shuffleQuestions = getCookie('shuffleQuestions') === 'yes';
     appSettings.shuffleAnswers = getCookie('shuffleAnswers') === 'yes';
     appSettings.currentQuestion = getCurrentQuestionFromCookies() || parseInt(localStorage.getItem('currentQuestion'), 10) || 0;
@@ -115,9 +114,7 @@ function parseQuestions(markdownText) {
 function toggleTheme() {
     const newTheme = appSettings.theme === 'dark' ? 'light' : 'dark';
     appSettings.theme = newTheme;
-    localStorage.setItem('theme', newTheme);
-    document.body.classList.toggle('dark', newTheme === 'dark');
-    console.log("Theme switched:", newTheme);
+    document.body.className = newTheme;
 }
 
 // Toggle between external and internal sources

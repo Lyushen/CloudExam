@@ -38,21 +38,48 @@ body {
     user-select: all;
 }
 
-.question-navigator {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5px 0;
+/* Menu CSS */
+.menu-button {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 7px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+    color: var(--text-color);
+    background-color: var(--button-fill);
 }
 
-.question-navigator input[type="number"] {
-    width: 60px;
-    padding: 5px;
-    margin-right: 5px;
-    border: 2px solid var(--button-fill);
-    border-radius: 4px;
-    text-align: center;
+.menu {
+    position: absolute;
+    top: 47px;
+    right: 5px;
+    background-color: transparent;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, border-color 0.3s ease-in-out; /* Add border-color transition */
+    max-height: 0;
 }
+
+.menu-button:hover {
+    background-color: var(--button-hover-fill);
+}
+
+.menu-item {
+    padding: 10px;
+    color: var(--text-color);
+    background-color: var(--button-fill);
+    transition: background-color 0.2s;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 2px;
+}
+
+.menu-item:hover {
+    background-color: var(--button-hover-fill);
+}
+
+/* Question Section */
 .question-box {
     margin: 2px 0px 40px;
     font-size: 1.8em;
@@ -64,10 +91,30 @@ body {
     margin-top:2px;
 }
 
+.question-navigator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+}
+
+#question-number {
+    width: 40px;
+    padding: 0px;
+    margin-right: 5px;
+    border: 2px solid var(--button-fill);
+    border-radius: 4px;
+    text-align: center;
+    background-color: var(--input-background-color); /* Use variable for background */
+    color: var(--input-text-color); /* Use variable for text color */
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s; /* Add transitions for smooth effect */
+}
+
 #question-text {
     margin-top:0px;
 }
 
+/* Bottom bar <> Controls and Question-Number Box */
 .controls {
     position: fixed;
     bottom: 10px;
@@ -107,18 +154,6 @@ body {
     user-select: all;
 }
 
-.question-navigator input[type="number"] {
-    width: 40px;
-    padding: 0px;
-    margin-right: 5px;
-    border: 2px solid var(--button-fill);
-    border-radius: 4px;
-    text-align: center;
-    background-color: var(--input-background-color); /* Use variable for background */
-    color: var(--input-text-color); /* Use variable for text color */
-    transition: background-color 0.2s, color 0.2s, border-color 0.2s; /* Add transitions for smooth effect */
-}
-
 .option-button:hover {
     background-color: var(--button-hover-fill);
     cursor: pointer; /* Changes cursor to hand pointer on hover */
@@ -132,50 +167,4 @@ body {
 .option-button.wrong {
     background-color: var(--wrong-color);
     border-color: var(--wrong-color);
-}
-
-.transition-element {
-    transition: transform 0.2s ease; /* Adjust duration and timing function as needed */
-}
-
-
-/* Menu CSS */
-.menu-button {
-    cursor: pointer;
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    background-color: #f0f0f0;
-    color: #333;
-    padding: 10px;
-    border-radius: 4px;
-    transition: background-color 0.2s;
-}
-
-.menu {
-    position: absolute;
-    top: 47px;
-    right: 5px;
-    background-color: transparent;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in-out, border-color 0.3s ease-in-out; /* Add border-color transition */
-    max-height: 0;
-}
-
-.menu-button:hover {
-    background-color: var(--button-hover-fill);
-}
-
-.menu-item {
-    padding: 10px;
-    color: var(--text-color);
-    background-color: var(--button-fill);
-    transition: background-color 0.2s;
-    cursor: pointer;
-    border-radius: 4px;
-    margin-bottom: 2px;
-}
-
-.menu-item:hover {
-    background-color: var(--button-hover-fill);
 }
