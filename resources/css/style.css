@@ -53,9 +53,6 @@ body {
     border-radius: 4px;
     text-align: center;
 }
-.option-button {
-    margin-right: 10px;   /* Provides spacing between the button and the text */
-}
 .question-box {
     margin: 2px 0px 40px;
     font-size: 1.8em;
