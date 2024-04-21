@@ -53,7 +53,9 @@ body {
     border-radius: 4px;
     text-align: center;
 }
-
+.option-button {
+    margin-right: 10px;   /* Provides spacing between the button and the text */
+}
 .question-box {
     margin: 2px 0px 40px;
     font-size: 1.8em;
@@ -63,10 +65,15 @@ body {
     border-radius: 4px;
     margin-bottom: 40px;
     margin-top:2px;
+    display: flex;        /* Establishes a flex container */
+    flex-wrap: wrap;      /* Allows items to wrap onto multiple lines */
+    align-items: flex-start; /* Aligns items to the start of the flex container */
 }
 
 #question-text {
     margin-top:0px;
+    flex: 1;             /* Allows the text to fill the remaining space */
+    white-space: normal; /* Ensures text wraps and does not overflow */
 }
 
 .controls {
