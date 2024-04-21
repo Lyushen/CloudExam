@@ -19,16 +19,15 @@ document.addEventListener("DOMContentLoaded", async function() {
 
 // Initialize settings from storage
 async function initializeAppSettings() {
-    appSettings.isExternalSource = localStorage.getItem('source') === 'external' || true;  // default to external if undefined
-    appSettings.theme = localStorage.getItem('theme') || 'light';
-    appSettings.shuffleQuestions = getCookie('shuffleQuestions') === 'yes' || false;
-    appSettings.shuffleAnswers = getCookie('shuffleAnswers') === 'yes' || false;
-    appSettings.currentQuestion = getCurrentQuestionFromCookies() || parseInt(localStorage.getItem('currentQuestion')) || 0;
+    appSettings.isExternalSource = (localStorage.getItem('source') === 'external') || appSettings.isExternalSource;
+    appSettings.theme = localStorage.getItem('theme') || appSettings.theme;
+    appSettings.shuffleQuestions = getCookie('shuffleQuestions') === 'yes';
+    appSettings.shuffleAnswers = getCookie('shuffleAnswers') === 'yes';
+    appSettings.currentQuestion = getCurrentQuestionFromCookies() || parseInt(localStorage.getItem('currentQuestion'), 10) || 0;
 
     try {
         const response = await fetch(appSettings.isExternalSource ? appSettings.externalURL : appSettings.internalURL);
         if (!response.ok) throw new Error('Failed to fetch');
-        // Optionally cache questions here if needed
     } catch (error) {
         console.log("Error fetching URL, switching to internal:", error);
         appSettings.isExternalSource = false;
@@ -39,7 +38,7 @@ async function initializeAppSettings() {
 
 // Helper function to get cookie by name
 function getCookie(name) {
-    let cookieArr = document.cookie.split(";");
+    const cookieArr = document.cookie.split(";");
     for(let i = 0; i < cookieArr.length; i++) {
         let cookiePair = cookieArr[i].split("=");
         if(name == cookiePair[0].trim()) {
@@ -52,12 +51,16 @@ function getCookie(name) {
 
 // Manage cookies with secure settings
 function manageCookies() {
-    setInterval(() => {
-        document.cookie = `shuffleQuestions=${appSettings.shuffleQuestions ? 'yes' : 'no'};max-age=86400;path=/;Secure;HttpOnly`;
-        document.cookie = `shuffleAnswers=${appSettings.shuffleAnswers ? 'yes' : 'no'};max-age=86400;path=/;Secure;HttpOnly`;
-        document.cookie = `currentQuestion=${encodeURIComponent(appSettings.currentQuestion)};max-age=86400;path=/;Secure;HttpOnly`;
-    }, 30000);
+    setCookie('shuffleQuestions', appSettings.shuffleQuestions ? 'yes' : 'no', 1);
+    setCookie('shuffleAnswers', appSettings.shuffleAnswers ? 'yes' : 'no', 1);
+    setCookie('currentQuestion', appSettings.currentQuestion, 1);
 }
+
+function setCookie(name, value, days) {
+    const expires = new Date(Date.now() + days * 86400000).toUTCString();
+    document.cookie = `${name}=${value}; expires=${expires}; path=/; Secure; HttpOnly`;
+}
+
 
 // Event listeners for UI interactions
 function addEventListeners() {
@@ -65,13 +68,13 @@ function addEventListeners() {
     document.querySelector('.source-switcher').addEventListener('click', toggleSource);
     document.querySelector('.shuffle-questions-flag').addEventListener('click', toggleShuffleQuestions);
     document.querySelector('.shuffle-answers-flag').addEventListener('click', toggleShuffleAnswers);
-    document.getElementById('menu-toggle').addEventListener('click', toggleMenu);
-    document.getElementById('prev-button').addEventListener('click', () => updateQuestionDisplay(appSettings.currentQuestion - 1));
-    document.getElementById('next-button').addEventListener('click', () => updateQuestionDisplay(appSettings.currentQuestion + 1));
+    document.querySelector('#menu-toggle').addEventListener('click', toggleMenu);
+    document.querySelector('#prev-button').addEventListener('click', () => updateQuestionDisplay(appSettings.currentQuestion - 1));
+    document.querySelector('#next-button').addEventListener('click', () => updateQuestionDisplay(appSettings.currentQuestion + 1));
     document.querySelector('.reset-cache').addEventListener('click', resetCache);
-    document.getElementById('question-number').addEventListener('input', handleInput);
-    document.getElementById('question-number').addEventListener('mouseenter', enableScroll);
-    document.getElementById('question-number').addEventListener('mouseleave', disableScroll);
+    document.querySelector('#question-number').addEventListener('input', handleInput);
+    document.querySelector('#question-number').addEventListener('mouseenter', enableScroll);
+    document.querySelector('#question-number').addEventListener('mouseleave', disableScroll);
 }
 
 
