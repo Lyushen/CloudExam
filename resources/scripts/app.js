@@ -66,8 +66,8 @@ function addEventListeners() {
     document.querySelector('.shuffle-questions-flag').addEventListener('click', toggleShuffleQuestions);
     document.querySelector('.shuffle-answers-flag').addEventListener('click', toggleShuffleAnswers);
     document.getElementById('menu-toggle').addEventListener('click', toggleMenu);
-    document.getElementById('prev-button').addEventListener('click', () => updateQuestionDisplay(currentIndex - 1));
-    document.getElementById('next-button').addEventListener('click', () => updateQuestionDisplay(currentIndex + 1));
+    document.getElementById('prev-button').addEventListener('click', () => updateQuestionDisplay(appSettings.currentQuestion - 1));
+    document.getElementById('next-button').addEventListener('click', () => updateQuestionDisplay(appSettings.currentQuestion + 1));
     document.querySelector('.reset-cache').addEventListener('click', resetCache);
     document.getElementById('question-number').addEventListener('input', handleInput);
     document.getElementById('question-number').addEventListener('mouseenter', enableScroll);
@@ -131,17 +131,32 @@ function toggleShuffleQuestions() {
     shuffleQuestions(!isCurrentlyShuffled);
     document.querySelector('.shuffle-questions-flag').textContent = `Shuffle Q: ${isCurrentlyShuffled ? 'No' : 'Yes'}`;
 }
+// Shuffle the order of questions based on a flag
+function shuffleQuestions(shouldShuffle) {
+    if (shouldShuffle) {
+        // Implementing Fisher-Yates shuffle algorithm
+        for (let i = questions.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [questions[i], questions[j]] = [questions[j], questions[i]];
+        }
+    } else {
+        // Reset to original order, consider caching original order to avoid unnecessary fetches
+        if (localStorage.getItem('questionsOriginal')) {
+            questions = JSON.parse(localStorage.getItem('questionsOriginal')); // Assuming original order is cached
+        } else {
+            fetchAndParseQuestions();
+        }
+    }
+    updateQuestionDisplay(0); // Start from the first question in the new order
+}
+
 
 // Toggle shuffle state for answers within a question
 function toggleShuffleAnswers() {
-    const isCurrentlyShuffled = sessionStorage.getItem('shuffleAnswers') === 'yes';
-    sessionStorage.setItem('shuffleAnswers', isCurrentlyShuffled ? 'no' : 'yes');
-    if (isCurrentlyShuffled) {
-        reloadCurrentQuestion();
-    } else {
-        shuffleCurrentQuestionAnswers();
-    }
-    document.querySelector('.shuffle-answers-flag').textContent = `Shuffle A: ${isCurrentlyShuffled ? 'No' : 'Yes'}`;
+    appSettings.shuffleAnswers = !appSettings.shuffleAnswers;
+    localStorage.setItem('shuffleAnswers', appSettings.shuffleAnswers ? 'yes' : 'no'); // Store setting in localStorage
+    updateQuestionDisplay(appSettings.currentQuestion); // Redisplay with new shuffle state
+    document.querySelector('.shuffle-answers-flag').textContent = `Shuffle A: ${appSettings.shuffleAnswers ? 'Yes' : 'No'}`;
 }
 
 // Toggle the menu visibility
@@ -156,46 +171,6 @@ function resetCache() {
     localStorage.clear();
     sessionStorage.clear();
     window.location.reload();
-}
-
-// Shuffle the order of questions based on a flag
-function shuffleQuestions(shouldShuffle) {
-    if (shouldShuffle) {
-        // Implementing Fisher-Yates shuffle algorithm
-        for (let i = questions.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [questions[i], questions[j]] = [questions[j], questions[i]];
-        }
-    } else {
-        // Reset to original order, consider caching original order to avoid unnecessary fetches
-        if (localStorage.getItem('questionsOriginal')) {
-            questions = JSON.parse(localStorage.getItem('questionsOriginal')); // Assuming original order is cached
-        } else {
-            fetchAndParseQuestions(getCurrentQuestionURL());
-        }
-    }
-    updateQuestionDisplay(0); // Start from the first question in the new order
-}
-
-// Get the current question URL based on the source
-function getCurrentQuestionURL() {
-    const source = sessionStorage.getItem('source');
-    return source === 'external'
-        ? 'https://raw.githubusercontent.com/Ditectrev/Amazon-Web-Services-AWS-Certified-Cloud-Practitioner-CLF-C02-Practice-Tests-Exams-Questions-Answers/main/README.md'
-        : 'resources/README.md';
-}
-
-// Shuffle answers within the current question
-function shuffleCurrentQuestionAnswers() {
-    const currentQuestion = questions[currentIndex];
-    currentQuestion.options = currentQuestion.options.sort(() => Math.random() - 0.5);
-    displayQuestion(currentQuestion); // Re-display the current question with shuffled answers
-}
-
-// Re-display the current question without shuffling the answers
-function reloadCurrentQuestion() {
-    const currentQuestion = questions[currentIndex];
-    displayQuestion(currentQuestion); // Re-display the current question with original answers
 }
 
 // Display the specified question in the UI
@@ -227,10 +202,25 @@ function checkAnswer(option, optionElement) {
 // Update question display based on the selected index
 function updateQuestionDisplay(index) {
     if (index < 0 || index >= questions.length) return;
-    currentIndex = index; // Update the global index
-    displayQuestion(questions[currentIndex]);
-    document.getElementById('question-number').value = currentIndex + 1;
-    localStorage.setItem('currentQuestion', currentIndex.toString());
+    appSettings.currentQuestion = index;
+    let currentQuestion = questions[appSettings.currentQuestion];
+
+    // Shuffle answers if enabled
+    if (appSettings.shuffleAnswers) {
+        currentQuestion.options = shuffleArray(currentQuestion.options.slice()); // Use slice to create a copy for immutability
+    }
+
+    displayQuestion(currentQuestion);
+    document.getElementById('question-number').value = appSettings.currentQuestion + 1;
+    localStorage.setItem('currentQuestion', appSettings.currentQuestion.toString());
+}
+
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
 }
 
 // Update question limits in the UI
@@ -257,8 +247,7 @@ function handleWheelEvent(e) {
     if (e.target === document.getElementById('question-number') || e.target === document.querySelector('label[for="question-number"]')) {
         e.preventDefault();
         const direction = Math.sign(e.deltaY);
-        const inputElement = document.getElementById('question-number');
-        let currentIndex = parseInt(inputElement.value, 10) - 1;
+        let currentIndex = appSettings.currentQuestion;
 
         if (direction < 0 && currentIndex > 0) {
             updateQuestionDisplay(currentIndex - 1);
