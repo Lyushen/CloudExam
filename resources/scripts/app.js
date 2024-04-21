@@ -1,9 +1,12 @@
 // Define Application Settings
 let appSettings = {
-    sourceURL: '',
+    externalURL: 'https://raw.githubusercontent.com/Ditectrev/Amazon-Web-Services-AWS-Certified-Cloud-Practitioner-CLF-C02-Practice-Tests-Exams-Questions-Answers/main/README.md',
+    internalURL: 'resources/README.md',
+    isExternalSource: true,  // true if using external, false if using internal
     shuffleQuestions: false,
     shuffleAnswers: false,
-    currentQuestion: 0
+    currentQuestion: 0,
+    theme: 'light'
 };
 
 // Initialize Application on Page Load
@@ -14,38 +17,47 @@ document.addEventListener("DOMContentLoaded", async function() {
     addEventListeners();
 });
 
-
 // Initialize settings from storage
 async function initializeAppSettings() {
-    const externalURL = 'https://raw.githubusercontent.com/Ditectrev/Amazon-Web-Services-AWS-Certified-Cloud-Practitioner-CLF-C02-Practice-Tests-Exams-Questions-Answers/main/README.md';
-    const internalURL = 'resources/README.md';
+    appSettings.isExternalSource = localStorage.getItem('source') === 'external' || true;  // default to external if undefined
+    appSettings.theme = localStorage.getItem('theme') || 'light';
+    appSettings.shuffleQuestions = getCookie('shuffleQuestions') === 'yes' || false;
+    appSettings.shuffleAnswers = getCookie('shuffleAnswers') === 'yes' || false;
+    appSettings.currentQuestion = getCurrentQuestionFromCookies() || parseInt(localStorage.getItem('currentQuestion')) || 0;
 
     try {
-        const response = await fetch(externalURL);
-        appSettings.sourceURL = response.ok ? externalURL : internalURL;
+        const response = await fetch(appSettings.isExternalSource ? appSettings.externalURL : appSettings.internalURL);
+        if (!response.ok) throw new Error('Failed to fetch');
+        // Optionally cache questions here if needed
     } catch (error) {
-        console.log("Error fetching external URL, using internal:", error);
-        appSettings.sourceURL = internalURL;
+        console.log("Error fetching URL, switching to internal:", error);
+        appSettings.isExternalSource = false;
+        localStorage.setItem('source', 'internal');
     }
+}
 
-    // Initialize other settings
-    appSettings.shuffleQuestions = sessionStorage.getItem('shuffleQuestions') === 'yes';
-    appSettings.shuffleAnswers = sessionStorage.getItem('shuffleAnswers') === 'yes';
-    appSettings.currentQuestion = getCurrentQuestionFromCookies() || parseInt(localStorage.getItem('currentQuestion')) || 0;
+
+// Helper function to get cookie by name
+function getCookie(name) {
+    let cookieArr = document.cookie.split(";");
+    for(let i = 0; i < cookieArr.length; i++) {
+        let cookiePair = cookieArr[i].split("=");
+        if(name == cookiePair[0].trim()) {
+            return decodeURIComponent(cookiePair[1]);
+        }
+    }
+    return null;
 }
 
 
 // Manage cookies with secure settings
-function manageCookies(settings) {
+function manageCookies() {
     setInterval(() => {
-        document.cookie = `theme=${encodeURIComponent(localStorage.getItem('theme'))};max-age=86400;path=/;Secure;HttpOnly`;
-        document.cookie = `source=${encodeURIComponent(settings.source)};max-age=86400;path=/;Secure;HttpOnly`;
-        document.cookie = `shuffleQuestions=${settings.shuffleQuestions ? 'yes' : 'no'};max-age=86400;path=/;Secure;HttpOnly`;
-        document.cookie = `shuffleAnswers=${settings.shuffleAnswers ? 'yes' : 'no'};max-age=86400;path=/;Secure;HttpOnly`;
-        document.cookie = `currentQuestion=${encodeURIComponent(currentIndex)};max-age=86400;path=/;Secure;HttpOnly`;
+        document.cookie = `shuffleQuestions=${appSettings.shuffleQuestions ? 'yes' : 'no'};max-age=86400;path=/;Secure;HttpOnly`;
+        document.cookie = `shuffleAnswers=${appSettings.shuffleAnswers ? 'yes' : 'no'};max-age=86400;path=/;Secure;HttpOnly`;
+        document.cookie = `currentQuestion=${encodeURIComponent(appSettings.currentQuestion)};max-age=86400;path=/;Secure;HttpOnly`;
     }, 30000);
 }
-
 
 // Event listeners for UI interactions
 function addEventListeners() {
@@ -65,8 +77,9 @@ function addEventListeners() {
 
 // Fetch and parse questions from a Markdown file using settings
 async function fetchAndParseQuestions() {
+    let url = appSettings.isExternalSource ? appSettings.externalURL : appSettings.internalURL;
     try {
-        const response = await fetch(appSettings.sourceURL);
+        const response = await fetch(url);
         const text = await response.text();
         questions = parseQuestions(text);
         localStorage.setItem('questions', JSON.stringify(questions));
@@ -76,8 +89,6 @@ async function fetchAndParseQuestions() {
         console.error("Failed to fetch questions:", error);
     }
 }
-
-
 
 function parseQuestions(markdownText) {
     const questionBlocks = markdownText.split('### ').slice(1);
@@ -97,40 +108,20 @@ function parseQuestions(markdownText) {
     });
 }
 
-
-// Tries to fetch from the external URL; if it fails, it sets the URL to the internal one.
-async function getSourceURL() {
-    const externalURL = 'https://raw.githubusercontent.com/Ditectrev/Amazon-Web-Services-AWS-Certified-Cloud-Practitioner-CLF-C02-Practice-Tests-Exams-Questions-Answers/main/README.md';
-    const internalURL = 'resources/README.md';
-
-    try {
-        const response = await fetch(externalURL);
-        if (response.ok) {
-            return externalURL;
-        } else {
-            console.log("Switching to internal source due to failure to fetch external.");
-            return internalURL;
-        }
-    } catch (error) {
-        console.log("Error fetching external URL, switching to internal:", error);
-        return internalURL;
-    }
-}
-
 // Toggle between dark and light themes
 function toggleTheme() {
-    document.body.classList.toggle('dark');
-    localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
-    console.log("Theme switched:", localStorage.getItem('theme'));
+    const newTheme = appSettings.theme === 'dark' ? 'light' : 'dark';
+    appSettings.theme = newTheme;
+    localStorage.setItem('theme', newTheme);
+    document.body.classList.toggle('dark', newTheme === 'dark');
+    console.log("Theme switched:", newTheme);
 }
 
-
 // Toggle between external and internal sources
-function toggleSource(settings) {
-    const isExternal = settings.source === 'external';
-    settings.source = isExternal ? 'internal' : 'external';
-    const newUrl = getSourceURL();
-    fetchAndParseQuestions(newUrl);
+function toggleSource() {
+    appSettings.isExternalSource = !appSettings.isExternalSource;
+    localStorage.setItem('source', appSettings.isExternalSource ? 'external' : 'internal');
+    fetchAndParseQuestions(); // This function will now use the updated source URL
 }
 
 // Toggle shuffle state for questions
