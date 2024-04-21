@@ -62,15 +62,10 @@ body {
     border-radius: 4px;
     margin-bottom: 40px;
     margin-top:2px;
-    display: flex;        /* Establishes a flex container */
-    flex-wrap: wrap;      /* Allows items to wrap onto multiple lines */
-    align-items: flex-start; /* Aligns items to the start of the flex container */
 }
 
 #question-text {
     margin-top:0px;
-    flex: 1;             /* Allows the text to fill the remaining space */
-    white-space: normal; /* Ensures text wraps and does not overflow */
 }
 
 .controls {
