@@ -1,62 +1,75 @@
 import { updateQuestionDisplay,appSettings } from './app.js';
 
 export function initializeSwipeHandling() {
-    const swipeConfig = {
-        startCoord: 0,
-        isSwiping: false,
-        sensitivityPercent: 0.25, // 25% of the screen width
-        sensitivity: visualViewport.width * 0.25
+    let startCoord = 0;
+    let isSwiping = false;
+    let sens_percent_value = 0.25; // 25% of the screen
+    let sensitivity = visualViewport.width * sens_percent_value; // Use % of the visual viewport width
+
+    // Update sensitivity on resize or zoom
+    visualViewport.addEventListener('resize', () => {
+        sensitivity = visualViewport.width * sens_percent_value;
+    });
+
+    const onStart = (startX) => {
+        startCoord = startX;
+        isSwiping = false;  // Reset swipe state on new gesture start
     };
 
-    function updateSensitivity() {
-        swipeConfig.sensitivity = visualViewport.width * swipeConfig.sensitivityPercent;
-    }
+    const onMove = (currentX) => {
+        if (!isSwiping) {
+            const deltaX = currentX - startCoord;
 
-    visualViewport.addEventListener('resize', updateSensitivity);
-
-    function handleStart(startX) {
-        swipeConfig.startCoord = startX;
-        swipeConfig.isSwiping = false;
-    }
-
-    function handleMove(currentX, evt) {
-        if (!swipeConfig.isSwiping) {
-            const deltaX = currentX - swipeConfig.startCoord;
-            if (Math.abs(deltaX) > swipeConfig.sensitivity) {
-                swipeConfig.isSwiping = true;
-                if (deltaX > 0) {
-                    updateQuestionDisplay(appSettings.currentQuestion - 1);
-                } else {
-                    updateQuestionDisplay(appSettings.currentQuestion + 1);
-                }
-                if (evt.cancelable) {
-                    evt.preventDefault();
-                }
+            if (Math.abs(deltaX) > sensitivity) {
+                isSwiping = true;
+                    if (deltaX > 0) {
+                        updateQuestionDisplay(appSettings.currentQuestion - 1); // Swipe left to right (previous)
+                    } else {
+                        updateQuestionDisplay(appSettings.currentQuestion + 1); // Swipe right to left (next)
+                    }
+                // Prevent default only for significant horizontal movements to not interfere with natural vertical scrolling
+                event.preventDefault();
             }
         }
-    }
+    };
 
-    function handleEnd() {
-        swipeConfig.isSwiping = false;
-    }
+    const onEnd = () => {
+        isSwiping = false;
+    };
 
-    // Touch Events
+    // Touch Event Handlers
     document.addEventListener('touchstart', (event) => {
-        handleStart(event.touches[0].clientX);
+        const touch = event.touches[0];
+        onStart(touch.clientX);
     }, { passive: true });
 
     document.addEventListener('touchmove', (event) => {
-        handleMove(event.touches[0].clientX, event);
+        onMove(event.touches[0].clientX);
     }, { passive: false });
 
-    document.addEventListener('touchend', handleEnd);
+    document.addEventListener('touchend', onEnd);
 
-    // Pointer Events for mouse
+    // Pointer Event Handlers (for mouse)
     document.addEventListener('pointerdown', (event) => {
-        if (event.pointerType !== 'mouse' || event.button === 0) {
-            handleStart(event.clientX);
-            document.addEventListener('pointermove', (evt) => handleMove(evt.clientX, evt), { passive: false });
-            document.addEventListener('pointerup', handleEnd);
-        }
+        if (event.pointerType === 'mouse' && event.button !== 0) return;
+        if (event.target.closest('#question-text')) return;
+        onStart(event.clientX);
+        document.addEventListener('pointermove', onPointerMove, { passive: false });
+        document.addEventListener('pointerup', onPointerEnd);
     });
+
+    const onPointerMove = (event) => {
+        if (event.pointerType === 'mouse') {
+            onMove(event.clientX);
+            event.preventDefault(); // Prevent default for mouse interactions to avoid selecting text or other mouse-specific behaviors
+        }
+    };
+
+    const onPointerEnd = (event) => {
+        if (event.pointerType === 'mouse') {
+            document.removeEventListener('pointermove', onPointerMove);
+            document.removeEventListener('pointerup', onPointerEnd);
+            onEnd();
+        }
+    };
 }
