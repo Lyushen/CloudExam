@@ -1,5 +1,5 @@
 // Define Application Settings
-let appSettings = {
+export let appSettings = {
     externalURL: 'https://raw.githubusercontent.com/Ditectrev/Amazon-Web-Services-AWS-Certified-Cloud-Practitioner-CLF-C02-Practice-Tests-Exams-Questions-Answers/main/README.md',
     internalURL: 'resources/README.md',
     isExternalSource: true,  // true if using external, false if using internal
@@ -9,16 +9,19 @@ let appSettings = {
     theme: 'light'
 };
 
-// Initialize Application on Page Load
-document.addEventListener("DOMContentLoaded", async function() {
+let questions = [];
+
+// Initialize Application on Page Load // Moved to the entry.js point
+/* document.addEventListener("DOMContentLoaded", async function() {
     await initializeAppSettings();
     manageCookies();
     fetchAndParseQuestions();
     addEventListeners();
-});
+    initializeSwipeHandling();
+}); */
 
 // Initialize settings from storage
-async function initializeAppSettings() {
+export async function initializeAppSettings() {
     appSettings.isExternalSource = (localStorage.getItem('source') === 'external') || appSettings.isExternalSource;
     appSettings.shuffleQuestions = getCookie('shuffleQuestions') === 'yes';
     appSettings.shuffleAnswers = getCookie('shuffleAnswers') === 'yes';
@@ -49,7 +52,7 @@ function getCookie(name) {
 
 
 // Manage cookies with secure settings
-function manageCookies() {
+export function manageCookies() {
     setCookie('shuffleQuestions', appSettings.shuffleQuestions ? 'yes' : 'no', 1);
     setCookie('shuffleAnswers', appSettings.shuffleAnswers ? 'yes' : 'no', 1);
     setCookie('currentQuestion', appSettings.currentQuestion, 1);
@@ -62,7 +65,7 @@ function setCookie(name, value, days) {
 
 
 // Event listeners for UI interactions
-function addEventListeners() {
+export function addEventListeners() {
     document.querySelector('.theme-switcher').addEventListener('click', toggleTheme);
     document.querySelector('.source-switcher').addEventListener('click', toggleSource);
     document.querySelector('.shuffle-questions-flag').addEventListener('click', toggleShuffleQuestions);
@@ -78,7 +81,7 @@ function addEventListeners() {
 
 
 // Fetch and parse questions from a Markdown file using settings
-async function fetchAndParseQuestions() {
+export async function fetchAndParseQuestions() {
     let url = appSettings.isExternalSource ? appSettings.externalURL : appSettings.internalURL;
     try {
         const response = await fetch(url);
@@ -122,6 +125,7 @@ function toggleSource() {
     appSettings.isExternalSource = !appSettings.isExternalSource;
     localStorage.setItem('source', appSettings.isExternalSource ? 'external' : 'internal');
     fetchAndParseQuestions(); // This function will now use the updated source URL
+    updateQuestionDisplay();
 }
 
 // Toggle shuffle state for questions
@@ -200,7 +204,7 @@ function checkAnswer(option, optionElement) {
 }
 
 // Update question display based on the selected index
-function updateQuestionDisplay(index) {
+export function updateQuestionDisplay(index=appSettings.currentQuestion) {
     if (index < 0 || index >= questions.length) return;
     appSettings.currentQuestion = index;
     let currentQuestion = questions[appSettings.currentQuestion];
