@@ -6,19 +6,13 @@ export let appSettings = {
     shuffleQuestions: false,
     shuffleAnswers: false,
     currentQuestion: 0,
-    theme: 'light'
+    theme: 'light',
+    questions:[]
 };
 
-let questions = [];
+/* let questions = []; */
 
 // Initialize Application on Page Load // Moved to the entry.js point
-/* document.addEventListener("DOMContentLoaded", async function() {
-    await initializeAppSettings();
-    manageCookies();
-    fetchAndParseQuestions();
-    addEventListeners();
-    initializeSwipeHandling();
-}); */
 
 // Initialize settings from storage
 export async function initializeAppSettings() {
@@ -27,14 +21,24 @@ export async function initializeAppSettings() {
     appSettings.shuffleAnswers = getCookie('shuffleAnswers') === 'yes';
     appSettings.currentQuestion = getCurrentQuestionFromCookies() || parseInt(localStorage.getItem('currentQuestion'), 10) || 0;
 
-    try {
-        const response = await fetch(appSettings.isExternalSource ? appSettings.externalURL : appSettings.internalURL);
-        if (!response.ok) throw new Error('Failed to fetch');
-    } catch (error) {
-        console.log("Error fetching URL, switching to internal:", error);
-        appSettings.isExternalSource = false;
-        localStorage.setItem('source', 'internal');
+    const storedQuestions = localStorage.getItem('questions');
+    if (storedQuestions) {
+        // If questions exist in localStorage, parse them
+        appSettings.questions = JSON.parse(storedQuestions);
+        console.log("Loaded questions from localStorage");
+    } else {
+        try {
+            const response = await fetch(appSettings.isExternalSource ? appSettings.externalURL : appSettings.internalURL);
+            if (!response.ok) throw new Error('Failed to fetch');
+        } catch (error) {
+            console.log("Error fetching URL, switching to internal:", error);
+            appSettings.isExternalSource = false;
+            localStorage.setItem('source', 'internal');
+        }
+        await fetchAndParseQuestions();
     }
+    updateQuestionLimits();
+    updateQuestionDisplay(appSettings.currentQuestion);
 }
 
 
@@ -81,15 +85,13 @@ export function addEventListeners() {
 
 
 // Fetch and parse questions from a Markdown file using settings
-export async function fetchAndParseQuestions() {
+async function fetchAndParseQuestions() {
     let url = appSettings.isExternalSource ? appSettings.externalURL : appSettings.internalURL;
     try {
         const response = await fetch(url);
         const text = await response.text();
-        questions = parseQuestions(text);
-        localStorage.setItem('questions', JSON.stringify(questions));
-        updateQuestionLimits();
-        updateQuestionDisplay(appSettings.currentQuestion);
+        appSettings.questions = parseQuestions(text);
+        localStorage.setItem('questions', JSON.stringify(appSettings.questions));
     } catch (error) {
         console.error("Failed to fetch questions:", error);
     }
@@ -122,9 +124,11 @@ function toggleTheme() {
 
 // Toggle between external and internal sources
 function toggleSource() {
+    console.log(`Source switched to ${!appSettings.isExternalSource ? 'external' : 'internal'}`)
     appSettings.isExternalSource = !appSettings.isExternalSource;
     localStorage.setItem('source', appSettings.isExternalSource ? 'external' : 'internal');
     fetchAndParseQuestions(); // This function will now use the updated source URL
+    updateQuestionLimits();
     updateQuestionDisplay();
 }
 
@@ -139,14 +143,14 @@ function toggleShuffleQuestions() {
 function shuffleQuestions(shouldShuffle) {
     if (shouldShuffle) {
         // Implementing Fisher-Yates shuffle algorithm
-        for (let i = questions.length - 1; i > 0; i--) {
+        for (let i = appSettings.questions.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
-            [questions[i], questions[j]] = [questions[j], questions[i]];
+            [appSettings.questions[i], appSettings.questions[j]] = [appSettings.questions[j], appSettings.questions[i]];
         }
     } else {
         // Reset to original order, consider caching original order to avoid unnecessary fetches
         if (localStorage.getItem('questionsOriginal')) {
-            questions = JSON.parse(localStorage.getItem('questionsOriginal')); // Assuming original order is cached
+            appSettings.questions = JSON.parse(localStorage.getItem('questionsOriginal')); // Assuming original order is cached
         } else {
             fetchAndParseQuestions();
         }
@@ -205,9 +209,9 @@ function checkAnswer(option, optionElement) {
 
 // Update question display based on the selected index
 export function updateQuestionDisplay(index=appSettings.currentQuestion) {
-    if (index < 0 || index >= questions.length) return;
+    if (index < 0 || index >= appSettings.questions.length) return;
     appSettings.currentQuestion = index;
-    let currentQuestion = questions[appSettings.currentQuestion];
+    let currentQuestion = appSettings.questions[appSettings.currentQuestion];
 
     // Shuffle answers if enabled
     if (appSettings.shuffleAnswers) {
@@ -229,7 +233,7 @@ function shuffleArray(array) {
 
 // Update question limits in the UI
 function updateQuestionLimits() {
-    const questionsLength = questions.length;
+    const questionsLength = appSettings.questions.length;
     const questionBox = document.getElementById('question-number');
     questionBox.min = 1;
     questionBox.max = questionsLength;
@@ -255,7 +259,7 @@ function handleWheelEvent(e) {
 
         if (direction < 0 && currentIndex > 0) {
             updateQuestionDisplay(currentIndex - 1);
-        } else if (direction > 0 && currentIndex < questions.length - 1) {
+        } else if (direction > 0 && currentIndex < appSettings.questions.length - 1) {
             updateQuestionDisplay(currentIndex + 1);
         }
     }
@@ -265,7 +269,7 @@ function handleWheelEvent(e) {
 function handleInput() {
     const inputElement = document.getElementById('question-number');
     const newIndex = parseInt(inputElement.value, 10) - 1;
-    if (!isNaN(newIndex) && newIndex >= 0 && newIndex < questions.length) {
+    if (!isNaN(newIndex) && newIndex >= 0 && newIndex < appSettings.questions.length) {
         updateQuestionDisplay(newIndex);
     }
 }
