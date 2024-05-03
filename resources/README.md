@@ -4083,7 +4083,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] Use CloudFront to monitor the CPU usage.
 - [ ] Set the AWS Config CPU threshold to 60% to receive a notification when EC2 usage exceeds that value.
 - [x] Use CloudWatch Alarms to monitor the CPUand alert when the CPU usage is >= 60%.
-- [ ] Use SNS to menitor the utilization of the server.
+- [ ] Use SNS to monitor the utilization of the server.
 
 **[⬆ Back to Top](#table-of-contents)**
 
