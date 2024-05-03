@@ -1922,7 +1922,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [x] Amazon Redshift.
 - [ ] Amazon Kinesis.
 - [ ] Amazon DynamoDB.
-- [ ]  Amazon RDS.
+- [ ] Amazon RDS.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -3962,7 +3962,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] Store media assets on an additional EBS volume and increase the capacity of your server.
 - [ ] Replicate media assets to at least two availability zones.
 - [ ] Reduce the size of media assets using the Amazon Elastic Transcoder.
-- [x] Store media assets in $3 and use CloudFront to distribute these assets.
+- [x] Store media assets in S3 and use CloudFront to distribute these assets.
 
 **[⬆ Back to Top](#table-of-contents)**
 
