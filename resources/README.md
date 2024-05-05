@@ -314,7 +314,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 | 170   | [For managed services like Amazon DynamoDB, which of the below is AWS responsible for? (Choose TWO)](#for-managed-services-like-amazon-dynamodb-which-of-the-below-is-aws-responsible-for-choose-two) |
 | 171   | [Which of the following AWS Services helps with planning application migration to the AWS Cloud?](#which-of-the-following-aws-services-helps-with-planning-application-migration-to-the-aws-cloud) |
 | 172   | [A company is trying to analyze the costs applied to their AWS account recently. Which of the following provides them the most granular data about their AWS costs and usage?](#a-company-is-trying-to-analyze-the-costs-applied-to-their-aws-account-recently-which-of-the-following-provides-them-the-most-granular-data-about-their-aws-costs-and-usage) |
-| 173   | [Which statement best describes the concept of an AWS region?](#which-statement-best-describes-the-concept-of-an-aws-region) |
+| 173   | [Which statement best describes the concept of an AWS region?](#which-bhytrstatement-best-describes-the-concept-of-an-aws-region) |
 | 174   | [A company has discovered that multiple S3 buckets were deleted, but it is unclear who deleted the buckets. Which of the following can the company use to determine the identity that deleted the buckets?](#a-company-has-discovered-that-multiple-s3-buckets-were-deleted-but-it-is-unclear-who-deleted-the-buckets-which-of-the-following-can-the-company-use-to-determine-the-identity-that-deleted-the-buckets) |
 | 175   | [Which of the following are factors in determining the appropriate database technology to use for a specific workload? (Choose TWO)](#which-of-the-following-are-factors-in-determining-the-appropriate-database-technology-to-use-for-a-specific-workload-choose-two) |
 | 176   | [What are the benefits of implementing a tagging strategy for AWS resources? (Choose TWO)](#what-are-the-benefits-of-implementing-a-tagging-strategy-for-aws-resources-choose-two) |
@@ -4371,8 +4371,8 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### Which AWS service delivers data, videos, applications, and APIs to users globally with low latency and high transfer speeds?
 
 - [ ] Amazon Route 53.
-- [x] Amazon Connect.
-- [ ] Amazon CloudFront.
+- [ ] Amazon Connect.
+- [x] Amazon CloudFront.
 - [ ] Amazon EC2.
 
 **[⬆ Back to Top](#table-of-contents)**
