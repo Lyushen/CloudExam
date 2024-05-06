@@ -4820,11 +4820,11 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 **[⬆ Back to Top](#table-of-contents)**
 
 
-### What costs are included when comparing AWS Total Cost of Ownership (TCO) with on-premises TCO?
+### What costs are included when comparing AWS Total Cost of Ownership (TCO) with on-premises TCO? (Select TWO)
 
-- [x] Project management.
-- [ ] Antivirus software licensing.
-- [ ] Data center security.
+- [ ] Project management.
+- [x] Antivirus software licensing.
+- [x] Data center security.
 - [ ] Software development.
 
 **[⬆ Back to Top](#table-of-contents)**
