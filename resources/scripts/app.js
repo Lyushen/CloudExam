@@ -2,44 +2,59 @@
 export let appSettings = {
     externalURL: 'https://raw.githubusercontent.com/Ditectrev/Amazon-Web-Services-AWS-Certified-Cloud-Practitioner-CLF-C02-Practice-Tests-Exams-Questions-Answers/main/README.md',
     internalURL: 'resources/README.md',
-    isExternalSource: true,  // true if using external, false if using internal
-    shuffleQuestions: false,
-    shuffleAnswers: false,
+    source: 'in',  // true if using external, false if using internal
+    shuffleQuestions: 'false',
+    shuffleAnswers: 'false',
     currentQuestion: 0,
     theme: 'light',
-    questions:[]
+    questions:[],
+    lastSource: ''
 };
 
-/* let questions = []; */
-
-// Initialize Application on Page Load // Moved to the entry.js point
+// Application initialisation on Page Load has been moved to the entry.js point
 
 // Initialize settings from storage
 export async function initializeAppSettings() {
-    appSettings.isExternalSource = (localStorage.getItem('source') === 'external') || appSettings.isExternalSource;
-    appSettings.shuffleQuestions = getCookie('shuffleQuestions') === 'yes';
-    appSettings.shuffleAnswers = getCookie('shuffleAnswers') === 'yes';
-    appSettings.currentQuestion = getCurrentQuestionFromCookies() || parseInt(localStorage.getItem('currentQuestion'), 10) || 0;
+    appSettings.source = localStorage.getItem('source') || appSettings.source;
+    appSettings.lastSource = localStorage.getItem('lastSource') || appSettings.lastSource;
+    appSettings.shuffleQuestions = getCookie('shuffleQuestions') || localStorage.getItem('shuffleQuestions') || appSettings.shuffleQuestions;
+    appSettings.shuffleAnswers = getCookie('shuffleAnswers') || localStorage.getItem('shuffleAnswers') || appSettings.shuffleAnswers;
+    appSettings.currentQuestion = getCurrentQuestionFromCookies() || parseInt(localStorage.getItem('currentQuestion'), 10) || appSettings.currentQuestion;
 
     const storedQuestions = localStorage.getItem('questions');
-    if (storedQuestions) {
-        // If questions exist in localStorage, parse them
+    if (storedQuestions && appSettings.lastSource === appSettings.source) {
+        // If questions exist in localStorage and the source has not changed, use them
         appSettings.questions = JSON.parse(storedQuestions);
-        console.log("Loaded questions from localStorage");
+        console.log("Loaded questions from localStorage with unchanged source.");
     } else {
-        try {
-            const response = await fetch(appSettings.isExternalSource ? appSettings.externalURL : appSettings.internalURL);
-            if (!response.ok) throw new Error('Failed to fetch');
-        } catch (error) {
-            console.log("Error fetching URL, switching to internal:", error);
-            appSettings.isExternalSource = false;
-            localStorage.setItem('source', 'internal');
-        }
+        // Fetch questions if not in localStorage or if the source has changed
         await fetchAndParseQuestions();
     }
-    document.querySelector('.source-switcher').textContent = `${appSettings.isExternalSource ? 'Source In' : 'Source Ex'}`;
     updateQuestionLimits();
-    updateQuestionDisplay(appSettings.currentQuestion);
+    updateQuestionDisplay();
+    updateSettings();
+}
+
+function updateSettings() {
+    // Log current settings to ensure tracking of changes
+    console.log("Updating settings:", appSettings);
+
+    // Update UI with current settings
+    document.querySelector('.source-switcher').textContent = (appSettings.source === 'in' ? 'Source In' : 'Source Ex');
+    document.querySelector('.shuffle-answers-flag').textContent = `Shuffle A: ${appSettings.shuffleAnswers === 'true' ? 'Yes' : 'No'}`;
+    document.querySelector('.shuffle-questions-flag').textContent = `Shuffle Q: ${appSettings.shuffleQuestions === 'true' ? 'Yes' : 'No'}`;
+
+    // Update localStorage with current settings
+    localStorage.setItem('source', appSettings.source);
+    localStorage.setItem('shuffleQuestions', appSettings.shuffleQuestions); // Ensure storing as string
+    localStorage.setItem('shuffleAnswers', appSettings.shuffleAnswers); // Ensure storing as string
+    localStorage.setItem('currentQuestion', appSettings.currentQuestion);
+    localStorage.setItem('lastSource', appSettings.lastSource);
+
+    // Update cookies with current settings
+    setCookie('shuffleQuestions', appSettings.shuffleQuestions.toString(), 7); // Storing for 7 days for example
+    setCookie('shuffleAnswers', appSettings.shuffleAnswers.toString(), 7);
+    setCookie('currentQuestion', appSettings.currentQuestion.toString(), 7);
 }
 
 
@@ -58,14 +73,14 @@ function getCookie(name) {
 
 // Manage cookies with secure settings
 export function manageCookies() {
-    setCookie('shuffleQuestions', appSettings.shuffleQuestions ? 'yes' : 'no', 1);
-    setCookie('shuffleAnswers', appSettings.shuffleAnswers ? 'yes' : 'no', 1);
+    setCookie('shuffleQuestions', appSettings.shuffleQuestions, 1);
+    setCookie('shuffleAnswers', appSettings.shuffleAnswers, 1);
     setCookie('currentQuestion', appSettings.currentQuestion, 1);
 }
 
 function setCookie(name, value, days) {
     const expires = new Date(Date.now() + days * 86400000).toUTCString();
-    document.cookie = `${name}=${value}; expires=${expires}; path=/; Secure; HttpOnly`;
+    document.cookie = `${name}=${value}; expires=${expires}; path=/; Secure; SameSite=Strict`;
 }
 
 
@@ -87,18 +102,27 @@ export function addEventListeners() {
 
 // Fetch and parse questions from a Markdown file using settings
 async function fetchAndParseQuestions() {
-    let url = appSettings.isExternalSource ? appSettings.externalURL : appSettings.internalURL;
+    let url = appSettings.source === 'in' ? appSettings.internalURL : appSettings.externalURL;
     try {
         const response = await fetch(url);
+        if (!response.ok) throw new Error('Failed to fetch');
         const text = await response.text();
         appSettings.questions = parseQuestions(text);
-        localStorage.setItem('questions', JSON.stringify(appSettings.questions));
+        localStorage.setItem('questions', JSON.stringify(appSettings.questions)); // Store fetched questions
     } catch (error) {
-        console.error("Failed to fetch questions:", error);
+        console.error(`Failed to fetch questions from ${url}:`, error);
+        // Fallback to internal source without changing the user's preferred source
+        if (appSettings.source === 'ex') {
+            appSettings.source = 'in'; // Temporarily use internal source for loading questions
+            console.error("Switching temporarily to internal source due to failure.");
+            await fetchAndParseQuestions();
+            appSettings.source = 'ex'; // Restore preferred source after fetching
+        }
     }
 }
 
 function parseQuestions(markdownText) {
+    appSettings.lastSource=appSettings.source;
     const questionBlocks = markdownText.split('### ').slice(1);
     return questionBlocks.map(block => {
         const lines = block.split('\n').filter(line => line.trim());
@@ -124,25 +148,22 @@ function toggleTheme() {
 }
 
 // Toggle between external and internal sources
-function toggleSource() {
-    console.log(`Source switched to ${!appSettings.isExternalSource ? 'external' : 'internal'}`)
-    appSettings.isExternalSource = !appSettings.isExternalSource;
-    localStorage.setItem('source', appSettings.isExternalSource ? 'external' : 'internal');
-    document.querySelector('.source-switcher').textContent = `${appSettings.isExternalSource ? 'Source In' : 'Source Ex'}`;
-    fetchAndParseQuestions(); // This function will now use the updated source URL
+async function toggleSource() {
+    appSettings.source = appSettings.source === 'in' ? 'ex' : 'in';
+    updateSettings();
+    await fetchAndParseQuestions(); // This function will now use the updated source URL
     updateQuestionLimits();
     updateQuestionDisplay();
 }
 
 // Toggle shuffle state for questions
 function toggleShuffleQuestions() {
-    const isCurrentlyShuffled = sessionStorage.getItem('shuffleQuestions') === 'yes';
-    sessionStorage.setItem('shuffleQuestions', isCurrentlyShuffled ? 'no' : 'yes');
-    shuffleQuestions(!isCurrentlyShuffled);
-    document.querySelector('.shuffle-questions-flag').textContent = `Shuffle Q: ${isCurrentlyShuffled ? 'No' : 'Yes'}`;
+    appSettings.shuffleQuestions = appSettings.shuffleQuestions === 'true' ? 'false' : 'true';
+    shuffleQuestions(appSettings.shuffleQuestions==='true');
+    updateSettings();
 }
 // Shuffle the order of questions based on a flag
-function shuffleQuestions(shouldShuffle) {
+async function shuffleQuestions(shouldShuffle) {
     if (shouldShuffle) {
         // Implementing Fisher-Yates shuffle algorithm
         for (let i = appSettings.questions.length - 1; i > 0; i--) {
@@ -154,7 +175,7 @@ function shuffleQuestions(shouldShuffle) {
         if (localStorage.getItem('questionsOriginal')) {
             appSettings.questions = JSON.parse(localStorage.getItem('questionsOriginal')); // Assuming original order is cached
         } else {
-            fetchAndParseQuestions();
+            await fetchAndParseQuestions();
         }
     }
     updateQuestionDisplay(0); // Start from the first question in the new order
@@ -163,10 +184,9 @@ function shuffleQuestions(shouldShuffle) {
 
 // Toggle shuffle state for answers within a question
 function toggleShuffleAnswers() {
-    appSettings.shuffleAnswers = !appSettings.shuffleAnswers;
-    localStorage.setItem('shuffleAnswers', appSettings.shuffleAnswers ? 'yes' : 'no'); // Store setting in localStorage
-    updateQuestionDisplay(appSettings.currentQuestion); // Redisplay with new shuffle state
-    document.querySelector('.shuffle-answers-flag').textContent = `Shuffle A: ${appSettings.shuffleAnswers ? 'Yes' : 'No'}`;
+    appSettings.shuffleAnswers = appSettings.shuffleAnswers === 'true' ? 'false' : 'true';
+    updateSettings();
+    updateQuestionDisplay(); // Redisplay with new shuffle state
 }
 
 // Toggle the menu visibility
@@ -176,10 +196,9 @@ function toggleMenu() {
     menu.style.borderColor = menu.style.maxHeight ? '#ccc' : 'transparent';
 }
 
-// Reset the entire cache (localStorage and sessionStorage) and reload the page
+// Reset the localStorage cache and reload the page
 function resetCache() {
     localStorage.clear();
-    sessionStorage.clear();
     window.location.reload();
 }
 
@@ -216,7 +235,7 @@ export function updateQuestionDisplay(index=appSettings.currentQuestion) {
     let currentQuestion = appSettings.questions[appSettings.currentQuestion];
 
     // Shuffle answers if enabled
-    if (appSettings.shuffleAnswers) {
+    if (appSettings.shuffleAnswers==='true') {
         currentQuestion.options = shuffleArray(currentQuestion.options.slice()); // Use slice to create a copy for immutability
     }
 
