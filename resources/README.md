@@ -5392,7 +5392,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### Which of the following will enhance the security of access to the AWS Management Console'? (Select TWO)
+### Which of the following will enhance the security of access to the AWS Management Console? (Select TWO)
 
 - [ ] AWS Secrets Manager.
 - [ ] AWS Certificate Manager.
