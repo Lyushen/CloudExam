@@ -5136,7 +5136,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### Access keys in AWS Identity and Access Management (IM1) are used to:
+### Access keys in AWS Identity and Access Management (IAM) are used to:
 
 - [ ] Log in to the AWS Management Console.
 - [x] Make programmatic calls to AWS from AWS APIs.
