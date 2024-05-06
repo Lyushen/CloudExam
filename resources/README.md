@@ -4943,8 +4943,8 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### Which of the following is an AWS-managed compute service?
 
-- [ ] Amazon SWF.
-- [x] Amazon EC2.
+- [x] Amazon SWF.
+- [ ] Amazon EC2.
 - [ ] AWS Lambda.
 - [ ] Amazon Aurora.
 
