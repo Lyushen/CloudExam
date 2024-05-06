@@ -5322,8 +5322,8 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### Amazon Relational Database Service (Amazon RDS) offers which of the following benefits over traditional database management?
 
 - [ ] AWS manages the data stored in Amazon RDS tables.
-- [ ] AWS manages the maintenance of the operating system.
-- [x] AWS automatically scales up instance types on demand.
+- [x] AWS manages the maintenance of the operating system.
+- [ ] AWS automatically scales up instance types on demand.
 - [ ] AWS manages the database type.
 
 **[⬆ Back to Top](#table-of-contents)**
