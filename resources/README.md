@@ -4691,10 +4691,10 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### Which AWS services provide a way to extend an on-premises architecture to the aws cloud? (Select TWO)
 
 - [ ] Amazon EBS.
-- [x] Amazon Connect.
-- [ ] AWS Storage Gateway AWS CLOUD PRACTITIONER DUMPS.
-- [x] Amazon CloudFront.
-- [ ] AWS Direct Connect.
+- [ ] Amazon Connect.
+- [x] AWS Storage Gateway.
+- [ ] Amazon CloudFront.
+- [x] AWS Direct Connect.
 
 **[⬆ Back to Top](#table-of-contents)**
 
