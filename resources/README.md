@@ -5462,7 +5462,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### Which is the MINIMUM AWS Support plan that allows for one-hour target response time for support cases?
 
 - [ ] Enterprise.
-- [ ] Business.
+- [x] Business.
 - [ ] Developer
 - [ ] Basic
 
