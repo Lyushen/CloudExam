@@ -5108,7 +5108,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### Which AWS tools assist with estimating costs? (Select three)
+### Which AWS tools assist with estimating costs? (Select THREE)
 
 - [ ] Detailed billing report.
 - [x] Cost allocation tags.
