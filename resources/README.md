@@ -5285,10 +5285,10 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### The user is fully responsible for which action when running workloads on AWS?
 
-- [x] Patching the infrastructure components.
+- [ ] Patching the infrastructure components.
 - [ ] Maintaining the underlying infrastructure components.
 - [ ] Maintaining physical and environmental controls.
-- [ ] Implementing controls to route application traffic.
+- [x] Implementing controls to route application traffic.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -5301,7 +5301,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### What time-savings advantage is offered with the use of Amazon Rekognition?
+### What time-saving advantage is offered with the use of Amazon Rekognition?
 
 - [ ] Amazon Rekognition provides automatic watermarking of images.
 - [x] Amazon Rekognition provides automatic detection of objects appearing in pictures.
