@@ -37,6 +37,7 @@ export async function initializeAppSettings() {
         }
         await fetchAndParseQuestions();
     }
+    document.querySelector('.source-switcher').textContent = `${appSettings.isExternalSource ? 'Source In' : 'Source Ex'}`;
     updateQuestionLimits();
     updateQuestionDisplay(appSettings.currentQuestion);
 }
@@ -127,6 +128,7 @@ function toggleSource() {
     console.log(`Source switched to ${!appSettings.isExternalSource ? 'external' : 'internal'}`)
     appSettings.isExternalSource = !appSettings.isExternalSource;
     localStorage.setItem('source', appSettings.isExternalSource ? 'external' : 'internal');
+    document.querySelector('.source-switcher').textContent = `${appSettings.isExternalSource ? 'Source In' : 'Source Ex'}`;
     fetchAndParseQuestions(); // This function will now use the updated source URL
     updateQuestionLimits();
     updateQuestionDisplay();
