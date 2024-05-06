@@ -43,6 +43,7 @@ function updateSettings() {
     document.querySelector('.source-switcher').textContent = (appSettings.source === 'in' ? 'Source In' : 'Source Ex');
     document.querySelector('.shuffle-answers-flag').textContent = `Shuffle A: ${appSettings.shuffleAnswers === 'true' ? 'Yes' : 'No'}`;
     document.querySelector('.shuffle-questions-flag').textContent = `Shuffle Q: ${appSettings.shuffleQuestions === 'true' ? 'Yes' : 'No'}`;
+    document.getElementById('question-number').value = appSettings.currentQuestion + 1; // Update displaying current question
 
     // Update localStorage with current settings
     localStorage.setItem('source', appSettings.source);
@@ -52,9 +53,9 @@ function updateSettings() {
     localStorage.setItem('lastSource', appSettings.lastSource);
 
     // Update cookies with current settings
-    setCookie('shuffleQuestions', appSettings.shuffleQuestions.toString(), 7); // Storing for 7 days for example
-    setCookie('shuffleAnswers', appSettings.shuffleAnswers.toString(), 7);
-    setCookie('currentQuestion', appSettings.currentQuestion.toString(), 7);
+    setCookie('shuffleQuestions', appSettings.shuffleQuestions.toString());
+    setCookie('shuffleAnswers', appSettings.shuffleAnswers.toString());
+    setCookie('currentQuestion', appSettings.currentQuestion.toString());
 }
 
 
@@ -73,13 +74,13 @@ function getCookie(name) {
 
 // Manage cookies with secure settings
 export function manageCookies() {
-    setCookie('shuffleQuestions', appSettings.shuffleQuestions, 1);
-    setCookie('shuffleAnswers', appSettings.shuffleAnswers, 1);
-    setCookie('currentQuestion', appSettings.currentQuestion, 1);
+    setCookie('shuffleQuestions', appSettings.shuffleQuestions);
+    setCookie('shuffleAnswers', appSettings.shuffleAnswers);
+    setCookie('currentQuestion', appSettings.currentQuestion);
 }
 
-function setCookie(name, value, days) {
-    const expires = new Date(Date.now() + days * 86400000).toUTCString();
+function setCookie(name, value) {
+    const expires = new Date(Date.now() + 180 * 86400000).toUTCString();
     document.cookie = `${name}=${value}; expires=${expires}; path=/; Secure; SameSite=Strict`;
 }
 
@@ -240,8 +241,8 @@ export function updateQuestionDisplay(index=appSettings.currentQuestion) {
     }
 
     displayQuestion(currentQuestion);
-    document.getElementById('question-number').value = appSettings.currentQuestion + 1;
-    localStorage.setItem('currentQuestion', appSettings.currentQuestion.toString());
+
+    updateSettings();
 }
 
 function shuffleArray(array) {
