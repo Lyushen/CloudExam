@@ -4766,7 +4766,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [x] Reduced Total Cost of Ownership (TCO).
 - [ ] Increased capital expenditure (capex).
-- [x] Reduced operational expenditure ( opex ).
+- [x] Reduced operational expenditure (opex).
 - [ ] Deferred payment plans for startups.
 - [ ] Business credit lines for startups.
 
