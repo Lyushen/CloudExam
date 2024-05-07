@@ -6076,7 +6076,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### Which AWS service would a customer use with a static website to achieve tower latency and high transfer speeds?
+### Which AWS service would a customer use with a static website to achieve lower latency and high transfer speeds?
 
 - [ ] AWS Lambda.
 - [ ] Amazon DynamoDB Accelerator.
