@@ -24,8 +24,6 @@ body {
     transition: background-color 0.3s, color 0.3s;
     overflow-x: hidden; /* Disable horizontal scrolling */
     width: 100%; /* Ensure the body takes up the full viewport width */
-    user-select: none;
-
 }
 
 .selectable {
