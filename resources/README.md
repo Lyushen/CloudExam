@@ -937,7 +937,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### What does the 'Principle of Least Privilege' refer to?
 
 - [x] You should grant your users only the permissions they need when they need them and nothing more.
-- [ ] AllIAM users should have at least the necessary permissions to access the core AWS services.
+- [ ] All IAM users should have at least the necessary permissions to access the core AWS services.
 - [ ] All trusted IAM users should have access to any AWS service in the respective AWS account.
 - [ ] IAM users should not be granted any permissions; to keep your account safe.
 
