@@ -5707,7 +5707,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### Which of the following AWS services can be used to serve large amounts of online video content with the lowest possible latency? (Select TWO)
 
-- [ ] appGateway.
+- [ ] API Gateway.
 - [x] Amazon S3.
 - [ ] Amazon Elastic File System (EFS).
 - [ ] Amazon Glacier.
