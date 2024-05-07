@@ -5628,7 +5628,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] There is a lower risk of service failure if a natural disaster causes a service disruption in a given AWS Region.
 - [x] The application will have higher availability because it can withstand a service disruption in one Availability Zone.
-- [ ] There will be better coverage as Availability Zones are geographical^ distant and can serve a wider area.
+- [ ] There will be better coverage as Availability Zones are geographical distant and can serve a wider area.
 - [ ] There will be decreased application latency that will improve the user experience.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -5655,8 +5655,8 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] AWS Trusted Advisor.
 - [ ] AWS Support case.
-- [ ] Concierge team.
-- [x] Amazon Connect.
+- [x] Concierge team.
+- [ ] Amazon Connect.
 
 **[⬆ Back to Top](#table-of-contents)**
 
