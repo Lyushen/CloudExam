@@ -1,6 +1,6 @@
 // Define Application Settings
 export let appSettings = {
-    externalURL: 'https://raw.githubusercontent.com/Ditectrev/Amazon-Web-Services-AWS-Certified-Cloud-Practitioner-CLF-C02-Practice-Tests-Exams-Questions-Answers/main/README.md',
+    externalURL: 'resources/tests/Amazon-Web-Services-AWS-Certified-Cloud-Practitioner-CLF-C02/README.md',
     internalURL: 'resources/README.md',
     source: 'in',  // true if using external, false if using internal
     shuffleQuestions: 'false',
@@ -10,8 +10,6 @@ export let appSettings = {
     questions:[],
     lastSource: ''
 };
-
-// Application initialisation on Page Load has been moved to the entry.js point
 
 // Initialize settings from storage
 export async function initializeAppSettings() {
@@ -71,7 +69,6 @@ function getCookie(name) {
     return null;
 }
 
-
 // Manage cookies with secure settings
 export function manageCookies() {
     setCookie('shuffleQuestions', appSettings.shuffleQuestions);
@@ -99,7 +96,6 @@ export function addEventListeners() {
     document.querySelector('#question-number').addEventListener('mouseenter', enableScroll);
     document.querySelector('#question-number').addEventListener('mouseleave', disableScroll);
 }
-
 
 // Fetch and parse questions from a Markdown file using settings
 async function fetchAndParseQuestions() {
@@ -141,12 +137,6 @@ function parseQuestions(markdownText) {
     });
 }
 
-// Toggle between dark and light themes
-function toggleTheme() {
-    const newTheme = appSettings.theme === 'dark' ? 'light' : 'dark';
-    appSettings.theme = newTheme;
-    document.body.className = newTheme;
-}
 
 // Toggle between external and internal sources
 async function toggleSource() {
@@ -155,6 +145,13 @@ async function toggleSource() {
     await fetchAndParseQuestions(); // This function will now use the updated source URL
     updateQuestionLimits();
     updateQuestionDisplay();
+}
+
+// Toggle between dark and light themes
+function toggleTheme() {
+    const newTheme = appSettings.theme === 'dark' ? 'light' : 'dark';
+    appSettings.theme = newTheme;
+    document.body.className = newTheme;
 }
 
 // Toggle shuffle state for questions
