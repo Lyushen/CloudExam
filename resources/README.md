@@ -6225,15 +6225,6 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### Which type of mirroring does SPAN technology perform?
-
-- [ ] Remote mirroring over Layer 2.
-- [ ] Remote mirroring over Layer 3.
-- [x] Local mirroring over Layer 2.
-- [ ] Local mirroring over Layer 3.
-
-**[⬆ Back to Top](#table-of-contents)**
-
 ### Your customer wants to grant restricted proxy rights to their HR Department to act on behalf of employees belonging to their legal entity. How can you perform this requirement? There are 2 correct answers to this question.
 
 - [ ] Use the Manage Permission Roles tool to grant proxy rights to the HR Department.
