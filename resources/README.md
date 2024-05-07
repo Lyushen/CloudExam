@@ -6197,7 +6197,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### Which AWS security service protects applications from distributed denial of service attacks with always-on detection and automatic inline mitigations?
+### Which AWS security service protects applications from Distributed Denial Of Service (DDOS) attacks with always-on detection and automatic inline mitigations?
 
 - [ ] Amazon Inspector.
 - [x] AWS Web Application Firewall (AWS WAF).
