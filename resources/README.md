@@ -6149,7 +6149,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### Much AWS services provide a way to extend an on-premises architecture to the AWS Cloud? (Select TWO)
+### Which AWS services provide a way to extend an on-premises architecture to the AWS Cloud? (Select TWO)
 
 - [ ] Amazon EBS.
 - [x] AWS Direct Connect.
