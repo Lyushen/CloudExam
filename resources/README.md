@@ -6225,26 +6225,6 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### Your customer wants to grant restricted proxy rights to their HR Department to act on behalf of employees belonging to their legal entity. How can you perform this requirement? There are 2 correct answers to this question.
-
-- [ ] Use the Manage Permission Roles tool to grant proxy rights to the HR Department.
-- [x] Fill the PROXY column of the Basic Import template to match the requirements and import the file using the Import Employee Data tool.
-- [x] Use the Proxy Management tool to configure the requested proxy assignments.
-- [ ] Fill the Basic Import template with the requested proxy configuration and import the file using the Import and Export Data tool.
-
-**[⬆ Back to Top](#table-of-contents)**
-
-### Which two statements about configuring a traffic monitoring session are true? (Choose two)
-
-- [ ] You can set a local VM as a traffic destination.
-- [x] You can have up to two active monitoring sessions simultaneously.
-- [ ] An unlimited number of monitoring session can be stored.
-- [ ] A newly created monitoring session is enabled by default.
-- [ ] A destination port can also be a source port within the same session.
-- [x] A vHBA can be a source for either an Ethernet or Fibre Channel monitoring session, but not both.
-
-**[⬆ Back to Top](#table-of-contents)**
-
 ### What are the advantages of the AWS Cloud? (Select TWO)
 
 - [ ] AWS management of user-owned infrastructure.
