@@ -6134,9 +6134,9 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] Firmware upgrades of network infrastructure.
 - [x] Patching of operating systems.
-- [x] Patching of the underlying hypervisor.
+- [ ] Patching of the underlying hypervisor.
 - [ ] Physical security of data centers.
-- [ ] Configuration of the security group.
+- [x] Configuration of the security group.
 
 **[⬆ Back to Top](#table-of-contents)**
 
