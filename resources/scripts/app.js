@@ -123,7 +123,7 @@ export function toggleShuffleAnswers() {
     appSettings.shuffleAnswers = appSettings.shuffleAnswers === 'true' ? 'false' : 'true';
     updateSettings();
     updateQuestionDisplay(); // Redisplay with new shuffle state
-}
+} 
 
 
 // Display the specified question in the UI
