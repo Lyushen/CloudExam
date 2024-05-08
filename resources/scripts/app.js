@@ -73,31 +73,13 @@ async function fetchAndParseQuestions() {
     localStorage.setItem('questions', JSON.stringify(appSettings.questions)); // Store fetched questions
 }
 
-function parseQuestions(markdownText) {
-    appSettings.lastSource=appSettings.source;
-    const questionBlocks = markdownText.split('### ').slice(1);
-    return questionBlocks.map(block => {
-        const lines = block.split('\n').filter(line => line.trim());
-        const question = lines[0].trim();
-        const options = lines.slice(1).filter(line => line.startsWith('- [x]') || line.startsWith('- [ ]'))
-                              .map(line => {
-                                  const isCorrect = line.trim().startsWith('- [x]');
-                                  const optionText = line.substring(line.indexOf(']') + 2).trim();
-                                  return {
-                                      text: optionText,
-                                      isCorrect: isCorrect
-                                  };
-                              });
-        return { question, options };
-    });
-}
-
 // Toggle shuffle state for questions
 export function toggleShuffleQuestions() {
     appSettings.shuffleQuestions = appSettings.shuffleQuestions === 'true' ? 'false' : 'true';
     shuffleQuestions(appSettings.shuffleQuestions==='true');
     updateSettings();
 }
+
 // Shuffle the order of questions based on a flag
 async function shuffleQuestions(shouldShuffle) {
     if (shouldShuffle) {
@@ -125,47 +107,21 @@ export function toggleShuffleAnswers() {
     updateQuestionDisplay(); // Redisplay with new shuffle state
 } 
 
-
 // Display the specified question in the UI
-function displayQuestion2(question) {
-    const questionText = document.getElementById('question-text');
-    const optionsContainer = document.getElementById('options-container');
-
-    questionText.textContent = question.question;
-    optionsContainer.innerHTML = '';
-
-    question.options.forEach(option => {
-        const optionElement = document.createElement('button');
-        optionElement.textContent = option.text;
-        optionElement.classList.add('option-button');
-        optionElement.onclick = () => checkAnswer(option, optionElement);
-        optionsContainer.appendChild(optionElement);
-    });
-}
-
 function displayQuestion(question) {
     const questionText = document.getElementById('question-text');
     const optionsContainer = document.getElementById('options-container');
 
-    questionText.innerHTML = question.question; // Use innerHTML to allow HTML content
-    optionsContainer.innerHTML = ''; // Reset the options container
+    questionText.innerHTML = question.question; // Allows HTML content
+    optionsContainer.innerHTML = ''; // Clear previous options
 
-    Object.keys(question.options).forEach(key => {
+    question.shuffledOptions.forEach(option => {
         const optionElement = document.createElement('button');
-        optionElement.innerHTML = question.options[key]; // Set HTML content
+        optionElement.innerHTML = option.html;
         optionElement.classList.add('option-button');
-        optionElement.onclick = () => checkAnswer(question, key, optionElement);
+        optionElement.onclick = () => checkAnswer(question, option.key, optionElement);
         optionsContainer.appendChild(optionElement);
     });
-}
-
-// Check the user's answer and update the UI accordingly
-function checkAnswer2(option, optionElement) {
-    if (option.isCorrect) {
-        optionElement.classList.add('correct');
-    } else {
-        optionElement.classList.add('wrong');
-    }
 }
 // Check the user's answer and update the UI accordingly
 function checkAnswer(question, selectedOptionKey, optionElement) {
@@ -178,37 +134,39 @@ function checkAnswer(question, selectedOptionKey, optionElement) {
 }
 
 // Update question display based on the selected index
-export function updateQuestionDisplay2(index=appSettings.currentQuestion) {
-    if (index < 0 || index >= appSettings.questions.length) return;
-    appSettings.currentQuestion = index;
-    let currentQuestion = appSettings.questions[appSettings.currentQuestion];
-
-    // Shuffle answers if enabled
-    if (appSettings.shuffleAnswers==='true') {
-        currentQuestion.options = shuffleArray(currentQuestion.options.slice()); // Use slice to create a copy for immutability
-    }
-
-    displayQuestion(currentQuestion);
-    updateSettings();
-}
-
-// Update question display based on the selected index
 export function updateQuestionDisplay(index=appSettings.currentQuestion) {
     if (index < 0 || index >= appSettings.questions.length) return;
     appSettings.currentQuestion = index;
-    let currentQuestion = appSettings.questions[appSettings.currentQuestion];
+    let currentQuestion = appSettings.questions[index];
+
+    let optionsArray = convertOptionsToArray(currentQuestion.options);
+
+    // Shuffle answers if enabled
+    if (appSettings.shuffleAnswers === 'true') {
+        optionsArray = shuffleArray(optionsArray);
+    }
+
+    currentQuestion.shuffledOptions = optionsArray;
 
     displayQuestion(currentQuestion);
     updateSettings();
 }
 
-
+// Convert options object to array, shuffle, then convert back to object if necessary
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
     }
     return array;
+}
+
+// Convert options object to array
+function convertOptionsToArray(options) {
+    return Object.keys(options).map(key => ({
+        key: key, // Preserve the original key for reference
+        html: options[key] // HTML content of the option
+    }));
 }
 
 // Update question limits in the UI

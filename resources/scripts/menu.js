@@ -25,5 +25,5 @@ function toggleTheme() {
 // Reset the localStorage cache and reload the page
 function resetCache() {
     localStorage.clear();
-    window.location.reload();
+    window.location.reload(true);
 }
