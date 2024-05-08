@@ -1,9 +1,13 @@
 import { initializeSwipeHandling } from './swipe.js';
-import { initializeAppSettings, manageCookies,addEventListeners} from './app.js';
+import { initializeAppSettings, addControlEventListeners,getAndParseInitialQuestions} from './app.js';
+import { menuInitialization } from './menu.js';
+import { manageCookies } from './cookies.js';
 
 document.addEventListener("DOMContentLoaded", async function() {
-    await initializeAppSettings();
+    menuInitialization();
+    initializeAppSettings();
+    await getAndParseInitialQuestions();
     manageCookies();
-    addEventListeners();
+    addControlEventListeners();
     initializeSwipeHandling();
 });
