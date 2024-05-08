@@ -1,28 +1,27 @@
-// Define Application Settings
+import { getCookie, manageCookies, getCurrentQuestionFromCookies} from './cookies.js';
 export let appSettings = {
-    externalURL: 'https://raw.githubusercontent.com/Ditectrev/Amazon-Web-Services-AWS-Certified-Cloud-Practitioner-CLF-C02-Practice-Tests-Exams-Questions-Answers/main/README.md',
-    internalURL: 'resources/README.md',
-    source: 'in',  // true if using external, false if using internal
+    source: '',
+    lastSource: '',
     shuffleQuestions: 'false',
     shuffleAnswers: 'false',
     currentQuestion: 0,
     theme: 'light',
     questions:[],
-    lastSource: ''
+    list:[]
 };
 
-// Application initialisation on Page Load has been moved to the entry.js point
-
-// Initialize settings from storage
+// Initialize settings from the local storage
 export async function initializeAppSettings() {
     appSettings.source = localStorage.getItem('source') || appSettings.source;
     appSettings.lastSource = localStorage.getItem('lastSource') || appSettings.lastSource;
     appSettings.shuffleQuestions = getCookie('shuffleQuestions') || localStorage.getItem('shuffleQuestions') || appSettings.shuffleQuestions;
     appSettings.shuffleAnswers = getCookie('shuffleAnswers') || localStorage.getItem('shuffleAnswers') || appSettings.shuffleAnswers;
     appSettings.currentQuestion = getCurrentQuestionFromCookies() || parseInt(localStorage.getItem('currentQuestion'), 10) || appSettings.currentQuestion;
+}
 
+export async function getAndParseInitialQuestions(){
     const storedQuestions = localStorage.getItem('questions');
-    if (storedQuestions && appSettings.lastSource === appSettings.source) {
+    if (storedQuestions && appSettings.source === appSettings.lastSource) {
         // If questions exist in localStorage and the source has not changed, use them
         appSettings.questions = JSON.parse(storedQuestions);
         console.log("Loaded questions from localStorage with unchanged source.");
@@ -37,10 +36,9 @@ export async function initializeAppSettings() {
 
 function updateSettings() {
     // Log current settings to ensure tracking of changes
-    console.log("Updating settings:", appSettings);
+    //console.log("Updating settings:", appSettings);
 
     // Update UI with current settings
-    document.querySelector('.source-switcher').textContent = (appSettings.source === 'in' ? 'Source In' : 'Source Ex');
     document.querySelector('.shuffle-answers-flag').textContent = `Shuffle A: ${appSettings.shuffleAnswers === 'true' ? 'Yes' : 'No'}`;
     document.querySelector('.shuffle-questions-flag').textContent = `Shuffle Q: ${appSettings.shuffleQuestions === 'true' ? 'Yes' : 'No'}`;
     document.getElementById('question-number').value = appSettings.currentQuestion + 1; // Update displaying current question
@@ -53,73 +51,26 @@ function updateSettings() {
     localStorage.setItem('lastSource', appSettings.lastSource);
 
     // Update cookies with current settings
-    setCookie('shuffleQuestions', appSettings.shuffleQuestions.toString());
-    setCookie('shuffleAnswers', appSettings.shuffleAnswers.toString());
-    setCookie('currentQuestion', appSettings.currentQuestion.toString());
+    manageCookies();
 }
-
-
-// Helper function to get cookie by name
-function getCookie(name) {
-    const cookieArr = document.cookie.split(";");
-    for(let i = 0; i < cookieArr.length; i++) {
-        let cookiePair = cookieArr[i].split("=");
-        if(name == cookiePair[0].trim()) {
-            return decodeURIComponent(cookiePair[1]);
-        }
-    }
-    return null;
-}
-
-
-// Manage cookies with secure settings
-export function manageCookies() {
-    setCookie('shuffleQuestions', appSettings.shuffleQuestions);
-    setCookie('shuffleAnswers', appSettings.shuffleAnswers);
-    setCookie('currentQuestion', appSettings.currentQuestion);
-}
-
-function setCookie(name, value) {
-    const expires = new Date(Date.now() + 180 * 86400000).toUTCString();
-    document.cookie = `${name}=${value}; expires=${expires}; path=/; Secure; SameSite=Strict`;
-}
-
 
 // Event listeners for UI interactions
-export function addEventListeners() {
-    document.querySelector('.theme-switcher').addEventListener('click', toggleTheme);
-    document.querySelector('.source-switcher').addEventListener('click', toggleSource);
-    document.querySelector('.shuffle-questions-flag').addEventListener('click', toggleShuffleQuestions);
-    document.querySelector('.shuffle-answers-flag').addEventListener('click', toggleShuffleAnswers);
-    document.querySelector('#menu-toggle').addEventListener('click', toggleMenu);
+export function addControlEventListeners() {
     document.querySelector('#prev-button').addEventListener('click', () => updateQuestionDisplay(appSettings.currentQuestion - 1));
     document.querySelector('#next-button').addEventListener('click', () => updateQuestionDisplay(appSettings.currentQuestion + 1));
-    document.querySelector('.reset-cache').addEventListener('click', resetCache);
     document.querySelector('#question-number').addEventListener('input', handleInput);
     document.querySelector('#question-number').addEventListener('mouseenter', enableScroll);
     document.querySelector('#question-number').addEventListener('mouseleave', disableScroll);
 }
 
-
 // Fetch and parse questions from a Markdown file using settings
 async function fetchAndParseQuestions() {
-    let url = appSettings.source === 'in' ? appSettings.internalURL : appSettings.externalURL;
-    try {
-        const response = await fetch(url);
-        if (!response.ok) throw new Error('Failed to fetch');
-        const text = await response.text();
-        appSettings.questions = parseQuestions(text);
-        localStorage.setItem('questions', JSON.stringify(appSettings.questions)); // Store fetched questions
-    } catch (error) {
-        console.error(`Failed to fetch questions from ${url}:`, error);
-        // Fallback to internal source without changing the user's preferred source
-        if (appSettings.source === 'ex') {
-            appSettings.source = 'in'; // Temporarily use internal source for loading questions
-            console.error("Switching temporarily to internal source due to failure.");
-            await fetchAndParseQuestions();
-            appSettings.source = 'ex'; // Restore preferred source after fetching
-        }
-    }
+    const response = await fetch(appSettings.source);
+    if (!response.ok) throw new Error('Failed to fetch');
+    const json = await response.json();
+    /* appSettings.questions = parseQuestions(text); */
+    appSettings.questions = json;  // Assigning parsed JSON directly to appSettings.questions
+    localStorage.setItem('questions', JSON.stringify(appSettings.questions)); // Store fetched questions
 }
 
 function parseQuestions(markdownText) {
@@ -141,24 +92,8 @@ function parseQuestions(markdownText) {
     });
 }
 
-// Toggle between dark and light themes
-function toggleTheme() {
-    const newTheme = appSettings.theme === 'dark' ? 'light' : 'dark';
-    appSettings.theme = newTheme;
-    document.body.className = newTheme;
-}
-
-// Toggle between external and internal sources
-async function toggleSource() {
-    appSettings.source = appSettings.source === 'in' ? 'ex' : 'in';
-    updateSettings();
-    await fetchAndParseQuestions(); // This function will now use the updated source URL
-    updateQuestionLimits();
-    updateQuestionDisplay();
-}
-
 // Toggle shuffle state for questions
-function toggleShuffleQuestions() {
+export function toggleShuffleQuestions() {
     appSettings.shuffleQuestions = appSettings.shuffleQuestions === 'true' ? 'false' : 'true';
     shuffleQuestions(appSettings.shuffleQuestions==='true');
     updateSettings();
@@ -184,27 +119,15 @@ async function shuffleQuestions(shouldShuffle) {
 
 
 // Toggle shuffle state for answers within a question
-function toggleShuffleAnswers() {
+export function toggleShuffleAnswers() {
     appSettings.shuffleAnswers = appSettings.shuffleAnswers === 'true' ? 'false' : 'true';
     updateSettings();
     updateQuestionDisplay(); // Redisplay with new shuffle state
 }
 
-// Toggle the menu visibility
-function toggleMenu() {
-    var menu = document.getElementById('menu');
-    menu.style.maxHeight = menu.style.maxHeight ? null : menu.scrollHeight + "px";
-    menu.style.borderColor = menu.style.maxHeight ? '#ccc' : 'transparent';
-}
-
-// Reset the localStorage cache and reload the page
-function resetCache() {
-    localStorage.clear();
-    window.location.reload();
-}
 
 // Display the specified question in the UI
-function displayQuestion(question) {
+function displayQuestion2(question) {
     const questionText = document.getElementById('question-text');
     const optionsContainer = document.getElementById('options-container');
 
@@ -220,9 +143,34 @@ function displayQuestion(question) {
     });
 }
 
+function displayQuestion(question) {
+    const questionText = document.getElementById('question-text');
+    const optionsContainer = document.getElementById('options-container');
+
+    questionText.innerHTML = question.question; // Use innerHTML to allow HTML content
+    optionsContainer.innerHTML = ''; // Reset the options container
+
+    Object.keys(question.options).forEach(key => {
+        const optionElement = document.createElement('button');
+        optionElement.innerHTML = question.options[key]; // Set HTML content
+        optionElement.classList.add('option-button');
+        optionElement.onclick = () => checkAnswer(question, key, optionElement);
+        optionsContainer.appendChild(optionElement);
+    });
+}
+
 // Check the user's answer and update the UI accordingly
-function checkAnswer(option, optionElement) {
+function checkAnswer2(option, optionElement) {
     if (option.isCorrect) {
+        optionElement.classList.add('correct');
+    } else {
+        optionElement.classList.add('wrong');
+    }
+}
+// Check the user's answer and update the UI accordingly
+function checkAnswer(question, selectedOptionKey, optionElement) {
+    const correctAnswer = question.correct_answers.includes(`options.${selectedOptionKey}`);
+    if (correctAnswer) {
         optionElement.classList.add('correct');
     } else {
         optionElement.classList.add('wrong');
@@ -230,7 +178,7 @@ function checkAnswer(option, optionElement) {
 }
 
 // Update question display based on the selected index
-export function updateQuestionDisplay(index=appSettings.currentQuestion) {
+export function updateQuestionDisplay2(index=appSettings.currentQuestion) {
     if (index < 0 || index >= appSettings.questions.length) return;
     appSettings.currentQuestion = index;
     let currentQuestion = appSettings.questions[appSettings.currentQuestion];
@@ -241,9 +189,19 @@ export function updateQuestionDisplay(index=appSettings.currentQuestion) {
     }
 
     displayQuestion(currentQuestion);
-
     updateSettings();
 }
+
+// Update question display based on the selected index
+export function updateQuestionDisplay(index=appSettings.currentQuestion) {
+    if (index < 0 || index >= appSettings.questions.length) return;
+    appSettings.currentQuestion = index;
+    let currentQuestion = appSettings.questions[appSettings.currentQuestion];
+
+    displayQuestion(currentQuestion);
+    updateSettings();
+}
+
 
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -296,12 +254,3 @@ function handleInput() {
     }
 }
 
-// Retrieve the current question index from cookies
-function getCurrentQuestionFromCookies() {
-    const cookieValue = document.cookie
-        .split('; ')
-        .find(row => row.startsWith('currentQuestion='))
-        ?.split('=')[1];
-
-    return cookieValue ? parseInt(decodeURIComponent(cookieValue), 10) : 0;
-}

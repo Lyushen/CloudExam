@@ -6,6 +6,7 @@
     --correct-color: #4CAF50;
     --wrong-color: #F44336;
     --font-family: 'Arial', sans-serif;
+    --button-border: 1px solid rgba(0, 0, 0, 0.229);
 }
 
 body.dark {
@@ -47,6 +48,7 @@ body {
     transition: background-color 0.2s;
     color: var(--text-color);
     background-color: var(--button-fill);
+    border: var(--button-border);
 }
 
 .menu {
@@ -69,6 +71,7 @@ body {
     background-color: var(--button-fill);
     transition: background-color 0.2s;
     cursor: pointer;
+    border: var(--button-border);
     border-radius: 4px;
     margin-bottom: 2px;
 }
@@ -126,7 +129,7 @@ body {
 .controls button {
     background-color: var(--button-fill);
     color: var(--text-color);
-    border: none;
+    border: var(--button-border);
     padding: 3px 35px;
     border-radius: 5px;
     cursor: pointer;
@@ -165,4 +168,46 @@ body {
 .option-button.wrong {
     background-color: var(--wrong-color);
     border-color: var(--wrong-color);
+}
+/* Grid Layout for Test Container */
+#test-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc(33.33% - 10px), 1fr)); /* Creates a flexible grid with max 3 columns */
+    gap: 5px; /* Sets the space between grid items */
+    padding: 5px;
+    width: 100%; /* Full width to utilize all available space */
+    height: calc(100vh - 20px); /* Full viewport height minus any additional padding/margins */
+    overflow: auto; /* Allows for scrolling within the container if content overflows */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    margin-top: 20px;
+}
+
+/* Button styles within test container */
+#test-container button {
+    width: 100%; /* Full width of the grid cell */
+    padding: 10px;
+    border: var(--button-border);
+    border-radius: 4px;
+    background-color: var(--button-fill);
+    color: var(--text-color);
+    text-align: center;
+    cursor: pointer; /* Hand pointer on hover */
+    transition: background-color 0.2s, border-color 0.2s; /* Smooth transition for color and border changes */
+}
+
+#test-container button:hover {
+    background-color: var(--button-hover-fill);
+}
+
+/* Responsive adjustments for smaller screens or fewer items */
+@media (max-width: 600px) {
+    #test-container {
+        grid-template-columns: repeat(auto-fill, minmax(calc(50% - 10px), 1fr)); /* Adjust to 2 columns on small screens */
+    }
+}
+
+@media (max-width: 400px) {
+    #test-container {
+        grid-template-columns: 1fr; /* Single column on very small screens */
+    }
 }
