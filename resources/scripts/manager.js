@@ -61,24 +61,11 @@ async function initializeQuizPage() {
             localStorage.setItem('source', appSettings.source);
             // Optionally redirect or refresh the quiz content
         } else {
-            redirectToDomainRoot();
+            window.location.href = 'index.html';
         }
     } else {
-        redirectToDomainRoot();
+        window.location.href = 'index.html';
     }
-}
-
-function redirectToDomainRoot() {
-    // Get protocol, hostname, and port if needed
-    var protocol = window.location.protocol; // e.g., 'http:' or 'https:'
-    var hostname = window.location.hostname; // e.g., 'www.example.com'
-    var port = window.location.port ? ':' + window.location.port : ''; // Include the port if there is one
-    
-    // Construct the URL to the root of the domain
-    var rootUrl = `${protocol}//${hostname}${port}/`;
-    
-    // Redirect to the constructed URL
-    window.location.href = rootUrl;
 }
 
 function getURLParameter(name) {
