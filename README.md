@@ -5,7 +5,7 @@ These Q&As are not an exact dump of the exam questions, but rather a collection 
 
 ## List of Exams
 1. AWS Cloud Practitioner(CLF-C02) 
-2. AWS Cloud Practitioner(CLF-C02-F) - Fixed version of author questions.
+2. AWS Cloud Practitioner(CLF-C02-F) - Fixed version of the prevoius question set.
 3. AWS Cloud Practitioner(CLF-C02-M) - Another set of questions extracted from a paid pdf file.
 4. AWS Advanced Networking Specialty (ANS-C01)
 5. AWS Data Analytics (DAS-C01)
