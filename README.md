@@ -1,4 +1,4 @@
-# CLF-C02-quiz
+# Certification-quiz
 
 ## This project is just for educational purposes 
 
