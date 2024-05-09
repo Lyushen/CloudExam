@@ -29,7 +29,7 @@ These Q&As are not an exact dump of the exam questions, but rather a collection 
 23. Professional Scrum Master I (PSM-I)
 24. Professional Scrum Product Owner (PSPO-I)
 
-## Technical aspect and a source credits.
+## Technical aspect and source credits.
 A collection of readme.md files from https://github.com/Ditectrev repositories, pre-converted to JSON and used local static website storage to retrieve questions for the quiz web app.
 
 The original author's web application is overwhelmed with redundant functionality/framework and as a result, significant performance issues that are not allowing easy practice on the questions.
