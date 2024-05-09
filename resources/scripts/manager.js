@@ -25,14 +25,14 @@ async function loadTestList() {
 function createTestButtons() {
     const container = document.getElementById('test-container');
     appSettings.list.forEach(testObj => {
-        Object.entries(testObj).forEach(([key, value]) => {
+        Object.entries(testObj).forEach(([key, testDetails]) => {
             const button = document.createElement('button');
             button.textContent = key;
             button.onclick = () => {
                 appSettings.lastSource = appSettings.source; // Update lastSource with the current source before changing
-                appSettings.source = value; // Update the source to the new test path
+                appSettings.source = testDetails.internal_url; // Update the source to the new test internal URL
                 localStorage.setItem('lastSource', appSettings.lastSource); // Store the lastSource in local storage
-                localStorage.setItem('source', value); // Store the new source in local storage
+                localStorage.setItem('source', testDetails.internal_url); // Store the new source (internal_url) in local storage
                 window.location.href = 'quiz.html'; // Navigate to the quiz page
             };
             container.appendChild(button);

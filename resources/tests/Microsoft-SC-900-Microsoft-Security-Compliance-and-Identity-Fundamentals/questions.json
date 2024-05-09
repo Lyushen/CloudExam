@@ -378,7 +378,7 @@
     },
     {
         "id": "28",
-        "question": "Applying system updates increases an organization's secure score in Azure Security Center.",
+        "question": "Applying system updates increases an organization&#x27;s secure score in Azure Security Center.",
         "options": {
             "1": "Yes.",
             "2": "No."
@@ -404,7 +404,7 @@
     },
     {
         "id": "30",
-        "question": "Enabling multi-factor authentication (MFA) increases an organization's secure score in Azure Security Center.",
+        "question": "Enabling multi-factor authentication (MFA) increases an organization&#x27;s secure score in Azure Security Center.",
         "options": {
             "1": "Yes.",
             "2": "No."
@@ -637,7 +637,7 @@
         "question": "Microsoft Intune can be used to manage Android devices.",
         "options": {
             "1": "Yes.",
-            "2": "No.",
+            "2": "No.  ## Microsoft Intune can be used to provision Azure subscriptions. ",
             "3": "Yes.",
             "4": "No."
         },
@@ -692,7 +692,7 @@
         "question": "Compliance Manager can help you asses whether data adheres to specific data protection standards.",
         "options": {
             "1": "Yes.",
-            "2": "No."
+            "2": "No.   #"
         },
         "correct_answers": [
             "options.1"
@@ -871,7 +871,7 @@
     },
     {
         "id": "63",
-        "question": "[...] can be used to provide Microsoft Support Engineers with access to an organization's data stored in Microsoft Exchange Online, SharePoint Online, and OneDrive for Business.",
+        "question": "[...] can be used to provide Microsoft Support Engineers with access to an organization&#x27;s data stored in Microsoft Exchange Online, SharePoint Online, and OneDrive for Business.",
         "options": {
             "1": "Customer Lockbox.",
             "2": "Information barriers.",
@@ -940,7 +940,7 @@
     },
     {
         "id": "68",
-        "question": "Azure Active Directory (Azure AD) Identity Protection can add users to groups based on the users' risk level.",
+        "question": "Azure Active Directory (Azure AD) Identity Protection can add users to groups based on the users&#x27; risk level.",
         "options": {
             "1": "Yes.",
             "2": "No."
@@ -966,7 +966,7 @@
     },
     {
         "id": "70",
-        "question": "Azure Active Directory (Azure AD) Identity Protection can be used to invoke Multi-Factor Authentication based on a user's risk level.",
+        "question": "Azure Active Directory (Azure AD) Identity Protection can be used to invoke Multi-Factor Authentication based on a user&#x27;s risk level.",
         "options": {
             "1": "Yes.",
             "2": "No."
@@ -1272,7 +1272,7 @@
         "question": "Conditional access policies can trigger multi-factor authentication (MFA) if a user attempts to access a specific application.",
         "options": {
             "1": "Yes.",
-            "2": "No.",
+            "2": "No. =======",
             "3": "Yes.",
             "4": "No."
         },
@@ -1285,7 +1285,7 @@
     },
     {
         "id": "93",
-        "question": "Azure AD Identity Protection can add users to groups based on the users' risk level.",
+        "question": "Azure AD Identity Protection can add users to groups based on the users&#x27; risk level.",
         "options": {
             "1": "Yes.",
             "2": "No."
@@ -1311,7 +1311,7 @@
     },
     {
         "id": "95",
-        "question": "Azure AD Identity Protection can be used to invoke Multi-Factor Authentication based on the users' risk level.",
+        "question": "Azure AD Identity Protection can be used to invoke Multi-Factor Authentication based on the users&#x27; risk level.",
         "options": {
             "1": "Yes.",
             "2": "No."
@@ -1894,7 +1894,7 @@
         "options": {
             "1": "Microsoft 365 admin center.",
             "2": "Microsoft 365 Defender portal.",
-            "3": "Microsoft 365 Purview"
+            "3": "Microsoft 365 Purview ======="
         },
         "correct_answers": [
             "options.3"
@@ -1923,7 +1923,7 @@
         "options": {
             "1": "Microsoft 365 admin center.",
             "2": "Microsoft 365 Defender portal.",
-            "3": "Microsoft 365 Compliance Center",
+            "3": "Microsoft 365 Compliance Center ",
             "4": "icrosoft Support portal."
         },
         "correct_answers": [
@@ -1964,7 +1964,7 @@
     },
     {
         "id": "141",
-        "question": "can be used to provide Microsoft Support Engineers with access to an organization's data stored in Microsoft Exchange Online, SharePoint Online, and OneDrive for",
+        "question": "can be used to provide Microsoft Support Engineers with access to an organization&#x27;s data stored in Microsoft Exchange Online, SharePoint Online, and OneDrive for",
         "options": {
             "1": "Customer Lockbox.",
             "2": "Information barriers.",
@@ -2235,7 +2235,7 @@
     },
     {
         "id": "160",
-        "question": "With Windows Hello for Business, a user's biometric data used for authentication",
+        "question": "With Windows Hello for Business, a user&#x27;s biometric data used for authentication",
         "options": {
             "1": "is stored on an external device.",
             "2": "is stored on a local device only.",

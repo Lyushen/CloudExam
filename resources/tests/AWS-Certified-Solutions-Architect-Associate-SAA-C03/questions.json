@@ -47,7 +47,7 @@
     },
     {
         "id": "4",
-        "question": "Your website is serving on-demand training videos to your workforce. Videos are uploaded monthly in high resolution MP4 format. Your workforce is distributed globally often on the move and using company-provided tablets that require the HTTP Live Streaming (HLS) protocol to watch a video. Your company has no video transcoding expertise and it required you may need to pay for a consultant. How do you implement the most cost-efficient architecture without compromising high availability and quality of video delivery'?",
+        "question": "Your website is serving on-demand training videos to your workforce. Videos are uploaded monthly in high resolution MP4 format. Your workforce is distributed globally often on the move and using company-provided tablets that require the HTTP Live Streaming (HLS) protocol to watch a video. Your company has no video transcoding expertise and it required you may need to pay for a consultant. How do you implement the most cost-efficient architecture without compromising high availability and quality of video delivery&#x27;?",
         "options": {
             "1": "A video transcoding pipeline running on EC2 using SQS to distribute tasks and Auto Scaling to adjust the number of nodes depending on the length of the queue. EBS volumes to host videos and EBS snapshots to incrementally backup original files after a few days. CloudFront to serve HLS transcoded videos from EC2.",
             "2": "Elastic Transcoder to transcode original high-resolution MP4 videos to HL.",
@@ -97,7 +97,7 @@
     },
     {
         "id": "7",
-        "question": "How can the domain's zone apex, for example, 'myzoneapexdomain.com', be pointed towards an Elastic Load Balancer?",
+        "question": "How can the domain&#x27;s zone apex, for example, &#x27;myzoneapexdomain.com&#x27;, be pointed towards an Elastic Load Balancer?",
         "options": {
             "1": "By using an Amazon Route 53 Alias record.",
             "2": "By using an AAAA record.",
@@ -126,7 +126,7 @@
     },
     {
         "id": "9",
-        "question": "Your department creates regular analytics reports from your company's log files All log data is collected in Amazon S3 and processed by daily Amazon Elastic MapReduce (EMR) jobs that generate daily PDF reports and aggregated tables in CSV format for an Amazon Redshift data warehouse. Which of the following alternatives will lower costs without compromising average performance of the system or data integrity for the raw data?",
+        "question": "Your department creates regular analytics reports from your company&#x27;s log files All log data is collected in Amazon S3 and processed by daily Amazon Elastic MapReduce (EMR) jobs that generate daily PDF reports and aggregated tables in CSV format for an Amazon Redshift data warehouse. Which of the following alternatives will lower costs without compromising average performance of the system or data integrity for the raw data?",
         "options": {
             "1": "Use reduced redundancy storage (RRS) for all data in S3. Use a combination of Spot Instances and Reserved Instances for Amazon EMR jobs. Use Reserved Instances for Amazon Redshift.",
             "2": "Use reduced redundancy storage (RRS) for PDF and .csv data in S3. Add Spot Instances to EMR jobs. Use Spot Instances for Amazon Redshift.",
@@ -184,7 +184,7 @@
     },
     {
         "id": "13",
-        "question": "Content and Media Server is the latest requirement that you need to meet for a client. The client has been very specific about his requirements such as low latency, high availability, durability, and access control. Potentially there will be millions of views on this server and because of 'spiky' usage patterns, operations teams will need to provision static hardware, network, and management resources to support the maximum expected need. The Customer base will be initially low but is expected to grow and become more geographically distributed. Which of the following would be a good solution for content distribution?",
+        "question": "Content and Media Server is the latest requirement that you need to meet for a client. The client has been very specific about his requirements such as low latency, high availability, durability, and access control. Potentially there will be millions of views on this server and because of &#x27;spiky&#x27; usage patterns, operations teams will need to provision static hardware, network, and management resources to support the maximum expected need. The Customer base will be initially low but is expected to grow and become more geographically distributed. Which of the following would be a good solution for content distribution?",
         "options": {
             "1": "Amazon S3 as both the origin server and for caching.",
             "2": "AWS Storage Gateway as the origin server and Amazon EC2 for caching.",
@@ -216,10 +216,10 @@
         "id": "15",
         "question": "After an Amazon VPC instance is launched, can I change the VPC security groups it belongs to?",
         "options": {
-            "1": "Only if the tag 'VPC_Change_Group' is true.",
+            "1": "Only if the tag &#x27;VPC_Change_Group&#x27; is true.",
             "2": "Yes. You can.",
             "3": "No. You cannot.",
-            "4": "Only if the tag 'VPC Change Group' is true."
+            "4": "Only if the tag &#x27;VPC Change Group&#x27; is true."
         },
         "correct_answers": [
             "options.2"
@@ -276,7 +276,7 @@
     },
     {
         "id": "19",
-        "question": "Which one of the following can't be used as an origin server with Amazon CloudFront?",
+        "question": "Which one of the following can&#x27;t be used as an origin server with Amazon CloudFront?",
         "options": {
             "1": "A web server running in your infrastructure.",
             "2": "Amazon S3.",
@@ -351,7 +351,7 @@
     },
     {
         "id": "24",
-        "question": "Which one of the below doesn't affect Amazon CloudFront billing?",
+        "question": "Which one of the below doesn&#x27;t affect Amazon CloudFront billing?",
         "options": {
             "1": "Distribution Type.",
             "2": "Data Transfer Out.",
@@ -381,7 +381,7 @@
     },
     {
         "id": "26",
-        "question": "$ aws sqs receive-message \u2013queue-url <https://queue.amazonaws.com/546419318123/Test>",
+        "question": "$ aws sqs receive-message \u2013queue-url &lt;https://queue.amazonaws.com/546419318123/Test&gt;",
         "options": {
             "1": "3.",
             "2": "4.",
@@ -519,7 +519,7 @@
         "options": {
             "1": "A scalable storage appliance on top of Amazon Web Services.",
             "2": "An application container on top of Amazon Web Services.",
-            "3": "A service by this name doesn't exist.",
+            "3": "A service by this name doesn&#x27;t exist.",
             "4": "A scalable cluster of EC2 instances."
         },
         "correct_answers": [
@@ -575,7 +575,7 @@
     },
     {
         "id": "39",
-        "question": "You are configuring a new VPC for one of your clients for a cloud migration project, and only a public VPN will be in place. After you created your VPC, you created a new subnet, a new internet gateway, and attached your internet gateway to your VPC. When you launched your first instance into your VPC, you realized that you aren't able to connect to the instance, even if it is configured with an elastic IP. What should be done to access the instance?",
+        "question": "You are configuring a new VPC for one of your clients for a cloud migration project, and only a public VPN will be in place. After you created your VPC, you created a new subnet, a new internet gateway, and attached your internet gateway to your VPC. When you launched your first instance into your VPC, you realized that you aren&#x27;t able to connect to the instance, even if it is configured with an elastic IP. What should be done to access the instance?",
         "options": {
             "1": "A route should be created as 0.0.0.0/0 and your internet gateway as target.",
             "2": "Attach another ENI to the instance and connect via new EN.",
@@ -639,10 +639,10 @@
         "id": "43",
         "question": "You are in the process of creating a Route 53 DNS failover to direct traffic to two EC2 zones. Obviously, if one fails, you would like Route 53 to direct traffic to the other region. Each region has an ELB with some instances being distributed. What is the best way for you to configure the Route 53 health check?",
         "options": {
-            "1": "Route 53 doesn't support ELB with an internal health check.You need to create your own Route 53 health check of the ELB.",
-            "2": "Route 53 natively supports ELB with an internal health check. Turn 'Evaluate target health' off and 'Associate with Health Check' on and R53 will use the ELB's internal health check.",
-            "3": "Route 53 doesn't support ELB with an internal health check. You need to associate your resource record set for the ELB with your own health check.",
-            "4": "Route 53 natively supports ELB with an internal health check. Turn 'Evaluate target health' on and 'Associate with Health Check' off and R53 will use the ELB's internal health check."
+            "1": "Route 53 doesn&#x27;t support ELB with an internal health check.You need to create your own Route 53 health check of the ELB.",
+            "2": "Route 53 natively supports ELB with an internal health check. Turn &#x27;Evaluate target health&#x27; off and &#x27;Associate with Health Check&#x27; on and R53 will use the ELB&#x27;s internal health check.",
+            "3": "Route 53 doesn&#x27;t support ELB with an internal health check. You need to associate your resource record set for the ELB with your own health check.",
+            "4": "Route 53 natively supports ELB with an internal health check. Turn &#x27;Evaluate target health&#x27; on and &#x27;Associate with Health Check&#x27; off and R53 will use the ELB&#x27;s internal health check."
         },
         "correct_answers": [
             "options.4"
@@ -686,7 +686,7 @@
         "options": {
             "1": "Prevents /dev/sdc from creating the instance.",
             "2": "Prevents /dev/sdc from deleting the instance.",
-            "3": "Set the value of /dev/sdc to 'zero'.",
+            "3": "Set the value of /dev/sdc to &#x27;zero&#x27;.",
             "4": "Prevents /dev/sdc from attaching to the instance."
         },
         "correct_answers": [
@@ -699,10 +699,10 @@
         "id": "47",
         "question": "Which of the following statements is true of tagging an Amazon EC2 resource?",
         "options": {
-            "1": "You don't need to specify the resource identifier while terminating a resource.",
+            "1": "You don&#x27;t need to specify the resource identifier while terminating a resource.",
             "2": "You can terminate, stop, or delete a resource based solely on its tags.",
-            "3": "You can't terminate, stop, or delete a resource based solely on its tags.",
-            "4": "You don't need to specify the resource identifier while stopping a resource."
+            "3": "You can&#x27;t terminate, stop, or delete a resource based solely on its tags.",
+            "4": "You don&#x27;t need to specify the resource identifier while stopping a resource."
         },
         "correct_answers": [
             "options.3"
@@ -757,7 +757,7 @@
     },
     {
         "id": "51",
-        "question": "An instance is launched into a VPC subnet with the network ACL configured to al low all inbound traffic and deny all outbound traffic. The instance's security group is configured to allow SSH from any IPaddress and deny all outbound traffic. What changes need to be made to allow SSH access to the instance?",
+        "question": "An instance is launched into a VPC subnet with the network ACL configured to al low all inbound traffic and deny all outbound traffic. The instance&#x27;s security group is configured to allow SSH from any IPaddress and deny all outbound traffic. What changes need to be made to allow SSH access to the instance?",
         "options": {
             "1": "The out bound security group needs to be modified to allow out bound traffic.",
             "2": "The outbound network ACL needs to be modified to allow outbound traffic.",
@@ -787,7 +787,7 @@
     },
     {
         "id": "53",
-        "question": "To serve Web traffic for a popular product your chief financial officer and IT director have purchased 10 ml large heavy utilization Reserved Instances (RIs) evenly spread across two Availability Zones: Route 53 is used to deliver the traffic to an Elastic Load Balancer (ELB). After several months, the product grows even more popular and you need additional capacity As a result, your company purchases two C3.2xlarge medium utilization RIs You register the two c3 2xlarge instances with your ELB and quickly find that the ml large instances are at 100% of capacity and the c3 2xlarge instances have significant capacity that's unused Which option is the most cost effective and uses EC2 capacity most effectively?",
+        "question": "To serve Web traffic for a popular product your chief financial officer and IT director have purchased 10 ml large heavy utilization Reserved Instances (RIs) evenly spread across two Availability Zones: Route 53 is used to deliver the traffic to an Elastic Load Balancer (ELB). After several months, the product grows even more popular and you need additional capacity As a result, your company purchases two C3.2xlarge medium utilization RIs You register the two c3 2xlarge instances with your ELB and quickly find that the ml large instances are at 100% of capacity and the c3 2xlarge instances have significant capacity that&#x27;s unused Which option is the most cost effective and uses EC2 capacity most effectively?",
         "options": {
             "1": "Use a separate ELB for each instance type and distribute load to ELBs with Route 53 weighted round robin.",
             "2": "Configure Autoscaning group and Launch Configuration with ELB to add up to 10 more on-demand ml large instances when triggered by Cloudwatch shut off c3 2xlarge instances.",
@@ -823,7 +823,7 @@
         "options": {
             "1": "Configure the IP range of the US West region instance as the ingress security rule of RDS.",
             "2": "It is not possible to access RDS of the US East region from the US West region.",
-            "3": "Open the security group of the US West region in the RDS security group's ingress rule.",
+            "3": "Open the security group of the US West region in the RDS security group&#x27;s ingress rule.",
             "4": "Create an IAM role which has access to RDS and launch an instance in the US West region with it."
         },
         "correct_answers": [
@@ -838,8 +838,8 @@
         "options": {
             "1": "Accelerates transferring large amounts of data between the AWS cloud and portable storage devices .",
             "2": "A web service that speeds up distribution of your static and dynamic web content.",
-            "3": "Connects an on-premises software appliance with cloud-based storage to provide seamless and secure integration between your on-premises IT environment and AWS's storage infrastructure.",
-            "4": "Is a storage service optimized for infrequently used data, or 'cold data'."
+            "3": "Connects an on-premises software appliance with cloud-based storage to provide seamless and secure integration between your on-premises IT environment and AWS&#x27;s storage infrastructure.",
+            "4": "Is a storage service optimized for infrequently used data, or &#x27;cold data&#x27;."
         },
         "correct_answers": [
             "options.3"
@@ -909,10 +909,10 @@
     },
     {
         "id": "61",
-        "question": "A friend tells you he is being charged $100 a month to host his WordPress website, and you tell him you can move it to AWS for him and he will only pay a fraction of that, which makes him very happy. He then tells you he is being charged $50 a month for the domain, which is registered with the same people that set it up, and he asks if it's possible to move that to AWS as well. You tell him you aren't sure, but will look into it. Which of the following statements is true in regards to transferring domain names to AWS?",
+        "question": "A friend tells you he is being charged $100 a month to host his WordPress website, and you tell him you can move it to AWS for him and he will only pay a fraction of that, which makes him very happy. He then tells you he is being charged $50 a month for the domain, which is registered with the same people that set it up, and he asks if it&#x27;s possible to move that to AWS as well. You tell him you aren&#x27;t sure, but will look into it. Which of the following statements is true in regards to transferring domain names to AWS?",
         "options": {
-            "1": "You can't transfer existing domains to AWS.",
-            "2": "You can transfer existing domains into Amazon Route 53's management.",
+            "1": "You can&#x27;t transfer existing domains to AWS.",
+            "2": "You can transfer existing domains into Amazon Route 53&#x27;s management.",
             "3": "You can transfer existing domains via AWS Direct Connect.",
             "4": "You can transfer existing domains via AWS Import/Export."
         },
@@ -969,7 +969,7 @@
     },
     {
         "id": "65",
-        "question": "You've created your first load balancer and have registered your EC2 instances with the load balancer. Elastic Load Balancing routinely performs health checks on all the registered EC2 instances and automatically distributes all incoming requests to the DNS name of your load balancer across your registered, healthy EC2 instances. By default, the load balancer uses the [...] protocol for checking the health of your instances.",
+        "question": "You&#x27;ve created your first load balancer and have registered your EC2 instances with the load balancer. Elastic Load Balancing routinely performs health checks on all the registered EC2 instances and automatically distributes all incoming requests to the DNS name of your load balancer across your registered, healthy EC2 instances. By default, the load balancer uses the [...] protocol for checking the health of your instances.",
         "options": {
             "1": "HTTPS.",
             "2": "HTTP.",
@@ -1045,7 +1045,7 @@
     },
     {
         "id": "70",
-        "question": "What does a 'Domain' refer to in Amazon SWF?",
+        "question": "What does a &#x27;Domain&#x27; refer to in Amazon SWF?",
         "options": {
             "1": "A security group in which only tasks inside can communicate with each other.",
             "2": "A special type of worker.",
@@ -1110,7 +1110,7 @@
             "1": "The AMI is missing a required part.",
             "2": "The snapshot is corrupt.",
             "3": "You need to create storage in EBS first.",
-            "4": "You've reached your volume limit."
+            "4": "You&#x27;ve reached your volume limit."
         },
         "correct_answers": [
             "options.3"
@@ -1167,10 +1167,10 @@
         "id": "78",
         "question": "Your company produces customer commissioned one-of-a-kind skiing helmets combining nigh fashion with custom technical enhancements Customers can show off their Individuality on the ski slopes and have access to head-up-displays. GPS rear-view cams and any other technical innovation they wish to embed in the helmet. The current manufacturing process is data rich and complex including assessments to ensure that the custom electronics and materials used to assemble the helmets are to the highest standards Assessments are a mixture of human and automated assessments you need to add a new set of assessment to model the failure modes of the custom electronics using GPUs with CUDA, across a cluster of servers with low latency networking. What architecture would allow you to automate the existing process using a hybrid approach and ensure that the architecture can support the evolution of processes over time?",
         "options": {
-            "1": "Use AWS Data Pipeline to manage movement of data & meta-data and assessments Use an autoscaling group of G2 instances in a placement group.",
-            "2": "Use Amazon Simple Workflow (SWF) to manages assessments, movement of data & meta-data Use an auto-scaling group of G2 instances in a placement group.",
-            "3": "Use Amazon Simple Workflow (SWF) to manages assessments movement of data & meta-data Use an auto-scaling group of C3 instances with SR-IOV (Single Root 1/0 Virtualization).",
-            "4": "Use AWS data Pipeline to manage movement of data & meta-data and assessments use autoscaling group of C3 with SR-IOV (Single Root 1/0 virtualization)."
+            "1": "Use AWS Data Pipeline to manage movement of data &amp; meta-data and assessments Use an autoscaling group of G2 instances in a placement group.",
+            "2": "Use Amazon Simple Workflow (SWF) to manages assessments, movement of data &amp; meta-data Use an auto-scaling group of G2 instances in a placement group.",
+            "3": "Use Amazon Simple Workflow (SWF) to manages assessments movement of data &amp; meta-data Use an auto-scaling group of C3 instances with SR-IOV (Single Root 1/0 Virtualization).",
+            "4": "Use AWS data Pipeline to manage movement of data &amp; meta-data and assessments use autoscaling group of C3 with SR-IOV (Single Root 1/0 virtualization)."
         },
         "correct_answers": [
             "options.2"
@@ -1235,7 +1235,7 @@
             "2": "Setup a DynamoDB table with an item for each user having the necessary attributes to hold the user preferences. The mobile application will query the user preferences directly from the DynamoDB table. Utilize ST.",
             "3": "Web Identity Federation, and DynamoDB Fine Grained Access Control to authenticate and authorize access.",
             "4": "Setup an RDS MySQL instance with multiple read replicas in 2 Availability Zones to store the user preference data. The mobile application will query the user preferences from the read replicas. Leverage the MySQL user management and access privilege system to manage security and access credentials.",
-            "5": "Store the user preference data in S3 Setup a DynamoDB table with an item for each user and an item attribute pointing to the user' S3 object. The mobile application will retrieve the S3 URL from DynamoDB and then access the S3 object directly utilize STS, Web identity Federation, and S3 ACLs to authenticate and authorize access."
+            "5": "Store the user preference data in S3 Setup a DynamoDB table with an item for each user and an item attribute pointing to the user&#x27; S3 object. The mobile application will retrieve the S3 URL from DynamoDB and then access the S3 object directly utilize STS, Web identity Federation, and S3 ACLs to authenticate and authorize access."
         },
         "correct_answers": [
             "options.2"
@@ -1266,7 +1266,7 @@
             "2": "You did not setup an HTTP health check tor one or more of the weighted resource record sets associated with me disabled web servers.",
             "3": "The value of the weight associated with the latency alias resource record set in the region with the disabled servers is higher than the weight for the other region.",
             "4": "One of the two working web servers in the other region did not pass its HTTP health check.",
-            "5": "You did not set 'Evaluate Target Health' to 'Yes' on the latency alias resource record set associated with example com in the region where you disabled the servers."
+            "5": "You did not set &#x27;Evaluate Target Health&#x27; to &#x27;Yes&#x27; on the latency alias resource record set associated with example com in the region where you disabled the servers."
         },
         "correct_answers": [
             "options.2",
@@ -1292,7 +1292,7 @@
     },
     {
         "id": "86",
-        "question": "You've been hired to enhance the overall security posture for a very large e-commerce site They have a well architected multi-tier application running in a VPC that uses ELBs in front of both the web and the app tier with static assets served directly from S3 They are using a combination of RDS and DynamoOB for their dynamic data and then archiving nightly into S3 for further processing with EMR They are concerned because they found questionable log entries and suspect someone is attempting to gain unauthorized access. Which approach provides a cost effective scalable mitigation to this kind of attack?",
+        "question": "You&#x27;ve been hired to enhance the overall security posture for a very large e-commerce site They have a well architected multi-tier application running in a VPC that uses ELBs in front of both the web and the app tier with static assets served directly from S3 They are using a combination of RDS and DynamoOB for their dynamic data and then archiving nightly into S3 for further processing with EMR They are concerned because they found questionable log entries and suspect someone is attempting to gain unauthorized access. Which approach provides a cost effective scalable mitigation to this kind of attack?",
         "options": {
             "1": "Recommend that they lease space at a DirectConnect partner location and establish a lG DirectConnect connection to their vPC they would then establish Internet connectivity into their space, filter the traffic in hardware Web Application Firewall (WAF). And then pass the traffic through the DirectConnect connection into their application running in their VPC,",
             "2": "Add previously identified hostile source IPs as an explicit INBOUND DENY NACL to the web tier sub net.",
@@ -1444,7 +1444,7 @@
     },
     {
         "id": "96",
-        "question": "If I want my instance to run on a single-tenant hardware, which value do I have to set the instance's tenancy attribute to?",
+        "question": "If I want my instance to run on a single-tenant hardware, which value do I have to set the instance&#x27;s tenancy attribute to?",
         "options": {
             "1": "Dedicated.",
             "2": "Isolated.",
@@ -1459,7 +1459,7 @@
     },
     {
         "id": "97",
-        "question": "Can the string value of 'Key' be prefixed with :aws:'?",
+        "question": "Can the string value of &#x27;Key&#x27; be prefixed with :aws:&#x27;?",
         "options": {
             "1": "Only in GovCloud.",
             "2": "Only for S3 not EC2.",
@@ -1579,7 +1579,7 @@
     },
     {
         "id": "105",
-        "question": "In the 'Detailed' monitoring data available for your Amazon EBS volumes, Provisioned IOPS volumes automatically send [...] minute metrics to Amazon CloudWatch.",
+        "question": "In the &#x27;Detailed&#x27; monitoring data available for your Amazon EBS volumes, Provisioned IOPS volumes automatically send [...] minute metrics to Amazon CloudWatch.",
         "options": {
             "1": "3.",
             "2": "1.",
@@ -1597,7 +1597,7 @@
         "question": "You are looking at ways to improve some existing infrastructure as it seems a lot of engineering resources are being taken up with basic management and monitoring tasks and the costs seem to be excessive. You are thinking of deploying Amazon ElasticCache to help. Which of the following statements is true in regards to ElasticCache?",
         "options": {
             "1": "You can improve load and response times to user actions and queries however the cost associated with scaling web applications will be more.",
-            "2": "You can't improve load and response times to user actions and queries but you can reduce the cost associated with scaling web applications.",
+            "2": "You can&#x27;t improve load and response times to user actions and queries but you can reduce the cost associated with scaling web applications.",
             "3": "You can improve load and response times to user actions and queries however the cost associated with scaling web applications will remain the same.",
             "4": "You can improve load and response times to user actions and queries and also reduce the cost associated with scaling web applications."
         },
@@ -1614,8 +1614,8 @@
             "1": "Use AWS Consolidated Billing and disable AWS root account access for the child accounts.",
             "2": "Enable IAM cross-account access for all corporate IT administrators in each child account.",
             "3": "Create separate VPCs for each division within the corporate IT AWS account.",
-            "4": "Use AWS Consolidated Billing to link the divisions' accounts to a parent corporate account.",
-            "5": "Write all child AWS CloudTrail and Amazon CloudWatch logs to each child account's Amazon S3 'Log' bucket."
+            "4": "Use AWS Consolidated Billing to link the divisions&#x27; accounts to a parent corporate account.",
+            "5": "Write all child AWS CloudTrail and Amazon CloudWatch logs to each child account&#x27;s Amazon S3 &#x27;Log&#x27; bucket."
         },
         "correct_answers": [
             "options.4",
@@ -1656,7 +1656,7 @@
     },
     {
         "id": "110",
-        "question": "IAM's Policy Evaluation Logic always starts with a default [...] for every request, except for those that use the AWS account's root security credentials?",
+        "question": "IAM&#x27;s Policy Evaluation Logic always starts with a default [...] for every request, except for those that use the AWS account&#x27;s root security credentials?",
         "options": {
             "1": "Permit.",
             "2": "Deny.",
@@ -1776,7 +1776,7 @@
     },
     {
         "id": "118",
-        "question": "You want to establish a dedicated network connection from your premises to AWS in order to save money by transferring data directly to AWS rather than through your internet service provider. You are sure there must be some other benefits beyond cost savings. Which of the following statements would be the best choice to put your client's mind at rest?",
+        "question": "You want to establish a dedicated network connection from your premises to AWS in order to save money by transferring data directly to AWS rather than through your internet service provider. You are sure there must be some other benefits beyond cost savings. Which of the following statements would be the best choice to put your client&#x27;s mind at rest?",
         "options": {
             "1": "Different instances running on the same physical machine are isolated from each other via a 256-bit Advanced Encryption Standard (AES-256).",
             "2": "Different instances running on the same physical machine are isolated from each other via the Xen hypervisor and via a 256-bit Advanced Encryption Standard (AES-256).",
@@ -1809,7 +1809,7 @@
             "1": "The instance does not have a public IP address.",
             "2": "The internet gateway security group must allow all outbound traffic.",
             "3": "The instance security group must allow all inbound traffic.",
-            "4": "The instance 'Source/Destination check' property must be enabled."
+            "4": "The instance &#x27;Source/Destination check&#x27; property must be enabled."
         },
         "correct_answers": [
             "options.1"
@@ -1821,7 +1821,7 @@
         "id": "121",
         "question": "Which of the following statements best describes the differences between Elastic Beanstalk and CloudFormation?",
         "options": {
-            "1": "Elastic Beanstalk uses Elastic load balancing and CloudFormation doesn't.",
+            "1": "Elastic Beanstalk uses Elastic load balancing and CloudFormation doesn&#x27;t.",
             "2": "CloudFormation is faster in deploying applications than Elastic Beanstalk.",
             "3": "Elastic Beanstalk is faster in deploying applications than CloudFormation.",
             "4": "CloudFormation is much more powerful than Elastic Beanstalk, because you can actually design and script custom resources."
@@ -1882,8 +1882,8 @@
         "question": "Does AWS CloudFormation support Amazon EC2 tagging?",
         "options": {
             "1": "Yes, AWS CloudFormation supports Amazon EC2 tagging.",
-            "2": "No, CloudFormation doesn't support any tagging.",
-            "3": "No, it doesn't support Amazon EC2 tagging.",
+            "2": "No, CloudFormation doesn&#x27;t support any tagging.",
+            "3": "No, it doesn&#x27;t support Amazon EC2 tagging.",
             "4": "It depends if the Amazon EC2 tagging has been defined in the template."
         },
         "correct_answers": [
@@ -1925,8 +1925,8 @@
         "question": "To specify a resource in a policy statement, in Amazon EC2, can you use its Amazon Resource Name (ARN)?",
         "options": {
             "1": "Yes, you can.",
-            "2": "No, you can't because EC2 is not related to AR",
-            "3": "No, you can't because you can't specify a particular Amazon EC2 resource in an IAM policy.",
+            "2": "No, you can&#x27;t because EC2 is not related to AR",
+            "3": "No, you can&#x27;t because you can&#x27;t specify a particular Amazon EC2 resource in an IAM policy.",
             "4": "Yes, you can but only for the resources that are not affected by the action."
         },
         "correct_answers": [
@@ -1937,11 +1937,11 @@
     },
     {
         "id": "129",
-        "question": "An enterprise wants to use a third-party SaaS application. The SaaS application needs to have access to issue several API commands to discover Amazon EC2 resources running within the enterprise's account The enterprise has internal security policies that require any outside access to their environment must conform to the principles of least privilege and there must be controls in place to ensure that the credentials used by the 5aa5 vendor cannot be used by any other third party. Which of the following would meet all of these conditions?",
+        "question": "An enterprise wants to use a third-party SaaS application. The SaaS application needs to have access to issue several API commands to discover Amazon EC2 resources running within the enterprise&#x27;s account The enterprise has internal security policies that require any outside access to their environment must conform to the principles of least privilege and there must be controls in place to ensure that the credentials used by the 5aa5 vendor cannot be used by any other third party. Which of the following would meet all of these conditions?",
         "options": {
             "1": "From the AWS Management Console, navigate to the Security Credentials page and retrieve the access and secret key for your account.",
             "2": "Create an IAM user within the enterprise account assign a user policy to the IAM user that allows only the actions required by the SaaS application create a new access and secret key for the user and provide these credentials to the 5aa5 provider.",
-            "3": "Create an IAM role for cross-account access allows the SaaS provider's account to assume the role and assign it a policy that allows only the actions required by the SaaS application.",
+            "3": "Create an IAM role for cross-account access allows the SaaS provider&#x27;s account to assume the role and assign it a policy that allows only the actions required by the SaaS application.",
             "4": "Create an IAM role for EC2 instances, assign it a policy that allows only the actions required tor the Saas application to work, provide the role ARM to the SaaS provider to use when launching their application instances."
         },
         "correct_answers": [
@@ -2046,7 +2046,7 @@
     },
     {
         "id": "136",
-        "question": "Can a 'user' be associated with multiple AWS accounts?",
+        "question": "Can a &#x27;user&#x27; be associated with multiple AWS accounts?",
         "options": {
             "1": "Yes.",
             "2": "No."
@@ -2091,10 +2091,10 @@
         "id": "139",
         "question": "You need a persistent and durable storage to trace call activity of an IVR (Interactive Voice Response) system. Call duration is mostly in the 2-3 minutes timeframe. Each traced call can be either active or terminated. An external application needs to know each minute the list of currently active calls, which are usually a few calls/second. Put once per month there is a periodic peak up to 1000 calls/second for a few hours. The system is open 24/7 and any downtime should be avoided. Historical data is periodically archived to files. Cost saving is a priority for this project. What database implementation would better fit this scenario, keeping costs as low as possible?",
         "options": {
-            "1": "Use RDS Multi-AZ with two tables, one for 'Active calls' and one for 'Terminated calls'. in this way the 'Active calls' table is always small and effective to access.",
-            "2": "Use DynamoDB with a 'Calls' table and a Global Secondary Index on a 'lsActive' attribute that is present for active calls only in this way the Global Secondary index is sparse and more effective.",
-            "3": "Use DynamoDB with a 'Calls' table and a Global secondary index on a 'State' attribute that can equal to 'active' or 'terminated' in this way the Global Secondary index can be used for all Items in the table.",
-            "4": "Use RDS Multi-AZ with a 'CALLS' table and an Indexed 'STATE* field that can be equal to 'ACTIVE' or 'TERMINATED' in this way the SOL query Is optimized by the use of the Index."
+            "1": "Use RDS Multi-AZ with two tables, one for &#x27;Active calls&#x27; and one for &#x27;Terminated calls&#x27;. in this way the &#x27;Active calls&#x27; table is always small and effective to access.",
+            "2": "Use DynamoDB with a &#x27;Calls&#x27; table and a Global Secondary Index on a &#x27;lsActive&#x27; attribute that is present for active calls only in this way the Global Secondary index is sparse and more effective.",
+            "3": "Use DynamoDB with a &#x27;Calls&#x27; table and a Global secondary index on a &#x27;State&#x27; attribute that can equal to &#x27;active&#x27; or &#x27;terminated&#x27; in this way the Global Secondary index can be used for all Items in the table.",
+            "4": "Use RDS Multi-AZ with a &#x27;CALLS&#x27; table and an Indexed &#x27;STATE* field that can be equal to &#x27;ACTIVE&#x27; or &#x27;TERMINATED&#x27; in this way the SOL query Is optimized by the use of the Index."
         },
         "correct_answers": [
             "options.1"
@@ -2179,10 +2179,10 @@
     },
     {
         "id": "145",
-        "question": "An AWS customer is deploying an application mat is composed of an AutoScaling group of EC2 Instances. The customers security policy requires that every outbound connection from these instances to any other service within the customers Virtual Private Cloud must be authenticated using a unique x 509 certificate that contains the specific instance-id. In addition an x 509 certificates must Designed by the customer's Key management service in order to be trusted for authentication. Which of the following configurations will support these requirements?",
+        "question": "An AWS customer is deploying an application mat is composed of an AutoScaling group of EC2 Instances. The customers security policy requires that every outbound connection from these instances to any other service within the customers Virtual Private Cloud must be authenticated using a unique x 509 certificate that contains the specific instance-id. In addition an x 509 certificates must Designed by the customer&#x27;s Key management service in order to be trusted for authentication. Which of the following configurations will support these requirements?",
         "options": {
             "1": "Configure an IAM Role that grants access to an Amazon S3 object containing a signed certificate and configure me Auto Scaling group to launch instances with this role Have the instances bootstrap get the certificate from Amazon S3 upon first boot.",
-            "2": "Embed a certificate into the Amazon Machine Image that is used by the Auto Scaling group Have the launched instances generate a certificate signature request with the instance's assigned instance- id to the Key management service for signature.",
+            "2": "Embed a certificate into the Amazon Machine Image that is used by the Auto Scaling group Have the launched instances generate a certificate signature request with the instance&#x27;s assigned instance- id to the Key management service for signature.",
             "3": "Configure the Auto Scaling group to send an SNS notification of the launch of a new instance to the trusted key management service. Have the Key management service generate a signed certificate and send it directly to the newly launched instance.",
             "4": "Configure the launched instances to generate a new certificate upon first boot Have the Key management service poll the AutoScaling group for associated instances and send new instances a certificate signature (hat contains the specific instance-id."
         },
@@ -2316,7 +2316,7 @@
     },
     {
         "id": "154",
-        "question": "A company is building a voting system for a popular TV show, viewers win watch the performances then visit the show's website to vote for their favorite performer. It is expected that in a short period of time after the show has finished the site will receive millions of visitors. The visitors will first login to the site using their Amazon.com credentials and then submit their vote. After the voting is completed the page will display the vote totals. The company needs to build the site such that can handle the rapid influx of traffic while maintaining good performance but also wants to keep costs to a minimum. Which of the design patterns below should they use?",
+        "question": "A company is building a voting system for a popular TV show, viewers win watch the performances then visit the show&#x27;s website to vote for their favorite performer. It is expected that in a short period of time after the show has finished the site will receive millions of visitors. The visitors will first login to the site using their Amazon.com credentials and then submit their vote. After the voting is completed the page will display the vote totals. The company needs to build the site such that can handle the rapid influx of traffic while maintaining good performance but also wants to keep costs to a minimum. Which of the design patterns below should they use?",
         "options": {
             "1": "Use CloudFront and an Elastic Load balancer in front of an auto-scaled set of web servers, the web servers will first can the Login With Amazon service to authenticate the user then process the users vote and store the result into a multi-AZ Relational Database Service instance.",
             "2": "Use CloudFront and the static website hosting feature of S3 with the Javascript SDK to call the Login With Amazon service to authenticate the user, use IAM Roles to gain permissions to a DynamoDB table to store the users vote.",
@@ -2334,9 +2334,9 @@
         "question": "You are designing a photo sharing mobile app the application will store all pictures in a single Amazon S3 bucket. Users will upload pictures from their mobile device directly to Amazon S3 and will be able to view and download their own pictures directly from Amazon S3. You want to configure security to handle potentially millions of users in the most secure manner possible. What should your server-side application do when a new user registers on the photo sharing mobile application?",
         "options": {
             "1": "Create a set of long-term credentials using AWS Security Token Service with appropriate permissions Store these credentials in the mobile app and use them to access Amazon S3.",
-            "2": "Record the user's Information in Amazon RDS and create a role in IAM with appropriate permissions. When the user uses their mobile app create temporary credentials using the AWS Security Token Service 'Assume Role' function Store these credentials in the mobile app's memory and use them to access Amazon S3 Generate new credentials the next time the user runs the mobile app.",
-            "3": "Record the user's Information in Amazon DynamoDB.",
-            "4": "When the user uses their mobile app create temporary credentials using AWS Security Token Service with appropriate permissions Store these credentials in the mobile app's memory and use them to access Amazon S3 Generate new credentials the next time the user runs the mobile app.",
+            "2": "Record the user&#x27;s Information in Amazon RDS and create a role in IAM with appropriate permissions. When the user uses their mobile app create temporary credentials using the AWS Security Token Service &#x27;Assume Role&#x27; function Store these credentials in the mobile app&#x27;s memory and use them to access Amazon S3 Generate new credentials the next time the user runs the mobile app.",
+            "3": "Record the user&#x27;s Information in Amazon DynamoDB.",
+            "4": "When the user uses their mobile app create temporary credentials using AWS Security Token Service with appropriate permissions Store these credentials in the mobile app&#x27;s memory and use them to access Amazon S3 Generate new credentials the next time the user runs the mobile app.",
             "5": "Create IAM user. Assign appropriate permissions to the IAM user Generate an access key and secret key for the IAM user, store them in the mobile app and use these credentials to access Amazon S3.",
             "6": "Create an IAM user. Update the bucket policy with appropriate permissions for the IAM user Generate an access Key and secret Key for the IAM user, store them in the mobile app and use these credentials to access Amazon S3."
         },
@@ -2378,7 +2378,7 @@
     },
     {
         "id": "158",
-        "question": "Your company hosts a social media site supporting users in multiple countries. You have been asked to provide a highly available design tor the application that leverages multiple regions tor the most recently accessed content and latency sensitive portions of the wet) site The most latency sensitive component of the application involves reading user preferences to support web site personalization and ad selection. In addition to running your application in multiple regions, which option will support this application's requirements?",
+        "question": "Your company hosts a social media site supporting users in multiple countries. You have been asked to provide a highly available design tor the application that leverages multiple regions tor the most recently accessed content and latency sensitive portions of the wet) site The most latency sensitive component of the application involves reading user preferences to support web site personalization and ad selection. In addition to running your application in multiple regions, which option will support this application&#x27;s requirements?",
         "options": {
             "1": "Serve user content from S3. CloudFront and use Route 53 latency-based routing between ELBs in each region Retrieve user preferences from a local DynamoDB table in each region and leverage SQS to capture changes to user preferences with 505 workers for propagating updates to each table.",
             "2": "Use the 53 Copy API to copy recently accessed content to multiple regions and serve user content from S3. CloudFront with dynamic content and an ELB in each region Retrieve user preferences from an ElasticCache cluster in each region and leverage SNS notifications to propagate user preference changes to a worker node in each region.",
@@ -2483,7 +2483,7 @@
         "id": "165",
         "question": "Select a true statement about Amazon EC2 Security Groups (EC2-Classic).",
         "options": {
-            "1": "After you launch an instance in EC2-Classic, you can't change its security groups.",
+            "1": "After you launch an instance in EC2-Classic, you can&#x27;t change its security groups.",
             "2": "After you launch an instance in EC2-Classic, you can change its security groups only once.",
             "3": "After you launch an instance in EC2-Classic, you can only add rules to a security group.",
             "4": "After you launch an instance in EC2-Classic, you cannot add or remove rules from a security group."
@@ -2496,7 +2496,7 @@
     },
     {
         "id": "166",
-        "question": "To view information about an Amazon EBS volume, open the Amazon EC2 console at <https://console.aws.amazon.com/ec2/>, click in the Navigation panel.",
+        "question": "To view information about an Amazon EBS volume, open the Amazon EC2 console at &lt;https://console.aws.amazon.com/ec2/&gt;, click in the Navigation panel.",
         "options": {
             "1": "EBS.",
             "2": "Describe.",
@@ -2558,7 +2558,7 @@
         "options": {
             "1": "Amazon Instance Storage.",
             "2": "Amazon EBS.",
-            "3": "You can't run a database inside an Amazon instance.",
+            "3": "You can&#x27;t run a database inside an Amazon instance.",
             "4": "Amazon S3."
         },
         "correct_answers": [
@@ -2599,7 +2599,7 @@
     },
     {
         "id": "173",
-        "question": "You try to connect via SSH to a newly created Amazon EC2 instance and get one of the following error messages: 'Network error: Connection timed out' or 'Error connecting to [instance], reason: -> Connection timed out: connect,' You have confirmed that the network and security group rules are configured correctly and the instance is passing status checks. What steps should you take to identify the source of the behavior? (Choose 2 answers)",
+        "question": "You try to connect via SSH to a newly created Amazon EC2 instance and get one of the following error messages: &#x27;Network error: Connection timed out&#x27; or &#x27;Error connecting to [instance], reason: -&gt; Connection timed out: connect,&#x27; You have confirmed that the network and security group rules are configured correctly and the instance is passing status checks. What steps should you take to identify the source of the behavior? (Choose 2 answers)",
         "options": {
             "1": "Verify that the private key file corresponds to the Amazon EC2 key pair assigned at launch.",
             "2": "Verify that your IAM user policy has permission to launch Amazon EC2 instances.",
@@ -2691,7 +2691,7 @@
     },
     {
         "id": "179",
-        "question": "Are penetration tests allowed as long as they are limited to the customer's instances?",
+        "question": "Are penetration tests allowed as long as they are limited to the customer&#x27;s instances?",
         "options": {
             "1": "Yes, they are allowed but only for selected regions.",
             "2": "No, they are never allowed.",
@@ -2708,7 +2708,7 @@
         "id": "180",
         "question": "You are building a system to distribute confidential documents to employees. Using CloudFront, what method could be used to serve content that is stored in S3, but not publically accessible from S3 directly?",
         "options": {
-            "1": "Add the CloudFront account security group 'amazon-cf/amazon-cf-sg' to the appropriate S3 bucket policy.",
+            "1": "Add the CloudFront account security group &#x27;amazon-cf/amazon-cf-sg&#x27; to the appropriate S3 bucket policy.",
             "2": "Create a S3 bucket policy that lists the CloudFront distribution ID as the Principal and the target bucket as the Amazon Resource Name (ARN).",
             "3": "Create an Identity and Access Management (IAM) User for CloudFront and grant access to the objects in your S3 bucket to that IAM User.",
             "4": "Create an Origin Access Identity (OAI) for CloudFront and grant access to the objects in your S3 bucket to that OA."
@@ -2783,7 +2783,7 @@
     },
     {
         "id": "185",
-        "question": "Can I initiate a 'forced failover' for my Oracle Multi-AZ DB Instance deployment?",
+        "question": "Can I initiate a &#x27;forced failover&#x27; for my Oracle Multi-AZ DB Instance deployment?",
         "options": {
             "1": "Yes.",
             "2": "Only in certain regions.",
@@ -2813,7 +2813,7 @@
     },
     {
         "id": "187",
-        "question": "True or False: Amazon EC2 has no Amazon Resource Names (ARNs) because you can't specify a particular Amazon EC2 resource in an IAM policy.",
+        "question": "True or False: Amazon EC2 has no Amazon Resource Names (ARNs) because you can&#x27;t specify a particular Amazon EC2 resource in an IAM policy.",
         "options": {
             "1": "True.",
             "2": "False."
@@ -2905,7 +2905,7 @@
         "options": {
             "1": "A scalable service is capable of handling heterogeneity.",
             "2": "A scalable service is resilient.",
-            "3": "A scalable architecture won't be cost effective as it grows.",
+            "3": "A scalable architecture won&#x27;t be cost effective as it grows.",
             "4": "Increasing resources results in a proportional increase in performance."
         },
         "correct_answers": [
@@ -3010,7 +3010,7 @@
         "id": "200",
         "question": "A user comes to you and wants access to Amazon CloudWatch but only wants to monitor a specific LoadBalancer. Is it possible to give him access to a specific set of instances or a specific LoadBalancer?",
         "options": {
-            "1": "No because you can't use IAM to control access to CloudWatch data for specific resources.",
+            "1": "No because you can&#x27;t use IAM to control access to CloudWatch data for specific resources.",
             "2": "Yes. You can use IAM to control access to CloudWatch data for specific resources.",
             "3": "No because you need to be Sysadmin to access CloudWatch data.",
             "4": "Yes. Any user can see all CloudWatch data and needs no access rights."
@@ -3095,10 +3095,10 @@
     },
     {
         "id": "206",
-        "question": "You're trying to delete an SSL certificate from the IAM certificate store, and you're getting the message 'Certificate: <certificate< span=''>-id> is being used by CloudFront.' Which of the following statements is probably the reason why you are getting this error?",
+        "question": "You&#x27;re trying to delete an SSL certificate from the IAM certificate store, and you&#x27;re getting the message &#x27;Certificate: &lt;certificate&lt; span=&#x27;&#x27;&gt;-id&gt; is being used by CloudFront.&#x27; Which of the following statements is probably the reason why you are getting this error?",
         "options": {
             "1": "Before you can delete an SSL certificate, you need to either rotate SSL certificates or revert from using a custom SSL certificate to using the default CloudFront certificate.",
-            "2": "You can't delete SSL certificates. You need to request it from AWS.",
+            "2": "You can&#x27;t delete SSL certificates. You need to request it from AWS.",
             "3": "Before you can delete an SSL certificate, you need to set up the appropriate access level in IAM. Before you can delete an SSL certificate you need to set up https on your server.",
             "4": "Before you can delete an SSL certificate you need to set up https on your server."
         },
@@ -3127,9 +3127,9 @@
         "id": "208",
         "question": "A web company is looking to implement an intrusion detection and prevention system into their deployed VPC. This platform should have the ability to scale to thousands of instances running inside of the VPC. How should they architect their solution to achieve these goals?",
         "options": {
-            "1": "Configure an instance with monitoring software and the elastic network interface (ENI) set to promiscuous mode packet sniffing to see an traffic across the VPC. Configure servers running in the VPC using the host-based 'route' commands to send all traffic through the platform to a scalable virtualized IDS/IP.",
+            "1": "Configure an instance with monitoring software and the elastic network interface (ENI) set to promiscuous mode packet sniffing to see an traffic across the VPC. Configure servers running in the VPC using the host-based &#x27;route&#x27; commands to send all traffic through the platform to a scalable virtualized IDS/IP.",
             "2": "Create a second VPC and route all traffic from the primary application VPC through the second VPC where the scalable virtualized IDS/IPS platform resides.",
-            "3": "Configure servers running in the VPC using the host-based 'route' commands to send all traffic through the platform to a scalable virtualized IDS/IP.",
+            "3": "Configure servers running in the VPC using the host-based &#x27;route&#x27; commands to send all traffic through the platform to a scalable virtualized IDS/IP.",
             "4": "Configure each host with an agent that collects all network traffic and sends that traffic to the IDS/IPS platform for inspection."
         },
         "correct_answers": [
@@ -3199,7 +3199,7 @@
     },
     {
         "id": "213",
-        "question": "You log in to IAM on your AWS console and notice the following message. 'Delete your root access keys.' Why do you think IAM is requesting this?",
+        "question": "You log in to IAM on your AWS console and notice the following message. &#x27;Delete your root access keys.&#x27; Why do you think IAM is requesting this?",
         "options": {
             "1": "Because the root access keys will expire as soon as you log out.",
             "2": "Because the root access keys expire after 1 week.",
@@ -3380,7 +3380,7 @@
         "id": "225",
         "question": "How can you secure data at rest on an EBS volume?",
         "options": {
-            "1": "Attach the volume to an instance using EC2's SSL interface.",
+            "1": "Attach the volume to an instance using EC2&#x27;s SSL interface.",
             "2": "Write the data randomly instead of sequentially.",
             "3": "Encrypt the volume using the S3 server-side encryption service.",
             "4": "Create an IAM policy that restricts read and write access to the volume.",
@@ -3454,7 +3454,7 @@
     },
     {
         "id": "230",
-        "question": "You are responsible for a legacy web application whose server environment is approaching end of life. You would like to migrate this application to AWS as quickly as possible, since the application environment currently has the following limitations. The VM's single 10GB VMDK is almost full Me virtual network interface still uses the 10Mbps driver, which leaves your 100Mbps WAN connection completely underutilized. It is currently running on a highly customized. Windows VM within a VMware environment: You do not have me installation media. This is a mission critical application with an RTO (Recovery Time Objective) of 8 hours. RPO (Recovery Point Objective) of 1 hour. How could you best migrate this application to AWS while meeting your business continuity requirements?",
+        "question": "You are responsible for a legacy web application whose server environment is approaching end of life. You would like to migrate this application to AWS as quickly as possible, since the application environment currently has the following limitations. The VM&#x27;s single 10GB VMDK is almost full Me virtual network interface still uses the 10Mbps driver, which leaves your 100Mbps WAN connection completely underutilized. It is currently running on a highly customized. Windows VM within a VMware environment: You do not have me installation media. This is a mission critical application with an RTO (Recovery Time Objective) of 8 hours. RPO (Recovery Point Objective) of 1 hour. How could you best migrate this application to AWS while meeting your business continuity requirements?",
         "options": {
             "1": "Use the EC2 VM Import Connector for vCenter to import the VM into EC2.",
             "2": "Use Import/Export to import the VM as an ESS snapshot and attach to EC2.",
@@ -3484,9 +3484,9 @@
     },
     {
         "id": "232",
-        "question": "Much of your company's data does not need to be accessed often, and can take several hours for retrieval time, so it's stored on Amazon Glacier. However someone within your organization has expressed concerns that his data is more sensitive than the other data, and is wondering whether the high level of encryption that he knows is on S3 is also used on the much cheaper Glacier service. Which of the following statements would be most applicable in regards to this concern?",
+        "question": "Much of your company&#x27;s data does not need to be accessed often, and can take several hours for retrieval time, so it&#x27;s stored on Amazon Glacier. However someone within your organization has expressed concerns that his data is more sensitive than the other data, and is wondering whether the high level of encryption that he knows is on S3 is also used on the much cheaper Glacier service. Which of the following statements would be most applicable in regards to this concern?",
         "options": {
-            "1": "There is no encryption on Amazon Glacier, that's why it is cheaper.",
+            "1": "There is no encryption on Amazon Glacier, that&#x27;s why it is cheaper.",
             "2": "Amazon Glacier automatically encrypts the data using AES-128 a lesser encryption method than Amazon S3 but you can change it to AES-256 if you are willing to pay more.",
             "3": "Amazon Glacier automatically encrypts the data using AES-256, the same as Amazon S3.",
             "4": "Amazon Glacier automatically encrypts the data using AES-128 a lesser encryption method than Amazon S3."
@@ -3618,11 +3618,11 @@
     },
     {
         "id": "241",
-        "question": "An AWS customer runs a public blogging website. The site users upload two million blog entries a month. The average blog entry size is 200 KB. The access rate to blog entries drops to negligible 6 months after publication and users rarely access a blog entry 1 year after publication. Additionally, blog entries have a high update rate during the first 3 months following publication, this drops to no updates after 6 months. The customer wants to use CloudFront to improve his user's load times. Which of the following recommendations would you make to the customer?",
+        "question": "An AWS customer runs a public blogging website. The site users upload two million blog entries a month. The average blog entry size is 200 KB. The access rate to blog entries drops to negligible 6 months after publication and users rarely access a blog entry 1 year after publication. Additionally, blog entries have a high update rate during the first 3 months following publication, this drops to no updates after 6 months. The customer wants to use CloudFront to improve his user&#x27;s load times. Which of the following recommendations would you make to the customer?",
         "options": {
             "1": "Duplicate entries into two different buckets and create two separate CloudFront distributions where S3 access is restricted only to CloudFront identity.",
-            "2": "Create a CloudFront distribution with 'US' Europe price class for US/ Europe users and a different CloudFront distribution with Al l Edge Locations' for the remaining users.",
-            "3": "Create a CloudFront distribution with S3 access restricted only to the CloudFront identity and partition the blog entry's location in S3 according to the month it was uploaded to be used withCloudFront behaviors.",
+            "2": "Create a CloudFront distribution with &#x27;US&#x27; Europe price class for US/ Europe users and a different CloudFront distribution with Al l Edge Locations&#x27; for the remaining users.",
+            "3": "Create a CloudFront distribution with S3 access restricted only to the CloudFront identity and partition the blog entry&#x27;s location in S3 according to the month it was uploaded to be used withCloudFront behaviors.",
             "4": "Create a CloudFronl distribution with Restrict Viewer Access Forward Query string set to true and minimum TTL of 0."
         },
         "correct_answers": [
@@ -3633,7 +3633,7 @@
     },
     {
         "id": "242",
-        "question": "Your supervisor has asked you to build a simple file synchronization service for your department. He doesn't want to spend too much money and he wants to be notified of any changes to files by email. What do you think would be the best Amazon service to use for the email solution?",
+        "question": "Your supervisor has asked you to build a simple file synchronization service for your department. He doesn&#x27;t want to spend too much money and he wants to be notified of any changes to files by email. What do you think would be the best Amazon service to use for the email solution?",
         "options": {
             "1": "Amazon SES.",
             "2": "Amazon CloudSearch.",
@@ -3650,10 +3650,10 @@
         "id": "243",
         "question": "What are the Amazon EC2 API tools?",
         "options": {
-            "1": "They don't exist. The Amazon EC2 AMI tools, instead, are used to manage permissions.",
+            "1": "They don&#x27;t exist. The Amazon EC2 AMI tools, instead, are used to manage permissions.",
             "2": "Command-line tools to the Amazon EC2 web service.",
             "3": "They are a set of graphical tools to manage EC2 instances.",
-            "4": "They don't exist. The Amazon API tools are a client interface to Amazon Web Services."
+            "4": "They don&#x27;t exist. The Amazon API tools are a client interface to Amazon Web Services."
         },
         "correct_answers": [
             "options.2"
@@ -3749,7 +3749,7 @@
     },
     {
         "id": "250",
-        "question": "You have a load balancer configured for VPC, and all back-end Amazon EC2 instances are in service. However, your web browser times out when connecting to the load balancer's DNS name. Which options are probable causes of this behavior? (Choose 2 answers)",
+        "question": "You have a load balancer configured for VPC, and all back-end Amazon EC2 instances are in service. However, your web browser times out when connecting to the load balancer&#x27;s DNS name. Which options are probable causes of this behavior? (Choose 2 answers)",
         "options": {
             "1": "The load balancer was not configured to use a public subnet with an Internet gateway configured.",
             "2": "The Amazon EC2 instances do not have a dynamically allocated private IP address.",
@@ -3796,11 +3796,11 @@
     },
     {
         "id": "253",
-        "question": "In AWS, which security aspects are the customer's responsibility? (Choose 4 answers)",
+        "question": "In AWS, which security aspects are the customer&#x27;s responsibility? (Choose 4 answers)",
         "options": {
             "1": "Security Group and ACL (Access Control List) settings.",
             "2": "Decommissioning storage devices.",
-            "3": "Patch management on the EC2 instance's operating system.",
+            "3": "Patch management on the EC2 instance&#x27;s operating system.",
             "4": "Life-cycle management of IAM credentials.",
             "5": "Controlling physical access to compute resources.",
             "6": "Encryption of EBS (Elastic Block Storage) volumes."
@@ -3850,7 +3850,7 @@
         "options": {
             "1": "You can use multiple layers of security, including security groups and network access control lists (ACL).",
             "2": "You can only use access control lists (ACL).",
-            "3": "You don't need any security in subnets.",
+            "3": "You don&#x27;t need any security in subnets.",
             "4": "You can use multiple layers of security, including security groups, network access control lists (ACL) and CloudHS."
         },
         "correct_answers": [
@@ -3876,7 +3876,7 @@
     },
     {
         "id": "258",
-        "question": "[...] embodies the 'share-nothing' architecture and essentially involves breaking a large database into several smaller databases. Common ways to split a database include: 1. Splitting tables that are not joined in the same query onto different hosts or 2. Duplicating a table across multiple hosts and then using a hashing algorithm to determine which host receives a given update.",
+        "question": "[...] embodies the &#x27;share-nothing&#x27; architecture and essentially involves breaking a large database into several smaller databases. Common ways to split a database include: 1. Splitting tables that are not joined in the same query onto different hosts or 2. Duplicating a table across multiple hosts and then using a hashing algorithm to determine which host receives a given update.",
         "options": {
             "1": "$harding.",
             "2": "Fai lure recovery.",
@@ -3893,10 +3893,10 @@
         "id": "259",
         "question": "After deploying a new website for a client on AWS, he asks if you can set it up so that if it fails it can be automatically redirected to a backup website that he has stored on a dedicated server elsewhere. You are wondering whether Amazon Route 53 can do this. Which statement below is correct in regards to Amazon Route 53?",
         "options": {
-            "1": "Amazon Route 53 can't help detect an outage. You need to use another service.",
+            "1": "Amazon Route 53 can&#x27;t help detect an outage. You need to use another service.",
             "2": "Amazon Route 53 can help detect an outage of your website and redirect your end users to alternate locations.",
-            "3": "Amazon Route 53 can help detect an outage of your website but can't redirect your end users to alternate locations.",
-            "4": "Amazon Route 53 can't help detect an outage of your website, but can redirect your end users to alternate locations."
+            "3": "Amazon Route 53 can help detect an outage of your website but can&#x27;t redirect your end users to alternate locations.",
+            "4": "Amazon Route 53 can&#x27;t help detect an outage of your website, but can redirect your end users to alternate locations."
         },
         "correct_answers": [
             "options.2"
@@ -3936,7 +3936,7 @@
     },
     {
         "id": "262",
-        "question": "You are migrating a legacy client-server application to AWS. The application responds to a specific DNS domain (e.g. <www.example.com>) and has a 2-tier architecture, with multiple application servers and a database server. Remote clients use TCP to connect to the application servers. The application servers need to know the IP address of the clients in order to function properly and are currently taking that information from the TCP socket. A Multi-AZ RDS MySQL instance will be used for the database. During the migration you can change the application code, but you have to file a change request. How would you implement the architecture on AWS in order to maximize scalability and high availability?",
+        "question": "You are migrating a legacy client-server application to AWS. The application responds to a specific DNS domain (e.g. &lt;www.example.com&gt;) and has a 2-tier architecture, with multiple application servers and a database server. Remote clients use TCP to connect to the application servers. The application servers need to know the IP address of the clients in order to function properly and are currently taking that information from the TCP socket. A Multi-AZ RDS MySQL instance will be used for the database. During the migration you can change the application code, but you have to file a change request. How would you implement the architecture on AWS in order to maximize scalability and high availability?",
         "options": {
             "1": "File a change request to implement Alias Resource support in the application. Use Route 53 Alias Resource Record to distribute load on two application servers in different AZs.",
             "2": "File a change request to implement Latency Based Routing support in the application. Use Route 53 with Latency Based Routing enabled to distribute load on two application servers in different AZs.",
@@ -4058,10 +4058,10 @@
         "id": "270",
         "question": "The base URI for all requests for instance metadata is [...].",
         "options": {
-            "1": "<http://254.169.169.254/latest/>.",
-            "2": "<http://169.169.254.254/latest/>.",
-            "3": "<http://127.0.0.1/latest/>.",
-            "4": "<http://169.254.169.254/latest/>."
+            "1": "&lt;http://254.169.169.254/latest/&gt;.",
+            "2": "&lt;http://169.169.254.254/latest/&gt;.",
+            "3": "&lt;http://127.0.0.1/latest/&gt;.",
+            "4": "&lt;http://169.254.169.254/latest/&gt;."
         },
         "correct_answers": [
             "options.4"
@@ -4134,7 +4134,7 @@
         "question": "A user has created a CloudFormation stack. The stack creates AWS services, such as EC2 instances, ELB, AutoScaling, and RDS. While creating the stack it created EC2, ELB and AutoScaling but failed to create RDS. What will CloudFormation do in this scenario?",
         "options": {
             "1": "Rollback all the changes and terminate all the created services.",
-            "2": "It will wait for the user's input about the error and correct the mistake after the input.",
+            "2": "It will wait for the user&#x27;s input about the error and correct the mistake after the input.",
             "3": "CloudFormation can never throw an error after launching a few services since it verifies all the steps before launching.",
             "4": "It will warn the user about the error and ask the user to manually create RDS."
         },
@@ -4241,10 +4241,10 @@
         "id": "282",
         "question": "What is Amazon Glacier?",
         "options": {
-            "1": "You mean Amazon 'Iceberg': it's a low-cost storage service.",
-            "2": "A security tool that allows to 'freeze' an EBS volume and perform computer forensics on it.",
+            "1": "You mean Amazon &#x27;Iceberg&#x27;: it&#x27;s a low-cost storage service.",
+            "2": "A security tool that allows to &#x27;freeze&#x27; an EBS volume and perform computer forensics on it.",
             "3": "A low-cost storage service that provides secure and durable storage for data archiving and backup.",
-            "4": "It's a security tool that allows to 'freeze' an EC2 instance and perform computer forensics on it."
+            "4": "It&#x27;s a security tool that allows to &#x27;freeze&#x27; an EC2 instance and perform computer forensics on it."
         },
         "correct_answers": [
             "options.3"
@@ -4269,7 +4269,7 @@
     },
     {
         "id": "284",
-        "question": "Can I initiate a 'forced failover' for my MySQL Multi-AZ DB Instance deployment?",
+        "question": "Can I initiate a &#x27;forced failover&#x27; for my MySQL Multi-AZ DB Instance deployment?",
         "options": {
             "1": "Only in certain regions.",
             "2": "Only in VPC.",
@@ -4329,7 +4329,7 @@
     },
     {
         "id": "288",
-        "question": "Your company has multiple IT departments, each with their own VPC. Some VPCs are located within the same AWS account, and others in a different AWS account. You want to peer together all VPCs to enable the IT departments to have full access to each others' resources. There are certain limitations placed on VPC peering. Which of the following statements is incorrect in relation to VPC peering?",
+        "question": "Your company has multiple IT departments, each with their own VPC. Some VPCs are located within the same AWS account, and others in a different AWS account. You want to peer together all VPCs to enable the IT departments to have full access to each others&#x27; resources. There are certain limitations placed on VPC peering. Which of the following statements is incorrect in relation to VPC peering?",
         "options": {
             "1": "Private DNS values cannot be resolved between instances in peered VPCs.",
             "2": "You can have up to 3 VPC peering connections between the same two VPCs at the same time.",
@@ -4374,7 +4374,7 @@
     },
     {
         "id": "291",
-        "question": "Your manager has just given you access to multiple VPN connections that someone else has recently set up between all your company's offices. She needs you to make sure that the communication between the VPNs is secure. Which of the following services would be best for providing a low-cost hub-and-spoke model for primary or backup connectivity between these remote offices?",
+        "question": "Your manager has just given you access to multiple VPN connections that someone else has recently set up between all your company&#x27;s offices. She needs you to make sure that the communication between the VPNs is secure. Which of the following services would be best for providing a low-cost hub-and-spoke model for primary or backup connectivity between these remote offices?",
         "options": {
             "1": "Amazon CloudFront.",
             "2": "AWS Direct Connect.",
@@ -4391,7 +4391,7 @@
         "id": "292",
         "question": "You need to create a management network using network interfaces for a virtual private cloud (VPC) network. Which of the following statements is incorrect pertaining to Best Practices for ConfiguringNetwork Interfaces.",
         "options": {
-            "1": "You can detach secondary (ethN) network interfaces when the instance is running or stopped. However, you can't detach the primary (eth0) interface.",
+            "1": "You can detach secondary (ethN) network interfaces when the instance is running or stopped. However, you can&#x27;t detach the primary (eth0) interface.",
             "2": "Launching an instance with multiple network interfaces automatically configures interfaces, private IP addresses, and route tables on the operating system of the instance.",
             "3": "You can attach a network interface in one subnet to an instance in another subnet in the same VPC, however, both the network interface and the instance must reside in the same Availability Zone.",
             "4": "Attaching another network interface to an instance is a valid method to increase or double the network bandwidth to or from the dual-homed instance."
@@ -4407,7 +4407,7 @@
         "question": "A user has launched 10 EC2 instances inside a placement group. Which of the following statements is true in regards to what ability launching your instances into a VPC instead of EC2-Classic gives you?",
         "options": {
             "1": "All of the things listed here.",
-            "2": "Change security group membership for your instances while they're running.",
+            "2": "Change security group membership for your instances while they&#x27;re running.",
             "3": "Assign static private IP addresses to your instances that persist across starts and stops.",
             "4": "Define network interfaces, and attach one or more network interfaces to your instances."
         },
@@ -4419,7 +4419,7 @@
     },
     {
         "id": "294",
-        "question": "In the HQ region you run an hourly batch process reading data from every region to compute cross regional reports that are sent by email to all offices this batch process must be completed as fast as possible to quickly optimize logistics how do you build the database architecture in order to meet the requirements'?",
+        "question": "In the HQ region you run an hourly batch process reading data from every region to compute cross regional reports that are sent by email to all offices this batch process must be completed as fast as possible to quickly optimize logistics how do you build the database architecture in order to meet the requirements&#x27;?",
         "options": {
             "1": "For each regional deployment, use RDS MySQL with a master in the region and a read replica in the HQ region.",
             "2": "For each regional deployment, use MySQL on EC2 with a master in the region and send hourly EBS snapshots to the HQ region.",
@@ -4465,7 +4465,7 @@
     },
     {
         "id": "297",
-        "question": "Your manager has asked you to set up a public subnet with instances that can send and receive internet traffic, and a private subnet that can't receive traffic directly from the internet, but can initiate traffic to the internet (and receive responses) through a NAT instance in the public subnet. Hence, the following 3 rules need to be allowed: Inbound SSH traffic. Web servers in the public subnet to read and write to MS SQL servers in the private subnet. Inbound RDP traffic from the Microsoft Terminal Services gateway in the public private subnet. What are the respective ports that need to be opened for this?",
+        "question": "Your manager has asked you to set up a public subnet with instances that can send and receive internet traffic, and a private subnet that can&#x27;t receive traffic directly from the internet, but can initiate traffic to the internet (and receive responses) through a NAT instance in the public subnet. Hence, the following 3 rules need to be allowed: Inbound SSH traffic. Web servers in the public subnet to read and write to MS SQL servers in the private subnet. Inbound RDP traffic from the Microsoft Terminal Services gateway in the public private subnet. What are the respective ports that need to be opened for this?",
         "options": {
             "1": "Ports 22, 1433, 3389.",
             "2": "Ports 21, 1433, 3389.",
@@ -4540,11 +4540,11 @@
         "id": "302",
         "question": "You have deployed a three-tier web application in a VPC with a CIDR block of 10.0.0.0/28. You initially deploy two web servers, two application servers, two database servers and one NAT instance tor a total of seven EC2 instances. The web, application and database servers are deployed across two Availability Zones (AZs). You also deploy an ELB in front of the two web servers, and use Route 53 for DNS Web. Raffle gradually increases in the first few days following the deployment, so you attempt to double the number of instances in each tier of the application to handle the new load unfortunately some of these new instances fail to launch.Which of the following could be the root caused? (Choose 2 answers)",
         "options": {
-            "1": "AWS reserves the first and the last private IP address in each subnet's CIDR block so you do not have enough addresses left to launch all of the new EC2 instances.",
+            "1": "AWS reserves the first and the last private IP address in each subnet&#x27;s CIDR block so you do not have enough addresses left to launch all of the new EC2 instances.",
             "2": "The Internet Gateway (IGW) of your VPC has scaled-up, adding more instances to handle the traffic spike, reducing the number of available private IP addresses for new instance launches.",
             "3": "The ELB has scaled-up, adding more instances to handle the traffic spike, reducing the number of available private IP addresses for new instance launches.",
-            "4": "AWS reserves one IP address in each subnet's CIDR block for Route 53 so you do not have enough addresses left to launch all of the new EC2 instances.",
-            "5": "AWS reserves the first four and the last IP address in each subnet's CIDR block so you do not have enough addresses left to launch all of the new EC2 instances."
+            "4": "AWS reserves one IP address in each subnet&#x27;s CIDR block for Route 53 so you do not have enough addresses left to launch all of the new EC2 instances.",
+            "5": "AWS reserves the first four and the last IP address in each subnet&#x27;s CIDR block so you do not have enough addresses left to launch all of the new EC2 instances."
         },
         "correct_answers": [
             "options.3",
@@ -4583,13 +4583,13 @@
     },
     {
         "id": "305",
-        "question": "You are tasked with moving a legacy application from a virtual machine running Inside your datacenter to an Amazon VPC Unfortunately this app requires access to a number of on-premises services and no one who configured the app still works for your company. Even worse there's no documentation for it. What will allow the application running inside the VPC to reach back and access its internal dependencies without being reconfigured? (Choose 3 answers)",
+        "question": "You are tasked with moving a legacy application from a virtual machine running Inside your datacenter to an Amazon VPC Unfortunately this app requires access to a number of on-premises services and no one who configured the app still works for your company. Even worse there&#x27;s no documentation for it. What will allow the application running inside the VPC to reach back and access its internal dependencies without being reconfigured? (Choose 3 answers)",
         "options": {
             "1": "An AWS Direct Connect link between the VPC and the network housing the internal services.",
             "2": "An Internet Gateway to allow a VPN connection.",
             "3": "An Elastic IP address on the VPC instance.",
             "4": "An IP address space that does not conflict with the one on-premises.",
-            "5": "Entries in Amazon Route 53 that allow the Instance to resolve its dependencies' IP addresses.",
+            "5": "Entries in Amazon Route 53 that allow the Instance to resolve its dependencies&#x27; IP addresses.",
             "6": "A VM Import of the current virtual machine."
         },
         "correct_answers": [
@@ -4754,7 +4754,7 @@
     },
     {
         "id": "316",
-        "question": "You have set up an Elastic Load Balancer (ELB) with the usual default settings, which route each request independently to the application instance with the smallest load. However, someone has asked you to bind a user's session to a specific application instance so as to ensure that all requests coming from the user during the session will be sent to the same application instance. AWS has a feature to do this. What is it called?",
+        "question": "You have set up an Elastic Load Balancer (ELB) with the usual default settings, which route each request independently to the application instance with the smallest load. However, someone has asked you to bind a user&#x27;s session to a specific application instance so as to ensure that all requests coming from the user during the session will be sent to the same application instance. AWS has a feature to do this. What is it called?",
         "options": {
             "1": "Connection draining.",
             "2": "Proxy protocol.",
@@ -4932,7 +4932,7 @@
     },
     {
         "id": "328",
-        "question": "Amazon S3 doesn't automatically give a user who creates [...] permission to perform other actions on that bucket or object.",
+        "question": "Amazon S3 doesn&#x27;t automatically give a user who creates [...] permission to perform other actions on that bucket or object.",
         "options": {
             "1": "a file.",
             "2": "a bucket or object.",
@@ -5194,7 +5194,7 @@
         "options": {
             "1": "It has high performance at scale as data and query complexity grows.",
             "2": "It prevents reporting and analytic processing from interfering with the performance of OLTP workloads.",
-            "3": "You don't have the administrative burden of running your own data warehouse and dealing with setup, durability, monitoring, scaling, and patching.",
+            "3": "You don&#x27;t have the administrative burden of running your own data warehouse and dealing with setup, durability, monitoring, scaling, and patching.",
             "4": "All answers listed are a reasonable response to his question."
         },
         "correct_answers": [
@@ -5222,10 +5222,10 @@
         "id": "347",
         "question": "Does Amazon DynamoDB support both increment and decrement atomic operations?",
         "options": {
-            "1": "Only increment, since decrement are inherently impossible with DynamoDB's data model.",
+            "1": "Only increment, since decrement are inherently impossible with DynamoDB&#x27;s data model.",
             "2": "No, neither increment nor decrement operations.",
             "3": "Yes, both increment and decrement operations.",
-            "4": "Only decrement, since increment are inherently impossible with DynamoDB's data model."
+            "4": "Only decrement, since increment are inherently impossible with DynamoDB&#x27;s data model."
         },
         "correct_answers": [
             "options.3"
@@ -5318,7 +5318,7 @@
             "1": "Create an EBS backed private AMI which includes a fresh install of your application. Develop a CloudFormation template which includes your AMI and the required EC2, AutoScaling, and ELBresources to support deploying the application across Multiple- Availability-Zones. Asynchronously replicate transactions from your on-premises database to a database instance in AWS across a secure VPN connection.",
             "2": "Deploy your application on EC2 instances within an Auto Scaling group across multiple availability zones. Asynchronously replicate transactions from your on-premises database to a database instance in AWS across a secure VPN connection.",
             "3": "Create an EBS backed private AMI which includes a fresh install of your application. Setup a script in your data center to backup the local database every 1 hour and to encrypt and copy the resulting file to an S3 bucket using multi-part upload.",
-            "4": "Install your application on a compute-optimized EC2 instance capable of supporting the application's average load. Synchronously replicate transactions from your on-premises database to a database instance in AWS across a secure Direct Connect connection."
+            "4": "Install your application on a compute-optimized EC2 instance capable of supporting the application&#x27;s average load. Synchronously replicate transactions from your on-premises database to a database instance in AWS across a secure Direct Connect connection."
         },
         "correct_answers": [
             "options.1"
@@ -5347,7 +5347,7 @@
     },
     {
         "id": "355",
-        "question": "Your customer is willing to consolidate their log streams (access logs application logs security logs etc.) in one single system. Once consolidated, the customer wants to analyze these logs in real time based on heuristics. From time to time, the customer needs to validate heuristics, which requires going back to data samples extracted from the last 12 hours. What is the best approach to meet your customer's requirements?",
+        "question": "Your customer is willing to consolidate their log streams (access logs application logs security logs etc.) in one single system. Once consolidated, the customer wants to analyze these logs in real time based on heuristics. From time to time, the customer needs to validate heuristics, which requires going back to data samples extracted from the last 12 hours. What is the best approach to meet your customer&#x27;s requirements?",
         "options": {
             "1": "Send all the log events to Amazon SQS, setup an Auto Scaling group of EC2 servers to consume the logs and apply the heuristics.",
             "2": "Send all the log events to Amazon Kinesis develop a client process to apply heuristics on the logs.",
@@ -5362,7 +5362,7 @@
     },
     {
         "id": "356",
-        "question": "Can the string value of 'Key' be prefixed with laws?",
+        "question": "Can the string value of &#x27;Key&#x27; be prefixed with laws?",
         "options": {
             "1": "No.",
             "2": "Only for EC2 not S3.",
@@ -5377,7 +5377,7 @@
     },
     {
         "id": "357",
-        "question": "You are configuring your company's application to use Auto Scaling and need to move user state information. Which of the following AWS services provides a shared data store with durability and lowlatency?",
+        "question": "You are configuring your company&#x27;s application to use Auto Scaling and need to move user state information. Which of the following AWS services provides a shared data store with durability and lowlatency?",
         "options": {
             "1": "AWS ElastiCache Memcached.",
             "2": "Amazon Simple Storage Service.",
@@ -5440,8 +5440,8 @@
             "1": "Enable CloudFront to deliver access logs to S3 and use them as input of the Elastic MapReduce job.",
             "2": "Turn on Cloud Trail and use trail log tiles on S3 as input of the Elastic MapReduce job.",
             "3": "Change your log collection process to use Cloud Watch ELB metrics as input of the Elastic Map Reduce job.",
-            "4": "Use Elastic Beanstalk 'Rebuild Environment' option to update log delivery to the Elastic Map Reduce job.",
-            "5": "Use Elastic Beanstalk 'Restart App server(s)' option to update log delivery to the Elastic Map Reduce job."
+            "4": "Use Elastic Beanstalk &#x27;Rebuild Environment&#x27; option to update log delivery to the Elastic Map Reduce job.",
+            "5": "Use Elastic Beanstalk &#x27;Restart App server(s)&#x27; option to update log delivery to the Elastic Map Reduce job."
         },
         "correct_answers": [
             "options.1"
@@ -5495,7 +5495,7 @@
     },
     {
         "id": "365",
-        "question": "Amazon S3 allows you to set per-file permissions to grant read and/or write access. However you have decided that you want an entire bucket with 100 files already in it to be accessible to the public. You don't want to go through 100 files individually and set permissions. What would be the best way to do this?",
+        "question": "Amazon S3 allows you to set per-file permissions to grant read and/or write access. However you have decided that you want an entire bucket with 100 files already in it to be accessible to the public. You don&#x27;t want to go through 100 files individually and set permissions. What would be the best way to do this?",
         "options": {
             "1": "Move the bucket to a new region.",
             "2": "Add a bucket policy to the bucket.",
@@ -5560,7 +5560,7 @@
     },
     {
         "id": "369",
-        "question": "An application hosted at the EC2 instance receives an HTTP request from ELB. The same request has an X-Forwarded-For header, which has three IP addresses. Which system's IP will be a part of this header?",
+        "question": "An application hosted at the EC2 instance receives an HTTP request from ELB. The same request has an X-Forwarded-For header, which has three IP addresses. Which system&#x27;s IP will be a part of this header?",
         "options": {
             "1": "Previous Request IP address.",
             "2": "Client IP address.",
@@ -5605,10 +5605,10 @@
     },
     {
         "id": "372",
-        "question": "You need to set up a security certificate for a client's e-commerce website as it will use the HTTPS protocol. Which of the below AWS services do you need to access to manage your SSL server certificate?",
+        "question": "You need to set up a security certificate for a client&#x27;s e-commerce website as it will use the HTTPS protocol. Which of the below AWS services do you need to access to manage your SSL server certificate?",
         "options": {
             "1": "AWS Directory Service.",
-            "2": "AWS Identity & Access Management.",
+            "2": "AWS Identity &amp; Access Management.",
             "3": "AWS CloudFormation.",
             "4": "Amazon Route 53."
         },
@@ -5624,7 +5624,7 @@
         "options": {
             "1": "Although launching multiple instance types into a placement group is possible, this reduces the likelihood that the required capacity will be available for your launch to succeed.",
             "2": "A placement group can span multiple Availability Zones.",
-            "3": "You can't move an existing instance into a placement group.",
+            "3": "You can&#x27;t move an existing instance into a placement group.",
             "4": "A placement group can span peered VPCs."
         },
         "correct_answers": [
@@ -5651,9 +5651,9 @@
         "question": "What is the Reduced Redundancy option in Amazon S3?",
         "options": {
             "1": "Less redundancy for a lower cost.",
-            "2": "It doesn't exist in Amazon S3, but in Amazon EBS.",
+            "2": "It doesn&#x27;t exist in Amazon S3, but in Amazon EBS.",
             "3": "It allows you to destroy any copy of your files outside a specific jurisdiction.",
-            "4": "It doesn't exist at all."
+            "4": "It doesn&#x27;t exist at all."
         },
         "correct_answers": [
             "options.1"
@@ -5667,7 +5667,7 @@
         "options": {
             "1": "Instances that you launch into a default subnet receive a public IP address and 10 private IP addresses.",
             "2": "Instances that you launch into a default subnet receive both a public IP address and a private IP address.",
-            "3": "Instances that you launch into a default subnet don't receive any ip addresses and you need to define them manually.",
+            "3": "Instances that you launch into a default subnet don&#x27;t receive any ip addresses and you need to define them manually.",
             "4": "Instances that you launch into a default subnet receive a public IP address and 5 private IP addresses."
         },
         "correct_answers": [
@@ -5772,7 +5772,7 @@
         "id": "383",
         "question": "What does Amazon ElastiCache provide?",
         "options": {
-            "1": "A service by this name doesn't exist. Perhaps you mean Amazon CloudCache.",
+            "1": "A service by this name doesn&#x27;t exist. Perhaps you mean Amazon CloudCache.",
             "2": "A virtual server with a huge amount of memory.",
             "3": "A managed In-memory cache service.",
             "4": "An Amazon EC2 instance with the Memcached software already pre-installed."
@@ -5879,7 +5879,7 @@
         "options": {
             "1": "It allows to integrate on-premises IT environments with Cloud Storage.",
             "2": "A direct encrypted connection to Amazon S3.",
-            "3": "It's a backup solution that provides an on-premises Cloud storage.",
+            "3": "It&#x27;s a backup solution that provides an on-premises Cloud storage.",
             "4": "It provides an encrypted SSL endpoint for backups in the Cloud."
         },
         "correct_answers": [
@@ -5998,8 +5998,8 @@
         "options": {
             "1": "It is not possible to implement your own health check system. You need to use AWSs health check system.",
             "2": "It is not possible to implement your own health check system due to compatibility issues.",
-            "3": "It is possible to implement your own health check system and then send the instance's health information directly from your system to Cloud Watch.",
-            "4": "It is possible to implement your own health check system and then send the instance's health information directly from your system to Cloud Watch but only in the US East (Virginia) region."
+            "3": "It is possible to implement your own health check system and then send the instance&#x27;s health information directly from your system to Cloud Watch.",
+            "4": "It is possible to implement your own health check system and then send the instance&#x27;s health information directly from your system to Cloud Watch but only in the US East (Virginia) region."
         },
         "correct_answers": [
             "options.3"
@@ -6009,7 +6009,7 @@
     },
     {
         "id": "399",
-        "question": "You've been brought in as solutions architect to assist an enterprise customer with their migration of an e-commerce platform to Amazon Virtual Private Cloud (VPC) The previous architect has already deployed a 3-tier VPC, The configuration is as follows. VPC: vpc-2f8bc447. IGW: igw-2d8bc445. NACL: ad-208bc448. 5ubnets and Route Tables: Web servers: subnet-258bc44d. Application servers: subnet-248bc44c. Database servers: subnet-9189c6f9. Route Tables: rrb-218bc449, rtb-238bc44b. Associations: subnet-258bc44d: rtb-218bc449, subnet-248bc44c: rtb-238bc44b, subnet-9189c6f9: rtb-238bc44b. You are now ready to begin deploying EC2 instances into the VPC Web servers must have direct access to the internet Application and database servers cannot have direct access to the internet. Which configuration below will allow you the ability to remotely administer your application and database servers, as well as allow these servers to retrieve updates from the Internet?",
+        "question": "You&#x27;ve been brought in as solutions architect to assist an enterprise customer with their migration of an e-commerce platform to Amazon Virtual Private Cloud (VPC) The previous architect has already deployed a 3-tier VPC, The configuration is as follows. VPC: vpc-2f8bc447. IGW: igw-2d8bc445. NACL: ad-208bc448. 5ubnets and Route Tables: Web servers: subnet-258bc44d. Application servers: subnet-248bc44c. Database servers: subnet-9189c6f9. Route Tables: rrb-218bc449, rtb-238bc44b. Associations: subnet-258bc44d: rtb-218bc449, subnet-248bc44c: rtb-238bc44b, subnet-9189c6f9: rtb-238bc44b. You are now ready to begin deploying EC2 instances into the VPC Web servers must have direct access to the internet Application and database servers cannot have direct access to the internet. Which configuration below will allow you the ability to remotely administer your application and database servers, as well as allow these servers to retrieve updates from the Internet?",
         "options": {
             "1": "Create a bastion and NAT instance in subnet-258bc44d, and add a route from rtb- 238bc44b to the NAT instance.",
             "2": "Add a route from rtb-238bc44b to igw-2d8bc445 and add a bastion and NAT instance within subnet-248bc44c.",
@@ -6099,7 +6099,7 @@
     },
     {
         "id": "405",
-        "question": "In the 'Detailed ' monitoring data available for your Amazon EBS volumes, Provisioned IOPS volumes automatically send [...] minute metrics to Amazon CloudWatch.",
+        "question": "In the &#x27;Detailed &#x27; monitoring data available for your Amazon EBS volumes, Provisioned IOPS volumes automatically send [...] minute metrics to Amazon CloudWatch.",
         "options": {
             "1": "5.",
             "2": "2.",
@@ -6247,7 +6247,7 @@
     },
     {
         "id": "415",
-        "question": "Your company has recently extended its datacenter into a VPC on AVVS to add burst computing capacity as needed Members of your Network Operations Center need to be able to go to the AWSManagement Console and administer Amazon EC2 instances as necessary You don't want to create new IAM users for each NOC member and make those users sign in again to the AWS Management Console Which option below will meet the needs for your NOC members?",
+        "question": "Your company has recently extended its datacenter into a VPC on AVVS to add burst computing capacity as needed Members of your Network Operations Center need to be able to go to the AWSManagement Console and administer Amazon EC2 instances as necessary You don&#x27;t want to create new IAM users for each NOC member and make those users sign in again to the AWS Management Console Which option below will meet the needs for your NOC members?",
         "options": {
             "1": "Use OAuth 2 0 to retrieve temporary AWS security credentials to enable your NOC members to sign in to the AVVS Management Console.",
             "2": "Use web Identity Federation to retrieve AWS temporary security credentials to enable your NOC members to sign in to the AWS Management Console.",
@@ -6369,7 +6369,7 @@
         "id": "423",
         "question": "An International company has deployed a multi-tier web application that relies on DynamoDB in a single region For regulatory reasons they need disaster recovery capability in a separate region with a Recovery Time Objective of 2 hours and a Recovery Point Objective of 24 hours They should synchronize their data on a regular basis and be able to provision me web application rapidly using CloudFormation. The objective is to minimize changes to the existing web application, control the throughput of DynamoDB used for the synchronization of data and synchronize only the modified elements. Which design would you choose to meet these requirements?",
         "options": {
-            "1": "Use AWS data Pipeline to schedule a DynamoDB cross region copy once a day. create a Last updated' attribute in your DynamoDB table that would represent the timestamp of the last update and use it as a filter.",
+            "1": "Use AWS data Pipeline to schedule a DynamoDB cross region copy once a day. create a Last updated&#x27; attribute in your DynamoDB table that would represent the timestamp of the last update and use it as a filter.",
             "2": "Use EMR and write a custom script to retrieve data from DynamoDB in the current region using a SCAN operation and push it to Dynamo DB in the second region.",
             "3": "Use AWS data Pipeline to schedule an export of the DynamoDB table to S3 in the current region once a day then schedule another task immediately after it that will import data from S3 to DynamoDB in the other region.",
             "4": "Send also each Ante into an SQS queue in me second region; use an auto-scaling group behind the SQS queue to replay the write in the second region."
@@ -6472,9 +6472,9 @@
     },
     {
         "id": "430",
-        "question": "A user is trying to launch a similar EC2 instance from an existing instance with the option 'Launch More like this'. The AMI of the selected instance is deleted. What will happen in this case?",
+        "question": "A user is trying to launch a similar EC2 instance from an existing instance with the option &#x27;Launch More like this&#x27;. The AMI of the selected instance is deleted. What will happen in this case?",
         "options": {
-            "1": "AWS does not need an AMI for the 'Launch more like this' option.",
+            "1": "AWS does not need an AMI for the &#x27;Launch more like this&#x27; option.",
             "2": "AWS will launch the instance but will not create a new AMI.",
             "3": "AWS will create a new AMI and launch the instance.",
             "4": "AWS will throw an error saying that the AMI is deregistered."
@@ -6547,7 +6547,7 @@
         "question": "Having set up a website to automatically be redirected to a backup website if it fails, you realize that there are different types of failovers that are possible. You need all your resources to be available the majority of the time. Using Amazon Route 53 which configuration would best suit this requirement?",
         "options": {
             "1": "Active-active failover.",
-            "2": "None. Route 53 can't failover.",
+            "2": "None. Route 53 can&#x27;t failover.",
             "3": "Active-passive failover.",
             "4": "Active-active-passive and other mixed configurations."
         },
@@ -6592,8 +6592,8 @@
         "options": {
             "1": "Yes, you can enable encryption when you create a new EBS volume using the AWS Management Console, API, or CLI.",
             "2": "No, you should use a third-party software to perform raw block-level encryption of an EBS volume.",
-            "3": "Yes, but you must use a third-party API for encrypting data before it's loaded on EBS.",
-            "4": "Yes, you can encrypt with the special 'ebs_encrypt' command through Amazon APIs."
+            "3": "Yes, but you must use a third-party API for encrypting data before it&#x27;s loaded on EBS.",
+            "4": "Yes, you can encrypt with the special &#x27;ebs_encrypt&#x27; command through Amazon APIs."
         },
         "correct_answers": [
             "options.1"
@@ -6736,7 +6736,7 @@
     },
     {
         "id": "448",
-        "question": "Groups can't [...].",
+        "question": "Groups can&#x27;t [...].",
         "options": {
             "1": "be nested more than 3 levels.",
             "2": "be nested at all.",
@@ -6799,12 +6799,12 @@
     },
     {
         "id": "452",
-        "question": "If you're unable to connect via SSH to your EC2 instance, which of the following should you check and possibly correct to restore connectivity?",
+        "question": "If you&#x27;re unable to connect via SSH to your EC2 instance, which of the following should you check and possibly correct to restore connectivity?",
         "options": {
             "1": "Adjust Security Group to permit egress traffic over TCP port 443 from your IP.",
             "2": "Configure the JAM role to permit changes to security group settings.",
             "3": "Modify the instance security group to allow ingress of ICMP packets from your IP.",
-            "4": "Adjust the instance's Security Group to permit ingress traffic over port 22 from your IP.",
+            "4": "Adjust the instance&#x27;s Security Group to permit ingress traffic over port 22 from your IP.",
             "5": "Apply the most recently released Operating System security patches."
         },
         "correct_answers": [
@@ -6830,13 +6830,13 @@
     },
     {
         "id": "454",
-        "question": "A customer has established an AWS Direct Connect connection to AWS. The link is up and routes are being advertised from the customer's end, however the customer is unable to connect from EC2 instances inside its VPC to servers residing in its datacenter. Which of the following options provide a viable solution to remedy this situation? (Choose 2 answers)",
+        "question": "A customer has established an AWS Direct Connect connection to AWS. The link is up and routes are being advertised from the customer&#x27;s end, however the customer is unable to connect from EC2 instances inside its VPC to servers residing in its datacenter. Which of the following options provide a viable solution to remedy this situation? (Choose 2 answers)",
         "options": {
             "1": "Add a route to the route table with an IPsec VPN connection as the target.",
             "2": "Enable route propagation to the virtual pinnate gateway (VGW).",
             "3": "Enable route propagation to the customer gateway (CGW).",
-            "4": "Modify the route table of all Instances using the 'route' command.",
-            "5": "Modify the Instances VPC subnet route table by adding a route back to the customer's on-premises environment."
+            "4": "Modify the route table of all Instances using the &#x27;route&#x27; command.",
+            "5": "Modify the Instances VPC subnet route table by adding a route back to the customer&#x27;s on-premises environment."
         },
         "correct_answers": [
             "options.2",
@@ -6866,7 +6866,7 @@
         "options": {
             "1": "In the EC2-VPC platform, the Elastic IP Address (EIP) does not remain associated with the instance when you stop it.",
             "2": "In the EC2-Classic platform, stopping the instance disassociates the Elastic IP Address (EIP) from it.",
-            "3": "In the EC2-VPC platform, if you have attached a second network interface to an instance, when you disassociate the Elastic IP Address (EIP) from that instance, a new public IP address is not assigned to the instance automatically; you'll have to associate an EIP with it manually.",
+            "3": "In the EC2-VPC platform, if you have attached a second network interface to an instance, when you disassociate the Elastic IP Address (EIP) from that instance, a new public IP address is not assigned to the instance automatically; you&#x27;ll have to associate an EIP with it manually.",
             "4": "In the EC2-Classic platform, if you disassociate an Elastic IP Address (EIP) from the instance, the instance is automatically assigned a new public IP address within a few minutes."
         },
         "correct_answers": [
@@ -6907,11 +6907,11 @@
     },
     {
         "id": "459",
-        "question": "You are in the process of moving your friend's WordPress site onto AWS to try and save him some money, and you have told him that he should probably also move his domain name. He asks why he can't leave his domain name where it is and just have his infrastructure on AWS. What would be an incorrect response to his question?",
+        "question": "You are in the process of moving your friend&#x27;s WordPress site onto AWS to try and save him some money, and you have told him that he should probably also move his domain name. He asks why he can&#x27;t leave his domain name where it is and just have his infrastructure on AWS. What would be an incorrect response to his question?",
         "options": {
             "1": "Route 53 offers low query latency for your end users.",
             "2": "Route 53 is designed to automatically answer queries from the optimal location depending on network conditions.",
-            "3": "The globally distributed nature of AWS's DNS servers helps ensure a consistent ability to route your end users to your application.",
+            "3": "The globally distributed nature of AWS&#x27;s DNS servers helps ensure a consistent ability to route your end users to your application.",
             "4": "Route 53 supports Domain Name System Security Extensions (DNSSEC)."
         },
         "correct_answers": [
@@ -6970,10 +6970,10 @@
     },
     {
         "id": "463",
-        "question": "What does the 'Server Side Encryption' option on Amazon S3 provide?",
+        "question": "What does the &#x27;Server Side Encryption&#x27; option on Amazon S3 provide?",
         "options": {
             "1": "It provides an encrypted virtual disk in the Cloud.",
-            "2": "It doesn't exist for Amazon S3, but only for Amazon EC2.",
+            "2": "It doesn&#x27;t exist for Amazon S3, but only for Amazon EC2.",
             "3": "It encrypts the files that you send to Amazon S3, on the server side.",
             "4": "It allows to upload fi les using an SSL endpoint, for a secure transfer."
         },
@@ -7018,8 +7018,8 @@
         "question": "Within the IAM service a GROUP is regarded as a:",
         "options": {
             "1": "A collection of AWS accounts.",
-            "2": "It's the group of EC2 machines that gain t he permissions specified in the GROUP.",
-            "3": "There's no GROUP in IAM, but only USERS and RESOURCES.",
+            "2": "It&#x27;s the group of EC2 machines that gain t he permissions specified in the GROUP.",
+            "3": "There&#x27;s no GROUP in IAM, but only USERS and RESOURCES.",
             "4": "A collection of users."
         },
         "correct_answers": [
@@ -7034,7 +7034,7 @@
         "options": {
             "1": "Private IP address 10.201.31.6 is blocked via ACLs in Amazon infrastructure as a part of platform security.",
             "2": "Private address IP 10.201.31.6 is currently assigned to another interface.",
-            "3": "Private IP address 10.201.31.6 is not part of the associated subnet's IP address range.",
+            "3": "Private IP address 10.201.31.6 is not part of the associated subnet&#x27;s IP address range.",
             "4": "Private IP address 10.201.31.6 is reserved by Amazon for IP networking purposes."
         },
         "correct_answers": [
@@ -7093,8 +7093,8 @@
         "question": "A user has launched one EC2 instance in the US East region and one in the US West region. The user has launched an RDS instance in the US East region. How can the user configure access from both the EC2 instances to RDS?",
         "options": {
             "1": "It is not possible to access RDS of the US East region from the US West region.",
-            "2": "Configure the US West region's security group to allow a request from the US East region's instance and configure the RDS security group's ingress rule for the US East EC2 group.",
-            "3": "Configure the security group of the US East region to allow traffic from the US West region's instance and configure the RDS security group's ingress rule for the US East EC2 group.",
+            "2": "Configure the US West region&#x27;s security group to allow a request from the US East region&#x27;s instance and configure the RDS security group&#x27;s ingress rule for the US East EC2 group.",
+            "3": "Configure the security group of the US East region to allow traffic from the US West region&#x27;s instance and configure the RDS security group&#x27;s ingress rule for the US East EC2 group.",
             "4": "Configure the security group of both instances in the ingress rule of the RDS security group."
         },
         "correct_answers": [
@@ -7330,7 +7330,7 @@
     },
     {
         "id": "487",
-        "question": "You are designing a connectivity solution between on-premises infrastructure and Amazon VPC. Your server's on-premises will De communicating with your VPC instances. You will De establishing IPSec tunnels over the internet You will be using VPN gateways and terminating the IPsec tunnels on AWS supported customer gateways. Which of the following objectives would you achieve by implementing an IPSec tunnel as outlined above? (Choose 4 answers)",
+        "question": "You are designing a connectivity solution between on-premises infrastructure and Amazon VPC. Your server&#x27;s on-premises will De communicating with your VPC instances. You will De establishing IPSec tunnels over the internet You will be using VPN gateways and terminating the IPsec tunnels on AWS supported customer gateways. Which of the following objectives would you achieve by implementing an IPSec tunnel as outlined above? (Choose 4 answers)",
         "options": {
             "1": "End-to-end protection of data in transit.",
             "2": "End-to-end Identity authentication.",
@@ -7410,7 +7410,7 @@
     },
     {
         "id": "492",
-        "question": "You are the new IT architect in a company that operates a mobile sleep tracking application. When activated at night, the mobile app is sending collected data points of 1 kilobyte every 5 minutes to your backend. The backend takes care of authenticating the user and writing the data points into an Amazon DynamoDB table. Every morning, you scan the table to extract and aggregate last night's data on a per user basis, and store the results in Amazon S3. Users are notified via Amazon 5M5 mobile push notifications that new data is available, which is parsed and visualized by The mobile app Currently you have around lOOk users who are mostly based out of North America. You have been tasked to optimize the architecture of the backend system to lower cost what would you recommend? (Choose 2 answers)",
+        "question": "You are the new IT architect in a company that operates a mobile sleep tracking application. When activated at night, the mobile app is sending collected data points of 1 kilobyte every 5 minutes to your backend. The backend takes care of authenticating the user and writing the data points into an Amazon DynamoDB table. Every morning, you scan the table to extract and aggregate last night&#x27;s data on a per user basis, and store the results in Amazon S3. Users are notified via Amazon 5M5 mobile push notifications that new data is available, which is parsed and visualized by The mobile app Currently you have around lOOk users who are mostly based out of North America. You have been tasked to optimize the architecture of the backend system to lower cost what would you recommend? (Choose 2 answers)",
         "options": {
             "1": "Create a new Amazon DynamoDB able each day and drop the one for the previous day after its data is on Amazon S3.",
             "2": "Have the mobile app access Amazon DynamoDB directly instead of J50N files stored on Amazon S3.",
@@ -7427,7 +7427,7 @@
     },
     {
         "id": "493",
-        "question": "You are implementing a URL whitelisting system for a company that wants to restrict outbound HTTP'S connections to specific domains from their EC2-hosted applications you deploy a single EC2 instance running proxy software and configure It to accept traffic from all subnets and EC2 instances in the VPC. You configure the proxy to only pass through traffic to domains that you define in its whitelist configuration You have a nightly maintenance window or 10 minutes where all instances fetch new software updates. Each update Is about 200MB in size and there are 500 instances in theVPC that routinely fetch updates After a few days you notice that some machines are failing to successfully download some, but not all of their updates within the maintenance window. The download URLs used for these updates are correctly listed in the proxy's whitelist configuration and you are able to access them manually using a web browser on the instances. What might be happening? (Choose 2 answers)",
+        "question": "You are implementing a URL whitelisting system for a company that wants to restrict outbound HTTP&#x27;S connections to specific domains from their EC2-hosted applications you deploy a single EC2 instance running proxy software and configure It to accept traffic from all subnets and EC2 instances in the VPC. You configure the proxy to only pass through traffic to domains that you define in its whitelist configuration You have a nightly maintenance window or 10 minutes where all instances fetch new software updates. Each update Is about 200MB in size and there are 500 instances in theVPC that routinely fetch updates After a few days you notice that some machines are failing to successfully download some, but not all of their updates within the maintenance window. The download URLs used for these updates are correctly listed in the proxy&#x27;s whitelist configuration and you are able to access them manually using a web browser on the instances. What might be happening? (Choose 2 answers)",
         "options": {
             "1": "You are running the proxy on an undersized EC2 instance type so network throughput is not sufficient for all instances to download their updates in time.",
             "2": "You are running the proxy on a sufficiently-sized EC2 instance in a private subnet and its network throughput is being throttled by a NAT running on an undersized EC2 instance.",
@@ -7444,7 +7444,7 @@
     },
     {
         "id": "494",
-        "question": "You are playing around with setting up stacks using JSON templates in CloudFormation to try and understand them a little better. You have set up about 5 or 6 but now start to wonder if you are being charged for these stacks. What is AWS's billing policy regarding stack resources?",
+        "question": "You are playing around with setting up stacks using JSON templates in CloudFormation to try and understand them a little better. You have set up about 5 or 6 but now start to wonder if you are being charged for these stacks. What is AWS&#x27;s billing policy regarding stack resources?",
         "options": {
             "1": "You are not charged for the stack resources if they are not taking any traffic.",
             "2": "You are charged for the stack resources for the time they were operating (even if you deleted the stack right away).",
@@ -7476,7 +7476,7 @@
         "id": "496",
         "question": "You are signed in as root user on your account but there is an Amazon S3 bucket under your account that you cannot access. What is a possible reason for this?",
         "options": {
-            "1": "An IAM user assigned a bucket policy to an Amazon S3 bucket and didn't specify the root user as a principal",
+            "1": "An IAM user assigned a bucket policy to an Amazon S3 bucket and didn&#x27;t specify the root user as a principal",
             "2": "The S3 bucket is full.",
             "3": "The S3 bucket has reached the maximum number of objects allowed.",
             "4": "You are in the wrong Availability Zone."
@@ -7551,8 +7551,8 @@
         "question": "A user has launched a large EBS backed EC2 instance in the US-East-1a region. The user wants to achieve Disaster Recovery (DR) for that instance by creating another small instance in Europe. How can the user achieve DR?",
         "options": {
             "1": "Copy the instance from the US East region to the EU region.",
-            "2": "Use the 'Launch more like this' option to copy the instance from one region to another.",
-            "3": "Copy the running instance using the 'Instance Copy' command to the EU region.",
+            "2": "Use the &#x27;Launch more like this&#x27; option to copy the instance from one region to another.",
+            "3": "Copy the running instance using the &#x27;Instance Copy&#x27; command to the EU region.",
             "4": "Create an AMI of the instance and copy the AMI to the EU region. Then launch the instance from the EU AMI."
         },
         "correct_answers": [
@@ -7699,7 +7699,7 @@
     },
     {
         "id": "511",
-        "question": "Which AWS instance address has the following characteristics? 'If you stop an instance, its Elastic IP address is unmapped, and you must remap it when you restart the instance.'",
+        "question": "Which AWS instance address has the following characteristics? &#x27;If you stop an instance, its Elastic IP address is unmapped, and you must remap it when you restart the instance.&#x27;",
         "options": {
             "1": "Both A and B.",
             "2": "None of these.",
@@ -7759,7 +7759,7 @@
     },
     {
         "id": "515",
-        "question": "What's an ECU?",
+        "question": "What&#x27;s an ECU?",
         "options": {
             "1": "Extended Cluster User.",
             "2": "None of these.",
@@ -7808,7 +7808,7 @@
     },
     {
         "id": "518",
-        "question": "My Read Replica appears 'stuck' after a Multi-AZ failover and is unable to obtain or apply updates from the source DB Instance. What do I do?",
+        "question": "My Read Replica appears &#x27;stuck&#x27; after a Multi-AZ failover and is unable to obtain or apply updates from the source DB Instance. What do I do?",
         "options": {
             "1": "You will need to delete the Read Replica and create a new one to rep lace it.",
             "2": "You will need to disassociate the DB Engine and re associate it.",
@@ -7823,7 +7823,7 @@
     },
     {
         "id": "519",
-        "question": "You are setting up some IAM user policies and have also become aware that some services support resource-based permissions, which let you attach policies to the service's resources instead of to IAM users or groups. Which of the below statements is true in regards to resource-level permissions?",
+        "question": "You are setting up some IAM user policies and have also become aware that some services support resource-based permissions, which let you attach policies to the service&#x27;s resources instead of to IAM users or groups. Which of the below statements is true in regards to resource-level permissions?",
         "options": {
             "1": "All services support resource-level permissions for all actions.",
             "2": "Resource-level permissions are supported by Amazon CloudFront.",
@@ -7883,7 +7883,7 @@
     },
     {
         "id": "523",
-        "question": "You are setting up your first Amazon Virtual Private Cloud (Amazon VPC) network so you decide you should probably use the AWS Management Console and the VPC Wizard. Which of the following is not an option for network architectures after launching the 'Start VPC Wizard' in Amazon VPC page on the AWS Management Console?",
+        "question": "You are setting up your first Amazon Virtual Private Cloud (Amazon VPC) network so you decide you should probably use the AWS Management Console and the VPC Wizard. Which of the following is not an option for network architectures after launching the &#x27;Start VPC Wizard&#x27; in Amazon VPC page on the AWS Management Console?",
         "options": {
             "1": "VPC with a Single Public Subnet Only.",
             "2": "VPC with a Public Subnet Only and Hardware VPN Access.",
@@ -7941,7 +7941,7 @@
     },
     {
         "id": "527",
-        "question": "Out of the stripping options available for the EBS volumes, which one has the following disadvantage: 'Doubles the amount of 1/0 required from the instance to EBS compared to RAID 0, because you're mirroring all writes to a pair of volumes, limiting how much you can stripe.'?",
+        "question": "Out of the stripping options available for the EBS volumes, which one has the following disadvantage: &#x27;Doubles the amount of 1/0 required from the instance to EBS compared to RAID 0, because you&#x27;re mirroring all writes to a pair of volumes, limiting how much you can stripe.&#x27;?",
         "options": {
             "1": "Raid 0.",
             "2": "RAID 1+0 (RAID 10).",
@@ -8125,9 +8125,9 @@
     },
     {
         "id": "539",
-        "question": "What does the following policy for Amazon EC2 do? { 'Statement':[{ 'Effect': 'Allow', 'Action':'ec2: Describe*', 'Resource':'*' }] }",
+        "question": "What does the following policy for Amazon EC2 do? { &#x27;Statement&#x27;:[{ &#x27;Effect&#x27;: &#x27;Allow&#x27;, &#x27;Action&#x27;:&#x27;ec2: Describe*&#x27;, &#x27;Resource&#x27;:&#x27;*&#x27; }] }",
         "options": {
-            "1": "Allow users to use actions that start with 'Describe' over all the EC2 resources.",
+            "1": "Allow users to use actions that start with &#x27;Describe&#x27; over all the EC2 resources.",
             "2": "Share an AMI with a partner.",
             "3": "Share an AMI within the account.",
             "4": "Allow a group to only be able to describe, run, stop, start, and terminate instances."
@@ -8155,7 +8155,7 @@
     },
     {
         "id": "541",
-        "question": "Can resource record sets in a hosted zone have a different domain suffix (for example, <www.blog>. acme.com and <www.acme.ca>)?",
+        "question": "Can resource record sets in a hosted zone have a different domain suffix (for example, &lt;www.blog&gt;. acme.com and &lt;www.acme.ca&gt;)?",
         "options": {
             "1": "Yes, it can have for a maximum of three different TLDs.",
             "2": "Yes.",
@@ -8445,12 +8445,12 @@
     },
     {
         "id": "560",
-        "question": "A customer wants to leverage Amazon Simple Storage Service (S3) and Amazon Glacier as part of their backup and archive infrastructure. The customer plans to use third-party software to support this integration. Which approach will limit the access of the third party software to only the Amazon S3 bucket named 'company-backup'?",
+        "question": "A customer wants to leverage Amazon Simple Storage Service (S3) and Amazon Glacier as part of their backup and archive infrastructure. The customer plans to use third-party software to support this integration. Which approach will limit the access of the third party software to only the Amazon S3 bucket named &#x27;company-backup&#x27;?",
         "options": {
-            "1": "A custom bucket policy limited to the Amazon S3 API in the Amazon Glacier archive 'company backup'.",
-            "2": "A custom bucket policy limited to the Amazon S3 API in 'company-backup'.",
-            "3": "A custom IAM user policy limited to the Amazon S3 API for the Amazon Glacier archive 'company backup'.",
-            "4": "A custom IAM user policy limited to the Amazon S3 API in 'company-backup'."
+            "1": "A custom bucket policy limited to the Amazon S3 API in the Amazon Glacier archive &#x27;company backup&#x27;.",
+            "2": "A custom bucket policy limited to the Amazon S3 API in &#x27;company-backup&#x27;.",
+            "3": "A custom IAM user policy limited to the Amazon S3 API for the Amazon Glacier archive &#x27;company backup&#x27;.",
+            "4": "A custom IAM user policy limited to the Amazon S3 API in &#x27;company-backup&#x27;."
         },
         "correct_answers": [
             "options.4"
@@ -8490,7 +8490,7 @@
     },
     {
         "id": "563",
-        "question": "Refer to the architecture diagram above of a batch processing solution using Simple Queue Service (SQS) to set up a message queue between EC2 instances which are used as batch processors Cloud Watch monitors the number of Job requests (queued messages) and an Auto Scaling group adds or deletes batch servers automatically based on parameters set in Cloud Watch alarms. You can use this architecture to implement which of the following features in a cost effective and efficient manner? <br><img src='resources\\tests\\AWS-Certified-Solutions-Architect-Associate-SAA-C03\\images\\question563.jpg' alt='Question 563'>",
+        "question": "Refer to the architecture diagram above of a batch processing solution using Simple Queue Service (SQS) to set up a message queue between EC2 instances which are used as batch processors Cloud Watch monitors the number of Job requests (queued messages) and an Auto Scaling group adds or deletes batch servers automatically based on parameters set in Cloud Watch alarms. You can use this architecture to implement which of the following features in a cost effective and efficient manner?  <br><img src='resources\\tests\\AWS-Certified-Solutions-Architect-Associate-SAA-C03\\images\\question563.jpg' alt='Question 563'>",
         "options": {
             "1": "Reduce the overall lime for executing jobs through parallel processing by allowing a busy EC2 instance that receives a message to pass it to the next instance in a daisy-chain setup.",
             "2": "Implement fault tolerance against EC2 instance failure since messages would remain in SQS and worn can continue with recovery of EC2 instances implement fault tolerance against SQS failure by backing up messages to S3.",
@@ -8523,10 +8523,10 @@
         "id": "565",
         "question": "Is there any way to own a direct connection to Amazon Web Services?",
         "options": {
-            "1": "You can create an encrypted tunnel to VPC, but you don't own the connection.",
-            "2": "Yes, it's called Amazon Dedicated Connection.",
+            "1": "You can create an encrypted tunnel to VPC, but you don&#x27;t own the connection.",
+            "2": "Yes, it&#x27;s called Amazon Dedicated Connection.",
             "3": "No, AWS only allows access from the public Internet.",
-            "4": "Yes, it's called Direct Connect."
+            "4": "Yes, it&#x27;s called Direct Connect."
         },
         "correct_answers": [
             "options.4"
@@ -8611,7 +8611,7 @@
     },
     {
         "id": "571",
-        "question": "Using Amazon CloudWatch's Free Tier, what is the frequency of metric updates which you receive?",
+        "question": "Using Amazon CloudWatch&#x27;s Free Tier, what is the frequency of metric updates which you receive?",
         "options": {
             "1": "5 minutes.",
             "2": "500 milliseconds.",
@@ -8656,7 +8656,7 @@
     },
     {
         "id": "574",
-        "question": "You're running an application on-premises due to its dependency on non-x86 hardware and want to use AWS for data backup. Your backup application is only able to write to POSIX-compatible block based storage. You have 140TB of data and would like to mount it as a single folder on your file server Users must be able to access portions of this data while the backups are taking place. What backup solution would be most appropriate for this use case?",
+        "question": "You&#x27;re running an application on-premises due to its dependency on non-x86 hardware and want to use AWS for data backup. Your backup application is only able to write to POSIX-compatible block based storage. You have 140TB of data and would like to mount it as a single folder on your file server Users must be able to access portions of this data while the backups are taking place. What backup solution would be most appropriate for this use case?",
         "options": {
             "1": "Use Storage Gateway and configure it to use Gateway Cached volumes.",
             "2": "Configure your backup software to use S3 as the target for your data backups.",
@@ -8686,7 +8686,7 @@
     },
     {
         "id": "576",
-        "question": "You require the ability to analyze a customer's clickstream data on a website so they can do behavioral analysis. Your customer needs to know what sequence of pages and ads their customer clicked on. This data will be used in real time to modify the page layouts as customers click through the site to increase stickiness and advertising click-through. Which option meets the requirements for captioning and analyzing this data?",
+        "question": "You require the ability to analyze a customer&#x27;s clickstream data on a website so they can do behavioral analysis. Your customer needs to know what sequence of pages and ads their customer clicked on. This data will be used in real time to modify the page layouts as customers click through the site to increase stickiness and advertising click-through. Which option meets the requirements for captioning and analyzing this data?",
         "options": {
             "1": "Log clicks in weblogs by URL store to Amazon S3, and then analyze with Elastic MapReduce.",
             "2": "Push web clicks by session to Amazon Kinesis and analyze behavior using Kinesis workers.",
@@ -8706,7 +8706,7 @@
             "1": "The topic is created, and it has the name you specified for it.",
             "2": "An ARN (Amazon Resource Name) is created.",
             "3": "You can create a topic on Amazon SQS, not on Amazon SNS.",
-            "4": "This question doesn't make sense."
+            "4": "This question doesn&#x27;t make sense."
         },
         "correct_answers": [
             "options.2"
@@ -8716,7 +8716,7 @@
     },
     {
         "id": "578",
-        "question": "A company needs to deploy virtual desktops to its customers in a virtual private cloud, leveraging existing security controls. Which set of AWS services and features will meet the company's requirements?",
+        "question": "A company needs to deploy virtual desktops to its customers in a virtual private cloud, leveraging existing security controls. Which set of AWS services and features will meet the company&#x27;s requirements?",
         "options": {
             "1": "Virtual Private Network connection. AWS Directory Services, and Classic link.",
             "2": "Virtual Private Network connection. AWS Di rectory Services, and Amazon Workspaces.",
@@ -8793,7 +8793,7 @@
         "id": "583",
         "question": "A web design company currently runs several FTP servers that their 250 customers use to upload and download large graphic files They wish to move this system to AWS to make it more scalable, butthey wish to maintain customer privacy and Keep costs to a minimum. What AWS architecture would you recommend?",
         "options": {
-            "1": "Ask their customers to use an S3 client instead of an FTP client. Create a single S3 bucket Create an IAM user for each customer Put the IAM Users in a Group that has an IAM policy that permits access to sub-directories within the bucket via use of the 'username' Policy variable.",
+            "1": "Ask their customers to use an S3 client instead of an FTP client. Create a single S3 bucket Create an IAM user for each customer Put the IAM Users in a Group that has an IAM policy that permits access to sub-directories within the bucket via use of the &#x27;username&#x27; Policy variable.",
             "2": "Create a single S3 bucket with Reduced Redundancy Storage turned on and ask their customers to use an S3 client instead of an FTP client Create a bucket for each customer with a Bucket Policy that permits access only to that one customer.",
             "3": "Create an auto-scaling group of FTP servers with a scaling policy to automatically scale-in when minimum network traffic on the auto-scaling group is below a given threshold. Load a central list of ftp users from S3 as part of the user Data startup script on each Instance.",
             "4": "Create a single S3 bucket with Requester Pays turned on and ask their customers to use an S3 client instead of an FTP client Create a bucket tor each customer with a Bucket Policy that permits access only to that one customer."
@@ -8824,7 +8824,7 @@
         "question": "Can Amazon S3 uploads resume on failure or do they need to restart?",
         "options": {
             "1": "Restart from beginning.",
-            "2": "You can resume them, if you flag the 'resume on fai lure' option before uploading.",
+            "2": "You can resume them, if you flag the &#x27;resume on fai lure&#x27; option before uploading.",
             "3": "Resume on failure.",
             "4": "Depends on the file size."
         },
@@ -8868,9 +8868,9 @@
         "id": "588",
         "question": "Which statement below best describes what thresholds you can set to trigger a CloudWatch Alarm?",
         "options": {
-            "1": "Set a target value and choose whether the alarm will trigger when the value is greater than (>), greater than or equal to (>=), less than (<), or less than or equal to (<=) that value.",
+            "1": "Set a target value and choose whether the alarm will trigger when the value is greater than (&gt;), greater than or equal to (&gt;=), less than (&lt;), or less than or equal to (&lt;=) that value.",
             "2": "Thresholds need to be set in IAM not CloudWatch.",
-            "3": "Only default thresholds can be set you can't choose your own thresholds.",
+            "3": "Only default thresholds can be set you can&#x27;t choose your own thresholds.",
             "4": "Set a target value and choose whether the alarm will trigger when the value hits this threshold."
         },
         "correct_answers": [
@@ -9047,9 +9047,9 @@
         "question": "Your team has a tomcat-based Java application you need to deploy into development, test and production environments. After some research, you opt to use Elastic Beanstalk due to its tight integration with your developer tools and RDS due to its ease of management. Your QA team lead points out that you need to roll a sanitized set of production data into your environment on a nightly basis. Similarly, other software teams in your org want access to that same restored data via their EC2 instances in your VPC. The optimal setup for persistence and security that meets the above requirements would be the following:",
         "options": {
             "1": "Create your RDS instance as part of your Elastic Beanstalk definition and alter its security group to allow access to it from hosts in your application subnets.",
-            "2": "Create your RDS instance separately and add its IP address to your application's DB connection strings in your code Alter its security group to allow access to it from hosts within your VPC's IPaddress block.",
-            "3": "Create your RDS instance separately and pass its DNS name to your app's DB connection string as an environment variable. Create a security group for client machines and add it as a valid source for DB traffic to the security group of the RDS instance itself.",
-            "4": "Create your RDS instance separately and pass its DNS name to your's DB connection string as an environment variable Alter its security group to allow access to It from hosts in your application subnets."
+            "2": "Create your RDS instance separately and add its IP address to your application&#x27;s DB connection strings in your code Alter its security group to allow access to it from hosts within your VPC&#x27;s IPaddress block.",
+            "3": "Create your RDS instance separately and pass its DNS name to your app&#x27;s DB connection string as an environment variable. Create a security group for client machines and add it as a valid source for DB traffic to the security group of the RDS instance itself.",
+            "4": "Create your RDS instance separately and pass its DNS name to your&#x27;s DB connection string as an environment variable Alter its security group to allow access to It from hosts in your application subnets."
         },
         "correct_answers": [
             "options.1"
@@ -9094,8 +9094,8 @@
         "question": "How should the application use AWS credentials to access the S3 bucket securely?",
         "options": {
             "1": "Use the AWS account access Keys the application retrieves the credentials from the source code of the application.",
-            "2": "Create an IAM user for the application with permissions that allow list access to the S3 bucket launch the instance as the IAM user and retrieve the IAM user's credentials from the EC2 instance user data.",
-            "3": "Create an IAM role for EC2 that allows list access to objects in the S3 bucket. Launch the instance with the role, and retrieve the role's credentials from the EC2 Instance metadata.",
+            "2": "Create an IAM user for the application with permissions that allow list access to the S3 bucket launch the instance as the IAM user and retrieve the IAM user&#x27;s credentials from the EC2 instance user data.",
+            "3": "Create an IAM role for EC2 that allows list access to objects in the S3 bucket. Launch the instance with the role, and retrieve the role&#x27;s credentials from the EC2 Instance metadata.",
             "4": "Create an IAM user for the application with permissions that allow list access to the S3 bucket. The application retrieves the IAM user credentials from a temporary directory with permissions that allow read access only to the application user."
         },
         "correct_answers": [
@@ -9108,9 +9108,9 @@
         "id": "604",
         "question": "You are setting up a VPC and you need to set up a public subnet within that VPC. Which following requirement must be met for this subnet to be considered a public subnet?",
         "options": {
-            "1": "Subnet's traffic is not routed to an internet gateway but has its traffic routed to a virtual private gateway.",
-            "2": "Subnet's traffic is routed to an internet gateway.",
-            "3": "Subnet's traffic is not routed to an internet gateway.",
+            "1": "Subnet&#x27;s traffic is not routed to an internet gateway but has its traffic routed to a virtual private gateway.",
+            "2": "Subnet&#x27;s traffic is routed to an internet gateway.",
+            "3": "Subnet&#x27;s traffic is not routed to an internet gateway.",
             "4": "None of these answers can be considered a public subnet."
         },
         "correct_answers": [
@@ -9126,7 +9126,7 @@
             "1": "Yes, through the Amazon S3 APIs.",
             "2": "Yes, through the Amazon EC2 APIs.",
             "3": "No, EBS snapshots cannot be accessed; they can only be used to create a new EBS volume.",
-            "4": "EBS doesn't provide snapshots."
+            "4": "EBS doesn&#x27;t provide snapshots."
         },
         "correct_answers": [
             "options.2"
@@ -9154,7 +9154,7 @@
         "question": "SQL Server [...] store log ins and passwords in the master database.",
         "options": {
             "1": "can be configured to but by default does not.",
-            "2": "doesn't.",
+            "2": "doesn&#x27;t.",
             "3": "does."
         },
         "correct_answers": [
@@ -9293,7 +9293,7 @@
             "1": "Depends on the type of connection.",
             "2": "Yes.",
             "3": "No.",
-            "4": "Only when there's just one Availability Zone in a region. If there are more than one, only one availability zone can be accessed directly."
+            "4": "Only when there&#x27;s just one Availability Zone in a region. If there are more than one, only one availability zone can be accessed directly."
         },
         "correct_answers": [
             "options.1"
@@ -9318,7 +9318,7 @@
     },
     {
         "id": "618",
-        "question": "Your organization is in the business of architecting complex transactional databases. For a variety of reasons, this has been done on EBS. What is AWS's recommendation for customers who have architected databases using EBS for backups?",
+        "question": "Your organization is in the business of architecting complex transactional databases. For a variety of reasons, this has been done on EBS. What is AWS&#x27;s recommendation for customers who have architected databases using EBS for backups?",
         "options": {
             "1": "Backups to Amazon S3 be performed through the database management system.",
             "2": "Backups to AWS Storage Gateway be performed through the database management system.",
@@ -9408,7 +9408,7 @@
     },
     {
         "id": "624",
-        "question": "Amazon RDS creates an SSL certificate and installs the certificate on the DB Instance when Amazon RDS provisions the instance. These certificates are signed by a certificate authority. The [...] is stored at <https://rds.amazonaws.com/doc/rds-ssl-ca-cert.pem>.",
+        "question": "Amazon RDS creates an SSL certificate and installs the certificate on the DB Instance when Amazon RDS provisions the instance. These certificates are signed by a certificate authority. The [...] is stored at &lt;https://rds.amazonaws.com/doc/rds-ssl-ca-cert.pem&gt;.",
         "options": {
             "1": "private key.",
             "2": "foreign key.",
@@ -9458,7 +9458,7 @@
             "1": "You can begin an upload before you know the final object size.",
             "2": "Quick recovery from any network issues.",
             "3": "Pause and resume object uploads.",
-            "4": "It's more secure than normal upload."
+            "4": "It&#x27;s more secure than normal upload."
         },
         "correct_answers": [
             "options.4"
@@ -9526,7 +9526,7 @@
     },
     {
         "id": "632",
-        "question": "A company is deploying a new two-tier web application in AWS. The company has limited staff and requires high availability, and the application requires complex queries and table joins. Which configuration provides the solution for the company's requirements?",
+        "question": "A company is deploying a new two-tier web application in AWS. The company has limited staff and requires high availability, and the application requires complex queries and table joins. Which configuration provides the solution for the company&#x27;s requirements?",
         "options": {
             "1": "MySQL Installed on two Amazon EC2 Instances in a single Availability Zone.",
             "2": "Amazon RDS for MySQL with Multi-AZ.",
@@ -9572,10 +9572,10 @@
     },
     {
         "id": "635",
-        "question": "Regarding the attaching of ENI to an instance, what does 'warm attach' refer to?",
+        "question": "Regarding the attaching of ENI to an instance, what does &#x27;warm attach&#x27; refer to?",
         "options": {
             "1": "Attaching an ENI to an instance when it is stopped.",
-            "2": "This question doesn't make sense.",
+            "2": "This question doesn&#x27;t make sense.",
             "3": "Attaching an ENI to an instance when it is running.",
             "4": "Attaching an ENI to an instance during the launch process."
         },
@@ -9637,7 +9637,7 @@
             "1": "By adding more security groups.",
             "2": "You need to create a default security group specifying your required rules if you need to use more than 100 rules per security group.",
             "3": "By default the Amazon EC2 security groups support 500 rules.",
-            "4": "You can't add more than 100 rules to security groups for an Amazon EC2 instance."
+            "4": "You can&#x27;t add more than 100 rules to security groups for an Amazon EC2 instance."
         },
         "correct_answers": [
             "options.4"
@@ -9724,10 +9724,10 @@
         "id": "645",
         "question": "Select the correct statement",
         "options": {
-            "1": "You don't need not specify the resource identifier while stopping a resource.",
+            "1": "You don&#x27;t need not specify the resource identifier while stopping a resource.",
             "2": "You can terminate, stop, or delete a resource based solely on its tags.",
-            "3": "You can't terminate, stop, or delete a resource based solely on its tags.",
-            "4": "You don't need to specify the resource identifier while terminating a resource."
+            "3": "You can&#x27;t terminate, stop, or delete a resource based solely on its tags.",
+            "4": "You don&#x27;t need to specify the resource identifier while terminating a resource."
         },
         "correct_answers": [
             "options.3"
@@ -9755,7 +9755,7 @@
         "question": "A large real -estate brokerage is exploring the option of adding a cost-effective location based alert to their existing mobile application The application backend infrastructure currently runs on AWS Users who opt in to this service will receive alerts on their mobile device regarding real-estate otters in proximity to their location. For the alerts to be relevant delivery time needs to be in the low minute count the existing mobile app has 5 million users across the us. Which one of the following architectural suggestions would you make to the customer?",
         "options": {
             "1": "The mobile application will submit its location to a web service endpoint utilizing Elastic Load Balancing and EC2 instances: DynamoDB will be used to store and retrieve relevant otters EC2 instances will communicate with mobile earners/device providers to push alerts back to mobile application.",
-            "2": "Use AWS DirectConnect or VPN to establish connectivity with mobile carriers EC2 instances will receive the mobile applications' location through carrier connection: ROS will be used to store and relevant relevant offers EC2 instances will communicate with mobile carriers to push alerts back to the mobile application.",
+            "2": "Use AWS DirectConnect or VPN to establish connectivity with mobile carriers EC2 instances will receive the mobile applications&#x27; location through carrier connection: ROS will be used to store and relevant relevant offers EC2 instances will communicate with mobile carriers to push alerts back to the mobile application.",
             "3": "The mobile application will send device location using SQS.",
             "4": "EC2 instances will retrieve the re levant others from DynamoDB AWS Mobile Push will be used to send offers to the mobile application to push alerts back to the mobile application.",
             "5": "The mobile application will send device location using AWS Mobile Push EC2 instances will retrieve the relevant offers from DynamoDB EC2 instances will communicate with mobile carriers/device providers to push alerts back to the mobile application."
@@ -9786,9 +9786,9 @@
         "question": "What is the data model of DynamoDB?",
         "options": {
             "1": "Since DynamoDB is schema-less, there is no data model.",
-            "2": "'Items', with Keys and one or more Attribute; and 'Attribute', with Name and Value.",
-            "3": "'Table', a collection of Items; 'Items', with Keys and one or more Attribute; and 'Attribute', with Name and Value.",
-            "4": "'Database', which is a set of 'Tables', which is a set of 'Items', which is a set of 'Attributes'."
+            "2": "&#x27;Items&#x27;, with Keys and one or more Attribute; and &#x27;Attribute&#x27;, with Name and Value.",
+            "3": "&#x27;Table&#x27;, a collection of Items; &#x27;Items&#x27;, with Keys and one or more Attribute; and &#x27;Attribute&#x27;, with Name and Value.",
+            "4": "&#x27;Database&#x27;, which is a set of &#x27;Tables&#x27;, which is a set of &#x27;Items&#x27;, which is a set of &#x27;Attributes&#x27;."
         },
         "correct_answers": [
             "options.3"

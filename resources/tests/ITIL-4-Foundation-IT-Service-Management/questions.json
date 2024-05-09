@@ -48,10 +48,10 @@
         "id": "4",
         "question": "Which describes a set of defined steps for implementing improvements?",
         "options": {
-            "1": "The 'improve' value chain activity.",
+            "1": "The &#x27;improve&#x27; value chain activity.",
             "2": "The Continual Improvement register.",
             "3": "The Continual Improvement model.",
-            "4": "The 'engage' value chain activity."
+            "4": "The &#x27;engage&#x27; value chain activity."
         },
         "correct_answers": [
             "options.3"
@@ -166,7 +166,7 @@
     },
     {
         "id": "12",
-        "question": "Which is a key consideration for the guiding principle 'keep it simple and practical'?",
+        "question": "Which is a key consideration for the guiding principle &#x27;keep it simple and practical&#x27;?",
         "options": {
             "1": "Try to create a solution for every exception.",
             "2": "Start with a complex solution, then simplify.",
@@ -241,7 +241,7 @@
     },
     {
         "id": "17",
-        "question": "What are 'engage', 'plan' and 'improve' examples of?",
+        "question": "What are &#x27;engage&#x27;, &#x27;plan&#x27; and &#x27;improve&#x27; examples of?",
         "options": {
             "1": "Service value chain activities.",
             "2": "Service Level Management.",
@@ -331,7 +331,7 @@
     },
     {
         "id": "23",
-        "question": "The use of [?] should support, not replace what is observed, when using the 'start where you are' guiding principle.",
+        "question": "The use of [?] should support, not replace what is observed, when using the &#x27;start where you are&#x27; guiding principle.",
         "options": {
             "1": "Plans.",
             "2": "Measurement.",
@@ -391,7 +391,7 @@
     },
     {
         "id": "27",
-        "question": "Which is NOT a key focus of the 'information and technology' dimension?",
+        "question": "Which is NOT a key focus of the &#x27;information and technology&#x27; dimension?",
         "options": {
             "1": "Workflow management and inventory systems.",
             "2": "Communication systems and knowledge bases.",
@@ -425,7 +425,7 @@
         "options": {
             "1": "Tangible or intangible deliverables.",
             "2": "Results desired by a stakeholder.",
-            "3": "Configuration of an organization's resources.",
+            "3": "Configuration of an organization&#x27;s resources.",
             "4": "Functionality offered by a product or service."
         },
         "correct_answers": [
@@ -736,7 +736,7 @@
     },
     {
         "id": "50",
-        "question": "Which practice has a purpose that includes aligning the organization's practices and services with changing business needs?",
+        "question": "Which practice has a purpose that includes aligning the organization&#x27;s practices and services with changing business needs?",
         "options": {
             "1": "Relationship Management.",
             "2": "Continual Improvement.",
@@ -861,7 +861,7 @@
             "1": "To help an organization make good decisions.",
             "2": "To direct and control an organization.",
             "3": "To identify activities that an organization must perform in order to deliver a valuable service.",
-            "4": "To ensure that an organization's performance continually meets stakeholders' expectations."
+            "4": "To ensure that an organization&#x27;s performance continually meets stakeholders&#x27; expectations."
         },
         "correct_answers": [
             "options.1"
@@ -1038,7 +1038,7 @@
         "id": "70",
         "question": "Which is an external input to the service value chain?",
         "options": {
-            "1": "The 'improve' value chain activity.",
+            "1": "The &#x27;improve&#x27; value chain activity.",
             "2": "An overall plan.",
             "3": "Customer requirements.",
             "4": "Feedback loops."
@@ -1051,7 +1051,7 @@
     },
     {
         "id": "71",
-        "question": "What should be considered as part of the 'partners and suppliers' dimension?",
+        "question": "What should be considered as part of the &#x27;partners and suppliers&#x27; dimension?",
         "options": {
             "1": "The level of integration and formality involved in the relationships between organizations.",
             "2": "The activities, workflows, controls and procedures needed to achieve the agreed objectives.",
@@ -1145,7 +1145,7 @@
         "options": {
             "1": "By using all the guiding principles equally when making any decision.",
             "2": "By using the one or two guiding principles that are most relevant to the specific decision.",
-            "3": "By using the 'focus on value' principle and one or two others that are relevant to the specific decision.",
+            "3": "By using the &#x27;focus on value&#x27; principle and one or two others that are relevant to the specific decision.",
             "4": "Review each guiding principle to decide how relevant it is to the specific decision."
         },
         "correct_answers": [
@@ -1171,7 +1171,7 @@
     },
     {
         "id": "79",
-        "question": "Which activity contributes to the 'where are we now?' step of the Continual Improvement model?",
+        "question": "Which activity contributes to the &#x27;where are we now?&#x27; step of the Continual Improvement model?",
         "options": {
             "1": "Executing improvement actions.",
             "2": "Performing baseline assessments.",
@@ -1216,7 +1216,7 @@
     },
     {
         "id": "82",
-        "question": "What can help to reduce resistance to a planned improvement when applying the guiding principle 'collaborate and promote visibility'?",
+        "question": "What can help to reduce resistance to a planned improvement when applying the guiding principle &#x27;collaborate and promote visibility&#x27;?",
         "options": {
             "1": "Restricting information about the improvement to essential stakeholders only.",
             "2": "Increasing collaboration and visibility for the improvement.",
@@ -1261,7 +1261,7 @@
     },
     {
         "id": "85",
-        "question": "Which BEST describes the purpose of the 'improve' value chain activity?",
+        "question": "Which BEST describes the purpose of the &#x27;improve&#x27; value chain activity?",
         "options": {
             "1": "To organize a major improvement initiative into several smaller initiatives.",
             "2": "To make new and improved services and features available for use.",
@@ -1323,7 +1323,7 @@
         "id": "89",
         "question": "Which is a purpose of Release Management?",
         "options": {
-            "1": "To protect the organization's information.",
+            "1": "To protect the organization&#x27;s information.",
             "2": "To handle user-initiated service requests.",
             "3": "To make new and changed services available for use.",
             "4": "To move hardware and software to live environments."
@@ -1336,7 +1336,7 @@
     },
     {
         "id": "90",
-        "question": "What is recommended by the guiding principle 'progress iteratively with feedback'?",
+        "question": "What is recommended by the guiding principle &#x27;progress iteratively with feedback&#x27;?",
         "options": {
             "1": "A current state assessment that is carried out at the start of an improvement initiative.",
             "2": "The identification of all interested parts at the start of an improvement initiative.",
@@ -1354,9 +1354,9 @@
         "question": "Which includes governance, management practices, and Continual Improvement?",
         "options": {
             "1": "The service value system.",
-            "2": "The 'deliver and support' value chain activity.",
-            "3": "The 'focus on value' guiding principle.",
-            "4": "The 'value stream and processes' dimension."
+            "2": "The &#x27;deliver and support&#x27; value chain activity.",
+            "3": "The &#x27;focus on value&#x27; guiding principle.",
+            "4": "The &#x27;value stream and processes&#x27; dimension."
         },
         "correct_answers": [
             "options.1"
@@ -1396,11 +1396,11 @@
     },
     {
         "id": "94",
-        "question": "Which is a result of applying the guiding principle 'progress iteratively with feedback'?",
+        "question": "Which is a result of applying the guiding principle &#x27;progress iteratively with feedback&#x27;?",
         "options": {
             "1": "The ability to discover and respond to failure earlier.",
             "2": "Standardization of practices and services.",
-            "3": "Understanding the customer's perception of value.",
+            "3": "Understanding the customer&#x27;s perception of value.",
             "4": "Understanding the current state and identifying what can be reused."
         },
         "correct_answers": [
@@ -1486,7 +1486,7 @@
     },
     {
         "id": "100",
-        "question": "What can be used to determine if a service is 'fit for purpose'?",
+        "question": "What can be used to determine if a service is &#x27;fit for purpose&#x27;?",
         "options": {
             "1": "Availability.",
             "2": "Tarranty.",
@@ -1516,7 +1516,7 @@
     },
     {
         "id": "102",
-        "question": "Which is a key activity carried out in the 'did we get there?' step of the Continual Improvement model?",
+        "question": "Which is a key activity carried out in the &#x27;did we get there?&#x27; step of the Continual Improvement model?",
         "options": {
             "1": "Define measurable targets.",
             "2": "Perform baseline assessments.",
@@ -1621,7 +1621,7 @@
     },
     {
         "id": "109",
-        "question": "Which is considered by the 'partners and suppliers' dimension?",
+        "question": "Which is considered by the &#x27;partners and suppliers&#x27; dimension?",
         "options": {
             "1": "Using artificial intelligence.",
             "2": "Defining controls and procedures.",
@@ -1834,7 +1834,7 @@
         "question": "What is the purpose of the Relationship Management practice?",
         "options": {
             "1": "To establish and nurture the links between the organization and its stakeholders.",
-            "2": "To align the organization's practices and services with changing business needs.",
+            "2": "To align the organization&#x27;s practices and services with changing business needs.",
             "3": "To set clear business-based targets for service performance.",
             "4": "To support the agreed quality of a service handling all agreed, user-initiated service requests."
         },
@@ -1876,7 +1876,7 @@
     },
     {
         "id": "126",
-        "question": "Which approach is CORRECT when applying the guiding principle 'keep it simple and practical'?",
+        "question": "Which approach is CORRECT when applying the guiding principle &#x27;keep it simple and practical&#x27;?",
         "options": {
             "1": "Only add controls and metrics when they are needed.",
             "2": "Design controls and metrics first, then remove those not adding value.",
@@ -1921,7 +1921,7 @@
     },
     {
         "id": "129",
-        "question": "Which is a recommendation of the guiding principle 'think and work holistically'?",
+        "question": "Which is a recommendation of the guiding principle &#x27;think and work holistically&#x27;?",
         "options": {
             "1": "Conduct a review of existing service management practices and decide what to keep and what to discard.",
             "2": "Review how an improvement initiative can be organized into smaller, manageable sections that can be completed in a timely manner.",
@@ -1955,7 +1955,7 @@
         "options": {
             "1": "To protect the information needed by the organization to conduct its business.",
             "2": "To reduce the likelihood and impact of incidents by identifying actual and potential causes of incidents, and managing workarounds and known errors.",
-            "3": "To align the organization's practices and services with changing business needs through the ongoing identification and improvement of services.",
+            "3": "To align the organization&#x27;s practices and services with changing business needs through the ongoing identification and improvement of services.",
             "4": "To minimize the negative impact of incidents by restoring normal service operation as quickly as possible."
         },
         "correct_answers": [
@@ -2116,7 +2116,7 @@
     },
     {
         "id": "142",
-        "question": "Which statement about the use of measurement in the 'start where you are' guiding principle is CORRECT?",
+        "question": "Which statement about the use of measurement in the &#x27;start where you are&#x27; guiding principle is CORRECT?",
         "options": {
             "1": "It should always be used to support direct observation.",
             "2": "It should always be used instead of direct observation.",
@@ -2136,7 +2136,7 @@
             "1": "The amount of money the customer pays for using the service.",
             "2": "The financial return the customer gets from using the service.",
             "3": "The outcomes the customer receives by using the service.",
-            "4": "The customer's perception of the benefits of using the service."
+            "4": "The customer&#x27;s perception of the benefits of using the service."
         },
         "correct_answers": [
             "options.4"
@@ -2266,12 +2266,12 @@
     },
     {
         "id": "152",
-        "question": "Which is a purpose of the 'engage' value chain activity?",
+        "question": "Which is a purpose of the &#x27;engage&#x27; value chain activity?",
         "options": {
             "1": "Meeting expectations for quality, costs and time-to-market.",
             "2": "Providing transparency and good relationships.",
             "3": "Ensuring the Continual Improvement of services.",
-            "4": "Ensuring that the organization's vision is understood."
+            "4": "Ensuring that the organization&#x27;s vision is understood."
         },
         "correct_answers": [
             "options.2"
@@ -2341,7 +2341,7 @@
     },
     {
         "id": "157",
-        "question": "Which two statements about an organization's culture are CORRECT? 1. It is created from shared values based on how it carries out its work 2. It is determined by the type of technology used to support services 3. It should be based on the culture of prospective suppliers 4. It should be based on the objectives of the organization",
+        "question": "Which two statements about an organization&#x27;s culture are CORRECT? 1. It is created from shared values based on how it carries out its work 2. It is determined by the type of technology used to support services 3. It should be based on the culture of prospective suppliers 4. It should be based on the objectives of the organization",
         "options": {
             "1": "1 and 2.",
             "2": "2 and 3.",
@@ -2435,7 +2435,7 @@
         "options": {
             "1": "It should be written in legal language.",
             "2": "It should be simply written and easy to understand.",
-            "3": "It should be based on the service provider's view of the service.",
+            "3": "It should be based on the service provider&#x27;s view of the service.",
             "4": "It should relate to simple operational metrics."
         },
         "correct_answers": [
@@ -2566,7 +2566,7 @@
     },
     {
         "id": "172",
-        "question": "Which practice has the purpose of ensuring that the organization's suppliers and their performance are managed appropriately to support the provision of seamless, quality products and services?",
+        "question": "Which practice has the purpose of ensuring that the organization&#x27;s suppliers and their performance are managed appropriately to support the provision of seamless, quality products and services?",
         "options": {
             "1": "Release Management.",
             "2": "Supplier Management.",
@@ -2626,7 +2626,7 @@
     },
     {
         "id": "176",
-        "question": "In Cisco AMP for Endpoints, which API queues to find the list of endpoints in the group 'Finance Hosts' which has a GUID of 6c3c2005-4c74-4ba7-8dbb-c4d5b6bafe03?",
+        "question": "In Cisco AMP for Endpoints, which API queues to find the list of endpoints in the group &#x27;Finance Hosts&#x27; which has a GUID of 6c3c2005-4c74-4ba7-8dbb-c4d5b6bafe03?",
         "options": {
             "1": "https://api.amp.cisco.com/v1/endpoints?group[]=6c3c2005-4c74-4ba7-8dbb\u00adc4d5b6bafe03",
             "2": "https://api.amp.cisco.com/v1/computers?group_guid[]=6c3c2005-4c74-4ba7-8dbb\u00adc4d5b6bafe03",
@@ -2941,7 +2941,7 @@
     },
     {
         "id": "197",
-        "question": " The purpose of the Supplier Management practice is to ensure that the organization's suppliers and their [?] are managed appropriately to support the seamless provision of quality products and services.",
+        "question": "The purpose of the Supplier Management practice is to ensure that the organization&#x27;s suppliers and their [?] are managed appropriately to support the seamless provision of quality products and services.",
         "options": {
             "1": "Costs.",
             "2": "Users.",
@@ -3007,7 +3007,7 @@
             "2": "Use a protocol analyzer on the air-gapped P.",
             "3": "Perform reverse engineering on the document.",
             "4": "Analyze network logs for unusual traffic.",
-            "5": "Run a baseline analyzer against the user's computer."
+            "5": "Run a baseline analyzer against the user&#x27;s computer."
         },
         "correct_answers": [
             "options.2"
@@ -3032,9 +3032,9 @@
     },
     {
         "id": "203",
-        "question": "What is a recommendation of the 'focus on value' guiding principle?",
+        "question": "What is a recommendation of the &#x27;focus on value&#x27; guiding principle?",
         "options": {
-            "1": "Make 'focus on value' a responsibility of the management.",
+            "1": "Make &#x27;focus on value&#x27; a responsibility of the management.",
             "2": "Focus on the value of new and significant projects first.",
             "3": "Focus on value for the service provider first.",
             "4": "Focus on value at every step of the improvement."
@@ -3107,7 +3107,7 @@
     },
     {
         "id": "208",
-        "question": "Which is included in the purpose of the 'design and transition' value chain activity?",
+        "question": "Which is included in the purpose of the &#x27;design and transition&#x27; value chain activity?",
         "options": {
             "1": "Ensuring that service components are available when needed.",
             "2": "Providing transparency and good stakeholder relationships.",
@@ -3122,10 +3122,10 @@
     },
     {
         "id": "209",
-        "question": "Which is included in the purpose of the 'deliver and support' value chain activity?",
+        "question": "Which is included in the purpose of the &#x27;deliver and support&#x27; value chain activity?",
         "options": {
             "1": "Meeting stakeholder expectations for time to market.",
-            "2": "Understanding the organization's service vision.",
+            "2": "Understanding the organization&#x27;s service vision.",
             "3": "Understanding stakeholder needs.",
             "4": "Providing services to agreed specifications."
         },
@@ -3290,7 +3290,7 @@
         "question": "Which is a purpose of the Service Level Management practice?",
         "options": {
             "1": "To establish and nurture the links between the organization and its stakeholders.",
-            "2": "To ensure that the organization's suppliers and their performance are managed appropriately.",
+            "2": "To ensure that the organization&#x27;s suppliers and their performance are managed appropriately.",
             "3": "To support the agreed quality of a service by handling all agreed, user-initiated service requests.",
             "4": "To set clear business-based targets for service levels."
         },
@@ -3362,11 +3362,11 @@
     },
     {
         "id": "225",
-        "question": "An SLA is a service level agreement. Which describes the 'watermelon SLA' effect?",
+        "question": "An SLA is a service level agreement. Which describes the &#x27;watermelon SLA&#x27; effect?",
         "options": {
             "1": "Introducing SLAs for a service enables customers to see that the service provider is doing a really good job, so this improves satisfaction.",
             "2": "SLA targets change very frequently, so that each report includes new measures and trends cannot be analyzed.",
-            "3": "A single SLA defines target service levels for multiple customers, so every customer sees reports about other customers' experiences.",
+            "3": "A single SLA defines target service levels for multiple customers, so every customer sees reports about other customers&#x27; experiences.",
             "4": "The metrics in an SLA are focused on internal measures, so that reports show everything is good, while the customer is not satisfied."
         },
         "correct_answers": [
@@ -3542,7 +3542,7 @@
     },
     {
         "id": "237",
-        "question": "The purpose of the Supplier Management practice is to ensure that the organization's suppliers and their performances are [?] appropriately to support the seamless provision of quality products and services.",
+        "question": "The purpose of the Supplier Management practice is to ensure that the organization&#x27;s suppliers and their performances are [?] appropriately to support the seamless provision of quality products and services.",
         "options": {
             "1": "Measured.",
             "2": "Rewarded.",
@@ -3767,10 +3767,10 @@
     },
     {
         "id": "252",
-        "question": "Which is one of the MAIN concerns of the 'design and transition' value chain activity?",
+        "question": "Which is one of the MAIN concerns of the &#x27;design and transition&#x27; value chain activity?",
         "options": {
             "1": "Meeting stakeholder expectations.",
-            "2": "Understanding the organization's vision.",
+            "2": "Understanding the organization&#x27;s vision.",
             "3": "Understanding stakeholder needs.",
             "4": "Ensuring service components are available."
         },
@@ -3842,7 +3842,7 @@
     },
     {
         "id": "257",
-        "question": "Which describes a 'change authority'?",
+        "question": "Which describes a &#x27;change authority&#x27;?",
         "options": {
             "1": "A person who approves a change.",
             "2": "A model used to determine who will assess a change.",
@@ -4117,7 +4117,7 @@
             "1": "Supporting the agreed quality of a service by handling all pre-defined, user-initiated service requests in an effective and user-friendly manner.",
             "2": "Systematically observing services and service components and recording and reporting selected changes of state identified as events.",
             "3": "Minimizing the negative impact of incidents by restoring normal service operation as quickly as possible.",
-            "4": "Ensuring that all an organization's projects are successfully delivered."
+            "4": "Ensuring that all an organization&#x27;s projects are successfully delivered."
         },
         "correct_answers": [
             "options.2"
@@ -4131,7 +4131,7 @@
         "options": {
             "1": "Supporting the agreed quality of a service by handling all pre-defined, user-initiated service requests in an effective and user-friendly manner.",
             "2": "Ensuring that services deliver agreed levels of availability or that change can be assessed.",
-            "3": "Ensuring that all an organization's projects are successfully delivered.",
+            "3": "Ensuring that all an organization&#x27;s projects are successfully delivered.",
             "4": "Minimizing the negative impact of incidents by restoring normal service operation as quickly as possible."
         },
         "correct_answers": [
@@ -4191,7 +4191,7 @@
         "options": {
             "1": "Tangible or intangible deliverables.",
             "2": "Results for stakeholders.",
-            "3": "Configuration of an organization's resources.",
+            "3": "Configuration of an organization&#x27;s resources.",
             "4": "Functionality offered by a product or service."
         },
         "correct_answers": [
@@ -4262,7 +4262,7 @@
     },
     {
         "id": "285",
-        "question": "Dion Training Solutions has decided to create an online course for the ITIL 4 Foundation exam. The company developed their curriculum and then invited 50 students to participate in live training to determine if the training was effective. During the training, some students didn't understand the concept of the service value chain, so the instructor rewrote that portion of the curriculum. Which guiding principle is being demonstrated by this approach to curriculum development?",
+        "question": "Dion Training Solutions has decided to create an online course for the ITIL 4 Foundation exam. The company developed their curriculum and then invited 50 students to participate in live training to determine if the training was effective. During the training, some students didn&#x27;t understand the concept of the service value chain, so the instructor rewrote that portion of the curriculum. Which guiding principle is being demonstrated by this approach to curriculum development?",
         "options": {
             "1": "Focus on value.",
             "2": "Collaborate and promote visibility.",
@@ -4275,7 +4275,7 @@
     },
     {
         "id": "286",
-        "question": "You are working to design a new service for internal use across your organization. As part of your design efforts, you form a small team with relevant stakeholders from the human resources, information technology, sales, and other relevant departments to ensure the service adequately meets each department's needs and hope this results in great acceptance of the service when delivered. Which guiding principle best describes this scenario?",
+        "question": "You are working to design a new service for internal use across your organization. As part of your design efforts, you form a small team with relevant stakeholders from the human resources, information technology, sales, and other relevant departments to ensure the service adequately meets each department&#x27;s needs and hope this results in great acceptance of the service when delivered. Which guiding principle best describes this scenario?",
         "options": {
             "1": "Focus on value.",
             "2": "Collaborate and promote visibility.",
@@ -4290,11 +4290,11 @@
     },
     {
         "id": "287",
-        "question": "John is currently working to create a new service that would allow a customer to purchase a digital product online and have it delivered to the user's inbox. John is responsible for the payment portion of this service, but Sally is responsible for the digital product fulfillment portion of the service. Which of the following should John do in order to follow the principle of 'think and work holistically'?",
+        "question": "John is currently working to create a new service that would allow a customer to purchase a digital product online and have it delivered to the user&#x27;s inbox. John is responsible for the payment portion of this service, but Sally is responsible for the digital product fulfillment portion of the service. Which of the following should John do in order to follow the principle of &#x27;think and work holistically&#x27;?",
         "options": {
             "1": "John should optimize his code to ensure it runs efficiently.",
             "2": "John should meet with Sally to determine how the digital product fulfillment will occur.",
-            "3": "John should wait until Sally's portion is complete before beginning his to ensure they work together properly.",
+            "3": "John should wait until Sally&#x27;s portion is complete before beginning his to ensure they work together properly.",
             "4": "John should tell Sally to wait until his portion is done before starting hers to ensure compatibility."
         },
         "correct_answers": [
@@ -4305,7 +4305,7 @@
     },
     {
         "id": "288",
-        "question": "Which of these are a key focus of the Organization and People dimension?",
+        "question": "Which of these are a key focus of the Organization and People dimension?  - Security and compliance. - Activities that transform inputs into outputs. - Roles and responsibilities. - Contracts and agreements.",
         "options": {},
         "correct_answers": [],
         "description": "",
@@ -4373,7 +4373,7 @@
     },
     {
         "id": "293",
-        "question": "Which step of the Continual Improvement model states that 'each improvement initiative should support the organization's goals and objectives'?",
+        "question": "Which step of the Continual Improvement model states that &#x27;each improvement initiative should support the organization&#x27;s goals and objectives&#x27;?",
         "options": {
             "1": "Where are we now?",
             "2": "What is the vision?",
@@ -4388,7 +4388,7 @@
     },
     {
         "id": "294",
-        "question": "When working within the 'what is the vision' step of the Continual Improvement model, what must you ensure to occur?",
+        "question": "When working within the &#x27;what is the vision&#x27; step of the Continual Improvement model, what must you ensure to occur?",
         "options": {
             "1": "The high-level direction of the initiative has been understood.",
             "2": "The detailed steps of how to achieve your objectives.",
@@ -4420,9 +4420,9 @@
         "id": "296",
         "question": "What is a normal change?",
         "options": {
-            "1": "A change that doesn't need risk assessment because the procedure has been pre-authorized.",
+            "1": "A change that doesn&#x27;t need risk assessment because the procedure has been pre-authorized.",
             "2": "A change that needs to be assessed, authorized, and scheduled by a change authority.",
-            "3": "A change that doesn't need risk assessment because it is required to resolve an incident.",
+            "3": "A change that doesn&#x27;t need risk assessment because it is required to resolve an incident.",
             "4": "A change that is routine in nature, is fully documented, and the risks are well understood."
         },
         "correct_answers": [
@@ -4433,7 +4433,7 @@
     },
     {
         "id": "297",
-        "question": "Your company's external router has just malfunctioned and needs to be replaced. The entire organization's connection to the Wide Area Network will remain offline until this router is replaced. Which type of change should be initiated?",
+        "question": "Your company&#x27;s external router has just malfunctioned and needs to be replaced. The entire organization&#x27;s connection to the Wide Area Network will remain offline until this router is replaced. Which type of change should be initiated?   - [ ] Standard.  - [ ] Normal.  - [x] Emergency.  - [ ] Routine.",
         "options": {},
         "correct_answers": [],
         "description": "",
@@ -4546,7 +4546,7 @@
     },
     {
         "id": "305",
-        "question": "Your smartphone isn't working properly. You call the toll-free number for your service provider's support center. Which practice would you reach that serves as the entry point for all contact between the service provider and its users?",
+        "question": "Your smartphone isn&#x27;t working properly. You call the toll-free number for your service provider&#x27;s support center. Which practice would you reach that serves as the entry point for all contact between the service provider and its users?",
         "options": {
             "1": "Problem Management.",
             "2": "Service Desk.",
@@ -4578,10 +4578,10 @@
         "id": "307",
         "question": "What is a Service Level Agreement used for?",
         "options": {
-            "1": "To measure the performance of services from a customer's point of view.",
+            "1": "To measure the performance of services from a customer&#x27;s point of view.",
             "2": "To measure the performance of the service availability.",
             "3": "To measure the performance of the service capability.",
-            "4": "To measure the performance of the service from the service provider's point of view."
+            "4": "To measure the performance of the service from the service provider&#x27;s point of view."
         },
         "correct_answers": [
             "options.1"
@@ -4591,7 +4591,7 @@
     },
     {
         "id": "308",
-        "question": "How does Service Level Management contribute to the 'plan' value chain activity?",
+        "question": "How does Service Level Management contribute to the &#x27;plan&#x27; value chain activity?",
         "options": {
             "1": "Uses feedback from users about the service and requirements from customers to make the service better.",
             "2": "Provides information about the actual service performance and trends.",
@@ -4636,7 +4636,7 @@
     },
     {
         "id": "311",
-        "question": "A customer is a person who defines the requirements for a service and takes responsibility for the [?] of service consumption.",
+        "question": "A customer is a person who defines the requirements for a service and takes responsibility for the [?] of service consumption.   - [x] Outcomes.  - [ ] Cost.  - [ ] Outputs.  - [ ] Benefits.",
         "options": {},
         "correct_answers": [],
         "description": "",
@@ -4689,7 +4689,7 @@
     },
     {
         "id": "315",
-        "question": "What is defined as the practice of aligning an organization's practices and services with changing business needs through the ongoing identification and improvement of all elements involved in the effective management of products and services?",
+        "question": "What is defined as the practice of aligning an organization&#x27;s practices and services with changing business needs through the ongoing identification and improvement of all elements involved in the effective management of products and services?",
         "options": {
             "1": "Service Level Management.",
             "2": "Service Request Management.",
@@ -4719,7 +4719,7 @@
     },
     {
         "id": "317",
-        "question": "Dion Training has decided not to run their own email servers. Instead, Dion Training pays a monthly service fee to Google's G-Suite to provide email services to the company so that Dion Training can receive emails from its students. What best describes this co-creation of value by Dion Training and Google in order to provide email support to Dion Training's students?",
+        "question": "Dion Training has decided not to run their own email servers. Instead, Dion Training pays a monthly service fee to Google&#x27;s G-Suite to provide email services to the company so that Dion Training can receive emails from its students. What best describes this co-creation of value by Dion Training and Google in order to provide email support to Dion Training&#x27;s students?",
         "options": {
             "1": "Service Offering.",
             "2": "Service Relationship Management.",
@@ -4749,7 +4749,7 @@
     },
     {
         "id": "319",
-        "question": "Your organization is preparing to launch a new service. Your manager is concerned that there is a possibility that something bad might happen which could cause the service to fail and the desired outcome won't be achieved. What term best describes your manager's concerns?",
+        "question": "Your organization is preparing to launch a new service. Your manager is concerned that there is a possibility that something bad might happen which could cause the service to fail and the desired outcome won&#x27;t be achieved. What term best describes your manager&#x27;s concerns?",
         "options": {
             "1": "Outputs.",
             "2": "Risks.",
@@ -4854,7 +4854,7 @@
     },
     {
         "id": "326",
-        "question": "Which service management dimension is focused on the roles and responsibilities of the people involved in a process' workflow?",
+        "question": "Which service management dimension is focused on the roles and responsibilities of the people involved in a process&#x27; workflow?",
         "options": {
             "1": "Organizations and people.",
             "2": "Information and technology.",
@@ -4961,7 +4961,7 @@
         "id": "333",
         "question": "What is an emergency change?",
         "options": {
-            "1": "A change that doesn't need risk assessment because the procedure has been pre-authorized.",
+            "1": "A change that doesn&#x27;t need risk assessment because the procedure has been pre-authorized.",
             "2": "A change that needs to be assessed, authorized, and scheduled by a change authority.",
             "3": "A change that must be implemented as soon as possible because it is required to resolve an incident or security issue.",
             "4": "A change that is assessed, authorized, and scheduled as part of Continual Improvement."
@@ -5109,12 +5109,12 @@
     },
     {
         "id": "343",
-        "question": "You are in a quarterly service level management review with your supervisor. The manager asks your supervisor if the service desk has been meeting their SLA target metrics. Your supervisor proudly proclaims that everything is 'green' (meaning, we are meeting all of the targets). Just then, another executive asks, \"If everything is showing as 'green', why am I hearing other users complain that the service is always unavailable for use?\" What might be the reason for this?",
+        "question": "You are in a quarterly service level management review with your supervisor. The manager asks your supervisor if the service desk has been meeting their SLA target metrics. Your supervisor proudly proclaims that everything is &#x27;green&#x27; (meaning, we are meeting all of the targets). Just then, another executive asks, &quot;If everything is showing as &#x27;green&#x27;, why am I hearing other users complain that the service is always unavailable for use?&quot; What might be the reason for this?",
         "options": {
-            "1": "Your supervisor's data is based on operational metrics.",
-            "2": "Your supervisor's data is based on business metrics.",
-            "3": "Your supervisor's data is based on availability metrics.",
-            "4": "Your supervisor's data is not based on business outcomes."
+            "1": "Your supervisor&#x27;s data is based on operational metrics.",
+            "2": "Your supervisor&#x27;s data is based on business metrics.",
+            "3": "Your supervisor&#x27;s data is based on availability metrics.",
+            "4": "Your supervisor&#x27;s data is not based on business outcomes."
         },
         "correct_answers": [],
         "description": "",
@@ -5229,7 +5229,7 @@
         "options": {
             "1": "Establishing and nurturing links between an organization and its stakeholders at strategic and tactical levels.",
             "2": "Setting clear business-based targets for service performance so that the delivery of a service can be properly assessed, monitored, and managed against these targets.",
-            "3": "Ensuring that an organization's suppliers and their performance levels are managed appropriately to support the provision of seamless quality products and services.",
+            "3": "Ensuring that an organization&#x27;s suppliers and their performance levels are managed appropriately to support the provision of seamless quality products and services.",
             "4": "Supporting the agreed quality of a service by handling all pre-defined, user-initiated service requests in an effective and user-friendly manner."
         },
         "correct_answers": [
@@ -5255,7 +5255,7 @@
     },
     {
         "id": "353",
-        "question": "Dion Training is an online training organization that provides asynchronous, on-demand video training for the ITIL 4 certifications. To provide these on-demand videos, Dion Training relies on a third-party service provider to host the videos securely and stream the content directly to students when requested through Dion Training's website. Dion Training is responsible for managing the amount of storage space utilized on the service provider's server, as well as determining whether a student may or may not watch a particular video. What best describes these activities?",
+        "question": "Dion Training is an online training organization that provides asynchronous, on-demand video training for the ITIL 4 certifications. To provide these on-demand videos, Dion Training relies on a third-party service provider to host the videos securely and stream the content directly to students when requested through Dion Training&#x27;s website. Dion Training is responsible for managing the amount of storage space utilized on the service provider&#x27;s server, as well as determining whether a student may or may not watch a particular video. What best describes these activities?",
         "options": {
             "1": "Service consumption.",
             "2": "Service provision.",
@@ -5515,7 +5515,7 @@
             "1": "Communicate with consumers to understand their requirements.",
             "2": "Initiate and fulfill standard changes.",
             "3": "Provide trend, quality, and feedback information about requests.",
-            "4": "Fulfill the consumer's service requests through acquisition of service components."
+            "4": "Fulfill the consumer&#x27;s service requests through acquisition of service components."
         },
         "correct_answers": [
             "options.3"
@@ -5558,7 +5558,7 @@
         "question": "Which of the following is NOT a valid source of Service Level Management data to use in analyzing your service level agreements?",
         "options": {
             "1": "Customer feedback.",
-            "2": "Competitor's metrics.",
+            "2": "Competitor&#x27;s metrics.",
             "3": "Operational metrics.",
             "4": "Business metrics."
         },
@@ -5570,7 +5570,7 @@
     },
     {
         "id": "374",
-        "question": "Your laptop only has a 256GB of SSD storage installed. You have been traveling for work for the last 2 weeks and have downloaded a lot of video files to your internal storage device. Your computer is having issues because there is not enough free space. You called your service desk, but since you are out of the country, they cannot remotely back up all the files on your laptop. They recommend that you move the large files from your internal storage device (256GB SSD) to an external hard drive to free up some available space. Unfortunately, you don't have an external hard drive with you, so you will purchase one at the store later today. How would you classify this situation and the solution recommended?",
+        "question": "Your laptop only has a 256GB of SSD storage installed. You have been traveling for work for the last 2 weeks and have downloaded a lot of video files to your internal storage device. Your computer is having issues because there is not enough free space. You called your service desk, but since you are out of the country, they cannot remotely back up all the files on your laptop. They recommend that you move the large files from your internal storage device (256GB SSD) to an external hard drive to free up some available space. Unfortunately, you don&#x27;t have an external hard drive with you, so you will purchase one at the store later today. How would you classify this situation and the solution recommended?",
         "options": {
             "1": "Incident.",
             "2": "Workaround.",
@@ -5628,7 +5628,7 @@
     },
     {
         "id": "378",
-        "question": "You have just been promoted to the role of the Service Desk manager. The manager before you loved metrics, and the Service Desk is currently spending numerous hours per week creating reports based on over 150 different metrics they call 'measures of effectiveness'. You believe there are simply too many metrics being collected and begin an analysis of each one to determine if is it providing valuable information. For the ones you find without value, you eliminate the requirement to track and report on those metrics. Which guiding principle are you following in this scenario?",
+        "question": "You have just been promoted to the role of the Service Desk manager. The manager before you loved metrics, and the Service Desk is currently spending numerous hours per week creating reports based on over 150 different metrics they call &#x27;measures of effectiveness&#x27;. You believe there are simply too many metrics being collected and begin an analysis of each one to determine if is it providing valuable information. For the ones you find without value, you eliminate the requirement to track and report on those metrics. Which guiding principle are you following in this scenario?",
         "options": {
             "1": "Optimize and automate.",
             "2": "Progress iteratively with feedback.",
@@ -5641,7 +5641,7 @@
     },
     {
         "id": "379",
-        "question": "Which service management dimension is focused on an organization's relationships with other organizations in order to deliver its services?",
+        "question": "Which service management dimension is focused on an organization&#x27;s relationships with other organizations in order to deliver its services?",
         "options": {
             "1": "Organizations and people.",
             "2": "Information and technology.",
@@ -5871,7 +5871,7 @@
             "1": "Supporting the agreed quality of a service by handling all pre-defined, user-initiated service requests in an effective and user-friendly manner.",
             "2": "Making new and changed services and features available for use.",
             "3": "Ensuring that risks are properly assessed, authorizing changes to proceed and managing a change schedule in order to maximize the number of successful IT changes.",
-            "4": "Aligning an organization's practices and services with changing business needs through the ongoing identification and improvement of all elements involved in the effective management of products and services."
+            "4": "Aligning an organization&#x27;s practices and services with changing business needs through the ongoing identification and improvement of all elements involved in the effective management of products and services."
         },
         "correct_answers": [
             "options.3"
@@ -5900,7 +5900,7 @@
         "options": {
             "1": "Establishing and nurturing links between an organization and its stakeholders at strategic and tactical levels.",
             "2": "Supporting the agreed quality of a service by handling all pre-defined, user-initiated service requests in an effective and user-friendly manner.",
-            "3": "Ensuring that an organization's suppliers and their performance levels are managed appropriately to support the provision of seamless quality products and services.",
+            "3": "Ensuring that an organization&#x27;s suppliers and their performance levels are managed appropriately to support the provision of seamless quality products and services.",
             "4": "Setting clear business-based targets for service performance so that the delivery of a service can be properly assessed, monitored, and managed against these targets."
         },
         "correct_answers": [],
@@ -5924,7 +5924,7 @@
     },
     {
         "id": "398",
-        "question": "Dion Training has just hired three new staff members. The IT department at Dion Training has created new accounts for the new staff members on the domain controller and allocated 10 GB of storage on the company's internal file server per staff member. What term best describes these activities performed by the IT department?",
+        "question": "Dion Training has just hired three new staff members. The IT department at Dion Training has created new accounts for the new staff members on the domain controller and allocated 10 GB of storage on the company&#x27;s internal file server per staff member. What term best describes these activities performed by the IT department?",
         "options": {
             "1": "Service consumption.",
             "2": "Service provision.",
@@ -5939,7 +5939,7 @@
     },
     {
         "id": "399",
-        "question": "[?] may simultaneously be removed from a service consumer and imposed on a service provider. For example, outsourcing a service to a service provider may remove the need for the consumer to have their own IT infrastructure, but it may require them to install a faster Internet connection to reach the service provider's servers instead.",
+        "question": "[?] may simultaneously be removed from a service consumer and imposed on a service provider. For example, outsourcing a service to a service provider may remove the need for the consumer to have their own IT infrastructure, but it may require them to install a faster Internet connection to reach the service provider&#x27;s servers instead.",
         "options": {
             "1": "Value.",
             "2": "Outputs.",
@@ -5954,7 +5954,7 @@
     },
     {
         "id": "400",
-        "question": "Your organization has recently installed a brand new accounting program. The program has many functions including one that creates a report that shows the 'Profit and Loss (P&L)' metrics for the month. What term best describes the P&L report that is produced each month?",
+        "question": "Your organization has recently installed a brand new accounting program. The program has many functions including one that creates a report that shows the &#x27;Profit and Loss (P&amp;L)&#x27; metrics for the month. What term best describes the P&amp;L report that is produced each month?",
         "options": {
             "1": "Output.",
             "2": "Value.",
@@ -6044,7 +6044,7 @@
     },
     {
         "id": "406",
-        "question": "What is the step after 'where do we want to be' in the continual improvement model?",
+        "question": "What is the step after &#x27;where do we want to be&#x27; in the continual improvement model?",
         "options": {
             "1": "What is the vision?",
             "2": "How do we get there?",
@@ -6061,9 +6061,9 @@
         "id": "407",
         "question": "What is a normal change?",
         "options": {
-            "1": "A change that doesn't need risk assessment because the procedure has been pre-authorized.",
+            "1": "A change that doesn&#x27;t need risk assessment because the procedure has been pre-authorized.",
             "2": "A change that is routine in nature, is fully documented, and the risks are well understood.",
-            "3": "A change that doesn't need risk assessment because it is required to resolve an incident.",
+            "3": "A change that doesn&#x27;t need risk assessment because it is required to resolve an incident.",
             "4": "A change that is scheduled, assessed, and authorized using a standard process."
         },
         "correct_answers": [
@@ -6199,7 +6199,7 @@
             "1": "To measure the performance of a component in the system.",
             "2": "To measure the performance of the entire system.",
             "3": "To measure the availability of a network.",
-            "4": "To provide a representation of the actual customer's experience."
+            "4": "To provide a representation of the actual customer&#x27;s experience."
         },
         "correct_answers": [
             "options.4"

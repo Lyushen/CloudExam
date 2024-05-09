@@ -19,7 +19,7 @@
         "question": "Which of the following is an example of horizontal scaling in the AWS Cloud?",
         "options": {
             "1": "Replacing an existing EC2 instance with a larger, more powerful one.",
-            "2": "Increasing the compute capacity of a single EC< instance to address the growing demands of an application.",
+            "2": "Increasing the compute capacity of a single EC&lt; instance to address the growing demands of an application.",
             "3": "Adding more RAM capacity to an EC2 instance.",
             "4": "Adding more EC2 instances of the same size to handle an increase in traffic."
         },
@@ -98,7 +98,7 @@
             "1": "Deploy the application across multiple Availability Zones and Edge locations.",
             "2": "Deploy the application across multiple Availability Zones and subnets.",
             "3": "Deploy the application across multiple Regions and Availability Zones.",
-            "4": "Deploy the application across multiple VPC's and subnets."
+            "4": "Deploy the application across multiple VPC&#x27;s and subnets."
         },
         "correct_answers": [
             "options.3"
@@ -217,7 +217,7 @@
     },
     {
         "id": "15",
-        "question": "What is the advantage of the AWS-recommended practice of 'decoupling' applications?",
+        "question": "What is the advantage of the AWS-recommended practice of &#x27;decoupling&#x27; applications?",
         "options": {
             "1": "Allows treating an application as a single, cohesive unit.",
             "2": "Reduces inter-dependencies so that failures do not impact other components of the application.",
@@ -237,7 +237,7 @@
             "1": "AWS Budgets.",
             "2": "AWS Pricing Calculator.",
             "3": "AWS Systems Manager.",
-            "4": "AWS Cost & Usage Reports."
+            "4": "AWS Cost &amp; Usage Reports."
         },
         "correct_answers": [
             "options.4"
@@ -249,7 +249,7 @@
         "id": "17",
         "question": "What do you gain from setting up consolidated billing for five different AWS accounts under another master account?",
         "options": {
-            "1": "AWS services' costs will be reduced to half the original price.",
+            "1": "AWS services&#x27; costs will be reduced to half the original price.",
             "2": "The consolidated billing feature is just for organizational purpose.",
             "3": "Each AWS account gets volume discounts.",
             "4": "Each AWS account gets five times the free-tier services capacity."
@@ -279,7 +279,7 @@
     },
     {
         "id": "19",
-        "question": "One of the most important AWS best-practices to follow is the cloud architecture principle of elasticity. How does this principle improve your architecture's design?",
+        "question": "One of the most important AWS best-practices to follow is the cloud architecture principle of elasticity. How does this principle improve your architecture&#x27;s design?",
         "options": {
             "1": "By automatically scaling your on-premises resources based on changes in demand.",
             "2": "By automatically scaling your AWS resources using an Elastic Load Balancer.",
@@ -326,7 +326,7 @@
     },
     {
         "id": "22",
-        "question": "What does the 'Principle of Least Privilege' refer to?",
+        "question": "What does the &#x27;Principle of Least Privilege&#x27; refer to?",
         "options": {
             "1": "You should grant your users only the permissions they need when they need them and nothing more.",
             "2": "AllIAM users should have at least the necessary permissions to access the core AWS services.",
@@ -403,7 +403,7 @@
     },
     {
         "id": "27",
-        "question": "A company is deploying a new two-tier web application in AWS. Where should the most frequently accessed data be stored so that the application's response time is optimal?",
+        "question": "A company is deploying a new two-tier web application in AWS. Where should the most frequently accessed data be stored so that the application&#x27;s response time is optimal?",
         "options": {
             "1": "AWS OpsWorks.",
             "2": "AWS Storage Gateway.",
@@ -587,7 +587,7 @@
     },
     {
         "id": "39",
-        "question": "In order to implement best practices when dealing with a 'Single Point of Failure,' you should attempt to build as much automation as possible in both detecting and reacting to failure. Which of the following AWS services would help? (Choose TWO)",
+        "question": "In order to implement best practices when dealing with a &#x27;Single Point of Failure,&#x27; you should attempt to build as much automation as possible in both detecting and reacting to failure. Which of the following AWS services would help? (Choose TWO)",
         "options": {
             "1": "ELB.",
             "2": "Auto Scaling.",
@@ -681,7 +681,7 @@
     },
     {
         "id": "45",
-        "question": "You have deployed your application on multiple Amazon EC2 instances. Your customers complain that sometimes they can't reach your application. Which AWS service allows you to monitor the performance of your EC2 instances to assist in troubleshooting these issues?",
+        "question": "You have deployed your application on multiple Amazon EC2 instances. Your customers complain that sometimes they can&#x27;t reach your application. Which AWS service allows you to monitor the performance of your EC2 instances to assist in troubleshooting these issues?",
         "options": {
             "1": "AWS Lambda.",
             "2": "AWS Config.",
@@ -717,7 +717,7 @@
             "2": "Amazon S3 can run any type of application or backend system.",
             "3": "Amazon S3 stores any number of objects, but with object size limits.",
             "4": "Amazon S3 can be scaled manually to store and retrieve any amount of data from anywhere.",
-            "5": "Amazon S3 provides 99.999999999% (11 9's) of data durability."
+            "5": "Amazon S3 provides 99.999999999% (11 9&#x27;s) of data durability."
         },
         "correct_answers": [
             "options.2",
@@ -972,7 +972,7 @@
     },
     {
         "id": "64",
-        "question": "The principle 'design for failure and nothing will fail' is very important when designing your AWS Cloud architecture. Which of the following would help adhere to this principle? (Choose TWO)",
+        "question": "The principle &#x27;design for failure and nothing will fail&#x27; is very important when designing your AWS Cloud architecture. Which of the following would help adhere to this principle? (Choose TWO)",
         "options": {
             "1": "Multi-factor authentication.",
             "2": "Availability Zones.",
@@ -1319,7 +1319,7 @@
         "question": "AWS has created a large number of Edge Locations as part of its Global Infrastructure. Which of the following is NOT a benefit of using Edge Locations?",
         "options": {
             "1": "Edge locations are used by CloudFront to cache the most recent responses.",
-            "2": "Edge locations are used by CloudFront to improve your end users' experience when uploading files.",
+            "2": "Edge locations are used by CloudFront to improve your end users&#x27; experience when uploading files.",
             "3": "Edge locations are used by CloudFront to distribute traffic across multiple instances to reduce latency.",
             "4": "Edge locations are used by CloudFront to distribute content to global users with low latency."
         },
@@ -1425,7 +1425,7 @@
     },
     {
         "id": "93",
-        "question": "What is the AWS service/feature that takes advantage of Amazon CloudFront's globally distributed edge locations to transfer files to S3 with higher upload speeds?",
+        "question": "What is the AWS service/feature that takes advantage of Amazon CloudFront&#x27;s globally distributed edge locations to transfer files to S3 with higher upload speeds?",
         "options": {
             "1": "S3 Transfer Acceleration.",
             "2": "AWS WAF.",
@@ -1675,7 +1675,7 @@
     },
     {
         "id": "109",
-        "question": "Sarah has deployed an application in the Northern California (us-west-1) region. After examining the application's traffic, she notices that about 30% of the traffic is coming from Asia. What can she do to reduce latency for the users in Asia?",
+        "question": "Sarah has deployed an application in the Northern California (us-west-1) region. After examining the application&#x27;s traffic, she notices that about 30% of the traffic is coming from Asia. What can she do to reduce latency for the users in Asia?",
         "options": {
             "1": "Replicate the current resources across multiple Availability Zones within the same region.",
             "2": "Migrate the application to a hosting provider in Asia.",
@@ -1707,7 +1707,7 @@
         "id": "111",
         "question": "Using Amazon EC2 falls under which of the following cloud computing models?",
         "options": {
-            "1": "Iaas & SaaS.",
+            "1": "Iaas &amp; SaaS.",
             "2": "IaaS.",
             "3": "SaaS.",
             "4": "PaaS."
@@ -1750,10 +1750,10 @@
     },
     {
         "id": "114",
-        "question": "Amazon Glacier is an Amazon S3 storage class that is suitable for storing [...] & [...]. (Choose TWO)",
+        "question": "Amazon Glacier is an Amazon S3 storage class that is suitable for storing [...] &amp; [...]. (Choose TWO)",
         "options": {
             "1": "Active archives.",
-            "2": "Dynamic websites' assets.",
+            "2": "Dynamic websites&#x27; assets.",
             "3": "Long-term analytic data.",
             "4": "Active databases.",
             "5": "Cached data."
@@ -1801,7 +1801,7 @@
         "options": {
             "1": "Patch management controls.",
             "2": "Database controls.",
-            "3": "Awareness & Training.",
+            "3": "Awareness &amp; Training.",
             "4": "Environmental controls.",
             "5": "Physical controls."
         },
@@ -1829,7 +1829,7 @@
     },
     {
         "id": "119",
-        "question": "Your application has recently experienced significant global growth, and international users are complaining of high latency. What is the AWS characteristic that can help improve your international users' experience?",
+        "question": "Your application has recently experienced significant global growth, and international users are complaining of high latency. What is the AWS characteristic that can help improve your international users&#x27; experience?",
         "options": {
             "1": "Elasticity.",
             "2": "Global reach.",
@@ -2064,7 +2064,7 @@
     },
     {
         "id": "134",
-        "question": "Which of the following statements describes the AWS Cloud's agility?",
+        "question": "Which of the following statements describes the AWS Cloud&#x27;s agility?",
         "options": {
             "1": "AWS allows you to host your applications in multiple regions around the world.",
             "2": "AWS provides customizable hardware at the lowest possible cost.",
@@ -2327,12 +2327,12 @@
     },
     {
         "id": "151",
-        "question": "A developer needs to set up an SSL security certificate for a client's eCommerce website in order to use the HTTPS protocol. Which of the following AWS services can be used to deploy the required SSL server certificates? (Choose TWO)",
+        "question": "A developer needs to set up an SSL security certificate for a client&#x27;s eCommerce website in order to use the HTTPS protocol. Which of the following AWS services can be used to deploy the required SSL server certificates? (Choose TWO)",
         "options": {
             "1": "Amazon Route 53.",
             "2": "AWS ACM.",
             "3": "AWS Directory Service.",
-            "4": "AWS Identity & Access Management.",
+            "4": "AWS Identity &amp; Access Management.",
             "5": "AWS Data Pipeline."
         },
         "correct_answers": [
@@ -2517,7 +2517,7 @@
     },
     {
         "id": "163",
-        "question": "What is the AWS' recommendation regarding access keys?",
+        "question": "What is the AWS&#x27; recommendation regarding access keys?",
         "options": {
             "1": "Delete all access keys and use passwords instead.",
             "2": "Only share them with trusted people.",
@@ -2658,7 +2658,7 @@
         "options": {
             "1": "Amazon Machine Image.",
             "2": "AWS Cost Explorer.",
-            "3": "AWS Cost & Usage Report.",
+            "3": "AWS Cost &amp; Usage Report.",
             "4": "Amazon CloudWatch."
         },
         "correct_answers": [
@@ -2846,7 +2846,7 @@
     },
     {
         "id": "184",
-        "question": "Both AWS and traditional IT distributors provide a wide range of virtual servers to meet their customers' requirements. What is the name of these virtual servers in AWS?",
+        "question": "Both AWS and traditional IT distributors provide a wide range of virtual servers to meet their customers&#x27; requirements. What is the name of these virtual servers in AWS?",
         "options": {
             "1": "Amazon EBS Snapshots.",
             "2": "Amazon VPC.",
@@ -3098,7 +3098,7 @@
     },
     {
         "id": "200",
-        "question": "Which AWS Service allows customers to download AWS SOC & PCI reports?",
+        "question": "Which AWS Service allows customers to download AWS SOC &amp; PCI reports?",
         "options": {
             "1": "AWS Well-Architected Tool.",
             "2": "AWS Artifact.",
@@ -3331,11 +3331,11 @@
         "id": "215",
         "question": "Which of the following factors should be considered when determining the region in which AWS Resources will be deployed? (Choose TWO)",
         "options": {
-            "1": "The AWS Region's security level.",
+            "1": "The AWS Region&#x27;s security level.",
             "2": "Data sovereignty.",
             "3": "Cost.",
             "4": "The planned number of VPCs.",
-            "5": "Geographic proximity to the company's location."
+            "5": "Geographic proximity to the company&#x27;s location."
         },
         "correct_answers": [
             "options.2",
@@ -3391,7 +3391,7 @@
     },
     {
         "id": "219",
-        "question": "Which of the following are examples of the customer's responsibility to implement 'security IN the cloud'? (Choose TWO)",
+        "question": "Which of the following are examples of the customer&#x27;s responsibility to implement &#x27;security IN the cloud&#x27;? (Choose TWO)",
         "options": {
             "1": "Building a schema for an application.",
             "2": "Replacing physical hardware.",
@@ -3500,7 +3500,7 @@
     },
     {
         "id": "226",
-        "question": "An external auditor is requesting a log of all accesses to the AWS resources in the company's account. Which of the following services will provide the auditor with the requested information?",
+        "question": "An external auditor is requesting a log of all accesses to the AWS resources in the company&#x27;s account. Which of the following services will provide the auditor with the requested information?",
         "options": {
             "1": "AWS CloudTrail.",
             "2": "Amazon CloudFront.",
@@ -3530,7 +3530,7 @@
     },
     {
         "id": "228",
-        "question": "A user has opened a 'Production System Down' support case to get help from AWS Support after a production system disruption. What is the expected response time for this type of support case?",
+        "question": "A user has opened a &#x27;Production System Down&#x27; support case to get help from AWS Support after a production system disruption. What is the expected response time for this type of support case?",
         "options": {
             "1": "12 hours.",
             "2": "15 minutes.",
@@ -3669,7 +3669,7 @@
     },
     {
         "id": "237",
-        "question": "A company is migrating a web application to AWS. The application's compute capacity is continually utilized throughout the year. Which of the below options offers the company the most cost-effective solution?",
+        "question": "A company is migrating a web application to AWS. The application&#x27;s compute capacity is continually utilized throughout the year. Which of the below options offers the company the most cost-effective solution?",
         "options": {
             "1": "On-demand Instances.",
             "2": "Dedicated Hosts.",
@@ -3781,7 +3781,7 @@
             "1": "AWS Cost Explorer.",
             "2": "AWS Pricing Calculator.",
             "3": "AWS Budgets.",
-            "4": "AWS Cost & Usage Report."
+            "4": "AWS Cost &amp; Usage Report."
         },
         "correct_answers": [
             "options.2"
@@ -3791,7 +3791,7 @@
     },
     {
         "id": "245",
-        "question": "What should you do if you see resources, which you don't remember creating, in the AWS Management Console? (Choose TWO)",
+        "question": "What should you do if you see resources, which you don&#x27;t remember creating, in the AWS Management Console? (Choose TWO)",
         "options": {
             "1": "Stop all running services and open an investigation.",
             "2": "Give your root account password to AWS Support so that they can assistin troubleshooting and securing the account.",
@@ -3857,8 +3857,8 @@
         "options": {
             "1": "Lambda only supports Python and Node.js, but third party plugins are available to convert code in other languages to these formats.",
             "2": "Lambda natively supports a number of programming languages such as Node.js, Python, and Java.",
-            "3": "Lambda is AWS' proprietary programming language for microservices.",
-            "4": "Lambda doesn't support programming languages; it is a serverless compute service.",
+            "3": "Lambda is AWS&#x27; proprietary programming language for microservices.",
+            "4": "Lambda doesn&#x27;t support programming languages; it is a serverless compute service.",
             "5": "Lambda can support any programming language using an API."
         },
         "correct_answers": [
@@ -4030,7 +4030,7 @@
     },
     {
         "id": "260",
-        "question": "A company's AWS workflow requires that it periodically perform large-scale image and video processing jobs. The customer is seeking to minimize cost and has stated that the amount of time it takes to process these jobs is not critical, but that cost minimization is the most important factor in designing the solution. Which EC2 instance class is best suited for this processing?",
+        "question": "A company&#x27;s AWS workflow requires that it periodically perform large-scale image and video processing jobs. The customer is seeking to minimize cost and has stated that the amount of time it takes to process these jobs is not critical, but that cost minimization is the most important factor in designing the solution. Which EC2 instance class is best suited for this processing?",
         "options": {
             "1": "EC2 On-Demand Instances.",
             "2": "EC2 Reserved Instances - No Upfront.",
@@ -4306,7 +4306,7 @@
     },
     {
         "id": "278",
-        "question": "What does the term 'Economies of scale' mean?",
+        "question": "What does the term &#x27;Economies of scale&#x27; mean?",
         "options": {
             "1": "It means that you save more when you consume more.",
             "2": "It means as more time passes using AWS, you pay more for its services.",
@@ -4432,7 +4432,7 @@
         "id": "286",
         "question": "What best describes penetration testing?",
         "options": {
-            "1": "Testing your application's response time from different locations.",
+            "1": "Testing your application&#x27;s response time from different locations.",
             "2": "Testing your network to find security vulnerabilities that an attacker could exploit.",
             "3": "Testing your instances to check for the unhealthy ones.",
             "4": "Testing your software for bugs and errors."
@@ -4462,7 +4462,7 @@
     },
     {
         "id": "288",
-        "question": "Your CTO has asked you to contact AWS support using the chat feature to ask for guidance related to EBS. However, when you open the AWS support center you can't see a way to contact support via Chat. What should you do?",
+        "question": "Your CTO has asked you to contact AWS support using the chat feature to ask for guidance related to EBS. However, when you open the AWS support center you can&#x27;t see a way to contact support via Chat. What should you do?",
         "options": {
             "1": "There is no chat feature in AWS support.",
             "2": "The chat feature is available for all plans for an additional fee, but you have to request it first.",
@@ -4477,7 +4477,7 @@
     },
     {
         "id": "289",
-        "question": "A developer wants to quickly deploy and manage his application in the AWS Cloud, but he doesn't have any experience with cloud computing. Which of the following AWS services would help the developer achieve his goal?",
+        "question": "A developer wants to quickly deploy and manage his application in the AWS Cloud, but he doesn&#x27;t have any experience with cloud computing. Which of the following AWS services would help the developer achieve his goal?",
         "options": {
             "1": "AWS Fargate.",
             "2": "AWS Batch.",
@@ -4744,7 +4744,7 @@
         "id": "306",
         "question": "You have migrated your application to AWS recently. How can you view the AWS costs applied to your account?",
         "options": {
-            "1": "Using the AWS Cost & Usage Report.",
+            "1": "Using the AWS Cost &amp; Usage Report.",
             "2": "Using the AWS Total Cost of Ownership (TCO) dashboard.",
             "3": "Using the AWS CloudWatch logs dashboard.",
             "4": "Using the Amazon VPC dashboard."
@@ -5193,10 +5193,10 @@
         "id": "335",
         "question": "Which of the following AWS support plans provides access to only the seven core AWS Trusted Advisor checks?",
         "options": {
-            "1": "Business & Enterprise Support.",
-            "2": "Basic & Developer Support.",
-            "3": "Developer & Enterprise Support.",
-            "4": "Developer & Business Support."
+            "1": "Business &amp; Enterprise Support.",
+            "2": "Basic &amp; Developer Support.",
+            "3": "Developer &amp; Enterprise Support.",
+            "4": "Developer &amp; Business Support."
         },
         "correct_answers": [
             "options.2"
@@ -5223,8 +5223,8 @@
         "id": "337",
         "question": "How does AWS help customers achieve compliance in the cloud?",
         "options": {
-            "1": "It's not possible to meet regulatory compliance requirements in the Cloud.",
-            "2": "AWS applies the most common Cloud security standards, and is responsible for complying with customers' applicable laws and regulations.",
+            "1": "It&#x27;s not possible to meet regulatory compliance requirements in the Cloud.",
+            "2": "AWS applies the most common Cloud security standards, and is responsible for complying with customers&#x27; applicable laws and regulations.",
             "3": "AWS has many common assurance certifications such as ISO 9001 and HIPAA.",
             "4": "Many AWS services are assessed regularly to comply with local laws and regulations."
         },
@@ -5270,7 +5270,7 @@
         "options": {
             "1": "Control access to AWS services.",
             "2": "Help organizations design and maintain an accelerated path to successful cloud adoption.",
-            "3": "Manage your organization's payment methods.",
+            "3": "Manage your organization&#x27;s payment methods.",
             "4": "Help organization achieve their desired business outcomes with AWS.",
             "5": "Consolidate billing across multiple AWS accounts."
         },
@@ -5499,7 +5499,7 @@
     },
     {
         "id": "355",
-        "question": "What does the AWS 'Business' support plan provide? (Choose TWO)",
+        "question": "What does the AWS &#x27;Business&#x27; support plan provide? (Choose TWO)",
         "options": {
             "1": "Access to the full set of Trusted Advisor checks.",
             "2": "Support Concierge Service.",
@@ -5565,7 +5565,7 @@
         "id": "359",
         "question": "Which statement is true regarding AWS pricing? (Choose TWO)",
         "options": {
-            "1": "With the AWS pay-as-you-go pricing model, you don't have to pay any upfront fee.",
+            "1": "With the AWS pay-as-you-go pricing model, you don&#x27;t have to pay any upfront fee.",
             "2": "You have no responsibility for third-party software license costs.",
             "3": "You only pay for the individual services that you need with no long-term contracts.",
             "4": "For some services, you have to pay a startup fee in order to get the service running.",
@@ -5599,7 +5599,7 @@
         "options": {
             "1": "Use CloudFront to monitor the CPU usage.",
             "2": "Set the AWS Config CPU threshold to 60% to receive a notification when EC2 usage exceeds that value.",
-            "3": "Use CloudWatch Alarms to monitor the CPUand alert when the CPU usage is >= 60%.",
+            "3": "Use CloudWatch Alarms to monitor the CPUand alert when the CPU usage is &gt;= 60%.",
             "4": "Use SNS to menitor the utilization of the server."
         },
         "correct_answers": [
@@ -5614,7 +5614,7 @@
         "options": {
             "1": "Amazon EBS.",
             "2": "Amazon RDS.",
-            "3": "You can't run a database inside an Amazon EC2 instance.",
+            "3": "You can&#x27;t run a database inside an Amazon EC2 instance.",
             "4": "Amazon DynamoDB."
         },
         "correct_answers": [
@@ -5706,7 +5706,7 @@
     },
     {
         "id": "368",
-        "question": "Which database service should you use if your application and data schema require 'joins' or complex transactions?",
+        "question": "Which database service should you use if your application and data schema require &#x27;joins&#x27; or complex transactions?",
         "options": {
             "1": "Amazon RDS.",
             "2": "AWS Outposts.",
@@ -5766,7 +5766,7 @@
     },
     {
         "id": "372",
-        "question": "How can you increase your application's fault-tolerance while it is being hosted in AWS?",
+        "question": "How can you increase your application&#x27;s fault-tolerance while it is being hosted in AWS?",
         "options": {
             "1": "Deploy your application across multiple EC2 instances.",
             "2": "Deploy your application across multiple Availability Zones.",
@@ -5781,7 +5781,7 @@
     },
     {
         "id": "373",
-        "question": "Which of the following AWS Support Plans gives you 24/7 access to Cloud Support Engineers via email & phone? (Choose TWO)",
+        "question": "Which of the following AWS Support Plans gives you 24/7 access to Cloud Support Engineers via email &amp; phone? (Choose TWO)",
         "options": {
             "1": "Developer.",
             "2": "Premium.",
@@ -5815,7 +5815,7 @@
     },
     {
         "id": "375",
-        "question": "Which of the following is a benefit of the 'Loose Coupling' architecture principle?",
+        "question": "Which of the following is a benefit of the &#x27;Loose Coupling&#x27; architecture principle?",
         "options": {
             "1": "It eliminates the need for change management.",
             "2": "It allows for Cross-Region Replication.",
@@ -5892,7 +5892,7 @@
     },
     {
         "id": "380",
-        "question": "You are planning to launch an advertising campaign over the coming weekend to promote a new digital product. It is expected that there will be heavy spikes in load during the campaign period, and you can't afford any downtime. You need additional compute resources to handle the additional load. What is the most cost-effective EC2 instance purchasing option for this job?",
+        "question": "You are planning to launch an advertising campaign over the coming weekend to promote a new digital product. It is expected that there will be heavy spikes in load during the campaign period, and you can&#x27;t afford any downtime. You need additional compute resources to handle the additional load. What is the most cost-effective EC2 instance purchasing option for this job?",
         "options": {
             "1": "Savings Plans.",
             "2": "Spot Instances.",
@@ -5992,7 +5992,7 @@
         "options": {
             "1": "They provide free capacity when testing your new applications.",
             "2": "They are cheaper than all other EC2 options.",
-            "3": "They remove the need to buy 'safety net' capacity to handle periodic traffic spikes.",
+            "3": "They remove the need to buy &#x27;safety net&#x27; capacity to handle periodic traffic spikes.",
             "4": "They only require 1-2 days for setup and configuration.",
             "5": "You can increase or decrease your compute capacity depending on the demands of your application."
         },
@@ -6035,7 +6035,7 @@
     },
     {
         "id": "389",
-        "question": "A financial services company decides to migrate one of its applications to AWS. The application deals with sensitive data, such as credit card information, and must run on a PCI-compliant environment. Which of the following is the company's responsibility when building a PCI-compliant environment in AWS? (Choose TWO)",
+        "question": "A financial services company decides to migrate one of its applications to AWS. The application deals with sensitive data, such as credit card information, and must run on a PCI-compliant environment. Which of the following is the company&#x27;s responsibility when building a PCI-compliant environment in AWS? (Choose TWO)",
         "options": {
             "1": "Start the migration process immediately as all AWS services are PCI compliant.",
             "2": "Ensure that AWS services are configured properly to meet all PCI DSS standards.",
@@ -6100,7 +6100,7 @@
         "question": "Which of the following steps should be taken by a customer when conducting penetration testing on AWS?",
         "options": {
             "1": "Conduct penetration testing using Amazon Inspector, and then notify AWS support.",
-            "2": "Request and wait for approval from the customer's internal security team, and then conduct testing.",
+            "2": "Request and wait for approval from the customer&#x27;s internal security team, and then conduct testing.",
             "3": "Notify AWS support, and then conduct testing immediately.",
             "4": "Request and wait for approval from AWS support, and then conduct testing."
         },
@@ -6157,7 +6157,7 @@
     },
     {
         "id": "397",
-        "question": "The AWS Cloud's multiple Regions are an example of:",
+        "question": "The AWS Cloud&#x27;s multiple Regions are an example of:",
         "options": {
             "1": "Agility.",
             "2": "Global infrastructure.",
@@ -6401,7 +6401,7 @@
     },
     {
         "id": "413",
-        "question": "Which AWS service identifies security groups that allow unrestricted access to a user's AWS resources?",
+        "question": "Which AWS service identifies security groups that allow unrestricted access to a user&#x27;s AWS resources?",
         "options": {
             "1": "AWS Trusted Advisor.",
             "2": "Amazon Inspector.",
@@ -6478,7 +6478,7 @@
     },
     {
         "id": "418",
-        "question": "Which AWS feature will reduce the customer's total cost of ownership (TCO)?",
+        "question": "Which AWS feature will reduce the customer&#x27;s total cost of ownership (TCO)?",
         "options": {
             "1": "Shared responsibility security model.",
             "2": "Single tenancy.",
@@ -6540,7 +6540,7 @@
     },
     {
         "id": "422",
-        "question": "Under the AWS shared responsibility model, which of the following activities are the customer's responsibility? (Select TWO)",
+        "question": "Under the AWS shared responsibility model, which of the following activities are the customer&#x27;s responsibility? (Select TWO)",
         "options": {
             "1": "Patching operating system components for Amazon Relational Database Server (Amazon RDS).",
             "2": "Encrypting data on the client-side.",
@@ -6587,9 +6587,9 @@
     },
     {
         "id": "425",
-        "question": "How do customers benefit from Amazon's massive economies of scale?",
+        "question": "How do customers benefit from Amazon&#x27;s massive economies of scale?",
         "options": {
-            "1": "Periodic price reductions as the result of Amazon's operational efficiencies.",
+            "1": "Periodic price reductions as the result of Amazon&#x27;s operational efficiencies.",
             "2": "New Amazon EC2 instance types providing the latest hardware.",
             "3": "The ability to scale up and down when needed.",
             "4": "Increased reliability in the underlying hardware of Amazon EC2 instances."
@@ -7070,7 +7070,7 @@
     },
     {
         "id": "456",
-        "question": "Which of the following is the customer's responsibility under the AWS shared responsibility model?",
+        "question": "Which of the following is the customer&#x27;s responsibility under the AWS shared responsibility model?",
         "options": {
             "1": "Patching underlying infrastructure",
             "2": "Physical security",
@@ -7403,7 +7403,7 @@
             "1": "It supplies an online IT ticketing platform for resource requests.",
             "2": "It supports automatic code validation services.",
             "3": "It provides the ability to programmatically provision existing resources.",
-            "4": "It automates the resource request process from a company's IT vendor list."
+            "4": "It automates the resource request process from a company&#x27;s IT vendor list."
         },
         "correct_answers": [
             "options.3"
@@ -7689,7 +7689,7 @@
     },
     {
         "id": "496",
-        "question": "A company's web application currently has light dependencies on underlying components so when one component fails the entire web application fails. Applying which AWS Cloud design principle will address the current design issue?",
+        "question": "A company&#x27;s web application currently has light dependencies on underlying components so when one component fails the entire web application fails. Applying which AWS Cloud design principle will address the current design issue?",
         "options": {
             "1": "Implementing elasticity enabling the application to scale up or scale down as demand changes.",
             "2": "Enabling several EC2 instances to run in parallel to achieve better performance.",
@@ -7796,7 +7796,7 @@
     },
     {
         "id": "503",
-        "question": "Which of the following will enhance the security of access to the AWS Management Console'? (Select TWO)",
+        "question": "Which of the following will enhance the security of access to the AWS Management Console&#x27;? (Select TWO)",
         "options": {
             "1": "AWS Secrets Manager.",
             "2": "AWS Certificate Manager.",
@@ -7851,7 +7851,7 @@
             "2": "Service limits increasing by default in all accounts.",
             "3": "A fixed discount on the monthly bill.",
             "4": "Potential volume discounts, as usage in all accounts is combined.",
-            "5": "The automatic extension of the master account's AWS support plan to all accounts."
+            "5": "The automatic extension of the master account&#x27;s AWS support plan to all accounts."
         },
         "correct_answers": [
             "options.1",
@@ -8367,7 +8367,7 @@
     },
     {
         "id": "540",
-        "question": "Which AWS service provides a customized view of the health of specific AWS services that power a customer's workloads running on AWS?",
+        "question": "Which AWS service provides a customized view of the health of specific AWS services that power a customer&#x27;s workloads running on AWS?",
         "options": {
             "1": "AWS Service Health Dashboard.",
             "2": "AWS X-Ray.",
@@ -8385,7 +8385,7 @@
         "question": "One of the advantages to moving infrastructure from an on-premises data center to the AWS Cloud is:",
         "options": {
             "1": "It allows the business to eliminate IT bills.",
-            "2": "It allows the business to put a server in each customer's data center.",
+            "2": "It allows the business to put a server in each customer&#x27;s data center.",
             "3": "It allows the business to focus on business activities.",
             "4": "It allows the business to leave servers unpatched."
         },
@@ -8446,7 +8446,7 @@
         "options": {
             "1": "A company wants to move its main website to AWS from an on-premises web server.",
             "2": "A company has a number of application services whose Service Level Agreement (SLA) requires 99.999% uptime.",
-            "3": "A company's heavily used legacy database is currently running on-premises.",
+            "3": "A company&#x27;s heavily used legacy database is currently running on-premises.",
             "4": "A company has a number of infrequent, interruptible jobs that are currently using On-Demand Instances."
         },
         "correct_answers": [
@@ -8457,13 +8457,13 @@
     },
     {
         "id": "546",
-        "question": "A customer is deploying a new application and needs to choose an AWS Region. Which of the following factors could influence the customer's decision? (Select TWO)",
+        "question": "A customer is deploying a new application and needs to choose an AWS Region. Which of the following factors could influence the customer&#x27;s decision? (Select TWO)",
         "options": {
             "1": "Reduced latency to users.",
-            "2": "The application's presentation in the local language.",
+            "2": "The application&#x27;s presentation in the local language.",
             "3": "Data sovereignty compliance.",
             "4": "Cooling costs in hotter climates.",
-            "5": "Proximity to the customer's office for on-site visits."
+            "5": "Proximity to the customer&#x27;s office for on-site visits."
         },
         "correct_answers": [
             "options.1",
@@ -8474,7 +8474,7 @@
     },
     {
         "id": "547",
-        "question": "Which AWS service provides alerts when an AWS event may impact a company's AWS resources?",
+        "question": "Which AWS service provides alerts when an AWS event may impact a company&#x27;s AWS resources?",
         "options": {
             "1": "AWS Personal Health Dashboard.",
             "2": "AWS Service Health Dashboard.",
@@ -8504,7 +8504,7 @@
     },
     {
         "id": "549",
-        "question": "Which service's PRIMARY purpose is software version control?",
+        "question": "Which service&#x27;s PRIMARY purpose is software version control?",
         "options": {
             "1": "Amazon CodeStar.",
             "2": "AWS Command Line Interface (AWS CLI).",
@@ -8660,7 +8660,7 @@
     },
     {
         "id": "559",
-        "question": "Which feature of the AWS Cloud will support an international company's requirement for low latency to all of its customers?",
+        "question": "Which feature of the AWS Cloud will support an international company&#x27;s requirement for low latency to all of its customers?",
         "options": {
             "1": "Fault tolerance.",
             "2": "Global reach.",
@@ -8804,8 +8804,8 @@
             "1": "Use the AWS Service Catalog to identify a list of on-premises resources that can be migrated.",
             "2": "Build a VPN connection between an on-premises device and a virtual private gateway in the new VPC.",
             "3": "Use Amazon Athena to query data from the on-premises database servers.",
-            "4": "Connect the company's on-premises data center to AWS using AWS Direct Connect.",
-            "5": "Leverage Amazon CloudFront to restrict access to static web content provided through the company's on-premises web servers."
+            "4": "Connect the company&#x27;s on-premises data center to AWS using AWS Direct Connect.",
+            "5": "Leverage Amazon CloudFront to restrict access to static web content provided through the company&#x27;s on-premises web servers."
         },
         "correct_answers": [
             "options.2",
@@ -8958,8 +8958,8 @@
         "question": "How do Amazon EC2 Auto Scaling groups help achieve high availability for a web application?",
         "options": {
             "1": "They automatically add more instances across multiple AWS Regions based on global demand of the application.",
-            "2": "They automatically add or replace instances across multiple Availability Zones when the",
-            "3": "They enable the application's stalk: content to reside closer to end users.",
+            "2": "They automatically add or replace instances across multiple Availability Zones when the application needs it.",
+            "3": "They enable the application&#x27;s stalk: content to reside closer to end users.",
             "4": "They are able to distribute incoming requests across a tier of web server instances."
         },
         "correct_answers": [
@@ -9030,7 +9030,7 @@
     },
     {
         "id": "583",
-        "question": "Under the shared responsibility model which of the following areas are the customer's responsibility? (Select TWO)",
+        "question": "Under the shared responsibility model which of the following areas are the customer&#x27;s responsibility? (Select TWO)",
         "options": {
             "1": "Firmware upgrades of network infrastructure.",
             "2": "Patching of operating systems.",
@@ -9047,7 +9047,7 @@
     },
     {
         "id": "584",
-        "question": "A company is looking for a scalable data warehouse solution. Which of the following AWS solutions would meet the company's needs?",
+        "question": "A company is looking for a scalable data warehouse solution. Which of the following AWS solutions would meet the company&#x27;s needs?",
         "options": {
             "1": "Amazon Simple Storage Service (Amazon S3).",
             "2": "Amazon DynamoDB.",
@@ -9164,7 +9164,7 @@
             "2": "Service limits increasing by default in all accounts.",
             "3": "A fixed discount on the monthly bill.",
             "4": "Potential volume discounts, as usage in all accounts is combined.",
-            "5": "The automatic extension of the master account's AWS support plan to all accounts."
+            "5": "The automatic extension of the master account&#x27;s AWS support plan to all accounts."
         },
         "correct_answers": [
             "options.1",

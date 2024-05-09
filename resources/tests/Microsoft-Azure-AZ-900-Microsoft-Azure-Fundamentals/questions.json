@@ -2096,7 +2096,7 @@
     },
     {
         "id": "147",
-        "question": "Match the Azure services to the correct descriptions. <br><img src='resources\\tests\\Microsoft-Azure-AZ-900-Microsoft-Azure-Fundamentals\\images\\question147.png' alt='Question 147'>",
+        "question": "Match the Azure services to the correct descriptions.  <br><img src='resources\\tests\\Microsoft-Azure-AZ-900-Microsoft-Azure-Fundamentals\\images\\question147.png' alt='Question 147'>",
         "options": {
             "1": "Provide operating system virtualization: Azure App Service. Provide portable environment for virtualized applications: Azure virtual machines. Used to build, deploy, and scale web apps: Azure Container Instances. Provide a platform for serverless code: Azure Functions.",
             "2": "Provide operating system virtualization: Azure Functions. Provide portable environment for virtualized applications: Azure virtual machines. Used to build, deploy, and scale web apps: Azure Container Instances. Provide a platform for serverless code: Azure App Service.",
@@ -2458,7 +2458,7 @@
             "1": "No change is needed.",
             "2": "The Azure portal.",
             "3": "The Knowledge Center.",
-            "4": "The Security & Compliance admin center."
+            "4": "The Security &amp; Compliance admin center."
         },
         "correct_answers": [
             "options.2"
@@ -3912,7 +3912,7 @@
             "1": "Use Bash in Azure Cloud Shell.",
             "2": "Use PowerShell in Azure Cloud Shell.",
             "3": "Use the PowerApps portal.",
-            "4": "Use the Security & Compliance admin center.",
+            "4": "Use the Security &amp; Compliance admin center.",
             "5": "Use the Azure portal."
         },
         "correct_answers": [
@@ -4959,7 +4959,7 @@
     },
     {
         "id": "356",
-        "question": "Match the Azure services to the appropriate descriptions. <br><img src='resources\\tests\\Microsoft-Azure-AZ-900-Microsoft-Azure-Fundamentals\\images\\question356.png' alt='Question 356'>",
+        "question": "Match the Azure services to the appropriate descriptions.  <br><img src='resources\\tests\\Microsoft-Azure-AZ-900-Microsoft-Azure-Fundamentals\\images\\question356.png' alt='Question 356'>",
         "options": {
             "1": "Extends on-premises networks to the Microsoft cloud via a private connection: VPN gateway. Combines two or more Azure virtual networks into a single logical virtual network: ExpressRoute. Provides an encrypted connection from on-premises networks to Azure via a public network: Virtual network peering.",
             "2": "Extends on-premises networks to the Microsoft cloud via a private connection: ExpressRoute. Combines two or more Azure virtual networks into a single logical virtual network: VPN gateway. Provides an encrypted connection from on-premises networks to Azure via a public network: Virtual network peering.",
@@ -5427,7 +5427,7 @@
     },
     {
         "id": "391",
-        "question": "Match the Azure Services service to the correct description. <br><img src='resources\\tests\\Microsoft-Azure-AZ-900-Microsoft-Azure-Fundamentals\\images\\question391.png' alt='Question 391'>",
+        "question": "Match the Azure Services service to the correct description.  <br><img src='resources\\tests\\Microsoft-Azure-AZ-900-Microsoft-Azure-Fundamentals\\images\\question391.png' alt='Question 391'>",
         "options": {
             "1": "A managed service that provides bidirectional communication between IoT devices and Azure: IoT Hub. A fully managed software as a service (SaaS) solution to connect, monitor, and manage IoT devices at scale: IoT Central. A software and hardware solution that provides communication and security features for IoT devices: Azure Sphere.",
             "2": "A managed service that provides bidirectional communication between IoT devices and Azure: Azure Sphere. A fully managed software as a service (SaaS) solution to connect, monitor, and manage IoT devices at scale: IoT Hub. A software and hardware solution that provides communication and security features for IoT devices: IoT Central.",
@@ -6100,7 +6100,7 @@
     },
     {
         "id": "439",
-        "question": "Match the Azure Services service to the correct descriptions. <br><img src='resources\\tests\\Microsoft-Azure-AZ-900-Microsoft-Azure-Fundamentals\\images\\question439.png' alt='Question 439'>",
+        "question": "Match the Azure Services service to the correct descriptions.  <br><img src='resources\\tests\\Microsoft-Azure-AZ-900-Microsoft-Azure-Fundamentals\\images\\question439.png' alt='Question 439'>",
         "options": {
             "1": "Analyze security log files from Azure virtual machines: Azure Security Center. Display the secure score for an Azure subscription: Azure Lighthouse. Store passwords for use by Azure Function applications: Azure Key Vault.",
             "2": "Analyze security log files from Azure virtual machines: Azure Sentinel. Display the secure score for an Azure subscription: Azure Lighthouse. Store passwords for use by Azure Function applications: Azure Key Vault.",

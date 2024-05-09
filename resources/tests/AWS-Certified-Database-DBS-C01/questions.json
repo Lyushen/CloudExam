@@ -1,7 +1,7 @@
 [
     {
         "id": "1",
-        "question": "A company has deployed an e-commerce web application in a new AWS account. An Amazon RDS for MySQL Multi-AZ DB instance is part of this deployment with a database-1.xxxxxxxxxxxx.us-east-1.rds.amazonaws.com endpoint listening on port 3306. The company's Database Specialist is able to log in to MySQL and run queries from the bastion host using these details. When users try to utilize the application hosted in the AWS account, they are presented with a generic error message. The application servers are logging a 'could not connect to server: Connection times out' error message to Amazon CloudWatch Logs. What is the cause of this error?",
+        "question": "A company has deployed an e-commerce web application in a new AWS account. An Amazon RDS for MySQL Multi-AZ DB instance is part of this deployment with a database-1.xxxxxxxxxxxx.us-east-1.rds.amazonaws.com endpoint listening on port 3306. The company&#x27;s Database Specialist is able to log in to MySQL and run queries from the bastion host using these details. When users try to utilize the application hosted in the AWS account, they are presented with a generic error message. The application servers are logging a &#x27;could not connect to server: Connection times out&#x27; error message to Amazon CloudWatch Logs. What is the cause of this error?",
         "options": {
             "1": "The user name and password the application is using are incorrect.",
             "2": "The security group assigned to the application servers does not have the necessary rules to allow inbound connections from the DB instance.",
@@ -50,12 +50,12 @@
     },
     {
         "id": "4",
-        "question": "A company is deploying a solution in Amazon Aurora by migrating from an on-premises system. The IT department has established an AWS Direct Connect link from the company's data center. The company's Database Specialist has selected the option to require SSL/TLS for connectivity to prevent plaintext data from being set over the network. The migration appears to be working successfully, and the data can be queried from a desktop machine. Two Data Analysts have been asked to query and validate the data in the new Aurora DB cluster. Both Analysts are unable to connect to Aurora. Their user names and passwords have been verified as valid and the Database Specialist can connect to the DB cluster using their accounts. The Database Specialist also verified that the security group configuration allows network from all corporate IP addresses. What should the Database Specialist do to correct the Data Analysts' inability to connect?",
+        "question": "A company is deploying a solution in Amazon Aurora by migrating from an on-premises system. The IT department has established an AWS Direct Connect link from the company&#x27;s data center. The company&#x27;s Database Specialist has selected the option to require SSL/TLS for connectivity to prevent plaintext data from being set over the network. The migration appears to be working successfully, and the data can be queried from a desktop machine. Two Data Analysts have been asked to query and validate the data in the new Aurora DB cluster. Both Analysts are unable to connect to Aurora. Their user names and passwords have been verified as valid and the Database Specialist can connect to the DB cluster using their accounts. The Database Specialist also verified that the security group configuration allows network from all corporate IP addresses. What should the Database Specialist do to correct the Data Analysts&#x27; inability to connect?",
         "options": {
             "1": "Restart the DB cluster to apply the SSL change.",
             "2": "Instruct the Data Analysts to download the root certificate and use the SSL certificate on the connection string to connect.",
-            "3": "Add explicit mappings between the Data Analysts' IP addresses and the instance in the security group assigned to the DB cluster.",
-            "4": "Modify the Data Analysts' local client firewall to allow network traffic to AWS."
+            "3": "Add explicit mappings between the Data Analysts&#x27; IP addresses and the instance in the security group assigned to the DB cluster.",
+            "4": "Modify the Data Analysts&#x27; local client firewall to allow network traffic to AWS."
         },
         "correct_answers": [
             "options.2"
@@ -116,7 +116,7 @@
             "2": "Ensure that Amazon CloudWatch metrics are configured in the ElastiCache cluster.",
             "3": "Ensure the security group for the ElastiCache cluster allows all inbound traffic from itself and inbound traffic on TCP port 6379 from trusted clients only.",
             "4": "Create an IAM policy to allow the application service roles to access all ElastiCache API actions.",
-            "5": "Ensure the security group for the ElastiCache clients authorize inbound TCP port 6379 and port 22 traffic from the trusted ElastiCache cluster's security group.",
+            "5": "Ensure the security group for the ElastiCache clients authorize inbound TCP port 6379 and port 22 traffic from the trusted ElastiCache cluster&#x27;s security group.",
             "6": "Ensure the cluster is created with the auth-token parameter and that the parameter is used in all subsequent commands."
         },
         "correct_answers": [
@@ -191,7 +191,7 @@
     },
     {
         "id": "13",
-        "question": "A manufacturing company's website uses an Amazon Aurora PostgreSQL DB cluster. Which configurations will result in the LEAST application downtime during a failover? (Choose three.)",
+        "question": "A manufacturing company&#x27;s website uses an Amazon Aurora PostgreSQL DB cluster. Which configurations will result in the LEAST application downtime during a failover? (Choose three.)",
         "options": {
             "1": "Use the provided read and write Aurora endpoints to establish a connection to the Aurora DB cluster.",
             "2": "Create an Amazon CloudWatch alert triggering a restore in another Availability Zone when the primary Aurora DB cluster is unreachable.",
@@ -469,7 +469,7 @@
     },
     {
         "id": "31",
-        "question": "A global digital advertising company captures browsing metadata to contextually display relevant images, pages, and links to targeted users. A single page load can generate multiple events that need to be stored individually. The maximum size of an event is 200 KB and the average size is 10 KB. Each page load must query the user's browsing history to provide targeting recommendations. The advertising company expects over 1 billion page visits per day from users in the United States, Europe, Hong Kong, and India. The structure of the metadata varies depending on the event. Additionally, the browsing metadata must be written and read with very low latency to ensure a good viewing experience for the users. Which database solution meets these requirements?",
+        "question": "A global digital advertising company captures browsing metadata to contextually display relevant images, pages, and links to targeted users. A single page load can generate multiple events that need to be stored individually. The maximum size of an event is 200 KB and the average size is 10 KB. Each page load must query the user&#x27;s browsing history to provide targeting recommendations. The advertising company expects over 1 billion page visits per day from users in the United States, Europe, Hong Kong, and India. The structure of the metadata varies depending on the event. Additionally, the browsing metadata must be written and read with very low latency to ensure a good viewing experience for the users. Which database solution meets these requirements?",
         "options": {
             "1": "Amazon DocumentDB.",
             "2": "Amazon RDS Multi-AZ deployment.",
@@ -503,7 +503,7 @@
         "options": {
             "1": "Use Amazon RDS for MySQL as the database and use Amazon ElastiCache.",
             "2": "Use Amazon DynamoDB as the database and use DynamoDB Accelerator.",
-            "3": "Use Amazon Aurora MySQL as the database and use Aurora's buffer cache.",
+            "3": "Use Amazon Aurora MySQL as the database and use Aurora&#x27;s buffer cache.",
             "4": "Use Amazon DynamoDB as the database and use Amazon API Gateway."
         },
         "correct_answers": [
@@ -561,7 +561,7 @@
     },
     {
         "id": "37",
-        "question": "An online gaming company is planning to launch a new game with Amazon DynamoDB as its data store. The database should be designated to support the following use cases: Update scores in real time whenever a player is playing the game. Retrieve a player's score details for a specific game session. A Database Specialist decides to implement a DynamoDB table. Each player has a unique user_id and each game has a unique game_id. Which choice of keys is recommended for the DynamoDB table?",
+        "question": "An online gaming company is planning to launch a new game with Amazon DynamoDB as its data store. The database should be designated to support the following use cases: Update scores in real time whenever a player is playing the game. Retrieve a player&#x27;s score details for a specific game session. A Database Specialist decides to implement a DynamoDB table. Each player has a unique user_id and each game has a unique game_id. Which choice of keys is recommended for the DynamoDB table?",
         "options": {
             "1": "Create a global secondary index with game_id as the partition key.",
             "2": "Create a global secondary index with user_id as the partition key.",
@@ -621,7 +621,7 @@
     },
     {
         "id": "41",
-        "question": "A company has an Amazon RDS Multi-AZ DB instances that is 200 GB in size with an RPO of 6 hours. To meet the company's disaster recovery policies, the database backup needs to be copied into another Region. The company requires the solution to be cost-effective and operationally efficient. What should a Database Specialist do to copy the database backup into a different Region?",
+        "question": "A company has an Amazon RDS Multi-AZ DB instances that is 200 GB in size with an RPO of 6 hours. To meet the company&#x27;s disaster recovery policies, the database backup needs to be copied into another Region. The company requires the solution to be cost-effective and operationally efficient. What should a Database Specialist do to copy the database backup into a different Region?",
         "options": {
             "1": "Use Amazon RDS automated snapshots and use AWS Lambda to copy the snapshot into another Region.",
             "2": "Use Amazon RDS automated snapshots every 6 hours and use Amazon S3 cross-Region replication to copy the snapshot into another Region.",
@@ -651,7 +651,7 @@
     },
     {
         "id": "43",
-        "question": "After restoring an Amazon RDS snapshot from 3 days ago, a company's Development team cannot connect to the restored RDS DB instance. What is the likely cause of this problem?",
+        "question": "After restoring an Amazon RDS snapshot from 3 days ago, a company&#x27;s Development team cannot connect to the restored RDS DB instance. What is the likely cause of this problem?",
         "options": {
             "1": "The restored DB instance does not have Enhanced Monitoring enabled.",
             "2": "The production DB instance is using a custom parameter group.",
@@ -696,7 +696,7 @@
     },
     {
         "id": "46",
-        "question": "A retail company is about to migrate its online and mobile store to AWS. The company's CEO has strategic plans to grow the brand globally. A Database Specialist has been challenged to provide predictable read and write database performance with minimal operational overhead. What should the Database Specialist do to meet these requirements?",
+        "question": "A retail company is about to migrate its online and mobile store to AWS. The company&#x27;s CEO has strategic plans to grow the brand globally. A Database Specialist has been challenged to provide predictable read and write database performance with minimal operational overhead. What should the Database Specialist do to meet these requirements?",
         "options": {
             "1": "Use Amazon DynamoDB global tables to synchronize transactions.",
             "2": "Use Amazon EMR to copy the orders table data across Regions.",
@@ -726,7 +726,7 @@
     },
     {
         "id": "48",
-        "question": "A company is looking to migrate a 1 TB Oracle database from on-premises to an Amazon Aurora PostgreSQL DB cluster. The company's Database Specialist discovered that the Oracle database is storing 100 GB of large binary objects (LOBs) across multiple tables. The Oracle database has a maximum LOB size of 500 MB with an average LOB size of 350 MB. The Database Specialist has chosen AWS DMS to migrate the data with the largest replication instances. How should the Database Specialist optimize the database migration using AWS DMS?",
+        "question": "A company is looking to migrate a 1 TB Oracle database from on-premises to an Amazon Aurora PostgreSQL DB cluster. The company&#x27;s Database Specialist discovered that the Oracle database is storing 100 GB of large binary objects (LOBs) across multiple tables. The Oracle database has a maximum LOB size of 500 MB with an average LOB size of 350 MB. The Database Specialist has chosen AWS DMS to migrate the data with the largest replication instances. How should the Database Specialist optimize the database migration using AWS DMS?",
         "options": {
             "1": "Create a single task using full LOB mode with a LOB chunk size of 500 MB to migrate the data and LOBs together.",
             "2": "Create two tasks: task1 with LOB tables using full LOB mode with a LOB chunk size of 500 MB and task2 without LOBs.",
@@ -893,7 +893,7 @@
     },
     {
         "id": "59",
-        "question": "An IT consulting company wants to reduce costs when operating its development environment databases. The company's workflow creates multiple Amazon Aurora MySQL DB clusters for each development group. The Aurora DB clusters are only used for 8 hours a day. The DB clusters can then be deleted at the end of the development cycle, which lasts 2 weeks. Which of the following provides the MOST cost-effective solution?",
+        "question": "An IT consulting company wants to reduce costs when operating its development environment databases. The company&#x27;s workflow creates multiple Amazon Aurora MySQL DB clusters for each development group. The Aurora DB clusters are only used for 8 hours a day. The DB clusters can then be deleted at the end of the development cycle, which lasts 2 weeks. Which of the following provides the MOST cost-effective solution?",
         "options": {
             "1": "Use AWS CloudFormation templates. Deploy a stack with the DB cluster for each development group. Delete the stack at the end of the development cycle.",
             "2": "Use the Aurora DB cloning feature. Deploy a single development and test Aurora DB instance, and create clone instances for the development groups. Delete the clones at the end of the development cycle.",
@@ -942,7 +942,7 @@
     },
     {
         "id": "62",
-        "question": "A company's Security department established new requirements that state internal users must connect to an existing Amazon RDS for SQL Server DB instance using their corporate Active Directory (AD) credentials. A Database Specialist must make the modifications needed to fulfill this requirement. Which combination of actions should the Database Specialist take? (Choose three.)",
+        "question": "A company&#x27;s Security department established new requirements that state internal users must connect to an existing Amazon RDS for SQL Server DB instance using their corporate Active Directory (AD) credentials. A Database Specialist must make the modifications needed to fulfill this requirement. Which combination of actions should the Database Specialist take? (Choose three.)",
         "options": {
             "1": "Disable Transparent Data Encryption (TDE) on the RDS SQL Server DB instance.",
             "2": "Modify the RDS SQL Server DB instance to use the directory for Windows authentication. Create appropriate new logins.",
@@ -993,7 +993,7 @@
         "id": "65",
         "question": "A company is using 5 TB Amazon RDS DB instances and needs to maintain 5 years of monthly database backups for compliance purposes. A Database Administrator must provide Auditors with data within 24 hours. Which solution will meet these requirements and is the MOST operationally efficient?",
         "options": {
-            "1": "Create an AWS Lambda function to run on the first day of every month to take a manual RDS snapshot. Move the snapshot to the company's Amazon S3 bucket.",
+            "1": "Create an AWS Lambda function to run on the first day of every month to take a manual RDS snapshot. Move the snapshot to the company&#x27;s Amazon S3 bucket.",
             "2": "Create an AWS Lambda function to run on the first day of every month to take a manual RDS snapshot.",
             "3": "Create an RDS snapshot schedule from the AWS Management Console to take a snapshot every 30 days.",
             "4": "Create an AWS Lambda function to run on the first day of every month to create an automated RDS snapshot."
@@ -1008,7 +1008,7 @@
         "id": "66",
         "question": "A company wants to automate the creation of secure test databases with random credentials to be stored safely for later use. The credentials should have sufficient information about each test database to initiate a connection and perform automated credential rotations. The credentials should not be logged or stored anywhere in an unencrypted form. Which steps should a Database Specialist take to meet these requirements using an AWS CloudFormation template?",
         "options": {
-            "1": "Create the database with the MasterUserName and MasterUserPassword properties set to the default values. Then, create the secret with the user name and password set to the same default values. Add a Secret Target Attachment resource with the SecretId and TargetId properties set to the Amazon Resource Names (ARNs) of the secret and the database. Finally, update the secret's password value with a randomly generated string set by the GenerateSecretString property.",
+            "1": "Create the database with the MasterUserName and MasterUserPassword properties set to the default values. Then, create the secret with the user name and password set to the same default values. Add a Secret Target Attachment resource with the SecretId and TargetId properties set to the Amazon Resource Names (ARNs) of the secret and the database. Finally, update the secret&#x27;s password value with a randomly generated string set by the GenerateSecretString property.",
             "2": "Add a Mapping property from the database Amazon Resource Name (ARN) to the secret ARN. Then, create the secret with a chosen user name and a randomly generated password set by the GenerateSecretString property. Add the database with the MasterUserName and MasterUserPassword properties set to the user name of the secret.",
             "3": "Add a resource of type AWS::SecretsManager::Secret and specify the GenerateSecretString property. Then, define the database user name in the SecureStringTemplate template. Create a resource for the database and reference the secret string for the MasterUserName and MasterUserPassword properties. Then, add a resource of type AWS::SecretsManagerSecretTargetAttachment with the SecretId and TargetId properties set to the Amazon Resource Names (ARNs) of the secret and the database.",
             "4": "Create the secret with a chosen user name and a randomly generated password set by the GenerateSecretString property. Add an SecretTargetAttachment resource with the SecretId property set to the Amazon Resource Name (ARN) of the secret and the TargetId property set to a parameter value matching the desired database ARN. Then, create a database with the MasterUserName and MasterUserPassword properties set to the previously created values in the secret."
@@ -1117,7 +1117,7 @@
     },
     {
         "id": "73",
-        "question": "A company is developing a multi-tier web application hosted on AWS using Amazon Aurora as the database. The application needs to be deployed to production and other non-production environments. A Database Specialist needs to specify different MasterUsername and MasterUserPassword properties in the AWS CloudFormation templates used for automated deployment. The CloudFormation templates are version controlled in the company's code repository. The company also needs to meet compliance requirement by routinely rotating its database master password for production. What is most secure solution to store the master password?",
+        "question": "A company is developing a multi-tier web application hosted on AWS using Amazon Aurora as the database. The application needs to be deployed to production and other non-production environments. A Database Specialist needs to specify different MasterUsername and MasterUserPassword properties in the AWS CloudFormation templates used for automated deployment. The CloudFormation templates are version controlled in the company&#x27;s code repository. The company also needs to meet compliance requirement by routinely rotating its database master password for production. What is most secure solution to store the master password?",
         "options": {
             "1": "Store the master password in a parameter file in each environment. Reference the environment-specific parameter file in the CloudFormation template.",
             "2": "Encrypt the master password using an AWS KMS key. Store the encrypted master password in the CloudFormation template.",
@@ -1211,8 +1211,8 @@
         "id": "79",
         "question": "A large financial services company requires that all data be encrypted in transit. A Developer is attempting to connect to an Amazon RDS DB instance using the company VPC for the first time with credentials provided by a Database Specialist. Other members of the Development team can connect, but this user is consistently receiving an error indicating a communications link failure. The Developer asked the Database Specialist to reset the password a number of times, but the error persists. Which step should be taken to troubleshoot this issue?",
         "options": {
-            "1": "Ensure that the database option group for the RDS DB instance allows ingress from the Developer machine's IP address.",
-            "2": "Ensure that the RDS DB instance's subnet group includes a public subnet to allow the Developer to connect.",
+            "1": "Ensure that the database option group for the RDS DB instance allows ingress from the Developer machine&#x27;s IP address.",
+            "2": "Ensure that the RDS DB instance&#x27;s subnet group includes a public subnet to allow the Developer to connect.",
             "3": "Ensure that the RDS DB instance has not reached its maximum connections limit.",
             "4": "Ensure that the connection is using SSL and is addressing the port where the RDS DB instance is listening for encrypted connections."
         },
@@ -1256,7 +1256,7 @@
         "id": "82",
         "question": "A company developed an AWS CloudFormation template used to create all new Amazon DynamoDB tables in its AWS account. The template configures provisioned throughput capacity using hard-coded values. The company wants to change the template so that the tables it creates in the future have independently configurable read and write capacity units assigned. Which solution will enable this change?",
         "options": {
-            "1": "Add values for the rcuCount and wcuCount parameters to the Mappings section of the template. Configure DynamoDB to provision throughput capacity using the stack's mappings.",
+            "1": "Add values for the rcuCount and wcuCount parameters to the Mappings section of the template. Configure DynamoDB to provision throughput capacity using the stack&#x27;s mappings.",
             "2": "Add values for two Number parameters, rcuCount and wcuCount, to the template. Replace the hard-coded values with calls to the Ref intrinsic function, referencing the new parameters.",
             "3": "Add values for the rcuCount and wcuCount parameters as outputs of the template. Configure DynamoDB to provision throughput capacity using the stack outputs.",
             "4": "Add values for the rcuCount and wcuCount parameters to the Mappings section of the template. Replace the hard-coded values with calls to the Ref intrinsic function, referencing the new parameters."
@@ -1269,7 +1269,7 @@
     },
     {
         "id": "83",
-        "question": "A retail company with its main office in New York and another office in Tokyo plans to build a database solution on AWS. The company's main workload consists of a mission-critical application that updates its application data in a data store. The team at the Tokyo office is building dashboards with complex analytical queries using the application data. The dashboards will be used to make buying decisions, so they need to have access to the application data in less than 1 second. Which solution meets these requirements?",
+        "question": "A retail company with its main office in New York and another office in Tokyo plans to build a database solution on AWS. The company&#x27;s main workload consists of a mission-critical application that updates its application data in a data store. The team at the Tokyo office is building dashboards with complex analytical queries using the application data. The dashboards will be used to make buying decisions, so they need to have access to the application data in less than 1 second. Which solution meets these requirements?",
         "options": {
             "1": "Use an Amazon RDS DB instance deployed in the us-east-1 Region with a read replica instance in the ap- northeast-1 Region. Create an Amazon ElastiCache cluster in the ap-northeast-1 Region to cache application data from the replica to generate the dashboards.",
             "2": "Use an Amazon DynamoDB global table in the us-east-1 Region with replication into the ap-northeast-1 Region. Use Amazon QuickSight for displaying dashboard results.",
@@ -1301,7 +1301,7 @@
     },
     {
         "id": "85",
-        "question": "A Database Specialist is creating a new Amazon Neptune DB cluster, and is attempting to load fata from Amazon S3 into the Neptune DB cluster using the Neptune bulk loader API. The Database Specialist receives the following error: 'Unable to connect to s3 endpoint. Provided source = s3://mybucket/graphdata/ and region = us-east-1. Please verify your S3 configuration.' Which combination of actions should the Database Specialist take to troubleshoot the problem? (Choose two.)",
+        "question": "A Database Specialist is creating a new Amazon Neptune DB cluster, and is attempting to load fata from Amazon S3 into the Neptune DB cluster using the Neptune bulk loader API. The Database Specialist receives the following error: &#x27;Unable to connect to s3 endpoint. Provided source = s3://mybucket/graphdata/ and region = us-east-1. Please verify your S3 configuration.&#x27; Which combination of actions should the Database Specialist take to troubleshoot the problem? (Choose two.)",
         "options": {
             "1": "Check that Amazon S3 has an IAM role granting read access to Neptune.",
             "2": "Check that an Amazon S3 VPC endpoint exists.",
@@ -1333,7 +1333,7 @@
     },
     {
         "id": "87",
-        "question": "A company is due for renewing its database license. The company wants to migrate its 80 TB transactional database system from on-premises to the AWS Cloud. The migration should incur the least possible downtime on the downstream database applications. The company's network infrastructure has limited network bandwidth that is shared with other applications. Which solution should a database specialist use for a timely migration?",
+        "question": "A company is due for renewing its database license. The company wants to migrate its 80 TB transactional database system from on-premises to the AWS Cloud. The migration should incur the least possible downtime on the downstream database applications. The company&#x27;s network infrastructure has limited network bandwidth that is shared with other applications. Which solution should a database specialist use for a timely migration?",
         "options": {
             "1": "Perform a full backup of the source database to AWS Snowball Edge appliances and ship them to be loaded to Amazon S3. Use AWS DMS to migrate change data capture (CDC) data from the source database to Amazon S3. Use a second AWS DMS task to migrate all the S3 data to the target database.",
             "2": "Perform a full backup of the source database to AWS Snowball Edge appliances and ship them to be loaded to Amazon S3. Periodically perform incremental backups of the source database to be shipped in another Snowball Edge appliance to handle syncing change data capture (CDC) data from the source to the target database.",
@@ -1378,7 +1378,7 @@
     },
     {
         "id": "90",
-        "question": "Developers have requested a new Amazon Redshift cluster so they can load new third-party marketing data. The new cluster is ready and the user credentials are given to the developers. The developers indicate that their copy jobs fail with the following error message: 'Amazon Invalid operation: S3ServiceException:Access Denied,Status 403,Error AccessDenied.' The developers need to load this data soon, so a database specialist must act quickly to solve this issue. What is the MOST secure solution?",
+        "question": "Developers have requested a new Amazon Redshift cluster so they can load new third-party marketing data. The new cluster is ready and the user credentials are given to the developers. The developers indicate that their copy jobs fail with the following error message: &#x27;Amazon Invalid operation: S3ServiceException:Access Denied,Status 403,Error AccessDenied.&#x27; The developers need to load this data soon, so a database specialist must act quickly to solve this issue. What is the MOST secure solution?",
         "options": {
             "1": "Create a new IAM role with the same user name as the Amazon Redshift developer user ID. Provide the IAM role with read-only access to Amazon S3 with the assume role action.",
             "2": "Create a new IAM role with read-only access to the Amazon S3 bucket and include the assume role action. Modify the Amazon Redshift cluster to add the IAM role.",
@@ -1438,7 +1438,7 @@
     },
     {
         "id": "94",
-        "question": "A database specialist is building a system that uses a static vendor dataset of postal codes and related territory information that is less than 1 GB in size. The dataset is loaded into the application's cache at start up. The company needs to store this data in a way that provides the lowest cost with a low application startup time. Which approach will meet these requirements?",
+        "question": "A database specialist is building a system that uses a static vendor dataset of postal codes and related territory information that is less than 1 GB in size. The dataset is loaded into the application&#x27;s cache at start up. The company needs to store this data in a way that provides the lowest cost with a low application startup time. Which approach will meet these requirements?",
         "options": {
             "1": "Use an Amazon RDS DB instance. Shut down the instance once the data has been read.",
             "2": "Use Amazon Aurora Serverless. Allow the service to spin resources up and down, as needed.",
@@ -1483,10 +1483,10 @@
     },
     {
         "id": "97",
-        "question": "A company's database specialist disabled TLS on an Amazon DocumentDB cluster to perform benchmarking tests. A few days after this change was implemented, a database specialist trainee accidentally deleted multiple tables. The database specialist restored the database from available snapshots. An hour after restoring the cluster, the database specialist is still unable to connect to the new cluster endpoint. What should the database specialist do to connect to the new, restored Amazon DocumentDB cluster?",
+        "question": "A company&#x27;s database specialist disabled TLS on an Amazon DocumentDB cluster to perform benchmarking tests. A few days after this change was implemented, a database specialist trainee accidentally deleted multiple tables. The database specialist restored the database from available snapshots. An hour after restoring the cluster, the database specialist is still unable to connect to the new cluster endpoint. What should the database specialist do to connect to the new, restored Amazon DocumentDB cluster?",
         "options": {
-            "1": "Change the restored cluster's parameter group to the original cluster's custom parameter group.",
-            "2": "Change the restored cluster's parameter group to the Amazon DocumentDB default parameter group.",
+            "1": "Change the restored cluster&#x27;s parameter group to the original cluster&#x27;s custom parameter group.",
+            "2": "Change the restored cluster&#x27;s parameter group to the Amazon DocumentDB default parameter group.",
             "3": "Configure the interface VPC endpoint and associate the new Amazon DocumentDB cluster.",
             "4": "Run the syncInstances command in AWS DataSync."
         },
@@ -1501,9 +1501,9 @@
         "question": "A company runs a customer relationship management (CRM) system that is hosted on-premises with a MySQL database as the backend. A custom stored procedure is used to send email notifications to another system when data is inserted into a table. The company has noticed that the performance of the CRM system has decreased due to database reporting applications used by various teams. The company requires an AWS solution that would reduce maintenance, improve performance, and accommodate the email notification feature. Which AWS solution meets these requirements?",
         "options": {
             "1": "Use MySQL running on an Amazon EC2 instance with Auto Scaling to accommodate the reporting applications. Configure a stored procedure and an AWS Lambda function that uses Amazon SES to send email notifications to the other system.",
-            "2": "Use Amazon Aurora MySQL in a multi-master cluster to accommodate the reporting applications. Configure Amazon RDS event subscriptions to publish a message to an Amazon SNS topic and subscribe the other system's email address to the topic.",
+            "2": "Use Amazon Aurora MySQL in a multi-master cluster to accommodate the reporting applications. Configure Amazon RDS event subscriptions to publish a message to an Amazon SNS topic and subscribe the other system&#x27;s email address to the topic.",
             "3": "Use MySQL running on an Amazon EC2 instance with a read replica to accommodate the reporting applications. Configure Amazon SES integration to send email notifications to the other system.",
-            "4": "Use Amazon Aurora MySQL with a read replica for the reporting applications. Configure a stored procedure and an AWS Lambda function to publish a message to an Amazon SNS topic. Subscribe the other system's email address to the topic."
+            "4": "Use Amazon Aurora MySQL with a read replica for the reporting applications. Configure a stored procedure and an AWS Lambda function to publish a message to an Amazon SNS topic. Subscribe the other system&#x27;s email address to the topic."
         },
         "correct_answers": [
             "options.4"
@@ -1651,7 +1651,7 @@
         "question": "A company has an AWS CloudFormation template written in JSON that is used to launch new Amazon RDS for MySQL DB instances. The security team has asked a database specialist to ensure that the master password is automatically rotated every 30 days for all new DB instances that are launched using the template. What is the MOST operationally efficient solution to meet these requirements?",
         "options": {
             "1": "Save the password in an Amazon S3 object. Encrypt the S3 object with an AWS KMS key. Set the KMS key to be rotated every 30 days by setting the EnableKeyRotation property to true. Use a CloudFormation custom resource to readthe S3 object to extract the password.",
-            "2": "Create an AWS Lambda function to rotate the secret. Modify the CloudFormation template to add an AWS::SecretsManager::RotationSchedule resource.",
+            "2": "Create an AWS Lambda function to rotate the secret. Modify the CloudFormation template to add an AWS::SecretsManager::RotationSchedule resource. Configure the RotationLambdaARN value and, for the RotationRules property, setthe AutomaticallyAfterDays parameter to 30.",
             "3": "Modify the CloudFormation template to use the AWS KMS key as the database password. Configure an Amazon EventBridge rule to invoke the KMS API to rotate the key every 30 days by setting the ScheduleExpression parameter to***/30***.",
             "4": "Integrate the Amazon RDS for MySQL DB instances with AWS IAM and centrally manage the master database user password."
         },
@@ -1757,7 +1757,7 @@
         "id": "115",
         "question": "To meet new data compliance requirements, a company needs to keep critical data durably stored and readily accessible for 7 years. Data that is more than 1 year old is considered archival data and must automatically be moved out of the Amazon Aurora MySQL DB cluster every week. On average, around 10 GB of new data is added to the database every month. A database specialist must choose the most operationally efficient solution to migrate the archival data to Amazon S3. Which solution meets these requirements?",
         "options": {
-            "1": "Create a custom script that exports archival data from the DB cluster to Amazon S3 using a SQL view, then deletes the archival data from the DB cluster.",
+            "1": "Create a custom script that exports archival data from the DB cluster to Amazon S3 using a SQL view, then deletes the archival data from the DB cluster. Launch an Amazon EC2 instance with a weekly cron job to execute the customscript.",
             "2": "Configure an AWS Lambda function that exports archival data from the DB cluster to Amazon S3 using a SELECT INTO OUTFILE S3 statement, then deletes the archival data from the DB cluster. Schedule the Lambda function to runweekly using Amazon EventBridge (Amazon CloudWatch Events).",
             "3": "Configure two AWS Lambda functions: one that exports archival data from the DB cluster to Amazon S3 using the mysqldump utility, and another that deletes the archival data from the DB cluster. Schedule both Lambda functions to runweekly using Amazon EventBridge (Amazon CloudWatch Events).",
             "4": "Use AWS Database Migration Service (AWS DMS) to continually export the archival data from the DB cluster to Amazon S3. Configure an AWS Data Pipeline process to run weekly that executes a custom SQL script to delete thearchival data from the DB cluster."
@@ -2326,7 +2326,7 @@
     },
     {
         "id": "152",
-        "question": "A large automobile company is migrating the database of a critical financial application to Amazon DynamoDB. The company's risk and compliance policy requires that every change in the database be recorded as a log entry for audits. The system is anticipating more than 500,000 log entries each minute. Log entries should be stored in batches of at least 100,000 records in each file in Apache Parquet format. How should a database specialist implement these requirements with DynamoDB?",
+        "question": "A large automobile company is migrating the database of a critical financial application to Amazon DynamoDB. The company&#x27;s risk and compliance policy requires that every change in the database be recorded as a log entry for audits. The system is anticipating more than 500,000 log entries each minute. Log entries should be stored in batches of at least 100,000 records in each file in Apache Parquet format. How should a database specialist implement these requirements with DynamoDB?",
         "options": {
             "1": "Enable Amazon DynamoDB Streams on the table. Create an AWS Lambda function triggered by the stream. Write the log entries to an Amazon S3 object.",
             "2": "Create a backup plan in AWS Backup to back up the DynamoDB table once a day. Create an AWS Lambda function that restores the backup in another table and compares both tables for changes. Generate the log entries and write them to an Amazon S3 object.",
@@ -2341,7 +2341,7 @@
     },
     {
         "id": "153",
-        "question": "A company released a mobile game that quickly grew to 10 million daily active users in North America. The game's backend is hosted on AWS and makes extensive use of an Amazon DynamoDB table that is configured with a TTL attribute. When an item is added or updated, its TTL is set to the current epoch time plus 600 seconds. The game logic relies on old data being purged so that it can calculate rewards points accurately. Occasionally, items are read from the table that are several hours past their TTL expiry. How should a database specialist fix this issue?",
+        "question": "A company released a mobile game that quickly grew to 10 million daily active users in North America. The game&#x27;s backend is hosted on AWS and makes extensive use of an Amazon DynamoDB table that is configured with a TTL attribute. When an item is added or updated, its TTL is set to the current epoch time plus 600 seconds. The game logic relies on old data being purged so that it can calculate rewards points accurately. Occasionally, items are read from the table that are several hours past their TTL expiry. How should a database specialist fix this issue?",
         "options": {
             "1": "Use a client library that supports the TTL functionality for DynamoDB.",
             "2": "Include a query filter expression to ignore items with an expired TTL.",
@@ -2422,10 +2422,10 @@
         "id": "158",
         "question": "A database specialist is creating an AWS CloudFormation stack. The database specialist wants to prevent accidental deletion of an Amazon RDS ProductionDatabase resource in the stack. Which solution will meet this requirement?",
         "options": {
-            "1": "Create a stack policy to prevent updates. Include 'Effect' : 'ProductionDatabase' and 'Resource' : 'Deny' in the policy.",
+            "1": "Create a stack policy to prevent updates. Include &#x27;Effect&#x27; : &#x27;ProductionDatabase&#x27; and &#x27;Resource&#x27; : &#x27;Deny&#x27; in the policy.",
             "2": "Create an AWS CloudFormation stack in XML format. Set xAttribute as false.",
             "3": "Create an RDS DB instance without the DeletionPolicy attribute. Disable termination protection.",
-            "4": "Create a stack policy to prevent updates. Include 'Effect' : 'Deny' and 'Resource' : 'ProductionDatabase' in the policy."
+            "4": "Create a stack policy to prevent updates. Include &#x27;Effect&#x27; : &#x27;Deny&#x27; and &#x27;Resource&#x27; : &#x27;ProductionDatabase&#x27; in the policy."
         },
         "correct_answers": [
             "options.4"
@@ -2558,7 +2558,7 @@
     },
     {
         "id": "167",
-        "question": "A company is running its production databases in a 3 TB Amazon Aurora MySQL DB cluster. The DB cluster is deployed to the us-east-1 Region. For disaster recovery (DR) purposes, the company's database specialist needs to make the DB cluster rapidly available in another AWS Region to cover the production load with an RTO of less than 2 hours. What is the MOST operationally efficient solution to meet these requirements?",
+        "question": "A company is running its production databases in a 3 TB Amazon Aurora MySQL DB cluster. The DB cluster is deployed to the us-east-1 Region. For disaster recovery (DR) purposes, the company&#x27;s database specialist needs to make the DB cluster rapidly available in another AWS Region to cover the production load with an RTO of less than 2 hours. What is the MOST operationally efficient solution to meet these requirements?",
         "options": {
             "1": "Implement an AWS Lambda function to take a snapshot of the production DB cluster every 2 hours, and copy that snapshot to an Amazon S3 bucket in the DR Region. Restore the snapshot to an appropriately sized DB cluster in the DR Region.",
             "2": "Add a cross-Region read replica in the DR Region with the same instance type as the current primary instance. If the read replica in the DR Region needs to be used for production, promote the read replica to become a standalone DB cluster.",
@@ -2577,7 +2577,7 @@
         "options": {
             "1": "Deploy Active Directory Federation Services (AD FS) on premises and configure it with an on-premises Active Directory. Set up delegation between the on- premises AD FS and AWS Security Token Service (AWS STS) to map user identities to a role using theAmazonRDSDirectoryServiceAccess managed IAM policy.",
             "2": "Establish a forest trust between the on-premises Active Directory and AWS Directory Service for Microsoft Active Directory. Use AWS SSO to configure an Active Directory user delegated to access the databases in RDS for SQL Server.",
-            "3": "Use Active Directory Connector to redirect directory requests to the company's on-premises Active Directory without caching any information in the cloud. Use the RDS master user credentials to connect to the DB instance and configure SQL Server logins and users from the Active Directory users and groups.",
+            "3": "Use Active Directory Connector to redirect directory requests to the company&#x27;s on-premises Active Directory without caching any information in the cloud. Use the RDS master user credentials to connect to the DB instance and configure SQL Server logins and users from the Active Directory users and groups.",
             "4": "Establish a forest trust between the on-premises Active Directory and AWS Directory Service for Microsoft Active Directory. Ensure RDS for SQL Server is using mixed mode authentication. Use the RDS master user credentials to connect to the DB instance and configure SQL Server logins and users from the Active Directory users and groups."
         },
         "correct_answers": [
@@ -2588,7 +2588,7 @@
     },
     {
         "id": "169",
-        "question": "A company uses an Amazon Redshift cluster to run its analytical workloads. Corporate policy requires that the company's data be encrypted at rest with customer managed keys. The company's disaster recovery plan requires that backups of the cluster be copied into another AWS Region on a regular basis. How should a database specialist automate the process of backing up the cluster data in compliance with these policies?",
+        "question": "A company uses an Amazon Redshift cluster to run its analytical workloads. Corporate policy requires that the company&#x27;s data be encrypted at rest with customer managed keys. The company&#x27;s disaster recovery plan requires that backups of the cluster be copied into another AWS Region on a regular basis. How should a database specialist automate the process of backing up the cluster data in compliance with these policies?",
         "options": {
             "1": "Copy the AWS Key Management Service (AWS KMS) customer managed key from the source Region to the destination Region. Set up an AWS Glue job in the source Region to copy the latest snapshot of the Amazon Redshift cluster from the source Region to the destination Region. Use a time-based schedule in AWS Glue to run the job on a daily basis.",
             "2": "Create a new AWS Key Management Service (AWS KMS) customer managed key in the destination Region. Create a snapshot copy grant in the destination Region specifying the new key. In the source Region, configure cross-Region snapshots for the Amazon Redshift cluster specifying the destination Region, the snapshot copy grant, and retention periods for the snapshot.",
