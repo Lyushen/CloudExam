@@ -5,9 +5,7 @@ document.addEventListener("DOMContentLoaded", async function() {
     menuInitialization();
     initializeAppSettings();
     appSettings.list = await loadTestList();
-
     createTestButtons();
-
 });
 
 // Load test list from local storage or fallback to list.json
@@ -24,18 +22,22 @@ async function loadTestList() {
 // Dynamically create buttons for each test on the index page
 function createTestButtons() {
     const container = document.getElementById('test-container');
-    appSettings.list.forEach(testObj => {
-        Object.entries(testObj).forEach(([key, testDetails]) => {
+    // Assuming appSettings.list is an array of objects
+    appSettings.list.forEach(testEntry => {
+        // Loop through each entry in the array
+        Object.entries(testEntry).forEach(([id, testDetails]) => {
+            // Create a button for each test
             const button = document.createElement('button');
-            button.textContent = key;
+            button.textContent = testDetails.name; // Set the button text to the test's name
             button.onclick = () => {
-                appSettings.lastSource = appSettings.source; // Update lastSource with the current source before changing
-                appSettings.source = testDetails.internal_url; // Update the source to the new test internal URL
-                localStorage.setItem('lastSource', appSettings.lastSource); // Store the lastSource in local storage
-                localStorage.setItem('source', testDetails.internal_url); // Store the new source (internal_url) in local storage
+                // Set up the button's onclick behavior
+                appSettings.lastSource = appSettings.source; // Store the current source as the last source
+                appSettings.source = testDetails.internal_url; // Update the source to the new test's internal URL
+                localStorage.setItem('lastSource', appSettings.lastSource); // Save lastSource in local storage
+                localStorage.setItem('source', testDetails.internal_url); // Save the new source in local storage
                 window.location.href = 'quiz.html'; // Navigate to the quiz page
             };
-            container.appendChild(button);
+            container.appendChild(button); // Append the button to the container
         });
     });
 }

@@ -191,6 +191,8 @@ body {
     color: var(--text-color);
     text-align: center;
     cursor: pointer; /* Hand pointer on hover */
+    font-family: var(--font-family);
+    font-size: calc(1vw + 1vh + 1vmin);
     transition: background-color 0.2s, border-color 0.2s; /* Smooth transition for color and border changes */
 }
 
