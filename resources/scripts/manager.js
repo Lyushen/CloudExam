@@ -61,10 +61,10 @@ async function initializeQuizPage() {
             localStorage.setItem('source', appSettings.source);
             // Optionally redirect or refresh the quiz content
         } else {
-            window.location.href = '/';
+            window.location.assign('/');
         }
     } else {
-        window.location.href = '/';
+        window.location.assign('/');
     }
 }
 
