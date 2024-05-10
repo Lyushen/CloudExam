@@ -10,6 +10,13 @@ export let appSettings = {
     list:[]
 };
 
+// UI Elements
+
+const questionText = document.getElementById('question-text');
+const explanationsContainer = document.getElementById('explanations-container');
+const questionBox = document.getElementById('question-number');
+const optionsContainer = document.getElementById('options-container');
+
 // Initialize settings from the local storage
 export async function initializeAppSettings() {
     appSettings.source = localStorage.getItem('source') || appSettings.source;
@@ -107,13 +114,13 @@ export function toggleShuffleAnswers() {
     updateQuestionDisplay(); // Redisplay with new shuffle state
 } 
 
+
 // Display the specified question in the UI
 function displayQuestion(question) {
-    const questionText = document.getElementById('question-text');
-    const optionsContainer = document.getElementById('options-container');
 
     questionText.innerHTML = question.question; // Allows HTML content
     optionsContainer.innerHTML = ''; // Clear previous options
+    explanationsContainer.innerHTML = ''; // Clear previous explanations
 
     question.shuffledOptions.forEach(option => {
         const optionElement = document.createElement('button');
@@ -126,6 +133,13 @@ function displayQuestion(question) {
 // Check the user's answer and update the UI accordingly
 function checkAnswer(question, selectedOptionKey, optionElement) {
     const correctAnswer = question.correct_answers.includes(`options.${selectedOptionKey}`);
+
+    if (question.option_explanations){
+        // Display the explanation related to the option clicked
+        const explanationText = question.option_explanations[selectedOptionKey] || "No explanation available.";
+        explanationsContainer.innerHTML = explanationText;
+    }
+
     if (correctAnswer) {
         optionElement.classList.add('correct');
     } else {
@@ -172,7 +186,7 @@ function convertOptionsToArray(options) {
 // Update question limits in the UI
 function updateQuestionLimits() {
     const questionsLength = appSettings.questions.length;
-    const questionBox = document.getElementById('question-number');
+    
     questionBox.min = 1;
     questionBox.max = questionsLength;
     document.getElementById('total-questions').textContent = '/ ' + questionsLength;
@@ -205,8 +219,8 @@ function handleWheelEvent(e) {
 
 // Handle input events to jump to a specific question
 function handleInput() {
-    const inputElement = document.getElementById('question-number');
-    const newIndex = parseInt(inputElement.value, 10) - 1;
+    
+    const newIndex = parseInt(questionBox.value, 10) - 1;
     if (!isNaN(newIndex) && newIndex >= 0 && newIndex < appSettings.questions.length) {
         updateQuestionDisplay(newIndex);
     }

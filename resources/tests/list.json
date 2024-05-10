@@ -8,14 +8,14 @@
 "2": {
     "name":"AWS Cloud Practitioner (CLF-C02-F)",
     "url_name":"AWS-Certified-Cloud-Practitioner-CLF-C02-F",
-    "internal_url":"resources/tests/AWS-Certified-Cloud-Practitioner-CLF-C02-f/questions.json",
+    "internal_url":"resources/tests/AWS-Certified-Cloud-Practitioner-CLF-C02-f/option_explanations.json",
     "external_url":""
 },
 "3": {
     "name":"AWS Cloud Practitioner (CLF-C02-M)",
     "url_name":"AWS-Certified-Cloud-Practitioner-CLF-C02-M",
-    "internal_url":"https://raw.githubusercontent.com/Lyushen/not-a-pdf-to-json/backup/pdf-in-fixed.json",
-    "external_url":""
+    "internal_url":"resources/tests/AWS-Certified-Cloud-Practitioner-CLF-C02-f/questions.json",
+    "external_url":"https://raw.githubusercontent.com/Lyushen/not-a-pdf-to-json/backup/pdf-in-fixed.json"
 },
 "4": {
     "name":"AWS Advanced Networking Specialty (ANS-C01)",

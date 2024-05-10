@@ -7,6 +7,17 @@
     --wrong-color: #F44336;
     --font-family: 'Arial', sans-serif;
     --button-border: 1px solid rgba(0, 0, 0, 0.229);
+
+    --white: #fff;
+    --black: #000;
+    --dark-grey: #1b2d36;
+    --light-blue: #78d6c6;
+    --dark-blue: #12486b;
+    --green: #80c0a1;
+    --yellow: #f5fccd;
+    --orange: orange;
+    --red: #ff7d66;
+    --pink: #eb80b1;
 }
 
 body.dark {
@@ -17,7 +28,6 @@ body.dark {
 }
 
 body {
-    background-color: var(--background-color);
     color: var(--text-color);
     font-family: var(--font-family);
     margin: 0;
@@ -143,7 +153,7 @@ body {
 .controls button:hover {
     background-color: var(--button-hover-fill);
 }
-
+/* 
 .option-button {
     display: block;
     width: 100%;
@@ -151,18 +161,43 @@ body {
     margin-top: 10px;
     padding: 8px 10px;
     background-color: transparent;
-    color: var(--text-color); /* Ensure this is explicitly set */
+    color: var(--text-color);
     border: 2px solid var(--button-fill);
     border-radius: 5px;
-    transition: background-color 0.2s, border-color 0.2s, color 0.2s; /* Add transition for color */
+    transition: background-color 0.2s, border-color 0.2s, color 0.2s;
     font-size: 0.75em;
 }
 
 .option-button:hover {
     background-color: var(--button-hover-fill);
-    cursor: pointer; /* Changes cursor to hand pointer on hover */
+    cursor: pointer; 
 }
+ */
 
+ .option-button {
+    display: block;
+    width: 100%;
+    margin: 0 0 20px 0;
+    text-align: left;
+    padding: 10px 20px; /* Adjust size as needed */
+    border: none; /* Remove any default border */
+    color: var(--white); /* Use the white color variable for text */
+    background-color: var(--dark-blue); /* Use a variable for background color */
+    font-size: 2rem; /* Adjust font size as needed */
+    cursor: pointer; /* Makes it clear it's clickable */
+    outline: none; /* Removes the focus outline, use with caution for accessibility */
+    animation: changing-neon 20s infinite; /* Apply the neon animation */
+    position: relative; /* Needed for the pseudo-elements to position correctly */
+  }
+  
+  .option-button:hover {
+    animation-play-state: paused; /* Optional: Pause animation on hover */
+  }
+  
+  .option-button:focus {
+    outline: 1px solid var(--white); /* Optional: Add an outline on focus for accessibility */
+  }
+  
 .option-button.correct {
     background-color: var(--correct-color);
     border-color: var(--correct-color);
@@ -216,3 +251,163 @@ body {
         grid-template-columns: 1fr; /* Single column on very small screens */
     }
 }
+
+
+  body {
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+    background-color: #000;
+    /* font-size: 6vh; */
+    /* font-family: sans-serif; */
+   /*  text-transform: uppercase; */
+    letter-spacing: 2px;
+  }
+  
+  .profile-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .title {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3rem 1.5rem;
+    margin: 1rem;
+  }
+  
+  /* Keyframe Animations */
+  @keyframes changing-neon {
+    0%,
+    100% {
+      box-shadow: 0 0 1px var(--white), 0 0 4px var(--white),
+        0 0 8px var(--dark-blue), 0 0 16px var(--dark-blue),
+        0 0 20px var(--dark-blue), inset 0 0 1px var(--white),
+        inset 0 0 4px var(--white), inset 0 0 8px var(--dark-blue),
+        inset 0 0 16px var(--dark-blue), inset 0 0 20px var(--dark-blue);
+    }
+    33% {
+      box-shadow: 0 0 1px var(--white), 0 0 4px var(--white), 0 0 8px var(--green),
+        0 0 16px var(--green), 0 0 20px var(--green), inset 0 0 1px var(--white),
+        inset 0 0 4px var(--white), inset 0 0 8px var(--green),
+        inset 0 0 16px var(--green), inset 0 0 20px var(--green);
+    }
+    66% {
+      box-shadow: 0 0 1px var(--white), 0 0 4px var(--white),
+        0 0 8px var(--light-blue), 0 0 16px var(--light-blue),
+        0 0 20px var(--light-blue), inset 0 0 1px var(--white),
+        inset 0 0 4px var(--white), inset 0 0 8px var(--light-blue),
+        inset 0 0 16px var(--light-blue), inset 0 0 20px var(--light-blue);
+    }
+  }
+  
+  @keyframes changing-background {
+    0%,
+    100% {
+      background-color: var(--dark-blue);
+    }
+    33% {
+      background-color: var(--green);
+    }
+    66% {
+      background-color: var(--light-blue);
+    }
+  }
+  
+  @keyframes changing-border {
+    0%,
+    100% {
+      border-color: var(--dark-blue);
+    }
+    33% {
+      border-color: var(--green);
+    }
+    66% {
+      border-color: var(--light-blue);
+    }
+  }
+  
+  /* Profile Header Styles */
+  .profile-header {
+    position: relative;
+    background: none;
+    animation: changing-background;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    z-index: -10;
+  }
+  .profile-header:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent -20%, #000);
+  }
+  
+  /* Profile Avatar */
+  .profile-avatar {
+    animation: changing-border;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+  }
+  
+  /* Location and Bio */
+  .profile-location-and-bio {
+    position: relative;
+    background: linear-gradient(#000, transparent);
+  }
+  
+  /* Profile Header Right and Navigation */
+  .profile-header-right,
+  .profile-nav-1.no-mobile-nav {
+    animation: changing-border;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    border-width: 2px;
+  }
+  
+  .profile-nav-2 {
+    background: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  /* Pen Item Styles */
+  .single-item.single-pen:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -6px;
+    left: -6px;
+    width: calc(100%);
+    height: calc(100%);
+    border-radius: 8px;
+    animation: changing-neon;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+  }
+  
+  /* Pen Clip-path Background */
+  .ContentGridItemBackground-module_root-qg7K1 {
+    animation: changing-background;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+  }
+  .ContentGridItemBackground-module_root-qg7K1:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 100% 100%, #000, transparent 300%);
+  }
+  
