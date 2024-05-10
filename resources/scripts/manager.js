@@ -55,6 +55,7 @@ async function initializeQuizPage() {
     if (urlNameParam) {
         const testDetails = await getTestDetailsByUrlName(urlNameParam);
         if (testDetails) {
+            document.title=`${testDetails.name}`; // Update the page title
             appSettings.lastSource = appSettings.source; // Update the last source
             appSettings.source = testDetails.internal_url; // Set the new source
             localStorage.setItem('lastSource', appSettings.lastSource);
