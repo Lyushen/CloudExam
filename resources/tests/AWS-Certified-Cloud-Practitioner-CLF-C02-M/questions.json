@@ -842,7 +842,7 @@
     },
     {
         "id": "56",
-        "question": "A company wants to automate infrastructure deployment by using infrastructure as code (IaC). The company wants to scale production stacks so the stacks can be deployed in multiple AWS Regions. Which AWS service will meet these requirements?",
+        "question": "What AWS service should a company use to automate infrastructure deployment across multiple AWS Regions using Infrastructure as Code (IaC) to scale production stacks?",
         "options": {
             "1": "Amazon CloudWatch",
             "2": "AWS Config",
