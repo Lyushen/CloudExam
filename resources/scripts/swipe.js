@@ -51,7 +51,7 @@ export function initializeSwipeHandling() {
 
     // Pointer Event Handlers (for mouse)
     document.addEventListener('pointerdown', (event) => {
-        if (event.pointerType === 'mouse' && event.button !== 1) return;
+        if (event.pointerType === 'mouse' && event.button !== 0) return;
         if (event.target.closest('#question-text')) return;
         onStart(event.clientX);
         document.addEventListener('pointermove', onPointerMove, { passive: false });
