@@ -52,7 +52,7 @@ export function initializeSwipeHandling() {
     // Pointer Event Handlers (for mouse)
     document.addEventListener('pointerdown', (event) => {
         if (event.pointerType === 'mouse' && event.button !== 0) return;
-        if (event.target.closest('#question-text')) return;
+        if (event.target.closest('#question-text') || event.target.closest('#explanations-container')) return; // if the mouse bove q-text and expl-text we stop
         onStart(event.clientX);
         document.addEventListener('pointermove', onPointerMove, { passive: false });
         document.addEventListener('pointerup', onPointerEnd);

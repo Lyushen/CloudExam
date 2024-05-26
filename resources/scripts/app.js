@@ -65,9 +65,9 @@ function updateSettings() {
 export function addControlEventListeners() {
     document.querySelector('#prev-button').addEventListener('click', () => updateQuestionDisplay(appSettings.currentQuestion - 1));
     document.querySelector('#next-button').addEventListener('click', () => updateQuestionDisplay(appSettings.currentQuestion + 1));
-    document.querySelector('#question-number').addEventListener('input', handleInput);
-    document.querySelector('#question-number').addEventListener('mouseenter', enableScroll);
-    document.querySelector('#question-number').addEventListener('mouseleave', disableScroll);
+    questionBox.addEventListener('input', handleInput);
+    questionBox.addEventListener('mouseenter', enableScroll);
+    questionBox.addEventListener('mouseleave', disableScroll);
 }
 
 // Fetch and parse questions from a Markdown file using settings
