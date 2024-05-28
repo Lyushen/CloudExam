@@ -1,4 +1,5 @@
-import { getCookie, manageCookies, getCurrentQuestionFromCookies} from './cookies.js';
+import { getCookie, manageCookies, getCurrentQuestionFromCookies } from './cookies.js';
+import { openDB, saveQuestion, getQuestion, getQuestionsCount } from './IndexedDB.js';
 export let appSettings = {
     source: '',
     lastSource: '',
@@ -6,12 +7,10 @@ export let appSettings = {
     shuffleAnswers: 'false',
     currentQuestion: 0,
     theme: 'light',
-    questions:[],
-    list:[]
+    list: []
 };
 
-// UI Elements
-
+// UI Element Consts
 const questionText = document.getElementById('question-text');
 const explanationsContainer = document.getElementById('explanations-container');
 const questionBox = document.getElementById('question-number');
@@ -19,26 +18,15 @@ const optionsContainer = document.getElementById('options-container');
 
 // Initialize settings from the local storage
 export async function initializeAppSettings() {
-    appSettings.source = localStorage.getItem('source') || appSettings.source;
-    appSettings.lastSource = localStorage.getItem('lastSource') || appSettings.lastSource;
-    appSettings.shuffleQuestions = getCookie('shuffleQuestions') || localStorage.getItem('shuffleQuestions') || appSettings.shuffleQuestions;
-    appSettings.shuffleAnswers = getCookie('shuffleAnswers') || localStorage.getItem('shuffleAnswers') || appSettings.shuffleAnswers;
-    appSettings.currentQuestion = getCurrentQuestionFromCookies() || parseInt(localStorage.getItem('currentQuestion'), 10) || appSettings.currentQuestion;
-}
-
-export async function getAndParseInitialQuestions(){
-    const storedQuestions = localStorage.getItem('questions');
-    if (storedQuestions && appSettings.source === appSettings.lastSource) {
-        // If questions exist in localStorage and the source has not changed, use them
-        appSettings.questions = JSON.parse(storedQuestions);
-        console.log("Loaded questions from localStorage with unchanged source.");
-    } else {
-        // Fetch questions if not in localStorage or if the source has changed
-        await fetchAndParseQuestions();
+    try {
+        appSettings.source = localStorage.getItem('source') || appSettings.source;
+        appSettings.lastSource = localStorage.getItem('lastSource') || appSettings.lastSource;
+        appSettings.shuffleQuestions = getCookie('shuffleQuestions') || localStorage.getItem('shuffleQuestions') || appSettings.shuffleQuestions;
+        appSettings.shuffleAnswers = getCookie('shuffleAnswers') || localStorage.getItem('shuffleAnswers') || appSettings.shuffleAnswers;
+        appSettings.currentQuestion = getCurrentQuestionFromCookies() || parseInt(localStorage.getItem('currentQuestion'), 10) || appSettings.currentQuestion;
+    } catch (error) {
+        showPopup('Initialization error: ' + error.message);
     }
-    updateQuestionLimits();
-    updateQuestionDisplay();
-    updateSettings();
 }
 
 function updateSettings() {
@@ -70,14 +58,106 @@ export function addControlEventListeners() {
     questionBox.addEventListener('mouseleave', disableScroll);
 }
 
-// Fetch and parse questions from a Markdown file using settings
-async function fetchAndParseQuestions() {
-    const response = await fetch(appSettings.source);
-    if (!response.ok) throw new Error('Failed to fetch');
-    const json = await response.json();
-    /* appSettings.questions = parseQuestions(text); */
-    appSettings.questions = json;  // Assigning parsed JSON directly to appSettings.questions
-    localStorage.setItem('questions', JSON.stringify(appSettings.questions)); // Store fetched questions
+export async function getAndParseInitialQuestions() {
+    try {
+        const db = await openDB();
+        const storedQuestionsCount = await getQuestionsCount(db);
+        if (storedQuestionsCount > 0 && appSettings.source === appSettings.lastSource) {
+            // If questions exist in IndexedDB and the source has not changed, use them
+            console.log("Loaded questions from IndexedDB with unchanged source.");
+        } else {
+            // Fetch questions if not in IndexedDB or if the source has changed
+            await fetchAndParseQuestions(db);
+        }
+        updateQuestionLimits(db);
+        updateQuestionDisplay();
+        updateSettings();
+    } catch (error) {
+        showPopup('Error loading questions: ' + error.message);
+    }
+}
+
+// Fetch and parse questions one by one to save memory
+async function fetchAndParseQuestions(db) {
+    try {
+        const response = await fetch(appSettings.source);
+        if (!response.ok) throw new Error('Failed to fetch');
+        const json = await response.json();
+
+        // Process questions one by one to handle storage limits
+        for (let i = 0; i < json.length; i++) {
+            try {
+                await saveQuestion(db, json[i], i);
+            } catch (error) {
+                const errorMessage = 'Error saving question: ' + error.message;
+                console.error(errorMessage);
+                showPopup(errorMessage);
+                break;
+            }
+        }
+        localStorage.setItem('questions_count', json.length);
+        localStorage.setItem('source', appSettings.source);
+    } catch (error) {
+        showPopup('Fetch error: ' + error.message);
+    }
+}
+
+// Load question from IndexedDB
+async function loadQuestionFromStorage(index) {
+    try {
+        const db = await openDB();
+        const question = await getQuestion(db, index);
+        return question;
+    } catch (error) {
+        showPopup('Error loading question: ' + error.message);
+    }
+}
+
+// Update question display based on the selected index
+export async function updateQuestionDisplay(index = appSettings.currentQuestion) {
+    try {
+        const db = await openDB();
+        const storedQuestionsCount = await getQuestionsCount(db);
+        if (index < 0 || index >= storedQuestionsCount) return;
+        appSettings.currentQuestion = index;
+        let currentQuestion = await loadQuestionFromStorage(index);
+
+        let optionsArray = convertOptionsToArray(currentQuestion.options);
+
+        // Shuffle answers if enabled
+        if (appSettings.shuffleAnswers === 'true') {
+            optionsArray = shuffleArray(optionsArray);
+        }
+
+        currentQuestion.shuffledOptions = optionsArray;
+
+        displayQuestion(currentQuestion);
+        updateSettings();
+    } catch (error) {
+        showPopup('Error updating question display: ' + error.message);
+    }
+}
+
+// Convert options object to array
+function convertOptionsToArray(options) {
+    return Object.keys(options).map((key, index) => ({
+        key: key, // Preserve the original key for reference
+        html: options[key], // HTML content of the option
+        index: index // Preserve the original index for reference
+    }));
+}
+
+// Update question limits in the UI
+async function updateQuestionLimits(db) {
+    try {
+        const questionsLength = await getQuestionsCount(db);
+
+        questionBox.min = 1;
+        questionBox.max = questionsLength;
+        document.getElementById('total-questions').textContent = '/ ' + questionsLength;
+    } catch (error) {
+        showPopup('Error updating question limits: ' + error.message);
+    }
 }
 
 // Toggle shuffle state for questions
@@ -147,25 +227,6 @@ function checkAnswer(question, selectedOptionKey, optionElement) {
     }
 }
 
-// Update question display based on the selected index
-export function updateQuestionDisplay(index=appSettings.currentQuestion) {
-    if (index < 0 || index >= appSettings.questions.length) return;
-    appSettings.currentQuestion = index;
-    let currentQuestion = appSettings.questions[index];
-
-    let optionsArray = convertOptionsToArray(currentQuestion.options);
-
-    // Shuffle answers if enabled
-    if (appSettings.shuffleAnswers === 'true') {
-        optionsArray = shuffleArray(optionsArray);
-    }
-
-    currentQuestion.shuffledOptions = optionsArray;
-
-    displayQuestion(currentQuestion);
-    updateSettings();
-}
-
 // Convert options object to array, shuffle, then convert back to object if necessary
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -173,23 +234,6 @@ function shuffleArray(array) {
         [array[i], array[j]] = [array[j], array[i]];
     }
     return array;
-}
-
-// Convert options object to array
-function convertOptionsToArray(options) {
-    return Object.keys(options).map(key => ({
-        key: key, // Preserve the original key for reference
-        html: options[key] // HTML content of the option
-    }));
-}
-
-// Update question limits in the UI
-function updateQuestionLimits() {
-    const questionsLength = appSettings.questions.length;
-    
-    questionBox.min = 1;
-    questionBox.max = questionsLength;
-    document.getElementById('total-questions').textContent = '/ ' + questionsLength;
 }
 
 // Enable scrolling while focusing on the input element
@@ -226,3 +270,27 @@ function handleInput() {
     }
 }
 
+export function showPopup(message) {
+    const popup = document.getElementById('popup');
+    const popupMessage = document.getElementById('popup-message');
+    popupMessage.textContent = message;
+    popup.classList.add('show');
+
+    // Remove the 'show' class after the animation ends
+    setTimeout(() => {
+        popup.classList.remove('show');
+    }, 4000); // Duration of the animation
+}
+
+// Function to check for console log issues
+function checkConsoleLog() {
+    if (console && console.log) {
+        const originalConsoleLog = console.log;
+        console.log = function(message) {
+            if (typeof message === 'string' && message.includes('Failed to save all questions')) {
+                showPopup(message);
+            }
+            originalConsoleLog.apply(console, arguments);
+        };
+    }
+}

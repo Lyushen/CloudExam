@@ -216,3 +216,32 @@ body {
         grid-template-columns: 1fr; /* Single column on very small screens */
     }
 }
+/* PopUp Error window */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: 1px solid var(--button-border);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 2s;
+    size: 2vw;
+}
+
+.popup.show {
+    visibility: visible;
+    animation: fadeInOut 4s forwards;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    25% { opacity: 1; }
+    75% { opacity: 1; }
+    100% { opacity: 0; }
+}
