@@ -47,6 +47,8 @@ function updateSettings() {
 
     // Update cookies with current settings
     manageCookies();
+    // Display any potential errors in the overlay
+    checkConsoleLog();
 }
 
 // Event listeners for UI interactions
