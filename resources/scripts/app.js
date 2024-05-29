@@ -286,6 +286,7 @@ function handleInput() {
 }
 
 export function showPopup(message) {
+    console.error(message);
     const popup = document.getElementById('popup');
     const popupMessage = document.getElementById('popup-message');
     popupMessage.textContent = message;

@@ -1,4 +1,4 @@
-import { updateQuestionDisplay,appSettings } from './app.js';
+import { updateQuestionDisplay, appSettings } from './app.js';
 
 export function initializeSwipeHandling() {
     let startCoord = 0;
@@ -22,11 +22,21 @@ export function initializeSwipeHandling() {
 
             if (Math.abs(deltaX) > sensitivity) {
                 isSwiping = true;
-                    if (deltaX > 0) {
-                        updateQuestionDisplay(appSettings.currentQuestion - 1); // Swipe left to right (previous)
-                    } else {
-                        updateQuestionDisplay(appSettings.currentQuestion + 1); // Swipe right to left (next)
+                if (deltaX > 0) {
+                    updateQuestionDisplay(appSettings.currentQuestion - 1); // Swipe left to right (previous)
+                } else {
+                    updateQuestionDisplay(appSettings.currentQuestion + 1); // Swipe right to left (next)
+                }
+                // Clear any text selection
+                if (window.getSelection) {
+                    if (window.getSelection().empty) {  // Chrome
+                        window.getSelection().empty();
+                    } else if (window.getSelection().removeAllRanges) {  // Firefox
+                        window.getSelection().removeAllRanges();
                     }
+                } else if (document.selection) {  // IE
+                    document.selection.empty();
+                }
                 // Prevent default only for significant horizontal movements to not interfere with natural vertical scrolling
                 event.preventDefault();
             }
@@ -52,7 +62,7 @@ export function initializeSwipeHandling() {
     // Pointer Event Handlers (for mouse)
     document.addEventListener('pointerdown', (event) => {
         if (event.pointerType === 'mouse' && event.button !== 0) return;
-        if (event.target.closest('#question-text') || event.target.closest('#explanations-container')) return; // if the mouse bove q-text and expl-text we stop
+        if (event.target.closest('#question-text') || event.target.closest('#explanations-container')) return; // if the mouse hovers over question-text and explanations-container we stop
         onStart(event.clientX);
         document.addEventListener('pointermove', onPointerMove, { passive: false });
         document.addEventListener('pointerup', onPointerEnd);
