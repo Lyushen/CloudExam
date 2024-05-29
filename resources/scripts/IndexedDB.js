@@ -1,3 +1,4 @@
+// IndexedDB.js
 import { showPopup } from './app.js';
 
 const dbName = 'QuestionsDB';
@@ -71,23 +72,6 @@ export function getQuestion(db, index) {
         request.onerror = (event) => {
             showPopup('Read error: ' + event.target.errorCode);
             reject('Read error: ' + event.target.errorCode);
-        };
-    });
-}
-
-export function getQuestionsCount(db) {
-    return new Promise((resolve, reject) => {
-        const transaction = db.transaction([storeName], 'readonly');
-        const store = transaction.objectStore(storeName);
-        const request = store.count();
-
-        request.onsuccess = () => {
-            resolve(request.result);
-        };
-
-        request.onerror = (event) => {
-            showPopup('Count error: ' + event.target.errorCode);
-            reject('Count error: ' + event.target.errorCode);
         };
     });
 }
