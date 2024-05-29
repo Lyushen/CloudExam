@@ -9,7 +9,7 @@ export let appSettings = {
     theme: 'light',
     list: []
 };
-
+ 
 // UI Element Consts
 const questionText = document.getElementById('question-text');
 const explanationsContainer = document.getElementById('explanations-container');
@@ -20,6 +20,7 @@ const optionsContainer = document.getElementById('options-container');
 export async function initializeAppSettings() {
     try {
         appSettings.source = localStorage.getItem('source') || appSettings.source;
+        appSettings.source = localStorage.getItem('theme') || appSettings.source;
         appSettings.lastSource = localStorage.getItem('lastSource') || appSettings.lastSource;
         appSettings.shuffleQuestions = getCookie('shuffleQuestions') || localStorage.getItem('shuffleQuestions') || appSettings.shuffleQuestions;
         appSettings.shuffleAnswers = getCookie('shuffleAnswers') || localStorage.getItem('shuffleAnswers') || appSettings.shuffleAnswers;
@@ -40,6 +41,7 @@ function updateSettings() {
 
     // Update localStorage with current settings
     localStorage.setItem('source', appSettings.source);
+    localStorage.setItem('theme', appSettings.source);
     localStorage.setItem('shuffleQuestions', appSettings.shuffleQuestions); // Ensure storing as string
     localStorage.setItem('shuffleAnswers', appSettings.shuffleAnswers); // Ensure storing as string
     localStorage.setItem('currentQuestion', appSettings.currentQuestion);
