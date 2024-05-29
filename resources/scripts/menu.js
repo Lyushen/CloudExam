@@ -10,35 +10,6 @@ export function menuInitialization() {
     document.querySelector('.fullscreen-mode').addEventListener('click', toggleFullscreen);
 }
 
-function toggleFullscreen() {
-    if (!document.fullscreenElement &&    // Standard syntax
-        !document.mozFullScreenElement && // Firefox
-        !document.webkitFullscreenElement && // Chrome, Safari and Opera
-        !document.msFullscreenElement) { // IE/Edge
-        if (document.documentElement.requestFullscreen) {
-            document.documentElement.requestFullscreen();
-        } else if (document.documentElement.msRequestFullscreen) { /* IE/Edge */
-            document.documentElement.msRequestFullscreen();
-        } else if (document.documentElement.mozRequestFullScreen) { /* Firefox */
-            document.documentElement.mozRequestFullScreen();
-        } else if (document.documentElement.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
-            document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
-        }
-    } else {
-        if (document.exitFullscreen) {
-            document.exitFullscreen();
-        } else if (document.msExitFullscreen) {
-            document.msExitFullscreen();
-        } else if (document.mozCancelFullScreen) { /* Firefox */
-            document.mozCancelFullScreen();
-        } else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
-            document.webkitExitFullscreen();
-        }
-    }
-    toggleMenu();
-}
-
-
 // Toggle the menu visibility
 function toggleMenu() {
     var menu = document.getElementById('menu');
@@ -64,4 +35,43 @@ function resetCache() {
 function goHome(){
     window.location.href = 'index.html';
     toggleMenu();
+}
+
+function toggleFullscreen() {
+    if (!document.fullscreenElement &&    // Standard syntax
+        !document.mozFullScreenElement && // Firefox
+        !document.webkitFullscreenElement && // Chrome, Safari and Opera
+        !document.msFullscreenElement) { // IE/Edge
+        
+        const docEl = document.documentElement;
+
+        if (docEl.requestFullscreen) {
+            docEl.requestFullscreen();
+        } else if (docEl.msRequestFullscreen) { /* IE/Edge */
+            docEl.msRequestFullscreen();
+        } else if (docEl.mozRequestFullScreen) { /* Firefox */
+            docEl.mozRequestFullScreen();
+        } else if (docEl.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+            docEl.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+        }
+
+        // Additional CSS for better fullscreen experience on mobile
+        docEl.style.height = '100vh';
+        docEl.style.overflow = 'hidden';
+
+    } else {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+        } else if (document.mozCancelFullScreen) { /* Firefox */
+            document.mozCancelFullScreen();
+        } else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
+            document.webkitExitFullscreen();
+        }
+
+        // Revert CSS changes
+        docEl.style.height = '';
+        docEl.style.overflow = '';
+    }
 }
