@@ -58,7 +58,7 @@ function toggleFullscreen() {
         // Additional CSS for better fullscreen experience on mobile
         docEl.style.height = '100vh';
         docEl.style.overflow = 'hidden';
-
+        toggleMenu();
     } else {
         if (document.exitFullscreen) {
             document.exitFullscreen();
@@ -73,6 +73,6 @@ function toggleFullscreen() {
         // Revert CSS changes
         docEl.style.height = '';
         docEl.style.overflow = '';
+        toggleMenu();
     }
-    toggleMenu();
 }
