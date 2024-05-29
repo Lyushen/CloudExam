@@ -176,6 +176,7 @@ export function toggleShuffleQuestions() {
     appSettings.shuffleQuestions = appSettings.shuffleQuestions === 'true' ? 'false' : 'true';
     shuffleQuestions(appSettings.shuffleQuestions==='true');
     updateSettings();
+    toggleMenu();
 }
 
 // Shuffle the order of questions based on a flag
@@ -203,6 +204,7 @@ export function toggleShuffleAnswers() {
     appSettings.shuffleAnswers = appSettings.shuffleAnswers === 'true' ? 'false' : 'true';
     updateSettings();
     updateQuestionDisplay(); // Redisplay with new shuffle state
+    toggleMenu(); // Deselect menu if open
 } 
 
 

@@ -35,6 +35,7 @@ function toggleFullscreen() {
             document.webkitExitFullscreen();
         }
     }
+    toggleMenu();
 }
 
 
@@ -50,14 +51,17 @@ function toggleTheme() {
     const newTheme = appSettings.theme === 'dark' ? 'light' : 'dark';
     appSettings.theme = newTheme;
     document.body.className = newTheme;
+    toggleMenu();
 }
 
 // Reset the localStorage cache and reload the page
 function resetCache() {
     localStorage.clear();
     window.location.reload(true);
+    toggleMenu();
 }
 
 function goHome(){
     window.location.href = 'index.html';
+    toggleMenu();
 }
