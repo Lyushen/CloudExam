@@ -39,12 +39,11 @@ function goHome(){
 
 function toggleFullscreen() {
     toggleMenu();
+const docEl = document.documentElement;
     if (!document.fullscreenElement &&    // Standard syntax
         !document.mozFullScreenElement && // Firefox
         !document.webkitFullscreenElement && // Chrome, Safari and Opera
         !document.msFullscreenElement) { // IE/Edge
-        
-        const docEl = document.documentElement;
 
         if (docEl.requestFullscreen) {
             docEl.requestFullscreen();
