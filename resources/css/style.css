@@ -57,8 +57,14 @@ body {
     right: 5px;
     background-color: transparent;
     overflow: hidden;
-    transition: max-height 0.3s ease-in-out, border-color 0.3s ease-in-out; /* Add border-color transition */
+    transition: max-height 0.3s ease-in-out, border-color 0.3s ease-in-out;
     max-height: 0;
+    border-color: transparent; /* Ensure border is transparent when closed */
+}
+
+.menu.open {
+    max-height: 500px; /* Adjust this value based on the total height of your menu items */
+    border-color: #ccc; /* Visible border when menu is open */
 }
 
 .menu-button:hover {
