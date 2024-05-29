@@ -1,4 +1,3 @@
-// IndexedDB.js
 import { showPopup } from './app.js';
 
 const dbName = 'QuestionsDB';
@@ -20,6 +19,23 @@ export function openDB() {
         request.onerror = (event) => {
             showPopup('Database error: ' + event.target.errorCode);
             reject('Database error: ' + event.target.errorCode);
+        };
+    });
+}
+
+export function clearQuestions(db) {
+    return new Promise((resolve, reject) => {
+        const transaction = db.transaction([storeName], 'readwrite');
+        const store = transaction.objectStore(storeName);
+        const request = store.clear();
+
+        request.onsuccess = () => {
+            resolve();
+        };
+
+        request.onerror = (event) => {
+            showPopup('Clear error: ' + event.target.errorCode);
+            reject('Clear error: ' + event.target.errorCode);
         };
     });
 }
