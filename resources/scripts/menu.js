@@ -38,6 +38,7 @@ function goHome(){
 }
 
 function toggleFullscreen() {
+    toggleMenu();
     if (!document.fullscreenElement &&    // Standard syntax
         !document.mozFullScreenElement && // Firefox
         !document.webkitFullscreenElement && // Chrome, Safari and Opera
@@ -58,7 +59,6 @@ function toggleFullscreen() {
         // Additional CSS for better fullscreen experience on mobile
         docEl.style.height = '100vh';
         docEl.style.overflow = 'hidden';
-        toggleMenu();
     } else {
         if (document.exitFullscreen) {
             document.exitFullscreen();
@@ -73,6 +73,5 @@ function toggleFullscreen() {
         // Revert CSS changes
         docEl.style.height = '';
         docEl.style.overflow = '';
-        toggleMenu();
     }
 }
