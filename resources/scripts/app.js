@@ -58,6 +58,7 @@ export function addControlEventListeners() {
     questionBox.addEventListener('input', handleInput);
     questionBox.addEventListener('mouseenter', enableScroll);
     questionBox.addEventListener('mouseleave', disableScroll);
+    
 }
 
 export async function getAndParseInitialQuestions() {
