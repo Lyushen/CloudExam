@@ -2,61 +2,56 @@ import { updateQuestionDisplay, appSettings } from './app.js';
 
 export function initializeSwipeHandling() {
     let startCoord = 0;
-    let lastQuestionIndex = 0; // Track the last question index shown
-    let updateLocked = false; // Lock updates after the first successful swipe change
-    let sens_percent_value = 0.25; // 25% of the screen
-    let sensitivity = visualViewport.width * sens_percent_value; // Use % of the visual viewport width
+    let isSwiping = false;
+    let lastSwipeIndex = 0;
+    let sens_percent_value = 0.25; // 25% of the screen width as swipe sensitivity
+    let sensitivity = visualViewport.width * sens_percent_value;
 
-    // Update sensitivity on resize or zoom
     visualViewport.addEventListener('resize', () => {
         sensitivity = visualViewport.width * sens_percent_value;
     });
 
     const onStart = (startX) => {
         startCoord = startX;
-        lastQuestionIndex = appSettings.currentQuestion; // Start swiping from the current question
-        updateLocked = false; // Unlock on new swipe start
+        isSwiping = true;
+        lastSwipeIndex = 0; // Reset swipe index on new gesture start
     };
 
     const onMove = (currentX) => {
-        if (!updateLocked) {
-            const deltaX = currentX - startCoord;
-            const stepIndex = Math.sign(deltaX) * Math.floor(Math.abs(deltaX) / sensitivity);
+        const deltaX = currentX - startCoord;
+        const swipeIndex = Math.sign(deltaX) * Math.floor(Math.abs(deltaX) / sensitivity);
 
-            if (Math.abs(stepIndex) == 1) { // Ensure only -1 or 1 step
-                const newQuestionIndex = lastQuestionIndex + stepIndex;
-
-                if (newQuestionIndex !== appSettings.currentQuestion) {
-                    updateQuestionDisplay(newQuestionIndex);
-                    appSettings.currentQuestion = newQuestionIndex; // Update the global current question index
-                    updateLocked = true; // Lock updates after one successful change
-                }
-
-                // Clear text selection
-                if (window.getSelection) {
-                    if (window.getSelection().empty) {  // Chrome
-                        window.getSelection().empty();
-                    } else if (window.getSelection().removeAllRanges) {  // Firefox
-                        window.getSelection().removeAllRanges();
-                    }
-                } else if (document.selection) {  // IE
-                    document.selection.empty();
-                }
-
-                // Prevent default to avoid unwanted behaviors like scrolling
-                event.preventDefault();
-            }
+        // Update only on changes of swipe index and within the bounds of -1 to 1
+        if (swipeIndex !== lastSwipeIndex && Math.abs(swipeIndex) <= 1) {
+            updateQuestionDisplay(appSettings.currentQuestion + swipeIndex - lastSwipeIndex);
+            lastSwipeIndex = swipeIndex; // Update lastSwipeIndex to the new swipe index
+            preventDefaultAndClearSelection(event);
         }
     };
 
     const onEnd = () => {
-        // No action needed here for locking, it resets on start
+        isSwiping = false;
+    };
+
+    const preventDefaultAndClearSelection = (event) => {
+        // Prevent default to avoid scrolling and other behaviors
+        event.preventDefault();
+
+        // Clear text selection
+        if (window.getSelection) {
+            if (window.getSelection().empty) {  // Chrome
+                window.getSelection().empty();
+            } else if (window.getSelection().removeAllRanges) {  // Firefox
+                window.getSelection().removeAllRanges();
+            }
+        } else if (document.selection) {  // IE
+            document.selection.empty();
+        }
     };
 
     // Touch Event Handlers
     document.addEventListener('touchstart', (event) => {
-        const touch = event.touches[0];
-        onStart(touch.clientX);
+        onStart(event.touches[0].clientX);
     }, { passive: true });
 
     document.addEventListener('touchmove', (event) => {
@@ -77,7 +72,6 @@ export function initializeSwipeHandling() {
     const onPointerMove = (event) => {
         if (event.pointerType === 'mouse') {
             onMove(event.clientX);
-            event.preventDefault(); // Prevent default for mouse interactions to avoid selecting text or other mouse-specific behaviors
         }
     };
 
@@ -85,6 +79,7 @@ export function initializeSwipeHandling() {
         if (event.pointerType === 'mouse') {
             document.removeEventListener('pointermove', onPointerMove);
             document.removeEventListener('pointerup', onPointerEnd);
+            onEnd();
         }
     };
 }
