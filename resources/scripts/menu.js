@@ -74,4 +74,5 @@ function toggleFullscreen() {
         docEl.style.height = '';
         docEl.style.overflow = '';
     }
+    toggleMenu();
 }
