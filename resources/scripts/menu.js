@@ -13,12 +13,6 @@ export function menuInitialization() {
 // Toggle the menu visibility
 function toggleMenu2() {
     var menu = document.getElementById('menu');
-    menu.style.maxHeight = menu.style.maxHeight ? null : menu.scrollHeight + "px";
-    menu.style.borderColor = menu.style.maxHeight ? '#ccc' : 'transparent';
-}
-
-function toggleMenu() {
-    var menu = document.getElementById('menu');
     if (menu.style.maxHeight !== '0px' && menu.style.maxHeight) {
         // If maxHeight is not '0px' and not empty, close the menu
         menu.style.maxHeight = '0px'; // Close the menu
@@ -29,6 +23,15 @@ function toggleMenu() {
         menu.style.borderColor = '#ccc'; // Show border
     }
 }
+function toggleMenu() {
+    var menu = document.getElementById('menu');
+    if (menu.classList.contains('open')) {
+        menu.classList.remove('open'); // Close the menu
+    } else {
+        menu.classList.add('open'); // Open the menu
+    }
+}
+
 
 // Toggle between dark and light themes
 function toggleTheme() {
