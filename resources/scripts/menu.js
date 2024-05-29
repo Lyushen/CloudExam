@@ -54,10 +54,6 @@ const docEl = document.documentElement;
         } else if (docEl.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
             docEl.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
         }
-
-        // Additional CSS for better fullscreen experience on mobile
-        docEl.style.height = '100vh';
-        docEl.style.overflow = 'hidden';
     } else {
         if (document.exitFullscreen) {
             document.exitFullscreen();
@@ -68,9 +64,5 @@ const docEl = document.documentElement;
         } else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
             document.webkitExitFullscreen();
         }
-
-        // Revert CSS changes
-        docEl.style.height = '';
-        docEl.style.overflow = '';
     }
 }
