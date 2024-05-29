@@ -3,31 +3,29 @@ import { updateQuestionDisplay, appSettings } from './app.js';
 export function initializeSwipeHandling() {
     let startCoord = 0;
     let isSwiping = false;
+    let currentQuestionIndex = appSettings.currentQuestion; // Start with current question index
     let sens_percent_value = 0.25; // 25% of the screen
-    let sensitivity = visualViewport.width * sens_percent_value; // Use % of the visual viewport width
+    let sensitivity = visualViewport.width * sens_percent_value;
 
-    // Update sensitivity on resize or zoom
     visualViewport.addEventListener('resize', () => {
         sensitivity = visualViewport.width * sens_percent_value;
     });
 
     const onStart = (startX) => {
         startCoord = startX;
-        isSwiping = false;  // Reset swipe state on new gesture start
+        isSwiping = true;
+        currentQuestionIndex = appSettings.currentQuestion; // Refresh current question on start
     };
 
     const onMove = (currentX) => {
-        if (!isSwiping) {
+        if (isSwiping) {
             const deltaX = currentX - startCoord;
 
             if (Math.abs(deltaX) > sensitivity) {
-                isSwiping = true;
-                if (deltaX > 0) {
-                    updateQuestionDisplay(appSettings.currentQuestion - 1); // Swipe left to right (previous)
-                } else {
-                    updateQuestionDisplay(appSettings.currentQuestion + 1); // Swipe right to left (next)
-                }
-                // Clear any text selection
+                let steps = Math.floor(deltaX / sensitivity); // Calculate how many steps user swiped
+                let newIndex = currentQuestionIndex + steps;
+                updateQuestionDisplay(newIndex); // Update the question index based on swiping
+
                 if (window.getSelection) {
                     if (window.getSelection().empty) {  // Chrome
                         window.getSelection().empty();
@@ -37,17 +35,18 @@ export function initializeSwipeHandling() {
                 } else if (document.selection) {  // IE
                     document.selection.empty();
                 }
-                // Prevent default only for significant horizontal movements to not interfere with natural vertical scrolling
+
+                // Prevent default behavior to avoid scrolling and other interactions
                 event.preventDefault();
             }
         }
     };
 
     const onEnd = () => {
-        isSwiping = false;
+        isSwiping = false; // Reset swiping state
     };
 
-    // Touch Event Handlers
+    // Touch Events
     document.addEventListener('touchstart', (event) => {
         const touch = event.touches[0];
         onStart(touch.clientX);
@@ -59,10 +58,10 @@ export function initializeSwipeHandling() {
 
     document.addEventListener('touchend', onEnd);
 
-    // Pointer Event Handlers (for mouse)
+    // Pointer Events for Mouse
     document.addEventListener('pointerdown', (event) => {
         if (event.pointerType === 'mouse' && event.button !== 0) return;
-        if (event.target.closest('#question-text') || event.target.closest('#explanations-container')) return; // if the mouse hovers over question-text and explanations-container we stop
+        if (event.target.closest('#question-text') || event.target.closest('#explanations-container')) return;
         onStart(event.clientX);
         document.addEventListener('pointermove', onPointerMove, { passive: false });
         document.addEventListener('pointerup', onPointerEnd);
@@ -71,7 +70,7 @@ export function initializeSwipeHandling() {
     const onPointerMove = (event) => {
         if (event.pointerType === 'mouse') {
             onMove(event.clientX);
-            event.preventDefault(); // Prevent default for mouse interactions to avoid selecting text or other mouse-specific behaviors
+            event.preventDefault(); // Avoid text selection and other default behaviors
         }
     };
 
