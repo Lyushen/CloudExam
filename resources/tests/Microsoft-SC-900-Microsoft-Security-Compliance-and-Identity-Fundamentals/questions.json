@@ -1132,7 +1132,7 @@
     },
     {
         "id": "82",
-        "question": "[...] is a cloud-based solution that leverages on-premises Active Directory to identiy, detect, and investigate advanced threats.",
+        "question": "[...] is a cloud-based solution that leverages on-premises Active Directory signals to identify, detect, and investigate advanced threats.",
         "options": {
             "1": "Microsoft Cloud App Security.",
             "2": "Microsoft Defender for Endpoint.",
@@ -1272,13 +1272,10 @@
         "question": "Conditional access policies can trigger multi-factor authentication (MFA) if a user attempts to access a specific application.",
         "options": {
             "1": "Yes.",
-            "2": "No. =======",
-            "3": "Yes.",
-            "4": "No."
+            "2": "No."
         },
         "correct_answers": [
-            "options.1",
-            "options.4"
+            "options.1"
         ],
         "description": "",
         "source_url": ""
@@ -1430,19 +1427,6 @@
     },
     {
         "id": "104",
-        "question": "Cloud Security Posture Management (CSPM) is available for all Azure subscriptions.",
-        "options": {
-            "1": "Yes.",
-            "2": "No."
-        },
-        "correct_answers": [
-            "options.1"
-        ],
-        "description": "",
-        "source_url": ""
-    },
-    {
-        "id": "105",
         "question": "Microsoft Defender for Cloud can evaluate the security of workloads deployed to Azure or on-premises.",
         "options": {
             "1": "Yes.",
@@ -1455,7 +1439,7 @@
         "source_url": ""
     },
     {
-        "id": "106",
+        "id": "105",
         "question": "[...] provides benchmark recommendations and guidance for protecting Azure services.",
         "options": {
             "1": "Azure Application Insights.",
@@ -1470,7 +1454,7 @@
         "source_url": ""
     },
     {
-        "id": "107",
+        "id": "106",
         "question": "Which two Azure resources can a network security group (NSG) be associated with?",
         "options": {
             "1": "a network interface.",
@@ -1487,22 +1471,7 @@
         "source_url": ""
     },
     {
-        "id": "108",
-        "question": "Which feature provides the extended detection and response (XDR) capability of Azure Sentinel?",
-        "options": {
-            "1": "integration with the Microsoft 365 compliance center.",
-            "2": "support for threat hunting.",
-            "3": "integration with Microsoft 365 Defender.",
-            "4": "support for Azure Monitor Workbooks."
-        },
-        "correct_answers": [
-            "options.3"
-        ],
-        "description": "",
-        "source_url": ""
-    },
-    {
-        "id": "109",
+        "id": "107",
         "question": "Which two Azure resources can a network security group (NSG) be associated with? Each correct answer presents a complete solution.",
         "options": {
             "1": "a network interface.",
@@ -1519,48 +1488,7 @@
         "source_url": ""
     },
     {
-        "id": "110",
-        "question": "[...] provides a central location for managing information protection, information governance, and data loss prevention (DLP) policies.",
-        "options": {
-            "1": "Azure Defender.",
-            "2": "The Microsoft 365 compliance center.",
-            "3": "The Microsoft 365 security center.",
-            "4": "Microsoft Endpoint Manager."
-        },
-        "correct_answers": [
-            "options.2"
-        ],
-        "description": "",
-        "source_url": ""
-    },
-    {
-        "id": "111",
-        "question": "You can add a resource lock to an Azure subscription.",
-        "options": {
-            "1": "Yes.",
-            "2": "No."
-        },
-        "correct_answers": [
-            "options.1"
-        ],
-        "description": "",
-        "source_url": ""
-    },
-    {
-        "id": "112",
-        "question": "You can add only one resource lock to an Azure resource.",
-        "options": {
-            "1": "Yes.",
-            "2": "No."
-        },
-        "correct_answers": [
-            "options.2"
-        ],
-        "description": "",
-        "source_url": ""
-    },
-    {
-        "id": "113",
+        "id": "108",
         "question": "You can delete a resource group containing resources that have resource locks.",
         "options": {
             "1": "Yes.",
@@ -1573,22 +1501,7 @@
         "source_url": ""
     },
     {
-        "id": "114",
-        "question": "Which Microsoft portal provides information about how Microsoft manages privacy, compliance, and security?",
-        "options": {
-            "1": "Microsoft Service Trust Portal.",
-            "2": "Compliance Manager.",
-            "3": "Microsoft 365 compliance center.",
-            "4": "Microsoft Support."
-        },
-        "correct_answers": [
-            "options.1"
-        ],
-        "description": "",
-        "source_url": ""
-    },
-    {
-        "id": "115",
+        "id": "109",
         "question": "Azure AD Connect can be used to implement hybrid identity.",
         "options": {
             "1": "Yes.",
@@ -1601,7 +1514,7 @@
         "source_url": ""
     },
     {
-        "id": "116",
+        "id": "110",
         "question": "Hybrid identity requires the implementation of two Microsoft 365 tenants.",
         "options": {
             "1": "Yes.",
@@ -1614,7 +1527,7 @@
         "source_url": ""
     },
     {
-        "id": "117",
+        "id": "111",
         "question": "Hybrid identity refers to the synchronization of Active Directory Domain Services (AD DS) and Azure Active Directory (Azure AD).",
         "options": {
             "1": "Yes.",
@@ -1627,7 +1540,7 @@
         "source_url": ""
     },
     {
-        "id": "118",
+        "id": "112",
         "question": "use encryption to protect data at rest.",
         "options": {
             "1": "Corrective.",
@@ -1641,7 +1554,7 @@
         "source_url": ""
     },
     {
-        "id": "119",
+        "id": "113",
         "question": "actively monitor systems to identify irregularities that might represent risks.",
         "options": {
             "1": "Corrective.",
@@ -1655,7 +1568,7 @@
         "source_url": ""
     },
     {
-        "id": "120",
+        "id": "114",
         "question": "You can use the insider risk management solution to detect phishing scams.",
         "options": {
             "1": "Yes.",
@@ -1668,33 +1581,7 @@
         "source_url": ""
     },
     {
-        "id": "121",
-        "question": "You can access the insider risk management solution from the Microsoft 365 compliance center.",
-        "options": {
-            "1": "Yes.",
-            "2": "No."
-        },
-        "correct_answers": [
-            "options.1"
-        ],
-        "description": "",
-        "source_url": ""
-    },
-    {
-        "id": "122",
-        "question": "You can use the insider risk management solution to detect data leaks by unhappy employees.",
-        "options": {
-            "1": "Yes.",
-            "2": "No."
-        },
-        "correct_answers": [
-            "options.1"
-        ],
-        "description": "",
-        "source_url": ""
-    },
-    {
-        "id": "123",
+        "id": "115",
         "question": "To which type of resource can Azure Bastion provide secure access?",
         "options": {
             "1": "Azure Files.",
@@ -1709,7 +1596,7 @@
         "source_url": ""
     },
     {
-        "id": "124",
+        "id": "116",
         "question": "Conditional access policies always enforce the use of multi-factor authentication (MFA).",
         "options": {
             "1": "Yes.",
@@ -1722,20 +1609,7 @@
         "source_url": ""
     },
     {
-        "id": "125",
-        "question": "Conditional access policies can be used to block access to an application based on the location of the user.",
-        "options": {
-            "1": "Yes.",
-            "2": "No."
-        },
-        "correct_answers": [
-            "options.1"
-        ],
-        "description": "",
-        "source_url": ""
-    },
-    {
-        "id": "126",
+        "id": "117",
         "question": "Conditional access policies only affect users who have Azure Active Directory (Azure AD)- joined devices.",
         "options": {
             "1": "Yes.",
@@ -1748,7 +1622,7 @@
         "source_url": ""
     },
     {
-        "id": "127",
+        "id": "118",
         "question": "Microsoft Sentinel [...] use Azure Logic Apps to automate and orchestrate responses to alerts.",
         "options": {
             "1": "analytic rules.",
@@ -1763,7 +1637,7 @@
         "source_url": ""
     },
     {
-        "id": "128",
+        "id": "119",
         "question": "What are three uses of Microsoft Cloud App Security? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
         "options": {
             "1": "to discover and control the use of shadow IT",
@@ -1781,7 +1655,7 @@
         "source_url": ""
     },
     {
-        "id": "129",
+        "id": "120",
         "question": "Azure Active Directory (Azure AD) is deployed to an on- premises environment.",
         "options": {
             "1": "Yes.",
@@ -1794,7 +1668,7 @@
         "source_url": ""
     },
     {
-        "id": "130",
+        "id": "121",
         "question": "Azure Active Directory (Azure AD) is provided as part of a Microsoft 365 subscription.",
         "options": {
             "1": "Yes.",
@@ -1807,7 +1681,7 @@
         "source_url": ""
     },
     {
-        "id": "131",
+        "id": "122",
         "question": "Azure Active Directory (Azure AD) is an identity and access management service.",
         "options": {
             "1": "Yes.",
@@ -1820,7 +1694,7 @@
         "source_url": ""
     },
     {
-        "id": "132",
+        "id": "123",
         "question": "Which service should you use to view your Azure secure score?",
         "options": {
             "1": "Alerts.",
@@ -1840,7 +1714,7 @@
         "source_url": ""
     },
     {
-        "id": "133",
+        "id": "124",
         "question": "Which two types of resources can be protected by using Azure Firewall? Each correct answer presents a complete solution.",
         "options": {
             "1": "Azure virtual machines.",
@@ -1857,7 +1731,7 @@
         "source_url": ""
     },
     {
-        "id": "134",
+        "id": "125",
         "question": "What can you use to provide threat detection for Azure SQL Managed Instance?",
         "options": {
             "1": "Microsoft Secure Score.",
@@ -1874,7 +1748,7 @@
         "source_url": ""
     },
     {
-        "id": "135",
+        "id": "126",
         "question": "[...] can use conditional access policies to control sessions in real time.",
         "options": {
             "1": "Azure Active Directory (Azure AD) Privileged Identity Management (PIM).",
@@ -1889,12 +1763,12 @@
         "source_url": ""
     },
     {
-        "id": "136",
+        "id": "127",
         "question": "Compliance Manager can be directly accessed from the [...].",
         "options": {
             "1": "Microsoft 365 admin center.",
             "2": "Microsoft 365 Defender portal.",
-            "3": "Microsoft 365 Purview ======="
+            "3": "Microsoft 365 Purview."
         },
         "correct_answers": [
             "options.3"
@@ -1903,37 +1777,22 @@
         "source_url": ""
     },
     {
-        "id": "137",
-        "question": "What feature in Microsoft Defender for Endpoint provides the first line of defense against cyberthreats by reducing the attack surface?",
-        "options": {
-            "1": "automated remediation.",
-            "2": "automated investigation.",
-            "3": "advanced hunting.",
-            "4": "network protection."
-        },
-        "correct_answers": [
-            "options.4"
-        ],
-        "description": "",
-        "source_url": ""
-    },
-    {
-        "id": "138",
+        "id": "128",
         "question": "Compliance Manager can be directly accessed from the [...].",
         "options": {
             "1": "Microsoft 365 admin center.",
             "2": "Microsoft 365 Defender portal.",
-            "3": "Microsoft 365 Compliance Center ",
-            "4": "icrosoft Support portal."
+            "3": "Microsoft 365 Compliance Center",
+            "4": "Microsoft Support portal."
         },
         "correct_answers": [
-            "options.1"
+            "options.3"
         ],
         "description": "",
         "source_url": ""
     },
     {
-        "id": "139",
+        "id": "129",
         "question": "In a Core eDiscovery workflow, what should you do before you can search for content?",
         "options": {
             "1": "Create an eDiscovery hold.",
@@ -1948,22 +1807,7 @@
         "source_url": ""
     },
     {
-        "id": "140",
-        "question": "[...] enables collaboration with business partners from external organizations such as suppliers, partners, and vendors. External users appear as guest users in the directory.",
-        "options": {
-            "1": "Active Directory Domain Services (AD DS).",
-            "2": "Active Directory forest trusts.",
-            "3": "Azure Active Directory (Azure AD) business-to-business (B2B).",
-            "4": "Azure Active Directory business-to-consumer B2C (Azure AD B2C)."
-        },
-        "correct_answers": [
-            "options.3"
-        ],
-        "description": "",
-        "source_url": ""
-    },
-    {
-        "id": "141",
+        "id": "130",
         "question": "can be used to provide Microsoft Support Engineers with access to an organization&#x27;s data stored in Microsoft Exchange Online, SharePoint Online, and OneDrive for",
         "options": {
             "1": "Customer Lockbox.",
@@ -1978,7 +1822,7 @@
         "source_url": ""
     },
     {
-        "id": "142",
+        "id": "131",
         "question": "Microsoft Secure Score in the Microsoft 365 security center can provide o recommendations for Microsoft Cloud App Security.",
         "options": {
             "1": "Yes.",
@@ -1991,7 +1835,7 @@
         "source_url": ""
     },
     {
-        "id": "143",
+        "id": "132",
         "question": "From the Microsoft 365 security center, you can view how your Microsoft Secure Score compares to the score of organizations like yours.",
         "options": {
             "1": "Yes.",
@@ -2004,7 +1848,7 @@
         "source_url": ""
     },
     {
-        "id": "144",
+        "id": "133",
         "question": "Microsoft Secure Score in the Microsoft 365 security center gives you points if you address the improvement action by using a third-party application or software.",
         "options": {
             "1": "Yes.",
@@ -2017,7 +1861,7 @@
         "source_url": ""
     },
     {
-        "id": "145",
+        "id": "134",
         "question": "Which Microsoft 365 feature can you use to restrict users from sending email messages that contain lists of customers and their associated credit card numbers?",
         "options": {
             "1": "retention policies.",
@@ -2032,7 +1876,7 @@
         "source_url": ""
     },
     {
-        "id": "146",
+        "id": "135",
         "question": "Which Azure Active Directory (Azure AD) feature can you use to evaluate group membership and automatically remove users that no longer require membership in a group?",
         "options": {
             "1": "access reviews.",
@@ -2047,7 +1891,7 @@
         "source_url": ""
     },
     {
-        "id": "147",
+        "id": "136",
         "question": "Which Microsoft portal provides information about how Microsoft cloud services comply with regulatory standard, such as International Organization for Standardization (ISO)?",
         "options": {
             "1": "the Microsoft Endpoint Manager admin center.",
@@ -2062,7 +1906,7 @@
         "source_url": ""
     },
     {
-        "id": "148",
+        "id": "137",
         "question": "What can you use to provision Azure resources across multiple subscriptions in a consistent manner?",
         "options": {
             "1": "Microsoft Defender for Cloud.",
@@ -2077,7 +1921,7 @@
         "source_url": ""
     },
     {
-        "id": "149",
+        "id": "138",
         "question": "When you enable security defaults in Azure Active Directory (Azure AD), [...] will be enabled for all Azure AD users.",
         "options": {
             "1": "Azure AD Identity Protection.",
@@ -2091,7 +1935,7 @@
         "source_url": ""
     },
     {
-        "id": "150",
+        "id": "139",
         "question": "[...] provides best practices from Microsoft employees, partners, and customers, including tools and guidance to assist in an Azure deployment.",
         "options": {
             "1": "Azure Blueprints.",
@@ -2106,7 +1950,7 @@
         "source_url": ""
     },
     {
-        "id": "151",
+        "id": "140",
         "question": "You can manage Microsoft Intune by using the",
         "options": {
             "1": "Azure Active Directory admin center.",
@@ -2121,7 +1965,7 @@
         "source_url": ""
     },
     {
-        "id": "152",
+        "id": "141",
         "question": "Verify explicitly is one of the guiding principles of Zero Trust.",
         "options": {
             "1": "Yes.",
@@ -2134,7 +1978,7 @@
         "source_url": ""
     },
     {
-        "id": "153",
+        "id": "142",
         "question": "Assume breach is one of the guiding principles of Zero Trust.",
         "options": {
             "1": "Yes.",
@@ -2147,7 +1991,7 @@
         "source_url": ""
     },
     {
-        "id": "154",
+        "id": "143",
         "question": "The Zero Trust security model assumes that a firewall secures the internal network from external threats.",
         "options": {
             "1": "Yes.",
@@ -2160,7 +2004,7 @@
         "source_url": ""
     },
     {
-        "id": "155",
+        "id": "144",
         "question": "is the process of identifying whether a signed-in user can access a specific resource.",
         "options": {
             "1": "Authentication.",
@@ -2175,7 +2019,7 @@
         "source_url": ""
     },
     {
-        "id": "156",
+        "id": "145",
         "question": "Which three statements accurately describe the guiding principles of Zero Trust?",
         "options": {
             "1": "Define the perimeter by physical locations.",
@@ -2193,7 +2037,7 @@
         "source_url": ""
     },
     {
-        "id": "157",
+        "id": "146",
         "question": "A higher Microsoft Secure Score means a lower identified risk level in the Microsoft 365 tenant.",
         "options": {
             "1": "Yes.",
@@ -2206,7 +2050,7 @@
         "source_url": ""
     },
     {
-        "id": "158",
+        "id": "147",
         "question": "Microsoft Secure Score measures progress in completing actions based on controls that include key regulations and standards for data protection and governance.",
         "options": {
             "1": "Yes.",
@@ -2219,7 +2063,7 @@
         "source_url": ""
     },
     {
-        "id": "159",
+        "id": "148",
         "question": "In a hybrid identity model, what can you use to sync identities between Active Directory Domain Services (AD DS) and Azure Active Directory (Azure AD)?",
         "options": {
             "1": "Active Directory Federation Services (AD FS).",
@@ -2234,7 +2078,7 @@
         "source_url": ""
     },
     {
-        "id": "160",
+        "id": "149",
         "question": "With Windows Hello for Business, a user&#x27;s biometric data used for authentication",
         "options": {
             "1": "is stored on an external device.",
@@ -2249,7 +2093,7 @@
         "source_url": ""
     },
     {
-        "id": "161",
+        "id": "150",
         "question": "Microsoft Defender for Identity can identify advanced threats from [...] signals.",
         "options": {
             "1": "Azure Active Directory (Azure AD).",
@@ -2263,7 +2107,7 @@
         "source_url": ""
     },
     {
-        "id": "162",
+        "id": "151",
         "question": "Which three authentication methods does Windows Hello for Business support?",
         "options": {
             "1": "fingerprint.",
@@ -2281,7 +2125,7 @@
         "source_url": ""
     },
     {
-        "id": "163",
+        "id": "152",
         "question": "You have an Azure subscription. You need to implement approval-based, time-bound role activation. What should you use?",
         "options": {
             "1": "Windows Hello for Business.",
@@ -2296,7 +2140,7 @@
         "source_url": ""
     },
     {
-        "id": "164",
+        "id": "153",
         "question": "Global administrators are exempt from conditional access policies.",
         "options": {
             "1": "Yes.",
@@ -2309,7 +2153,7 @@
         "source_url": ""
     },
     {
-        "id": "165",
+        "id": "154",
         "question": "A conditional access policy can add users to Azure Active Directory (Azure AD) roles.",
         "options": {
             "1": "Yes.",
@@ -2322,7 +2166,7 @@
         "source_url": ""
     },
     {
-        "id": "166",
+        "id": "155",
         "question": "Conditional access policies can force the use of multi-factor authentication (MFA) to access cloud apps.",
         "options": {
             "1": "Yes.",
@@ -2335,7 +2179,7 @@
         "source_url": ""
     },
     {
-        "id": "167",
+        "id": "156",
         "question": "When security defaults are enabled for an Azure Active Directory (Azure AD) tenant, which two requirements are enforced?",
         "options": {
             "1": "All users must authenticate from a registered device.",
@@ -2352,7 +2196,7 @@
         "source_url": ""
     },
     {
-        "id": "168",
+        "id": "157",
         "question": "Which type of identity is created when you register an application with Active Directory (Azure AD)?",
         "options": {
             "1": "a user account.",
@@ -2367,7 +2211,7 @@
         "source_url": ""
     },
     {
-        "id": "169",
+        "id": "158",
         "question": "Which three tasks can be performed by using Azure Active Directory (Azure AD) Identity Protection?",
         "options": {
             "1": "Configure external access for partner organizations.",
@@ -2385,7 +2229,7 @@
         "source_url": ""
     },
     {
-        "id": "170",
+        "id": "159",
         "question": "When using multi-factor authentication (MFA), a password is considered something you [...].",
         "options": {
             "1": "are.",
@@ -2400,7 +2244,7 @@
         "source_url": ""
     },
     {
-        "id": "171",
+        "id": "160",
         "question": "Windows Hello for Business can use the Microsoft Authenticator app as an authentication method.",
         "options": {
             "1": "Yes.",
@@ -2413,7 +2257,7 @@
         "source_url": ""
     },
     {
-        "id": "172",
+        "id": "161",
         "question": "Windows Hello for Business can use a PIN code as an authentication method.",
         "options": {
             "1": "Yes.",
@@ -2426,7 +2270,7 @@
         "source_url": ""
     },
     {
-        "id": "173",
+        "id": "162",
         "question": "Windows Hello for Business authentication information syncs across all the devices registered by a user.",
         "options": {
             "1": "Yes.",
@@ -2439,7 +2283,7 @@
         "source_url": ""
     },
     {
-        "id": "174",
+        "id": "163",
         "question": "An Azure resource can use a system-assigned [...] to access Azure services.",
         "options": {
             "1": "Azure Active Directory (Azure AD) joined device",
@@ -2454,7 +2298,7 @@
         "source_url": ""
     },
     {
-        "id": "175",
+        "id": "164",
         "question": "You can use [...] in the Microsoft 365 security center to view an aggregation of alerts that relate to the same attack.",
         "options": {
             "1": "Reports.",
@@ -2469,7 +2313,7 @@
         "source_url": ""
     },
     {
-        "id": "176",
+        "id": "165",
         "question": "You can create one Azure Bastion per virtual network.",
         "options": {
             "1": "Yes.",
@@ -2482,7 +2326,7 @@
         "source_url": ""
     },
     {
-        "id": "177",
+        "id": "166",
         "question": "Azure Bastion provides secure user connections by using RDP.",
         "options": {
             "1": "Yes.",
@@ -2495,7 +2339,7 @@
         "source_url": ""
     },
     {
-        "id": "178",
+        "id": "167",
         "question": "In Microsoft Sentinel, you can automate common tasks by using [...]",
         "options": {
             "1": "deep investigation tools.",
@@ -2510,7 +2354,7 @@
         "source_url": ""
     },
     {
-        "id": "179",
+        "id": "168",
         "question": "Which Azure Active Directory (Azure AD) feature can you use to restrict Microsoft Intune-managed devices from accessing corporate resources?",
         "options": {
             "1": "network security groups (NSGs).",
@@ -2525,7 +2369,7 @@
         "source_url": ""
     },
     {
-        "id": "180",
+        "id": "169",
         "question": "What should you use in the Microsoft 365 Defender portal to view security trends and track the protection status of identities?",
         "options": {
             "1": "Attack simulator.",
@@ -2540,7 +2384,7 @@
         "source_url": ""
     },
     {
-        "id": "181",
+        "id": "170",
         "question": "You have a Microsoft 365 E3 subscription. You plan to audit user activity by using the unified audit log and Basic Audit. For how long will the audit records be retained?",
         "options": {
             "1": "15 days.",
@@ -2555,7 +2399,7 @@
         "source_url": ""
     },
     {
-        "id": "182",
+        "id": "171",
         "question": "In the Microsoft 365 Defender portal, an incident is a collection of correlated [...].",
         "options": {
             "1": "alerts.",
@@ -2570,7 +2414,7 @@
         "source_url": ""
     },
     {
-        "id": "183",
+        "id": "172",
         "question": "You need to connect to an Azure virtual machine by using Azure Bastion. What should you use?",
         "options": {
             "1": "PowerShell remoting.",
@@ -2585,7 +2429,7 @@
         "source_url": ""
     },
     {
-        "id": "184",
+        "id": "173",
         "question": "Which service includes the Attack simulation training feature?",
         "options": {
             "1": "Microsoft Defender for Cloud Apps.",
@@ -2600,7 +2444,7 @@
         "source_url": ""
     },
     {
-        "id": "185",
+        "id": "174",
         "question": "Which type of alert can you manage from the Microsoft 365 Defender portal?",
         "options": {
             "1": "Microsoft Defender for Storage.",
@@ -2615,7 +2459,7 @@
         "source_url": ""
     },
     {
-        "id": "186",
+        "id": "175",
         "question": "Microsoft Sentinel data connectors support only Microsoft services.",
         "options": {
             "1": "Yes.",
@@ -2628,7 +2472,7 @@
         "source_url": ""
     },
     {
-        "id": "187",
+        "id": "176",
         "question": "You can use Azure Monitor workbooks to monitor data collected by Microsoft Sentinel.",
         "options": {
             "1": "Yes.",
@@ -2641,7 +2485,7 @@
         "source_url": ""
     },
     {
-        "id": "188",
+        "id": "177",
         "question": "Hunting provides you with the ability to identify security threats before an alert is triggered.",
         "options": {
             "1": "Yes.",
@@ -2654,7 +2498,7 @@
         "source_url": ""
     },
     {
-        "id": "189",
+        "id": "178",
         "question": "What is a use case for implementing information barrier policies in Microsoft 365?",
         "options": {
             "1": "to restrict unauthenticated access to Microsoft 365.",
@@ -2669,7 +2513,7 @@
         "source_url": ""
     },
     {
-        "id": "190",
+        "id": "179",
         "question": "What can you use to deploy Azure resources across multiple subscriptions in a consistent manner?",
         "options": {
             "1": "Microsoft Defender for Cloud.",
@@ -2684,7 +2528,7 @@
         "source_url": ""
     },
     {
-        "id": "191",
+        "id": "180",
         "question": "Azure Defender provides security alerts and advanced threat protection for virtual machines, SQL databases, containers, web applications, your network, your storage, and more",
         "options": {
             "1": "Yes.",
@@ -2697,7 +2541,7 @@
         "source_url": ""
     },
     {
-        "id": "192",
+        "id": "181",
         "question": "Cloud security posture management (CSPM) is available for free to all Azure users.",
         "options": {
             "1": "Yes.",
@@ -2710,7 +2554,7 @@
         "source_url": ""
     },
     {
-        "id": "193",
+        "id": "182",
         "question": "Azure Security Center is a unified infrastructure security management system that strengthens the security posture of your data centers, and provides advanced threat protection across your hybrid workloads in the cloud \u2013 whether they\u2019re in Azure or not \u2013 as well as on premises.",
         "options": {
             "1": "Yes.",
@@ -2723,7 +2567,7 @@
         "source_url": ""
     },
     {
-        "id": "194",
+        "id": "183",
         "question": "Azure Active Directory (Azure AD) is a cloud-based user identity and authentication service.",
         "options": {
             "1": "Yes.",
@@ -2736,7 +2580,7 @@
         "source_url": ""
     },
     {
-        "id": "195",
+        "id": "184",
         "question": "Microsoft 365 uses Azure Active Directory (Azure AD). Azure Active Directory (Azure AD) is included with your Microsoft 365 subscription.",
         "options": {
             "1": "Yes.",
@@ -2749,8 +2593,143 @@
         "source_url": ""
     },
     {
-        "id": "196",
+        "id": "185",
         "question": "Azure Bastion provides a secure connection to an Azure virtual machine by using the Azure portal.",
+        "options": {
+            "1": "Yes.",
+            "2": "No."
+        },
+        "correct_answers": [
+            "options.1"
+        ],
+        "description": "",
+        "source_url": ""
+    },
+    {
+        "id": "186",
+        "question": "Applying system updates increases an organization&#x27;s secure score in Microsoft Defender for Cloud.",
+        "options": {
+            "1": "Yes.",
+            "2": "No."
+        },
+        "correct_answers": [
+            "options.1"
+        ],
+        "description": "",
+        "source_url": ""
+    },
+    {
+        "id": "187",
+        "question": "The secure score in Microsoft Defender for Cloud can evaluate resources across multiple Azure subscriptions.",
+        "options": {
+            "1": "Yes.",
+            "2": "No."
+        },
+        "correct_answers": [
+            "options.1"
+        ],
+        "description": "",
+        "source_url": ""
+    },
+    {
+        "id": "188",
+        "question": "Enabling multi-factor authentication (MFA) increases an organization&#x27;s secure score in Microsoft Defender for Cloud.",
+        "options": {
+            "1": "Yes.",
+            "2": "No."
+        },
+        "correct_answers": [
+            "options.1"
+        ],
+        "description": "",
+        "source_url": ""
+    },
+    {
+        "id": "189",
+        "question": "Which score measures an organization&#x27;s progress in completing actions that help reduce risks associated to data protection and regulatory standards?",
+        "options": {
+            "1": "Microsoft Secure Score.",
+            "2": "AProductivity Score.",
+            "3": "Secure score in Azure Security Center.",
+            "4": "Compliance score."
+        },
+        "correct_answers": [
+            "options.4"
+        ],
+        "description": "",
+        "source_url": ""
+    },
+    {
+        "id": "190",
+        "question": "Encrytp data at rest.",
+        "options": {
+            "1": "Corrective.",
+            "2": "Detective.",
+            "3": "Preventative."
+        },
+        "correct_answers": [
+            "options.3"
+        ],
+        "description": "",
+        "source_url": ""
+    },
+    {
+        "id": "191",
+        "question": "Perform a system access audit.",
+        "options": {
+            "1": "Corrective.",
+            "2": "Detective.",
+            "3": "Preventative."
+        },
+        "correct_answers": [
+            "options.2"
+        ],
+        "description": "",
+        "source_url": ""
+    },
+    {
+        "id": "192",
+        "question": "Make configuration changes in response to a security incident.",
+        "options": {
+            "1": "Corrective.",
+            "2": "Detective.",
+            "3": "Preventative."
+        },
+        "correct_answers": [
+            "options.1"
+        ],
+        "description": "",
+        "source_url": ""
+    },
+    {
+        "id": "193",
+        "question": "Conditional access policies can be applied to global administrators.",
+        "options": {
+            "1": "Yes.",
+            "2": "No."
+        },
+        "correct_answers": [
+            "options.1"
+        ],
+        "description": "",
+        "source_url": ""
+    },
+    {
+        "id": "194",
+        "question": "Conditional access policies are evaluated before a user is authenticated.",
+        "options": {
+            "1": "Yes.",
+            "2": "No."
+        },
+        "correct_answers": [
+            "options.2"
+        ],
+        "description": "",
+        "source_url": ""
+    },
+    {
+        "id": "195",
+        "question": "Conditional access policies can use a device platform, such as Android or iOS, as a signal.",
         "options": {
             "1": "Yes.",
             "2": "No."

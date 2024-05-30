@@ -265,7 +265,7 @@
     },
     {
         "id": "18",
-        "question": "A developer needs to modify an application architecture to meet new functional requirements. Application data is stored in Amazon DynamoDB and processed for analysis in a rightly batch. The system analysts do not want to wait unit the next day to view the processed data and have asked to have it available in near-real time. Which application architect pattern would enables the data to be processed as it is received?",
+        "question": "A developer needs to modify an application architecture to meet new functional requirements. Application data is stored in Amazon DynamoDB and processed for analysis in a nightly batch. The system analysts do not want to wait unit the next day to view the processed data and have asked to have it available in near-real time. Which application architect pattern would enables the data to be processed as it is received?",
         "options": {
             "1": "Event driven.",
             "2": "Client served driven.",
@@ -1739,7 +1739,7 @@
             "5": "Amazon Redshift with operations made within a transaction block."
         },
         "correct_answers": [
-            "options.2",
+            "options.3",
             "options.4"
         ],
         "description": "",
@@ -2316,7 +2316,7 @@
             "4": "Replicate the existing MongoDB workload to Amazon DynamoDB."
         },
         "correct_answers": [
-            "options.4"
+            "options.2"
         ],
         "description": "",
         "source_url": ""
@@ -2693,7 +2693,7 @@
             "4": "Use Amazon EBS and file synchronization software to achieve eventual consistency among the Auto Scaling group."
         },
         "correct_answers": [
-            "options.4"
+            "options.2"
         ],
         "description": "",
         "source_url": ""
@@ -2875,7 +2875,7 @@
             "4": "Create an S3 service role with read-only permissions for the S3 bucket. Attach the role to the EC2 instance."
         },
         "correct_answers": [
-            "options.2"
+            "options.3"
         ],
         "description": "",
         "source_url": ""

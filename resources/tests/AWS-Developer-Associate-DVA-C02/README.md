@@ -6,7 +6,7 @@
 
 ❣️ Please support us by purchasing this course on Udemy in an interactive version with the [discounted link](https://www.udemy.com/course/aws-certified-developer-associate-dva-c02-practice-exams/?referralCode=F5DA24D55B35D823086A). If you're working for a company, you could most probably easily claim this expense during preparation for your exam. For us, it's to be, or not to be, in the game.
 
-🛍️ Alternatively, you can buy the PDF with those questions on [Etsy](https://ditectrev.etsy.com/listing/1548083846).
+🛍️ Alternatively, you can buy the PDF with those questions on [Etsy](https://ditectrev.etsy.com/listing/1548083846) or [Google Play Books](https://play.google.com/store/books/details?id=0XL-EAAAQBAJ).
 
 ## ✨ This course is unlike any Amazon Web Services Certified (AWS Certified) Developer Associate (DVA-C02) course you will find online.
 
@@ -123,7 +123,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 | 15  | [A Developer is creating an application that needs to locate the public IPv4 address of the Amazon EC2 instance on which it runs. How can the application locate this information?](#a-developer-is-creating-an-application-that-needs-to-locate-the-public-ipv4-address-of-the-amazon-ec2-instance-on-which-it-runs-how-can-the-application-locate-this-information)
 | 16  | [The development team is working on an API that will be served from Amazon API gateway. The API will be served from three environments: development, test, and production. The API Gateway is configured to use 237 GB of cache in all three stages. Which is the MOST cost-efficient deployment strategy?](#the-development-team-is-working-on-an-api-that-will-be-served-from-amazon-api-gateway-the-api-will-be-served-from-three-environments-development-test-and-production-the-api-gateway-is-configured-to-use-237-gb-of-cache-in-all-three-stages-which-is-the-most-cost-efficient-deployment-strategy)
 | 17  | [A company is migrating its on-premises database to Amazon RDS for MySQL. The company has read-heavy workloads, and wants to make sure it re-factors its code to achieve optimum read performance for its queries. How can this objective be met?](#a-company-is-migrating-its-on-premises-database-to-amazon-rds-for-mysql-the-company-has-read-heavy-workloads-and-wants-to-make-sure-it-re-factors-its-code-to-achieve-optimum-read-performance-for-its-queries-how-can-this-objective-be-met)
-| 18  | [A developer needs to modify an application architecture to meet new functional requirements. Application data is stored in Amazon DynamoDB and processed for analysis in a rightly batch. The system analysts do not want to wait unit the next day to view the processed data and have asked to have it available in near-real time. Which application architect pattern would enables the data to be processed as it is received?](#a-developer-needs-to-modify-an-application-architecture-to-meet-new-functional-requirements-application-data-is-stored-in-amazon-dynamodb-and-processed-for-analysis-in-a-rightly-batch-the-system-analysts-do-not-want-to-wait-unit-the-next-day-to-view-the-processed-data-and-have-asked-to-have-it-available-in-near-real-time-which-application-architect-pattern-would-enables-the-data-to-be-processed-as-it-is-received)
+| 18  | [A developer needs to modify an application architecture to meet new functional requirements. Application data is stored in Amazon DynamoDB and processed for analysis in a nightly batch. The system analysts do not want to wait unit the next day to view the processed data and have asked to have it available in near-real time. Which application architect pattern would enables the data to be processed as it is received?](#a-developer-needs-to-modify-an-application-architecture-to-meet-new-functional-requirements-application-data-is-stored-in-amazon-dynamodb-and-processed-for-analysis-in-a-nightly-batch-the-system-analysts-do-not-want-to-wait-unit-the-next-day-to-view-the-processed-data-and-have-asked-to-have-it-available-in-near-real-time-which-application-architect-pattern-would-enables-the-data-to-be-processed-as-it-is-received)
 | 19  | [PLACEHOLDER 2](#placeholder-2)
 | 20  | [A software company needs to make sure user-uploaded documents are securely stored in Amazon S3. The documents must be encrypted at rest in Amazon S3. The company does not want to manage the security infrastructure in-house, but the company still needs extra protection to ensure it has control over its encryption keys due to industry regulations. Which encryption strategy should a developer use to meet these requirements?](#a-software-company-needs-to-make-sure-user-uploaded-documents-are-securely-stored-in-amazon-s3-the-documents-must-be-encrypted-at-rest-in-amazon-s3-the-company-does-not-want-to-manage-the-security-infrastructure-in-house-but-the-company-still-needs-extra-protection-to-ensure-it-has-control-over-its-encryption-keys-due-to-industry-regulations-which-encryption-strategy-should-a-developer-use-to-meet-these-requirements)
 | 21  | [An application uses Amazon Kinesis Data Streams to ingest and process large streams of data records in real time. Amazon EC2 instances consume and process the data from the shards of the Kinesis data stream by using Amazon Kinesis Client Library (KCL). The application handles the failure scenarios and does not require standby workers. The application reports that a specific shard is receiving more data than expected. To adapt to the changes in the rate of data flow, the 'hot' shard is resharded. Assuming that the initial number of shards in the Kinesis data stream is 4, and after resharding the number of shards increased to 6, what is the maximum number of EC2 instances that can be deployed to process data from all the shards?](#an-application-uses-amazon-kinesis-data-streams-to-ingest-and-process-large-streams-of-data-records-in-real-time-amazon-ec2-instances-consume-and-process-the-data-from-the-shards-of-the-kinesis-data-stream-by-using-amazon-kinesis-client-library-kcl-the-application-handles-the-failure-scenarios-and-does-not-require-standby-workers-the-application-reports-that-a-specific-shard-is-receiving-more-data-than-expected-to-adapt-to-the-changes-in-the-rate-of-data-flow-the-hot-shard-is-resharded-assuming-that-the-initial-number-of-shards-in-the-kinesis-data-stream-is-4-and-after-resharding-the-number-of-shards-increased-to-6-what-is-the-maximum-number-of-ec2-instances-that-can-be-deployed-to-process-data-from-all-the-shards)
@@ -651,7 +651,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### A developer needs to modify an application architecture to meet new functional requirements. Application data is stored in Amazon DynamoDB and processed for analysis in a rightly batch. The system analysts do not want to wait unit the next day to view the processed data and have asked to have it available in near-real time. Which application architect pattern would enables the data to be processed as it is received?
+### A developer needs to modify an application architecture to meet new functional requirements. Application data is stored in Amazon DynamoDB and processed for analysis in a nightly batch. The system analysts do not want to wait unit the next day to view the processed data and have asked to have it available in near-real time. Which application architect pattern would enables the data to be processed as it is received?
 
 - [x] Event driven.
 - [ ] Client served driven.
@@ -1548,8 +1548,8 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### A company is adding stored value (or gift card) capability to its highly popular casual gaming website. Users need to be able to trade this value for other users' items on the platform. This would require both users' records be updated as a single transaction, or both users' records to be completely rolled back. Which AWS database options can provide the transactional capability required for this new feature? (Choose TWO)
 
 - [ ] Amazon DynamoDB with operations made with the ConsistentRead parameter set to true.
-- [x] Amazon ElastiCache for Memcached with operations made within a transaction block.
-- [ ] Amazon Aurora MySQL with operations made within a transaction block.
+- [ ] Amazon ElastiCache for Memcached with operations made within a transaction block.
+- [x] Amazon Aurora MySQL with operations made within a transaction block.
 - [x] Amazon DynamoDB with reads and writes made using Transact* operations.
 - [ ] Amazon Redshift with operations made within a transaction block.
 
@@ -1898,9 +1898,9 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### A Developer is migrating existing applications to AWS. These applications use MongoDB as their primary data store, and they will be deployed to Amazon EC2 instances. Management requires that the Developer minimize changes to applications while using AWS services. Which solution should the Developer use to host MongoDB in AWS?
 
 - [ ] Install MongoDB on the same instance where the application is running.
-- [ ] Deploy Amazon DocumentDB in MongoDB compatibility mode.
+- [x] Deploy Amazon DocumentDB in MongoDB compatibility mode.
 - [ ] Use Amazon API Gateway to translate API calls from MongoDB to Amazon DynamoDB.
-- [x] Replicate the existing MongoDB workload to Amazon DynamoDB.
+- [ ] Replicate the existing MongoDB workload to Amazon DynamoDB.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -2124,9 +2124,9 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### A Developer is migrating an on-premises application to AWS. The application currently takes user uploads and saves them to a local directory on the server. All uploads must be saved and made immediately available to all instances in an Auto Scaling group. Which approach will meet these requirements?
 
 - [ ] Use Amazon EBS and configure the application AMI to use a snapshot of the same EBS instance on boot.
-- [ ] Use Amazon S3 and rearchitect the application so all uploads are placed in S3.
+- [x] Use Amazon S3 and rearchitect the application so all uploads are placed in S3.
 - [ ] Use instance storage and share it between instances launched from the same Amazon Machine Image (AMI).
-- [x] Use Amazon EBS and file synchronization software to achieve eventual consistency among the Auto Scaling group.
+- [ ] Use Amazon EBS and file synchronization software to achieve eventual consistency among the Auto Scaling group.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -2233,8 +2233,8 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### A company wants to migrate an imaging service to Amazon EC2 while following security best practices. The images are sourced and read from a non-public Amazon S3 bucket. What should a Developer do to meet these requirements?
 
 - [ ] Create an IAM user with read-only permissions for the S3 bucket. Temporarily store the user credentials in the Amazon EBS volume of the EC2 instance.
-- [x] Create an IAM user with read-only permissions for the S3 bucket. Temporarily store the user credentials in the user data of the EC2 instance.
-- [ ] Create an EC2 service role with read-only permissions for the S3 bucket. Attach the role to the EC2 instance.
+- [ ] Create an IAM user with read-only permissions for the S3 bucket. Temporarily store the user credentials in the user data of the EC2 instance.
+- [x] Create an EC2 service role with read-only permissions for the S3 bucket. Attach the role to the EC2 instance.
 - [ ] Create an S3 service role with read-only permissions for the S3 bucket. Attach the role to the EC2 instance.
 
 **[⬆ Back to Top](#table-of-contents)**
