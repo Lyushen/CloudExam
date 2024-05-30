@@ -24,6 +24,23 @@ export function openDB() {
     });
 }
 
+export function clearQuestions(db) {
+    return new Promise((resolve, reject) => {
+        const transaction = db.transaction([storeName], 'readwrite');
+        const store = transaction.objectStore(storeName);
+        const request = store.clear();
+
+        request.onsuccess = () => {
+            resolve();
+        };
+
+        request.onerror = (event) => {
+            showPopup('Clear error: ' + event.target.errorCode);
+            reject('Clear error: ' + event.target.errorCode);
+        };
+    });
+}
+
 export function saveQuestion(db, question, index) {
     return new Promise((resolve, reject) => {
         const transaction = db.transaction([storeName], 'readwrite');
@@ -55,23 +72,6 @@ export function getQuestion(db, index) {
         request.onerror = (event) => {
             showPopup('Read error: ' + event.target.errorCode);
             reject('Read error: ' + event.target.errorCode);
-        };
-    });
-}
-
-export function getQuestionsCount(db) {
-    return new Promise((resolve, reject) => {
-        const transaction = db.transaction([storeName], 'readonly');
-        const store = transaction.objectStore(storeName);
-        const request = store.count();
-
-        request.onsuccess = () => {
-            resolve(request.result);
-        };
-
-        request.onerror = (event) => {
-            showPopup('Count error: ' + event.target.errorCode);
-            reject('Count error: ' + event.target.errorCode);
         };
     });
 }

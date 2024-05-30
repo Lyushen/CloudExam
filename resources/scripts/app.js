@@ -1,5 +1,7 @@
+// app.js
 import { getCookie, manageCookies, getCurrentQuestionFromCookies } from './cookies.js';
-import { openDB, saveQuestion, getQuestion, getQuestionsCount } from './IndexedDB.js';
+import { openDB, saveQuestion, getQuestion, clearQuestions } from './IndexedDB.js';
+
 export let appSettings = {
     source: '',
     lastSource: '',
@@ -7,7 +9,8 @@ export let appSettings = {
     shuffleAnswers: 'false',
     currentQuestion: 0,
     theme: 'light',
-    list: []
+    list: [],
+    dbQCount: 0 // Added dbQCount to appSettings
 };
 
 // UI Element Consts
@@ -24,12 +27,13 @@ export async function initializeAppSettings() {
         appSettings.shuffleQuestions = getCookie('shuffleQuestions') || localStorage.getItem('shuffleQuestions') || appSettings.shuffleQuestions;
         appSettings.shuffleAnswers = getCookie('shuffleAnswers') || localStorage.getItem('shuffleAnswers') || appSettings.shuffleAnswers;
         appSettings.currentQuestion = getCurrentQuestionFromCookies() || parseInt(localStorage.getItem('currentQuestion'), 10) || appSettings.currentQuestion;
+        appSettings.dbQCount = parseInt(localStorage.getItem('dbQCount'), 10) || appSettings.dbQCount; // Initialize dbQCount
     } catch (error) {
         showPopup('Initialization error: ' + error.message);
     }
 }
 
-function updateSettings() {
+export function updateSettings() {
     // Log current settings to ensure tracking of changes
     //console.log("Updating settings:", appSettings);
 
@@ -44,6 +48,7 @@ function updateSettings() {
     localStorage.setItem('shuffleAnswers', appSettings.shuffleAnswers); // Ensure storing as string
     localStorage.setItem('currentQuestion', appSettings.currentQuestion);
     localStorage.setItem('lastSource', appSettings.lastSource);
+    localStorage.setItem('dbQCount', appSettings.dbQCount); // Store dbQCount in localStorage
 
     // Update cookies with current settings
     manageCookies();
@@ -63,15 +68,20 @@ export function addControlEventListeners() {
 export async function getAndParseInitialQuestions() {
     try {
         const db = await openDB();
-        const storedQuestionsCount = await getQuestionsCount(db);
-        if (storedQuestionsCount > 0 && appSettings.source === appSettings.lastSource) {
+
+        if (appSettings.dbQCount > 0 && appSettings.source === appSettings.lastSource) {
             // If questions exist in IndexedDB and the source has not changed, use them
             console.log("Loaded questions from IndexedDB with unchanged source.");
         } else {
+            // Clear the existing questions if the source has changed
+            if (appSettings.source !== appSettings.lastSource) {
+                await clearQuestions(db);
+                console.log("Cleared existing questions due to source change.");
+            }
             // Fetch questions if not in IndexedDB or if the source has changed
             await fetchAndParseQuestions(db);
         }
-        updateQuestionLimits(db);
+        updateQuestionLimits();
         updateQuestionDisplay();
         updateSettings();
     } catch (error) {
@@ -97,8 +107,11 @@ async function fetchAndParseQuestions(db) {
                 break;
             }
         }
+        appSettings.dbQCount = json.length;
         localStorage.setItem('questions_count', json.length);
         localStorage.setItem('source', appSettings.source);
+        localStorage.setItem('lastSource', appSettings.source);
+        localStorage.setItem('dbQCount', appSettings.dbQCount);
     } catch (error) {
         showPopup('Fetch error: ' + error.message);
     }
@@ -119,8 +132,7 @@ async function loadQuestionFromStorage(index) {
 export async function updateQuestionDisplay(index = appSettings.currentQuestion) {
     try {
         const db = await openDB();
-        const storedQuestionsCount = await getQuestionsCount(db);
-        if (index < 0 || index >= storedQuestionsCount) return;
+        if (index < 0 || index >= appSettings.dbQCount) return;
         appSettings.currentQuestion = index;
         let currentQuestion = await loadQuestionFromStorage(index);
 
@@ -150,9 +162,9 @@ function convertOptionsToArray(options) {
 }
 
 // Update question limits in the UI
-async function updateQuestionLimits(db) {
+async function updateQuestionLimits() {
     try {
-        const questionsLength = await getQuestionsCount(db);
+        const questionsLength = appSettings.dbQCount;
 
         questionBox.min = 1;
         questionBox.max = questionsLength;
@@ -167,6 +179,7 @@ export function toggleShuffleQuestions() {
     appSettings.shuffleQuestions = appSettings.shuffleQuestions === 'true' ? 'false' : 'true';
     shuffleQuestions(appSettings.shuffleQuestions==='true');
     updateSettings();
+    toggleMenu();
 }
 
 // Shuffle the order of questions based on a flag
@@ -194,6 +207,7 @@ export function toggleShuffleAnswers() {
     appSettings.shuffleAnswers = appSettings.shuffleAnswers === 'true' ? 'false' : 'true';
     updateSettings();
     updateQuestionDisplay(); // Redisplay with new shuffle state
+    toggleMenu(); // Deselect menu if open
 } 
 
 
@@ -257,7 +271,7 @@ function handleWheelEvent(e) {
 
         if (direction < 0 && currentIndex > 0) {
             updateQuestionDisplay(currentIndex - 1);
-        } else if (direction > 0 && currentIndex < appSettings.questions.length - 1) {
+        } else if (direction > 0 && currentIndex < appSettings.dbQCount - 1) {
             updateQuestionDisplay(currentIndex + 1);
         }
     }
@@ -265,14 +279,14 @@ function handleWheelEvent(e) {
 
 // Handle input events to jump to a specific question
 function handleInput() {
-    
     const newIndex = parseInt(questionBox.value, 10) - 1;
-    if (!isNaN(newIndex) && newIndex >= 0 && newIndex < appSettings.questions.length) {
+    if (!isNaN(newIndex) && newIndex >= 0 && newIndex < appSettings.dbQCount) {
         updateQuestionDisplay(newIndex);
     }
 }
 
 export function showPopup(message) {
+    console.error(message);
     const popup = document.getElementById('popup');
     const popupMessage = document.getElementById('popup-message');
     popupMessage.textContent = message;

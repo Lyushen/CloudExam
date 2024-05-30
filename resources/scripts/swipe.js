@@ -1,35 +1,51 @@
-import { updateQuestionDisplay,appSettings } from './app.js';
+import { updateQuestionDisplay, appSettings } from './app.js';
 
 export function initializeSwipeHandling() {
     let startCoord = 0;
+    let currentQuestionIndex = appSettings.currentQuestion;
     let isSwiping = false;
+    let changeMade = false;
     let sens_percent_value = 0.25; // 25% of the screen
     let sensitivity = visualViewport.width * sens_percent_value; // Use % of the visual viewport width
 
-    // Update sensitivity on resize or zoom
     visualViewport.addEventListener('resize', () => {
         sensitivity = visualViewport.width * sens_percent_value;
     });
 
     const onStart = (startX) => {
         startCoord = startX;
-        isSwiping = false;  // Reset swipe state on new gesture start
+        currentQuestionIndex = appSettings.currentQuestion; // Capture the current question at start
+        isSwiping = true;
+        changeMade = false;  // Reset change tracking on new gesture start
     };
 
-    const onMove = (currentX) => {
-        if (!isSwiping) {
-            const deltaX = currentX - startCoord;
+    const onMove = (event) => {
+        const currentX = event.touches ? event.touches[0].clientX : event.clientX;
 
-            if (Math.abs(deltaX) > sensitivity) {
-                isSwiping = true;
-                    if (deltaX > 0) {
-                        updateQuestionDisplay(appSettings.currentQuestion - 1); // Swipe left to right (previous)
-                    } else {
-                        updateQuestionDisplay(appSettings.currentQuestion + 1); // Swipe right to left (next)
-                    }
-                // Prevent default only for significant horizontal movements to not interfere with natural vertical scrolling
+        if (!isSwiping) return;
+
+        const deltaX = currentX - startCoord;
+        let targetIndex = currentQuestionIndex;
+
+        if (Math.abs(deltaX) > sensitivity) {
+            if (!changeMade) {
+                if (deltaX > 0) {
+                    targetIndex = currentQuestionIndex - 1; // Swipe right to go to previous question
+                } else {
+                    targetIndex = currentQuestionIndex + 1; // Swipe left to go to next question
+                }
+                updateQuestionDisplay(targetIndex);
+                changeMade = true;
+                appSettings.currentQuestion = targetIndex; // Update the global current question index
+                // Prevent default action when a horizontal swipe is recognized
                 event.preventDefault();
             }
+        } else if (changeMade && Math.abs(deltaX) <= sensitivity) {
+            updateQuestionDisplay(currentQuestionIndex); // Revert to original question if user swipes back within threshold
+            appSettings.currentQuestion = currentQuestionIndex;
+            changeMade = false;
+            // Prevent default as it's part of a swipe revert logic
+            event.preventDefault();
         }
     };
 
@@ -39,30 +55,24 @@ export function initializeSwipeHandling() {
 
     // Touch Event Handlers
     document.addEventListener('touchstart', (event) => {
-        const touch = event.touches[0];
-        onStart(touch.clientX);
+        onStart(event.touches[0].clientX);
     }, { passive: true });
 
-    document.addEventListener('touchmove', (event) => {
-        onMove(event.touches[0].clientX);
-    }, { passive: false });
+    document.addEventListener('touchmove', onMove, { passive: false });
 
     document.addEventListener('touchend', onEnd);
 
     // Pointer Event Handlers (for mouse)
     document.addEventListener('pointerdown', (event) => {
         if (event.pointerType === 'mouse' && event.button !== 0) return;
-        if (event.target.closest('#question-text') || event.target.closest('#explanations-container')) return; // if the mouse bove q-text and expl-text we stop
+        if (event.target.closest('#question-text') || event.target.closest('#explanations-container')) return;
         onStart(event.clientX);
         document.addEventListener('pointermove', onPointerMove, { passive: false });
         document.addEventListener('pointerup', onPointerEnd);
     });
 
     const onPointerMove = (event) => {
-        if (event.pointerType === 'mouse') {
-            onMove(event.clientX);
-            event.preventDefault(); // Prevent default for mouse interactions to avoid selecting text or other mouse-specific behaviors
-        }
+        onMove(event);
     };
 
     const onPointerEnd = (event) => {
