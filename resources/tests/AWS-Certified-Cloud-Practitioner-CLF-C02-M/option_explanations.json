@@ -5406,7 +5406,7 @@
             "1": "AWS Budgets",
             "2": "AWS Cost Explorer",
             "3": "AWS Cost and Usage Report",
-            "4": "AWS Cost Anomaly Detection\nExplanation:\nAWS Cost and Usage Report delivers detailed data about AWS costs and usage, which can be directly used to feed Amazon QuickSight for creating detailed and customized billing dashboards. It is specifically designed to provide comprehensive data suitable for in-depth analysis and reporting."
+            "4": "AWS Cost Anomaly Detection"
         },
         "correct_answers": [
             "options.3"
