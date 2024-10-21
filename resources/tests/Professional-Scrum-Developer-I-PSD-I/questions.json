@@ -4753,19 +4753,11 @@
         "question": "True or False: The more code a Developer writes the better.",
         "options": {
             "1": "True.",
-            "2": "False.   #"
+            "2": "False."
         },
         "correct_answers": [
             "options.2"
         ],
-        "description": "",
-        "source_url": ""
-    },
-    {
-        "id": "306",
-        "question": "Legal Information and Disclaimer  *Scrum.org \u2022 Professional Scrum \u2022 Applying Professional Scrum \u2022 Professional Scrum Foundations \u2022 Professional Scrum Master \u2022 Professional Scrum Product Owner \u2022 Professional Scrum Developer \u2022 Scaled Professional Scrum \u2022 Professional Agile Leadership \u2022 Professional Agile Leadership - Essentials \u2022 Professional Scrum with Kanban \u2022 Professional Scrum with User Experience \u2022 Professional Scrum Facilitation Skills \u2022 Professional Scrum Product Backlog Management Skills \u2022 Professional Scrum Trainer \u2022 Professional Training Network \u2022 Evidence Based Management \u2022 Guided Learning Platform \u2022 Professional Scrum Guide \u2022 Scrum Pulse \u2022 ScrumPulse \u2022 Scrum Tapas \u2022 PSF \u2022 APS \u2022 PSM \u2022 PSPO \u2022 PSD \u2022 SPS \u2022 PAL-E \u2022 PSK \u2022 PSU \u2022 PSF Skills \u2022 PSPBM Skills \u2022 PST \u2022 PSG \u2022 GLP \u2022 PTN \u2022 EBM \u2022 EBMngt along with respective Design Marks, are protected brands of Scrum.org. This course is neither endorsed nor affiliated with Scrum.org.*",
-        "options": {},
-        "correct_answers": [],
         "description": "",
         "source_url": ""
     }

@@ -103,6 +103,18 @@
 
 - Fix 1 question with a wrong answer.
 
+**[v1.2.3](../../releases/tag/v1.2.3): June 10, 2024.**
+
+- Fix 1 question with a wrong answer.
+
+**[v1.3.0](../../releases/tag/v1.3.0): July 15, 2024.**
+
+- Fix 23 questions with wrong answers.
+
+**[v1.3.0](../../releases/tag/v1.3.0): August 8, 2024.**
+
+- AI-generated explanations (only paid [Udemy](https://www.udemy.com/course/aws-cloud-practitioner-clf-C01-practice-tests-exams/?referralCode=5FA00571456CA3B6E16D)).
+
 ## 🙋‍♀️ & 🙋‍♂️ Contribution
 
 We are so thankful for every contribution, which makes sure we can deliver top-notch content. Whenever you find a missing resource, broken link in a [Table of Contents](#table-of-contents), the wrong answer, please submit an [issue](../../issues). Even better would be a [Pull Request (PR)](../../pulls).
@@ -568,7 +580,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 | 424   | [Which AWS service is used to pay AWS bills, and monitor usage and budget costs?](#which-aws-service-is-used-to-pay-aws-bills-and-monitor-usage-and-budget-costs) |
 | 425   | [How do customers benefit from Amazon's massive economies of scale?](#how-do-customers-benefit-from-amazons-massive-economies-of-scale) |
 | 426   | [Which AWS feature allows a company to take advantage of usage tiers for services across multiple member accounts?](#which-aws-feature-allows-a-company-to-take-advantage-of-usage-tiers-for-services-across-multiple-member-accounts) |
-| 427   | [Which AWS services provide a way to extend an on-premises architecture to the aws cloud? (Select TWO)](#which-aws-services-provide-a-way-to-extend-an-on-premises-architecture-to-the-aws-cloud-select-two) |
+| 427   | [Which AWS services provide a way to extend an on-premises architecture to the AWS cloud? (Select TWO)](#which-aws-services-provide-a-way-to-extend-an-on-premises-architecture-to-the-aws-cloud-select-two) |
 | 428   | [Which of the following services will automatically scale with an expected increase in web traffic?](#which-of-the-following-services-will-automatically-scale-with-an-expected-increase-in-web-traffic) |
 | 429   | [Which service provides a virtually unlimited amount of online highly durable object storage?](#which-service-provides-a-virtually-unlimited-amount-of-online-highly-durable-object-storage) |
 | 430   | [Which AWS feature should a customer leverage to achieve high availability of an application?](#which-aws-feature-should-a-customer-leverage-to-achieve-high-availability-of-an-application) |
@@ -1516,7 +1528,6 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 **[⬆ Back to Top](#table-of-contents)**
 
-
 ### Which statement best describes the operational excellence pillar of the AWS Well-Architected Framework?
 
 - [ ] The ability of a system to recover gracefully from failure.
@@ -2216,8 +2227,8 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### A company needs to track resource changes using the API call history. Which AWS service can help the company achieve this goal?
 
 - [ ] AWS Config.
-- [x] Amazon CloudWatch.
-- [ ] AWS CloudTrail.
+- [ ] Amazon CloudWatch.
+- [x] AWS CloudTrail.
 - [ ] AWS CloudFormation.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -2327,8 +2338,8 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### A company is trying to analyze the costs applied to their AWS account recently. Which of the following provides them the most granular data about their AWS costs and usage?
 
 - [ ] Amazon Machine Image.
-- [x] AWS Cost Explorer.
-- [ ] AWS Cost & Usage Report.
+- [ ] AWS Cost Explorer.
+- [x] AWS Cost & Usage Report.
 - [ ] Amazon CloudWatch.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -2422,8 +2433,8 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### Which of the following is NOT a characteristic of Amazon Elastic Compute Cloud (Amazon EC2)?
 
-- [ ] Amazon EC2 is considered a Serverless Web Service.
-- [x] Amazon EC2 eliminates the need to invest in hardware upfront.
+- [x] Amazon EC2 is considered a Serverless Web Service.
+- [ ] Amazon EC2 eliminates the need to invest in hardware upfront.
 - [ ] Amazon EC2 can launch as many or as few virtual servers as needed.
 - [ ] Amazon EC2 offers scalable computing.
 
@@ -2765,10 +2776,10 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### Which of the following are examples of the customer's responsibility to implement 'security IN the cloud'? (Choose TWO)
 
-- [x] Building a schema for an application.
+- [ ] Building a schema for an application.
 - [ ] Replacing physical hardware.
 - [ ] Creating a new hypervisor.
-- [ ] Patch management of the underlying infrastructure.
+- [x] Patch management of the underlying infrastructure.
 - [x] File system encryption.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -2987,9 +2998,9 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### According to best practices, which of the below options is best suited for processing a large number of binary files?
 
 - [ ] Vertically scaling EC2 instances.
-- [x] Running RDS instances in parallel.
+- [ ] Running RDS instances in parallel.
 - [ ] Vertically scaling RDS instances.
-- [ ] Running EC2 instances in parallel.
+- [x] Running EC2 instances in parallel.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -4238,11 +4249,11 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### What are the benefits of the AWS Marketplace service? (Choose TWO)
 
-- [x] Protects customers by performing periodic security checks on listed products.
-- [ ] Per-second billing.
+- [ ] Protects customers by performing periodic security checks on listed products.
+- [x] Per-second billing.
 - [ ] Provides cheaper options for purchasing Amazon EC2 on-demand instances.
-- [x] Provides flexible pricing options that suit most customer needs.
-- [ ] Provides software solutions that run on AWS or any other Cloud vendor.
+- [ ] Provides flexible pricing options that suit most customer needs.
+- [x] Provides software solutions that run on AWS or any other Cloud vendor.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -4552,9 +4563,9 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### Which of the following are pillars of the AWS Well-Architected Framework? (Select TWO)
 
 - [ ] Multiple Availability Zones.
-- [ ] Performance efficiency.
+- [x] Performance efficiency.
 - [x] Security.
-- [x] Encryption usage.
+- [ ] Encryption usage.
 - [ ] High availability.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -4607,9 +4618,9 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### Which AWS feature will reduce the customer's total cost of ownership (TCO)?
 
-- [x] Shared responsibility security model.
+- [ ] Shared responsibility security model.
 - [ ] Single tenancy.
-- [ ] Elastic computing.
+- [x] Elastic computing.
 - [ ] Encryption.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -4672,9 +4683,9 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### How do customers benefit from Amazon's massive economies of scale?
 
-- [ ] Periodic price reductions as the result of Amazon's operational efficiencies.
+- [x] Periodic price reductions as the result of Amazon's operational efficiencies.
 - [ ] New Amazon EC2 instance types providing the latest hardware.
-- [x] The ability to scale up and down when needed.
+- [ ] The ability to scale up and down when needed.
 - [ ] Increased reliability in the underlying hardware of Amazon EC2 instances.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -4688,13 +4699,13 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### Which AWS services provide a way to extend an on-premises architecture to the aws cloud? (Select TWO)
+### Which AWS services provide a way to extend an on-premises architecture to the AWS cloud? (Select TWO)
 
 - [ ] Amazon EBS.
-- [x] Amazon Connect.
-- [ ] AWS Storage Gateway AWS CLOUD PRACTITIONER DUMPS.
-- [x] Amazon CloudFront.
-- [ ] AWS Direct Connect.
+- [ ] Amazon Connect.
+- [x] AWS Storage Gateway.
+- [ ] Amazon CloudFront.
+- [x] AWS Direct Connect.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -4729,9 +4740,9 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [x] AWS WAF.
 - [ ] AWS Trusted Advisor.
-- [x] AWS Direct Connect.
+- [ ] AWS Direct Connect.
 - [ ] AWS Organizations.
-- [ ] Network ACLs.
+- [x] Network ACLs.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -4796,8 +4807,8 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] Resource groups.
 - [x] Availability Zones.
 - [ ] Security groups.
-- [ ] Regions.
-- [x] Amazon Machine Images (AMIS).
+- [x] Regions.
+- [ ] Amazon Machine Images (AMIS).
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -4819,12 +4830,11 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 **[⬆ Back to Top](#table-of-contents)**
 
-
 ### What costs are included when comparing AWS Total Cost of Ownership (TCO) with on-premises TCO?
 
-- [x] Project management.
+- [ ] Project management.
 - [ ] Antivirus software licensing.
-- [ ] Data center security.
+- [x] Data center security.
 - [ ] Software development.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -4979,8 +4989,8 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### Which security service automatically recognizes and classifies sensitive data or intellectual property on AWS?
 
-- [x] Amazon GuardDuty.
-- [ ] Amazon Macie.
+- [ ] Amazon GuardDuty.
+- [x] Amazon Macie.
 - [ ] Amazon Inspector.
 - [ ] AWS Shield.
 
@@ -5165,9 +5175,9 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### Which AWS services can be used to gather information about AWS account activity? (Select TWO)
 
-- [x] Amazon CloudFront.
+- [ ] Amazon CloudFront.
 - [ ] AWS Cloud9.
-- [ ] AWS CloudTrail.
+- [x] AWS CloudTrail.
 - [ ] AWS CloudHSM.
 - [x] Amazon CloudWatch.
 
@@ -5444,8 +5454,8 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### A company wants to expand from one AWS Region into a second AWS Region. What does the company need to do to start supporting the new Region?
 
 - [ ] Contact an AWS Account Manager to sign a new contract.
-- [x] Move an Availability Zone to the new Region.
-- [ ] Begin deploying resources in the second Region.
+- [ ] Move an Availability Zone to the new Region.
+- [x] Begin deploying resources in the second Region.
 - [ ] Download the AWS Management Console for the new Region.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -5453,8 +5463,8 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### Why is it beneficial to use Elastic Load Balancers with applications?
 
 - [ ] They allow for the conversion from Application Load.
-- [x] Balancers to Classic Load Balancers.
-- [ ] They are capable of handling constant changes in network traffic patterns.
+- [ ] Balancers to Classic Load Balancers.
+- [x] They are capable of handling constant changes in network traffic patterns.
 - [ ] They automatically adjust capacity. They are provided at no charge to users.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -5655,8 +5665,8 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] AWS Trusted Advisor.
 - [ ] AWS Support case.
-- [ ] Concierge team.
-- [x] Amazon Connect.
+- [x] Concierge team.
+- [ ] Amazon Connect.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -5727,9 +5737,9 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### A company is planning to migrate from on-premises to the AWS Cloud. When AWS tool or service provides detailed reports on estimated cost savings after migration?
 
-- [ ] AWS Total Cost of Ownership (TCO) Calculator.
+- [x] AWS Total Cost of Ownership (TCO) Calculator.
 - [ ] Cost Explorer.
-- [x] AWS Budgets.
+- [ ] AWS Budgets.
 - [ ] AWS Migration Hub.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -5884,8 +5894,8 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### What is a value proposition of the AWS Cloud?
 
-- [x] AWS is responsible for security in the AWS Cloud.
-- [ ] No long-term contract is required.
+- [ ] AWS is responsible for security in the AWS Cloud.
+- [x] No long-term contract is required.
 - [ ] Provision new servers in days.
 - [ ] AWS manages user applications in the AWS Cloud.
 
@@ -5932,8 +5942,8 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] AWS automatically distributes the data globally for higher durability.
 - [ ] AWS will take care of operating the application.
 - [x] AWS makes it easy to architect for high availability.
-- [ ] AWS can easily accommodate application demand changes.
-- [x] AWS takes care of application security patching.
+- [x] AWS can easily accommodate application demand changes.
+- [ ] AWS takes care of application security patching.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -6135,9 +6145,9 @@ application needs it.
 
 - [ ] Firmware upgrades of network infrastructure.
 - [x] Patching of operating systems.
-- [x] Patching of the underlying hypervisor.
+- [ ] Patching of the underlying hypervisor.
 - [ ] Physical security of data centers.
-- [ ] Configuration of the security group.
+- [x] Configuration of the security group.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -6201,9 +6211,9 @@ application needs it.
 ### Which AWS security service protects applications from distributed denial of service attacks with always-on detection and automatic inline mitigations?
 
 - [ ] Amazon Inspector.
-- [x] AWS Web Application Firewall (AWS WAF).
+- [ ] AWS Web Application Firewall (AWS WAF).
 - [ ] Elastic Load Balancing (ELB).
-- [ ] AWS Shield.
+- [x] AWS Shield.
 
 **[⬆ Back to Top](#table-of-contents)**
 

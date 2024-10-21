@@ -1,5 +1,88 @@
 # ⬆️ Microsoft SC-900 (Microsoft Security, Compliance, and Identity Fundamentals) Practice Tests Exams Questions & Answers
 
+![Promotional image](images/promotional.png)
+
+## Udemy & shop.ditectrev.com
+
+❣️ Please support us by purchasing this course on Udemy in an interactive version with the [discounted link](https://www.udemy.com/course/ms-security-compliance-and-identity-fundamentals-sc-900/?referralCode=38CEC527FAE1EC26ACBA). If you're working for a company, you could most probably easily claim this expense during preparation for your exam. For us, it's to be, or not to be, in the game.
+
+🛍️ Alternatively, you can buy the PDF with those questions on [shop.ditectrev.com](https://shop.ditectrev.com/product/microsoft-sc-900-security-compliance-and-identity-fundamentals-practice-tests-exams-questions-answers).
+
+## ✨ This course is unlike any Microsoft SC-900 (Microsoft Security, Compliance, and Identity Fundamentals) course you will find online.
+
+✋ Join a live online community and a course taught by industry experts and pass the Microsoft SC-900 (Microsoft Security, Compliance, and Identity Fundamentals) confidently. We aim to build an ecosystem of Information Technology (IT) certifications and online courses in cooperation with the technology industry. We believe it will give our students 100% confidence in the pacing market in an open-source environment. We are just at the beginning of our way, so it's even better for you to join now!
+
+[![Join our Discord](images/discord.png 'Join our Discord')](https://discord.gg/RFjtXKfJy3)
+
+## ⌛️ Short and to the point; why should you take the course:
+
+1. Always happy to answer your questions on Udemy's Q&A's and outside :)
+2. Failed? Please submit a screenshot of your exam result and request a refund (via our upcoming platform, not possible on Udemy); we'll always accept it.
+3. Learn about topics, such as:
+   - Azure Active Directory (Azure AD);
+   - Azure Bastion;
+   - Azure Defender;
+   - Azure Firewall;
+   - Azure Policy;
+   - Azure Security Center;
+   - Conditional Access Policies;
+   - Microsoft Cloud App Security;
+   - Microsoft 365 Compliance Center;
+   - Microsoft Defender;
+   - Multi-Factor Authentication (MFA);
+   - Privileged Identity Management (PIM);
+   - **Much More!**
+4. Questions are similar to the actual exam, without duplications (like in other courses ;-)).
+5. The Practice Tests Exams simulate the actual exam's content, timing, and percentage required to pass the exam.
+6. This course is **not** an Microsoft SC-900 (Microsoft Security, Compliance, and Identity Fundamentals) Exam Dump. Some people use brain dumps or exam dumps, but that's absurd, which we don't practice.
+7. 211 **unique** questions.
+
+## ☝️ Course Updates
+
+**[v1.0.0](../../releases/tag/v1.0.0): June 28, 2024.**
+
+- Launch of the course.
+
+**[v1.0.0](../../releases/tag/v1.0.0): July 26, 2024.**
+
+- AI-generated explanations (only paid [Udemy](https://www.udemy.com/course/ms-security-compliance-and-identity-fundamentals-sc-900/?referralCode=38CEC527FAE1EC26ACBA)).
+
+## 🙋‍♀️ & 🙋‍♂️ Contribution
+
+We are so thankful for every contribution, which makes sure we can deliver top-notch content. Whenever you find a missing resource, broken link in a [Table of Contents](#table-of-contents), the wrong answer, please submit an [issue](../../issues). Even better would be a [Pull Request (PR)](../../pulls).
+
+## Who this course is for:
+
+- 👨‍🎓 Students preparing for the Microsoft SC-900 (Microsoft Security, Compliance, and Identity Fundamentals) Exam;
+- 👨‍🎓 AWS Engineers;
+- 👨‍🎓 Azure Engineers;
+- 👨‍🎓 Cloud Architects;
+- 👨‍🎓 Cloud Engineers;
+- 👨‍🎓 DevOps Engineers;
+- 👨‍🎓 Enterprise Architects;
+- 👨‍🎓 Google Cloud Platform (GCP) Engineers;
+- 👨‍🎓 Infrastructure Engineers;
+- 👨‍🎓 IT Professionals;
+- 👨‍🎓 Lead Engineers;
+- 👨‍🎓 Network Engineers;
+- 👨‍🎓 Product Architects;
+- 👨‍🎓 Product Managers;
+- 👨‍🎓 Product Owners;
+- 👨‍🎓 Project Managers;
+- 👨‍🎓 Scrum Masters;
+- 👨‍🎓 Security Specialists;
+- 👨‍🎓 Site Reliability Engineers;
+- 👨‍🎓 Software Developers/Engineers;
+- 👨‍🎓 Software Testers;
+- 👨‍🎓 Solution Architects;
+- 👨‍🎓 Team Leaders.
+
+## Requirements
+
+- 🤩 Excitement to learn!
+- 0️⃣ Prior knowledge is required;
+- ✅ You can pass the Microsoft SC-900 (Microsoft Security, Compliance, and Identity Fundamentals) Exam solely based on our Practice Tests Exams.
+
 ## Table of Contents
 
 | No. | Questions |
@@ -21,7 +104,7 @@
 | 15  | [Azure Security Center can evaluate the security of workloads deployed to Azure or on-premises.](#azure-security-center-can-evaluate-the-security-of-workloads-deployed-to-azure-or-on-premises)
 | 16  | [In the shared responsibility model for an Azure deployment, what is Microsoft solely responsible for managing?](#in-the-shared-responsibility-model-for-an-azure-deployment-what-is-microsoft-solely-responsible-for-managing)
 | 17  | [Which Microsoft 365 feature can you use to restrict communication and the sharing of information between members of two departments at your organization?](#which-microsoft-365-feature-can-you-use-to-restrict-communication-and-the-sharing-of-information-between-members-of-two-departments-at-your-organization)
-| 18  | [You can use [...] in the Microsoft 365 security center to identify devices that are affected by an alert.](#-in-the-microsoft-365-security-center-to-identify-devices-that-are-affected-by-an-alert)
+| 18  | [You can use [...] in the Microsoft 365 security center to identify devices that are affected by an alert.](#you-can-use--in-the-microsoft-365-security-center-to-identify-devices-that-are-affected-by-an-alert)
 | 19  | [When users sign in to the Azure portal, they are first [...].](#when-users-sign-in-to-the-azure-portal-they-are-first-)
 | 20  | [You plan to implement a security strategy and place multiple layers of defense throughout a network infrastructure. Which security methodology does this represent?](#you-plan-to-implement-a-security-strategy-and-place-multiple-layers-of-defense-throughout-a-network-infrastructure-which-security-methodology-does-this-represent)
 | 21  | [Compliance Manager assesses compliance data [...] for an organization.](#compliance-manager-assesses-compliance-data--for-an-organization)
@@ -44,9 +127,9 @@
 | 38  | [What is an example of encryption at rest?](#what-is-an-example-of-encryption-at-rest)
 | 39  | [Azure DDoS Protection Standard can be used to protect [...].](#azure-ddos-protection-standard-can-be-used-to-protect-)
 | 40  | [Which three authentication methods can be used by Azure Multi-Factor Authentication (MFA)?](#which-three-authentication-methods-can-be-used-by-azure-multi-factor-authentication-mfa)
-| 41  | [Which Microsoft 365 compliance center feature can you use to identify all the documents on a Microsoft SharePoint Online site that contain a specific key word?](#which-microsoft-365-compliance-center-feature-can-you-use-to-identify-all-the-documents-on-a-microsoft-sharepoint-online-site-that-contain-a-specific-key-word)
+| 41  | [Which Microsoft 365 Compliance Center feature can you use to identify all the documents on a Microsoft SharePoint Online site that contain a specific key word?](#which-microsoft-365-compliance-center-feature-can-you-use-to-identify-all-the-documents-on-a-microsoft-sharepoint-online-site-that-contain-a-specific-key-word)
 | 42  | [You can use the insider risk management solution to detect phising scams.](#you-can-use-the-insider-risk-management-solution-to-detect-phising-scams)
-| 43  | [You can access the insider risk management solution from the Microsoft 365 compliance center.](#you-can-access-the-insider-risk-management-solution-from-the-microsoft-365-compliance-center)
+| 43  | [You can access the insider risk management solution from the Microsoft 365 Compliance Center.](#you-can-access-the-insider-risk-management-solution-from-the-microsoft-365-compliance-center)
 | 44  | [You can use the insider risk management solution to detect data leaks by unhappy employees.](#you-can-use-the-insider-risk-management-solution-to-detect-data-leaks-by-unhappy-employees)
 | 45  | [What are two capabilities of Microsoft Defender for Endpoint?](#what-are-two-capabilities-of-microsoft-defender-for-endpoint)
 | 46  | [Microsoft Intune can be used to manage Android devices.](#microsoft-intune-can-be-used-to-manage-android-devices)
@@ -94,6 +177,127 @@
 | 88  | [[...] provides Network Address Translation (NAT) services.](#-provides-network-address-translation-nat-services)
 | 89  | [[...] provides secure and seamless Remote Desktop connectivity to Azure virtual machines.](#-provides-secure-and-seamless-remote-desktop-connectivity-to-azure-virtual-machines)
 | 90  | [[...] provides provides traffic filtering that can be applied to specific network interfaces on a virtual network.](#-provides-provides-traffic-filtering-that-can-be-applied-to-specific-network-interfaces-on-a-virtual-network)
+| 91  | [Conditional access policies can use the device state as a signal.](#conditional-access-policies-can-use-the-device-state-as-a-signal)
+| 92  | [Conditional access policies apply before first-factor authentication is complete.](#conditional-access-policies-apply-before-first-factor-authentication-is-complete)
+| 93  | [Conditional access policies can trigger multi-factor authentication (MFA) if a user attempts to access a specific application.](#conditional-access-policies-can-trigger-multi-factor-authentication-mfa-if-a-user-attempts-to-access-a-specific-application)
+| 94  | [Azure AD Identity Protection can add users to groups based on the users' risk level.](#azure-ad-identity-protection-can-add-users-to-groups-based-on-the-users-risk-level)
+| 95  | [Azure AD Identity Protection can detect whether user credentials were leaked to the public.](#azure-ad-identity-protection-can-detect-whether-user-credentials-were-leaked-to-the-public)
+| 96  | [Azure AD Identity Protection can be used to invoke Multi-Factor Authentication based on the users' risk level.](#azure-ad-identity-protection-can-be-used-to-invoke-multi-factor-authentication-based-on-the-users-risk-level)
+| 97  | [Security defaults require an Azure Active Directory (Azure AD) Premium license.](#security-defaults-require-an-azure-active-directory-azure-ad-premium-license)
+| 98  | [Security defaults can be enabled for a single Azure Active Directory (Azure AD) user.](#security-defaults-can-be-enabled-for-a-single-azure-active-directory-azure-ad-user)
+| 99  | [When Security defaults are enabled, all administrators must use multi-factor authentication (MFA).](#when-security-defaults-are-enabled-all-administrators-must-use-multi-factor-authentication-mfa)
+| 100 | [Control is a key privacy principle of Microsoft.](#control-is-a-key-privacy-principle-of-microsoft)
+| 101 | [Transparency is a key principle of Microsoft.](#transparency-is-a-key-principle-of-microsoft)
+| 102 | [Shared responsibility a key principle of Microsoft.](#shared-responsibility-a-key-principle-of-microsoft)
+| 103 | [What should you use to ensure that the members of an Azure Active Directory group use multi-factor authentication (MFA) when they sign in?](#what-should-you-use-to-ensure-that-the-members-of-an-azure-active-directory-group-use-multi-factor-authentication-mfa-when-they-sign-in)
+| 104 | [Microsoft Defender for Cloud can detect vulnerabilities and threats for Azure Storage.](#microsoft-defender-for-cloud-can-detect-vulnerabilities-and-threats-for-azure-storage)
+| 105 | [Microsoft Defender for Cloud can evaluate the security of workloads deployed to Azure or on-premises.](#microsoft-defender-for-cloud-can-evaluate-the-security-of-workloads-deployed-to-azure-or-on-premises)
+| 106 | [[...] provides benchmark recommendations and guidance for protecting Azure services.](#-provides-benchmark-recommendations-and-guidance-for-protecting-azure-services)
+| 107 | [Which two Azure resources can a network security group (NSG) be associated with?](#which-two-azure-resources-can-a-network-security-group-nsg-be-associated-with)
+| 108 | [Azure AD Connect can be used to implement hybrid identity.](#azure-ad-connect-can-be-used-to-implement-hybrid-identity)
+| 109 | [Hybrid identity requires the implementation of two Microsoft 365 tenants.](#hybrid-identity-requires-the-implementation-of-two-microsoft-365-tenants)
+| 110 | [Hybrid identity refers to the synchronization of Active Directory Domain Services (AD DS) and Azure Active Directory (Azure AD).](#hybrid-identity-refers-to-the-synchronization-of-active-directory-domain-services-ad-ds-and-azure-active-directory-azure-ad)
+| 111 | [Match the types of compliance score actions to the appropriate tasks. [...] Use encryption to protect data at rest.](#match-the-types-of-compliance-score-actions-to-the-appropriate-tasks--use-encryption-to-protect-data-at-rest)
+| 112 | [Match the types of compliance score actions to the appropriate tasks. [...] Actively monitor systems to identify irregularities that might represent risks.](#match-the-types-of-compliance-score-actions-to-the-appropriate-tasks--actively-monitor-systems-to-identify-irregularities-that-might-represent-risks)
+| 113 | [You can use the insider risk management solution to detect phishing scams.](#you-can-use-the-insider-risk-management-solution-to-detect-phishing-scams)
+| 114 | [To which type of resource can Azure Bastion provide secure access?](#to-which-type-of-resource-can-azure-bastion-provide-secure-access)
+| 115 | [Conditional access policies always enforce the use of multi-factor authentication (MFA).](#conditional-access-policies-always-enforce-the-use-of-multi-factor-authentication-mfa)
+| 116 | [What can you protect by using the information protection solution in the Microsoft 365 Compliance Center?](#what-can-you-protect-by-using-the-information-protection-solution-in-the-microsoft-365-compliance-center)
+| 117 | [Microsoft Sentinel [...] use Azure Logic Apps to automate and orchestrate responses to alerts.](#microsoft-sentinel--use-azure-logic-apps-to-automate-and-orchestrate-responses-to-alerts)
+| 118 | [What are three uses of Microsoft Cloud App Security?](#what-are-three-uses-of-microsoft-cloud-app-security)
+| 119 | [Azure Active Directory (Azure AD) is deployed to an on premises environment.](#azure-active-directory-azure-ad-is-deployed-to-an-on-premises-environment)
+| 120 | [Azure Active Directory (Azure AD) is provided as part of a Microsoft 365 subscription.](#azure-active-directory-azure-ad-is-provided-as-part-of-a-microsoft-365-subscription)
+| 121 | [Azure Active Directory (Azure AD) is an identity and access management service.](#azure-active-directory-azure-ad-is-an-identity-and-access-management-service)
+| 122 | [Which service should you use to view your Azure secure score?](#which-service-should-you-use-to-view-your-azure-secure-score)
+| 123 | [Which two types of resources can be protected by using Azure Firewall?](#which-two-types-of-resources-can-be-protected-by-using-azure-firewall)
+| 124 | [What can you use to provide threat detection for Azure SQL Managed Instance?](#what-can-you-use-to-provide-threat-detection-for-azure-sql-managed-instance)
+| 125 | [[...] can use conditional access policies to control sessions in real time.](#-can-use-conditional-access-policies-to-control-sessions-in-real-time)
+| 126 | [Compliance Manager can be directly accessed from the [...].](#compliance-manager-can-be-directly-accessed-from-the-)
+| 127 | [Compliance Manager can be directly accessed from the [...].](#compliance-manager-can-be-directly-accessed-from-the--1)
+| 128 | [In a Core eDiscovery workflow, what should you do before you can search for content?](#in-a-core-ediscovery-workflow-what-should-you-do-before-you-can-search-for-content)
+| 129 | [Microsoft Secure Score in the Microsoft 365 security center can provide o recommendations for Microsoft Cloud App Security.](#microsoft-secure-score-in-the-microsoft-365-security-center-can-provide-o-recommendations-for-microsoft-cloud-app-security)
+| 130 | [From the Microsoft 365 security center, you can view how your Microsoft Secure Score compares to the score of organizations like yours.](#from-the-microsoft-365-security-center-you-can-view-how-your-microsoft-secure-score-compares-to-the-score-of-organizations-like-yours)
+| 131 | [Microsoft Secure Score in the Microsoft 365 security center gives you points if you address the improvement action by using a third-party application or software.](#microsoft-secure-score-in-the-microsoft-365-security-center-gives-you-points-if-you-address-the-improvement-action-by-using-a-third-party-application-or-software)
+| 132 | [Which Microsoft 365 feature can you use to restrict users from sending email messages that contain lists of customers and their associated credit card numbers?](#which-microsoft-365-feature-can-you-use-to-restrict-users-from-sending-email-messages-that-contain-lists-of-customers-and-their-associated-credit-card-numbers)
+| 133 | [Which Azure Active Directory (Azure AD) feature can you use to evaluate group membership and automatically remove users that no longer require membership in a group?](#which-azure-active-directory-azure-ad-feature-can-you-use-to-evaluate-group-membership-and-automatically-remove-users-that-no-longer-require-membership-in-a-group)
+| 134 | [Which Microsoft portal provides information about how Microsoft cloud services comply with regulatory standard, such as International Organization for Standardization (ISO)?](#which-microsoft-portal-provides-information-about-how-microsoft-cloud-services-comply-with-regulatory-standard-such-as-international-organization-for-standardization-iso)
+| 135 | [What can you use to provision Azure resources across multiple subscriptions in a consistent manner?](#what-can-you-use-to-provision-azure-resources-across-multiple-subscriptions-in-a-consistent-manner)
+| 136 | [When you enable security defaults in Azure Active Directory (Azure AD), [...] will be enabled for all Azure AD users.](#when-you-enable-security-defaults-in-azure-active-directory-azure-ad--will-be-enabled-for-all-azure-ad-users)
+| 137 | [[...] provides best practices from Microsoft employees, partners, and customers, including tools and guidance to assist in an Azure deployment.](#-provides-best-practices-from-microsoft-employees-partners-and-customers-including-tools-and-guidance-to-assist-in-an-azure-deployment)
+| 138 | [You can manage Microsoft Intune by using the](#you-can-manage-microsoft-intune-by-using-the)
+| 139 | [Verify explicitly is one of the guiding principles of Zero Trust.](#verify-explicitly-is-one-of-the-guiding-principles-of-zero-trust)
+| 140 | [Assume breach is one of the guiding principles of Zero Trust.](#assume-breach-is-one-of-the-guiding-principles-of-zero-trust)
+| 141 | [The Zero Trust security model assumes that a firewall secures the internal network from external threats.](#the-zero-trust-security-model-assumes-that-a-firewall-secures-the-internal-network-from-external-threats)
+| 142 | [[...] is the process of identifying whether a signed-in user can access a specific resource.](#-is-the-process-of-identifying-whether-a-signed-in-user-can-access-a-specific-resource)
+| 143 | [Which three statements accurately describe the guiding principles of Zero Trust?](#which-three-statements-accurately-describe-the-guiding-principles-of-zero-trust)
+| 144 | [A higher Microsoft Secure Score means a lower identified risk level in the Microsoft 365 tenant.](#a-higher-microsoft-secure-score-means-a-lower-identified-risk-level-in-the-microsoft-365-tenant)
+| 145 | [Microsoft Secure Score measures progress in completing actions based on controls that include key regulations and standards for data protection and governance.](#microsoft-secure-score-measures-progress-in-completing-actions-based-on-controls-that-include-key-regulations-and-standards-for-data-protection-and-governance)
+| 146 | [In a hybrid identity model, what can you use to sync identities between Active Directory Domain Services (AD DS) and Azure Active Directory (Azure AD)?](#in-a-hybrid-identity-model-what-can-you-use-to-sync-identities-between-active-directory-domain-services-ad-ds-and-azure-active-directory-azure-ad)
+| 147 | [With Windows Hello for Business, a user's biometric data used for authentication](#with-windows-hello-for-business-a-users-biometric-data-used-for-authentication)
+| 148 | [Microsoft Defender for Identity can identify advanced threats from [...] signals.](#microsoft-defender-for-identity-can-identify-advanced-threats-from--signals)
+| 149 | [Which three authentication methods does Windows Hello for Business support?](#which-three-authentication-methods-does-windows-hello-for-business-support)
+| 150 | [You have an Azure subscription. You need to implement approval-based, time-bound role activation. What should you use?](#you-have-an-azure-subscription-you-need-to-implement-approval-based-time-bound-role-activation-what-should-you-use)
+| 151 | [Global administrators are exempt from conditional access policies.](#global-administrators-are-exempt-from-conditional-access-policies)
+| 152 | [A conditional access policy can add users to Azure Active Directory (Azure AD) roles.](#a-conditional-access-policy-can-add-users-to-azure-active-directory-azure-ad-roles)
+| 153 | [Conditional access policies can force the use of multi-factor authentication (MFA) to access cloud apps.](#conditional-access-policies-can-force-the-use-of-multi-factor-authentication-mfa-to-access-cloud-apps)
+| 154 | [When security defaults are enabled for an Azure Active Directory (Azure AD) tenant, which two requirements are enforced?](#when-security-defaults-are-enabled-for-an-azure-active-directory-azure-ad-tenant-which-two-requirements-are-enforced)
+| 155 | [Which type of identity is created when you register an application with Active Directory (Azure AD)?](#which-type-of-identity-is-created-when-you-register-an-application-with-active-directory-azure-ad)
+| 156 | [Which three tasks can be performed by using Azure Active Directory (Azure AD) Identity Protection?](#which-three-tasks-can-be-performed-by-using-azure-active-directory-azure-ad-identity-protection)
+| 157 | [When using multi-factor authentication (MFA), a password is considered something you [...].](#when-using-multi-factor-authentication-mfa-a-password-is-considered-something-you-)
+| 158 | [Windows Hello for Business can use the Microsoft Authenticator app as an authentication method.](#windows-hello-for-business-can-use-the-microsoft-authenticator-app-as-an-authentication-method)
+| 159 | [Windows Hello for Business can use a PIN code as an authentication method.](#windows-hello-for-business-can-use-a-pin-code-as-an-authentication-method)
+| 160 | [Windows Hello for Business authentication information syncs across all the devices registered by a user.](#windows-hello-for-business-authentication-information-syncs-across-all-the-devices-registered-by-a-user)
+| 161 | [An Azure resource can use a system-assigned [...] to access Azure services.](#an-azure-resource-can-use-a-system-assigned--to-access-azure-services)
+| 162 | [You can use [...] in the Microsoft 365 security center to view an aggregation of alerts that relate to the same attack.](#you-can-use--in-the-microsoft-365-security-center-to-view-an-aggregation-of-alerts-that-relate-to-the-same-attack)
+| 163 | [You can create one Azure Bastion per virtual network.](#you-can-create-one-azure-bastion-per-virtual-network)
+| 164 | [Azure Bastion provides secure user connections by using RDP.](#azure-bastion-provides-secure-user-connections-by-using-rdp)
+| 165 | [In Microsoft Sentinel, you can automate common tasks by using [...]](#in-microsoft-sentinel-you-can-automate-common-tasks-by-using-)
+| 166 | [Which Azure Active Directory (Azure AD) feature can you use to restrict Microsoft Intune-managed devices from accessing corporate resources?](#which-azure-active-directory-azure-ad-feature-can-you-use-to-restrict-microsoft-intune-managed-devices-from-accessing-corporate-resources)
+| 167 | [What should you use in the Microsoft 365 Defender portal to view security trends and track the protection status of identities?](#what-should-you-use-in-the-microsoft-365-defender-portal-to-view-security-trends-and-track-the-protection-status-of-identities)
+| 168 | [You have a Microsoft 365 E3 subscription. You plan to audit user activity by using the unified audit log and Basic Audit. For how long will the audit records be retained?](#you-have-a-microsoft-365-e3-subscription-you-plan-to-audit-user-activity-by-using-the-unified-audit-log-and-basic-audit-for-how-long-will-the-audit-records-be-retained)
+| 169 | [In the Microsoft 365 Defender portal, an incident is a collection of correlated [...].](#in-the-microsoft-365-defender-portal-an-incident-is-a-collection-of-correlated-)
+| 170 | [You need to connect to an Azure virtual machine by using Azure Bastion. What should you use?](#you-need-to-connect-to-an-azure-virtual-machine-by-using-azure-bastion-what-should-you-use)
+| 171 | [Which service includes the Attack simulation training feature?](#which-service-includes-the-attack-simulation-training-feature)
+| 172 | [Which type of alert can you manage from the Microsoft 365 Defender portal?](#which-type-of-alert-can-you-manage-from-the-microsoft-365-defender-portal)
+| 173 | [Microsoft Sentinel data connectors support only Microsoft services.](#microsoft-sentinel-data-connectors-support-only-microsoft-services)
+| 174 | [You can use Azure Monitor workbooks to monitor data collected by Microsoft Sentinel.](#you-can-use-azure-monitor-workbooks-to-monitor-data-collected-by-microsoft-sentinel)
+| 175 | [Hunting provides you with the ability to identify security threats before an alert is triggered.](#hunting-provides-you-with-the-ability-to-identify-security-threats-before-an-alert-is-triggered)
+| 176 | [What is a use case for implementing information barrier policies in Microsoft 365?](#what-is-a-use-case-for-implementing-information-barrier-policies-in-microsoft-365)
+| 177 | [What can you use to deploy Azure resources across multiple subscriptions in a consistent manner?](#what-can-you-use-to-deploy-azure-resources-across-multiple-subscriptions-in-a-consistent-manner)
+| 178 | [Azure Defender provides security alerts and advanced threat protection for virtual machines, SQL databases, containers, web applications, your network, your storage, and more](#azure-defender-provides-security-alerts-and-advanced-threat-protection-for-virtual-machines-sql-databases-containers-web-applications-your-network-your-storage-and-more)
+| 179 | [Cloud security posture management (CSPM) is available for free to all Azure users.](#cloud-security-posture-management-cspm-is-available-for-free-to-all-azure-users)
+| 180 | [Azure Security Center is a unified infrastructure security management system that strengthens the security posture of your data centers, and provides advanced threat protection across your hybrid workloads in the cloud – whether they’re in Azure or not – as well as on premises.](#azure-security-center-is-a-unified-infrastructure-security-management-system-that-strengthens-the-security-posture-of-your-data-centers-and-provides-advanced-threat-protection-across-your-hybrid-workloads-in-the-cloud--whether-theyre-in-azure-or-not--as-well-as-on-premises)
+| 181 | [Azure Active Directory (Azure AD) is a cloud-based user identity and authentication service.](#azure-active-directory-azure-ad-is-a-cloud-based-user-identity-and-authentication-service)
+| 182 | [Microsoft 365 uses Azure Active Directory (Azure AD). Azure Active Directory (Azure AD) is included with your Microsoft 365 subscription.](#microsoft-365-uses-azure-active-directory-azure-ad-azure-active-directory-azure-ad-is-included-with-your-microsoft-365-subscription)
+| 183 | [Azure Bastion provides a secure connection to an Azure virtual machine by using the Azure portal.](#azure-bastion-provides-a-secure-connection-to-an-azure-virtual-machine-by-using-the-azure-portal)
+| 184 | [Applying system updates increases an organization's secure score in Microsoft Defender for Cloud.](#applying-system-updates-increases-an-organizations-secure-score-in-microsoft-defender-for-cloud)
+| 185 | [The secure score in Microsoft Defender for Cloud can evaluate resources across multiple Azure subscriptions.](#the-secure-score-in-microsoft-defender-for-cloud-can-evaluate-resources-across-multiple-azure-subscriptions)
+| 186 | [Enabling multi-factor authentication (MFA) increases an organization's secure score in Microsoft Defender for Cloud.](#enabling-multi-factor-authentication-mfa-increases-an-organizations-secure-score-in-microsoft-defender-for-cloud)
+| 187 | [Which score measures an organization's progress in completing actions that help reduce risks associated to data protection and regulatory standards?](#which-score-measures-an-organizations-progress-in-completing-actions-that-help-reduce-risks-associated-to-data-protection-and-regulatory-standards)
+| 188 | [You are evaluating the compliance score in Compliance Manager. Match the compliance score action subcategories to the appropriate actions. Encrypt data at rest.](#you-are-evaluating-the-compliance-score-in-compliance-manager-match-the-compliance-score-action-subcategories-to-the-appropriate-actions--encrypt-data-at-rest)
+| 189 | [You are evaluating the compliance score in Compliance Manager. Match the compliance score action subcategories to the appropriate actions. Perform a system access audit.](#you-are-evaluating-the-compliance-score-in-compliance-manager-match-the-compliance-score-action-subcategories-to-the-appropriate-actions--perform-a-system-access-audit)
+| 190 | [You are evaluating the compliance score in Compliance Manager. Match the compliance score action subcategories to the appropriate actions. Make configuration changes in response to a security incident.](#you-are-evaluating-the-compliance-score-in-compliance-manager-match-the-compliance-score-action-subcategories-to-the-appropriate-actions--make-configuration-changes-in-response-to-a-security-incident)
+| 191 | [Conditional access policies can be applied to global administrators.](#conditional-access-policies-can-be-applied-to-global-administrators)
+| 192 | [Conditional access policies are evaluated before a user is authenticated.](#conditional-access-policies-are-evaluated-before-a-user-is-authenticated)
+| 193 | [Conditional access policies can use a device platform, such as Android or iOS, as a signal.](#conditional-access-policies-can-use-a-device-platform-such-as-android-or-ios-as-a-signal)
+| 194 | [Which two cards are available in the Microsoft 365 Defender portal?](#which-two-cards-are-available-in-the-microsoft-365-defender-portal)
+| 195 | [Microsoft 365 Endpoint data loss prevention (Endpoint DLP) can be used on which operating systems?](#microsoft-365-endpoint-data-loss-prevention-endpoint-dlp-can-be-used-on-which-operating-systems)
+| 196 | [Which compliance feature should you use to identify documents that are employee resumes?](#which-compliance-feature-should-you-use-to-identify-documents-that-are-employee-resumes)
+| 197 | [What are customers responsible for when evaluating security in a software as a service (SaaS) cloud services model?](#what-are-customers-responsible-for-when-evaluating-security-in-a-software-as-a-service-saas-cloud-services-model)
+| 198 | [You need to create a data loss prevention (DLP) policy. What should you use?](#you-need-to-create-a-data-loss-prevention-dlp-policy-what-should-you-use)
+| 199 | [What is an assessment in Compliance Manager?](#what-is-an-assessment-in-compliance-manager)
+| 200 | [You need to keep a copy of all files in a Microsoft SharePoint site for one year, even if users delete the files from the site. What should you apply to the site?](#you-need-to-keep-a-copy-of-all-files-in-a-microsoft-sharepoint-site-for-one-year-even-if-users-delete-the-files-from-the-site-what-should-you-apply-to-the-site)
+| 201 | [What can you use to view the Microsoft Secure Score for Devices?](#what-can-you-use-to-view-the-microsoft-secure-score-for-devices)
+| 202 | [Match the Microsoft 365 insider risk management workflow step to the appropriate task. [...] Review and filter alerts.](#match-the-microsoft-365-insider-risk-management-workflow-step-to-the-appropriate-task--review-and-filter-alerts)
+| 203 | [Match the Microsoft 365 insider risk management workflow step to the appropriate task. [...] Create cases in the Case dashboard.](#match-the-microsoft-365-insider-risk-management-workflow-step-to-the-appropriate-task--create-cases-in-the-case-dashboard)
+| 204 | [Match the Microsoft 365 insider risk management workflow step to the appropriate task. [...] Send a reminder of corporate policies to users.](#match-the-microsoft-365-insider-risk-management-workflow-step-to-the-appropriate-task--send-a-reminder-of-corporate-policies-to-users)
+| 205 | [Users can apply sensitivity labels manually.](#users-can-apply-sensitivity-labels-manually)
+| 206 | [Multiple sensitivity labels can be applied to the same file.](#multiple-sensitivity-labels-can-be-applied-to-the-same-file)
+| 207 | [A sensitivity abel can apply a watermark to a Microsoft Word document.](#a-sensitivity-abel-can-apply-a-watermark-to-a-microsoft-word-document)
+| 208 | [You can use Advanced Audit in Micrdsoft 365 to view billing details.](#you-can-use-advanced-audit-in-micrdsoft-365-to-view-billing-details)
+| 209 | [You can use Advanced Auditin Microsoft 365 to view the contents of an email message.](#you-can-use-advanced-auditin-microsoft-365-to-view-the-contents-of-an-email-message)
+| 210 | [You can use Advanced Auditin Microsoft 365 to view when a user sees the search bar in Outlook on the web to search for message in a mailbox.](#you-can-use-advanced-auditin-microsoft-365-to-view-when-a-user-sees-the-search-bar-in-outlook-on-the-web-to-search-for-message-in-a-mailbox)
+| 211 | [What can you specify in Microsoft 365 sensitivity labels?](#what-can-you-specify-in-microsoft-365-sensitivity-labels)
 
 ### Conditional access policies always enforce the user of multi-factor authentication (MFA).
 
@@ -121,7 +325,7 @@
 - [ ] Customer Lockbox.
 - [ ] Data loss prevention (DLP).
 - [x] eDiscovery.
-- [ ] A resource lock.
+- [ ] Resource lock.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -226,10 +430,10 @@
 
 ### You can use [...] in the Microsoft 365 security center to identify devices that are affected by an alert.
 
-- [ ] Classifications.
-- [x] Incidents.
-- [ ] Policies.
-- [ ] Secure score.
+- [ ] classifications.
+- [x] incidents.
+- [ ] policies.
+- [ ] secure score.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -343,7 +547,7 @@
 
 - [x] Microsoft Service Trust Portal.
 - [ ] Compliance Manager.
-- [ ] Microsoft 365 compliance center.
+- [ ] Microsoft 365 Compliance Center.
 - [ ] Microsoft Support.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -415,7 +619,7 @@
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### Which Microsoft 365 compliance center feature can you use to identify all the documents on a Microsoft SharePoint Online site that contain a specific key word?
+### Which Microsoft 365 Compliance Center feature can you use to identify all the documents on a Microsoft SharePoint Online site that contain a specific key word?
 
 - [ ] Audit.
 - [ ] Compliance Manager.
@@ -431,7 +635,7 @@
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### You can access the insider risk management solution from the Microsoft 365 compliance center.
+### You can access the insider risk management solution from the Microsoft 365 Compliance Center.
 
 - [x] Yes.
 - [ ] No.
@@ -459,7 +663,9 @@
 - [x] Yes.
 - [ ] No.
 
-## Microsoft Intune can be used to provision Azure subscriptions.
+**[⬆ Back to Top](#table-of-contents)**
+
+### Microsoft Intune can be used to provision Azure subscriptions.
 
 - [ ] Yes.
 - [x] No.
@@ -494,7 +700,7 @@
 
 **[⬆ Back to Top](#table-of-contents)**
 
-#### Which two tasks can you implement by using data loss prevention (DLP) policies in Microsoft 365?
+### Which two tasks can you implement by using data loss prevention (DLP) policies in Microsoft 365?
 
 - [x] Display policy tips to users who are about to violate your organization’s policies.
 - [ ] Enable disk encryption on endpoints.
@@ -604,7 +810,7 @@
 - [ ] Azure AD Connect.
 - [ ] Log Analytics workspace.
 - [ ] Azure Information Protection.
-- [x] A data connector.
+- [x] Data connector.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -652,7 +858,7 @@
 
 ### Which feature provides the extended detection and response (XDR) capability of Azure Sentinel?
 
-- [ ] Integration with the Microsoft 365 compliance center.
+- [ ] Integration with the Microsoft 365 Compliance Center.
 - [ ] Support for threat hunting.
 - [x] Integration with Microsoft 365 Defender.
 - [ ] Support for Azure Monitor Workbooks.
@@ -918,28 +1124,11 @@
 
 ### Which two Azure resources can a network security group (NSG) be associated with?
 
-- [x] a network interface.
-- [ ] an Azure App Service web app.
-- [ ] a virtual network.
-- [x] a virtual network subnet.
-- [ ] a resource group.
-
-**[⬆ Back to Top](#table-of-contents)**
-
-### Which two Azure resources can a network security group (NSG) be associated with? Each correct answer presents a complete solution.
-
-- [ ] a network interface.
-- [ ] an Azure App Service web app.
-- [x] a virtual network.
-- [ ] a virtual network subnet.
-- [x] a resource group.
-
-**[⬆ Back to Top](#table-of-contents)**
-
-### You can delete a resource group containing resources that have resource locks.
-
-- [ ] Yes.
-- [x] No.
+- [ ] Network interface.
+- [ ] Azure App Service web app.
+- [x] Virtual network.
+- [ ] Virtual network subnet.
+- [x] Resource group.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -964,7 +1153,7 @@
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### use encryption to protect data at rest.
+### Match the types of compliance score actions to the appropriate tasks. [...] Use encryption to protect data at rest.
 
 - [ ] Corrective.
 - [ ] Detective.
@@ -972,7 +1161,7 @@
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### actively monitor systems to identify irregularities that might represent risks.
+### Match the types of compliance score actions to the appropriate tasks. [...] Actively monitor systems to identify irregularities that might represent risks.
 
 - [ ] Corrective.
 - [x] Detective.
@@ -1003,10 +1192,12 @@
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### Conditional access policies only affect users who have Azure Active Directory (Azure AD)- joined devices.
+### What can you protect by using the information protection solution in the Microsoft 365 Compliance Center?
 
-- [ ] Yes.
-- [x] No.
+- [ ] Computers from zero-day exploits.
+- [ ] Users from phishing attempts.
+- [ ] Files from malware and viruses.
+- [x] Sensitive data from being exposed to unauthorized users.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -1019,17 +1210,17 @@
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### What are three uses of Microsoft Cloud App Security? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.
+### What are three uses of Microsoft Cloud App Security?
 
-- [x] to discover and control the use of shadow IT
-- [ ] to provide secure connections to Azure virtual machines
-- [x] to protect sensitive information hosted anywhere in the cloud
-- [ ] to provide pass-through authentication to on-premises applications
-- [x] to prevent data leaks to noncompliant apps and limit access to regulated data
+- [x] Discover and control the use of shadow IT.
+- [ ] Provide secure connections to Azure virtual machines.
+- [x] Protect sensitive information hosted anywhere in the cloud.
+- [ ] Provide pass-through authentication to on-premises applications.
+- [x] Prevent data leaks to noncompliant apps and limit access to regulated data.
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### Azure Active Directory (Azure AD) is deployed to an on- premises environment.
+### Azure Active Directory (Azure AD) is deployed to an on premises environment.
 
 - [ ] Yes.
 - [x] No.
@@ -1063,7 +1254,7 @@
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### Which two types of resources can be protected by using Azure Firewall? Each correct answer presents a complete solution.
+### Which two types of resources can be protected by using Azure Firewall?
 
 - [x] Azure virtual machines.
 - [ ] Azure Active Directory (Azure AD) users.
@@ -1076,7 +1267,7 @@
 ### What can you use to provide threat detection for Azure SQL Managed Instance?
 
 - [ ] Microsoft Secure Score.
-- [ ] application security groups.
+- [ ] Application security groups.
 - [x] Microsoft Defender for Cloud.
 - [x] Azure Defender.
 - [ ] Azure Bastion.
@@ -1104,7 +1295,7 @@
 
 - [ ] Microsoft 365 admin center.
 - [ ] Microsoft 365 Defender portal.
-- [x] Microsoft 365 Compliance Center
+- [x] Microsoft 365 Compliance Center.
 - [ ] Microsoft Support portal.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -1115,15 +1306,6 @@
 - [ ] Run Express Analysis.
 - [ ] Configure attorney-client privilege detection.
 - [ ] Export and download results.
-
-**[⬆ Back to Top](#table-of-contents)**
-
-### can be used to provide Microsoft Support Engineers with access to an organization's data stored in Microsoft Exchange Online, SharePoint Online, and OneDrive for
-
-- [x] Customer Lockbox.
-- [ ] Information barriers.
-- [ ] Privileged Access Management (PAM) Business.
-- [ ] Sensitivity labels.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -1150,28 +1332,28 @@
 
 ### Which Microsoft 365 feature can you use to restrict users from sending email messages that contain lists of customers and their associated credit card numbers?
 
-- [ ] retention policies.
-- [x] data loss prevention (DLP) policies.
-- [ ] conditional access policies.
-- [ ] information barriers.
+- [ ] Retention policies.
+- [x] Data loss prevention (DLP) policies.
+- [ ] Conditional access policies.
+- [ ] Information barriers.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### Which Azure Active Directory (Azure AD) feature can you use to evaluate group membership and automatically remove users that no longer require membership in a group?
 
-- [x] access reviews.
-- [ ] managed identities.
-- [ ] conditional access policies.
+- [x] Access reviews.
+- [ ] Managed identities.
+- [ ] Conditional access policies.
 - [ ] Azure AD Identity Protection.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### Which Microsoft portal provides information about how Microsoft cloud services comply with regulatory standard, such as International Organization for Standardization (ISO)?
 
-- [ ] the Microsoft Endpoint Manager admin center.
+- [ ] Microsoft Endpoint Manager admin center.
 - [ ] Azure Cost Management + Billing.
 - [x] Microsoft Service Trust Portal.
-- [ ] the Azure Active Directory admin center.
+- [ ] Azure Active Directory admin center.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -1188,7 +1370,7 @@
 
 - [ ] Azure AD Identity Protection.
 - [ ] Azure AD Privileged Identity Management (PIM).
-- [x] multi-factor authentication (MFA).
+- [x] Multi-factor authentication (MFA).
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -1204,7 +1386,7 @@
 ### You can manage Microsoft Intune by using the
 
 - [ ] Azure Active Directory admin center.
-- [ ] Microsoft 365 compliance center.
+- [ ] Microsoft 365 Compliance Center.
 - [ ] Microsoft 365 Defender portal.
 - [x] Microsoft Endpoint Manager admin center.
 
@@ -1231,7 +1413,7 @@
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### is the process of identifying whether a signed-in user can access a specific resource.
+### [...] is the process of identifying whether a signed-in user can access a specific resource.
 
 - [ ] Authentication.
 - [x] Authorization.
@@ -1292,10 +1474,10 @@
 
 ### Which three authentication methods does Windows Hello for Business support?
 
-- [x] fingerprint.
-- [x] facial recognition.
+- [x] Fingerprint.
+- [x] Facial recognition.
 - [x] PIN.
-- [ ] email verification.
+- [ ] Email verification.
 - [ ] security question.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -1304,7 +1486,7 @@
 
 - [ ] Windows Hello for Business.
 - [ ] Azure Active Directory (Azure AD) Identity Protection.
-- [ ] access reviews in Azure Active Directory (Azure AD).
+- [ ] Access reviews in Azure Active Directory (Azure AD).
 - [x] Azure Active Directory (Azure AD) Privileged Identity Management (PIM).
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -1342,10 +1524,10 @@
 
 ### Which type of identity is created when you register an application with Active Directory (Azure AD)?
 
-- [ ] a user account.
-- [ ] a user-assigned managed identity.
-- [ ] a system-assigned managed identity.
-- [x] a service principal.
+- [ ] User account.
+- [ ] User-assigned managed identity.
+- [ ] System-assigned managed identity.
+- [x] Service principal.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -1391,10 +1573,10 @@
 
 ### An Azure resource can use a system-assigned [...] to access Azure services.
 
-- [ ] Azure Active Directory (Azure AD) joined device
-- [x] managed identity
-- [ ] service principal
-- [ ] user identity
+- [ ] Azure Active Directory (Azure AD) joined device.
+- [x] managed identity.
+- [ ] service principal.
+- [ ] user identity.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -1431,10 +1613,10 @@
 
 ### Which Azure Active Directory (Azure AD) feature can you use to restrict Microsoft Intune-managed devices from accessing corporate resources?
 
-- [ ] network security groups (NSGs).
+- [ ] Network security groups (NSGs).
 - [ ] Azure AD Privileged Identity Management (PIM).
-- [x] conditional access policies.
-- [ ] resource locks.
+- [x] Conditional access policies.
+- [ ] Resource locks.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -1451,8 +1633,8 @@
 
 - [ ] 15 days.
 - [ ] 30 days.
-- [ ] 90 days.
-- [x] 180 days.
+- [x] 90 days.
+- [ ] 180 days.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -1468,9 +1650,9 @@
 ### You need to connect to an Azure virtual machine by using Azure Bastion. What should you use?
 
 - [ ] PowerShell remoting.
-- [x] the Azure portal.
-- [ ] the Remote Desktop Connection client.
-- [ ] an SSH client.
+- [x] Azure portal.
+- [ ] Remote Desktop Connection client.
+- [ ] SSH client.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -1515,10 +1697,10 @@
 
 ### What is a use case for implementing information barrier policies in Microsoft 365?
 
-- [ ] to restrict unauthenticated access to Microsoft 365.
-- [x] to restrict Microsoft Teams chats between certain groups within an organization.
-- [ ] to restrict Microsoft Exchange Online email between certain groups within an organization.
-- [ ] to restrict data sharing to external email recipients.
+- [ ] Restrict unauthenticated access to Microsoft 365.
+- [x] Restrict Microsoft Teams chats between certain groups within an organization.
+- [ ] Restrict Microsoft Exchange Online email between certain groups within an organization.
+- [ ] Restrict data sharing to external email recipients.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -1603,7 +1785,7 @@
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### Encrytp data at rest.
+### You are evaluating the compliance score in Compliance Manager. Match the compliance score action subcategories to the appropriate actions. [...] Encrypt data at rest.
 
 - [ ] Corrective.
 - [ ] Detective.
@@ -1611,7 +1793,7 @@
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### Perform a system access audit.
+### You are evaluating the compliance score in Compliance Manager. Match the compliance score action subcategories to the appropriate actions. [...] Perform a system access audit.
 
 - [ ] Corrective.
 - [x] Detective.
@@ -1619,7 +1801,7 @@
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### Make configuration changes in response to a security incident.
+### You are evaluating the compliance score in Compliance Manager. Match the compliance score action subcategories to the appropriate actions. [...] Make configuration changes in response to a security incident.
 
 - [x] Corrective.
 - [ ] Detective.
@@ -1645,5 +1827,153 @@
 
 - [x] Yes.
 - [ ] No.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Which two cards are available in the Microsoft 365 Defender portal?
+
+- [ ] Users at risk.
+- [x] Compliance Score.
+- [x] Devices at risk.
+- [ ] Service Health.
+- [ ] User Management.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Microsoft 365 Endpoint data loss prevention (Endpoint DLP) can be used on which operating systems?
+
+- [x] Windows 10 and iOS only.
+- [ ] Windows 10 and Android only.
+- [ ] Windows 10, Android, and iOS.
+- [ ] Windows 10 only.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Which compliance feature should you use to identify documents that are employee resumes?
+
+- [ ] Pre-trained classifiers.
+- [ ] Content explorer.
+- [x] Activity explorer.
+- [ ] eDiscovery.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### What are customers responsible for when evaluating security in a software as a service (SaaS) cloud services model?
+
+- [ ] Applications.
+- [ ] Network controls.
+- [ ] Operating systems.
+- [x] Accounts and identities.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You need to create a data loss prevention (DLP) policy. What should you use?
+
+- [x] Microsoft 365 admin center.
+- [ ] Microsoft Endpoint Manager admin center.
+- [ ] Microsoft 365 Defender portal.
+- [ ] Microsoft 365 Compliance center.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### What is an assessment in Compliance Manager?
+
+- [ ] Grouping of controls from a specific regulation, standard or policy.
+- [x] Recommended guidance to help organizations align with their corporate standards.
+- [ ] Dictionary of words that are not allowed in company documents.
+- [ ] Policy initiative that includes multiple policies.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You need to keep a copy of all files in a Microsoft SharePoint site for one year, even if users delete the files from the site. What should you apply to the site?
+
+- [ ] Data loss prevention (DLP) policy.
+- [x] Retention policy.
+- [ ] Insider risk policy.
+- [ ] Sensitivity label policy.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### What can you use to view the Microsoft Secure Score for Devices?
+
+- [ ] Microsoft Defender for Cloud Apps.
+- [x] Microsoft Defender for Endpoint.
+- [ ] Microsoft Defender for Identity.
+- [ ] Microsoft Defender for Office 365.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Match the Microsoft 365 insider risk management workflow step to the appropriate task. [...] Review and filter alerts.
+
+- [x] Triage.
+- [ ] Investigate.
+- [ ] Action.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Match the Microsoft 365 insider risk management workflow step to the appropriate task. [...] Create cases in the Case dashboard.
+
+- [ ] Triage.
+- [x] Investigate.
+- [ ] Action.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Match the Microsoft 365 insider risk management workflow step to the appropriate task. [...] Send a reminder of corporate policies to users.
+
+- [ ] Triage.
+- [ ] Investigate.
+- [x] Action.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Users can apply sensitivity labels manually.
+
+- [x] Yes.
+- [ ] No.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Multiple sensitivity labels can be applied to the same file.
+
+- [ ] Yes.
+- [x] No.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### A sensitivity abel can apply a watermark to a Microsoft Word document.
+
+- [x] Yes.
+- [ ] No.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You can use Advanced Audit in Micrdsoft 365 to view billing details.
+
+- [ ] Yes.
+- [x] No.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You can use Advanced Auditin Microsoft 365 to view the contents of an email message.
+
+- [ ] Yes.
+- [x] No.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### You can use Advanced Auditin Microsoft 365 to view when a user sees the search bar in Outlook on the web to search for message in a mailbox.
+
+- [x] Yes.
+- [ ] No.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### What can you specify in Microsoft 365 sensitivity labels?
+
+- [ ] How long files must be preserved.
+- [ ] When to archive an email message.
+- [x] Which watermark to add to files.
+- [ ] Where to store files.
 
 **[⬆ Back to Top](#table-of-contents)**

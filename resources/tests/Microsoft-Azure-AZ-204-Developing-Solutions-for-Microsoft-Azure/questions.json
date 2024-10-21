@@ -507,7 +507,7 @@
             "2": "No."
         },
         "correct_answers": [
-            "options.2"
+            "options.1"
         ],
         "description": "",
         "source_url": ""
@@ -2025,7 +2025,7 @@
             "5": "Create a Custom Track Availability Test to query the home page."
         },
         "correct_answers": [
-            "options.4"
+            "options.2"
         ],
         "description": "",
         "source_url": ""
@@ -2055,7 +2055,7 @@
             "4": "Azure Event Grid."
         },
         "correct_answers": [
-            "options.1"
+            "options.3"
         ],
         "description": "",
         "source_url": ""
@@ -2577,7 +2577,7 @@
             "4": "Run the az keyvault update --enable-soft-delete false CLI."
         },
         "correct_answers": [
-            "options.4"
+            "options.2"
         ],
         "description": "",
         "source_url": ""

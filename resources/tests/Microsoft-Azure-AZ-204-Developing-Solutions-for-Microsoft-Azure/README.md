@@ -73,6 +73,10 @@
 
 - Update 1 question with deprecated answer.
 
+**[v1.1.1](../../releases/tag/v1.1.1): August 6, 2024.**
+
+- AI-generated explanations (only paid [Udemy](https://www.udemy.com/course/developing-solutions-for-azure-az-204-practice-test-exams/?referralCode=94E823A45873B0E39FE3)).
+
 ## 🙋‍♀️ & 🙋‍♂️ Contribution
 
 We are so thankful for every contribution, which makes sure we can deliver top-notch content. Whenever you find a missing resource, broken link in a [Table of Contents](../..#table-of-contents), the wrong answer, please submit an [issue](../../issues). Even better would be a [Pull Request (PR)](../../pulls).
@@ -656,8 +660,8 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### You develop and deploy an Azure App Service API app to a Windows-hosted deployment slot named Development. You create additional deployment slots named Testing and Production. You enable auto swap on the Production deployment slot. You need to ensure that scripts run and resources are available before a swap operation occurs. Solution: Update the app with a method named statuscheck to run the scripts. Update the app settings for the app. Set the WEBSITE_SWAP_WARMUP_PING_PATH and WEBSITE_SWAP_WARMUP_PING_STATUSES with a path to the new method and appropriate response codes. Does the solution meet the goal?
 
-- [ ] Yes.
-- [x] No.
+- [x] Yes.
+- [ ] No.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -1666,9 +1670,9 @@ specified personnel if the temperature is outside of those thresholds.
 ### You are developing applications for a company. You plan to host the applications on Azure App Services. The company has the following requirements: Every five minutes verify that the websites are responsive. Verify that the websites respond within a specified time threshold. Dependent requests such as images and JavaScript files must load properly. Generate alerts if a website is experiencing issues. If a website fails to load, the system must attempt to reload the site three more times. You need to implement this process with the least amount of effort. What should you do?
 
 - [ ] Create a Selenium web test and configure it to run from your workstation as a scheduled task.
-- [ ] Set up a URL ping test to query the home page.
+- [x] Set up a URL ping test to query the home page.
 - [ ] Create an Azure function to query the home page.
-- [x] Create a multi-step web test to query the home page.
+- [ ] Create a multi-step web test to query the home page.
 - [ ] Create a Custom Track Availability Test to query the home page.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -1684,9 +1688,9 @@ specified personnel if the temperature is outside of those thresholds.
 
 ### You are developing an e-commerce solution that uses a microservice architecture. You need to design a communication backplane for communicating transactional messages between various parts of the solution. Messages must be communicated in first-in-first-out (FIFO) order. What should you use?
 
-- [x] Azure Storage Queue.
+- [ ] Azure Storage Queue.
 - [ ] Azure Event Hub.
-- [ ] Azure Service Bus.
+- [x] Azure Service Bus.
 - [ ] Azure Event Grid.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -1977,9 +1981,9 @@ specified personnel if the temperature is outside of those thresholds.
 ### You are developing an application to transfer data between on-premises file servers and Azure Blob storage. The application stores keys, secrets, and certificates in Azure Key Vault and makes use of the Azure Key Vault APIs. You want to configure the application to allow recovery of an accidental deletion of the key vault or key vault objects for 90 days after deletion. What should you do?
 
 - [ ] Run the Add-AzKeyVaultKey cmdlet.
-- [ ] Run the az keyvault update --enable-soft-delete true --enable-purge-protection true CLI.
+- [x] Run the az keyvault update --enable-soft-delete true --enable-purge-protection true CLI.
 - [ ] Implement virtual network service endpoints for Azure Key Vault.
-- [x] Run the az keyvault update --enable-soft-delete false CLI.
+- [ ] Run the az keyvault update --enable-soft-delete false CLI.
 
 **[⬆ Back to Top](#table-of-contents)**
 

@@ -9,7 +9,7 @@
             "4": "The precision of the model is 86%, which is greater than the accuracy of the model."
         },
         "correct_answers": [
-            "options.1"
+            "options.3"
         ],
         "description": "",
         "source_url": ""
@@ -39,7 +39,7 @@
             "4": "Ingest .CSV data from Amazon Kinesis Data Streams and use Amazon Kinesis Data Firehose to convert data into Parquet."
         },
         "correct_answers": [
-            "options.2"
+            "options.4"
         ],
         "description": "",
         "source_url": ""
@@ -518,7 +518,7 @@
             "4": "Use K-means clustering to handle missing features."
         },
         "correct_answers": [
-            "options.4"
+            "options.2"
         ],
         "description": "",
         "source_url": ""
@@ -540,16 +540,14 @@
     },
     {
         "id": "36",
-        "question": "Tom has been tasked to install Check Point R80 in a distributed deployment. Before Tom installs the systems this way, how many machines will he need if he does NOT include a SmartConsole machine in his calculations?",
+        "question": "PLACEHOLDER",
         "options": {
-            "1": "One machine, but it needs to be installed using SecurePlatform for compatibility purposes.",
-            "2": "One machine.",
-            "3": "Two machines.",
-            "4": "Three machines."
+            "1": "One.",
+            "2": "Two.",
+            "3": "Three.",
+            "4": "Four."
         },
-        "correct_answers": [
-            "options.3"
-        ],
+        "correct_answers": [],
         "description": "",
         "source_url": ""
     },
@@ -1483,7 +1481,7 @@
             "4": "Use a decision tree classifier engine on customer profile data to understand key characteristics of consumer segments. Find similar profiles on social media."
         },
         "correct_answers": [
-            "options.3"
+            "options.2"
         ],
         "description": "",
         "source_url": ""

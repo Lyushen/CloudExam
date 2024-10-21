@@ -1099,7 +1099,7 @@
             "1": "Install the dependencies and external libraries at the beginning of the Lambda function.",
             "2": "Create a Lambda deployment package that includes the external libraries.",
             "3": "Copy the external libraries to Amazon S3, and reference the external libraries to the S3 location.",
-            "4": "Install the external libraries in Lambda to be available to all Lambda functions."
+            "4": "Install the external libraries in Lambda Layer to be available to all Lambda functions."
         },
         "correct_answers": [
             "options.4"
@@ -1817,7 +1817,7 @@
             "4": "Create the application environment using the eb create my-env command."
         },
         "correct_answers": [
-            "options.1"
+            "options.3"
         ],
         "description": "",
         "source_url": ""
@@ -1907,7 +1907,7 @@
             "4": "Perform an Elastic Beanstalk Rolling deployment."
         },
         "correct_answers": [
-            "options.4"
+            "options.3"
         ],
         "description": "",
         "source_url": ""
@@ -1997,7 +1997,7 @@
             "4": "Amazon DynamoDB transactions."
         },
         "correct_answers": [
-            "options.4"
+            "options.2"
         ],
         "description": "",
         "source_url": ""
@@ -2013,8 +2013,8 @@
             "5": "Create a ZIP package and upload it to Amazon S3. Call aws cloudformation create-stack to create the application."
         },
         "correct_answers": [
-            "options.3",
-            "options.5"
+            "options.1",
+            "options.2"
         ],
         "description": "",
         "source_url": ""
@@ -2061,7 +2061,7 @@
             "4": "Use the Amazon CloudWatch API to write timestamps to a custom CloudWatch metric. Use the AWS X-Ray console to analyze the resulting data."
         },
         "correct_answers": [
-            "options.2"
+            "options.3"
         ],
         "description": "",
         "source_url": ""
@@ -2106,7 +2106,7 @@
             "4": "The EC2 instance will not be able to perform any S3 action on any S3 bucket."
         },
         "correct_answers": [
-            "options.1"
+            "options.4"
         ],
         "description": "",
         "source_url": ""
@@ -2166,7 +2166,7 @@
             "4": "Update and add AWS X-Ray daemon code to relevant parts of the Lambda function to set up the trace."
         },
         "correct_answers": [
-            "options.2"
+            "options.3"
         ],
         "description": "",
         "source_url": ""
@@ -2196,7 +2196,7 @@
             "4": "In the Lambda console, create a LB_LIBRARY_PATH environment and specify the value for the system library plan."
         },
         "correct_answers": [
-            "options.4"
+            "options.1"
         ],
         "description": "",
         "source_url": ""
@@ -2385,13 +2385,13 @@
         "id": "158",
         "question": "A Developer has an Amazon DynamoDB table that must be in provisioned mode to comply with user requirements. The application needs to support the following: Average item size: 10 KB Item reads each second: 10 strongly consistent Item writes each second: 2 transactional Which read and write capacity cost-effectively meets these requirements?",
         "options": {
-            "1": "Read 10; write 2",
-            "2": "Read 30; write 40",
-            "3": "Use on-demand scaling",
-            "4": "Read 300; write 400"
+            "1": "Read 10; write 2.",
+            "2": "Read 30; write 40.",
+            "3": "Use on-demand scaling.",
+            "4": "Read 300; write 400."
         },
         "correct_answers": [
-            "options.1"
+            "options.2"
         ],
         "description": "",
         "source_url": ""
@@ -2451,7 +2451,7 @@
             "4": "Create a testing branch in AWS CodeCommit to run unit tests."
         },
         "correct_answers": [
-            "options.4"
+            "options.2"
         ],
         "description": "",
         "source_url": ""
@@ -2481,7 +2481,7 @@
             "4": "Create a new user pool, disable authentication access, and grant access to AWS resources."
         },
         "correct_answers": [
-            "options.4"
+            "options.2"
         ],
         "description": "",
         "source_url": ""
@@ -2648,7 +2648,7 @@
             "4": "Store the connection string as a Lambda layer."
         },
         "correct_answers": [
-            "options.3"
+            "options.1"
         ],
         "description": "",
         "source_url": ""
@@ -2663,7 +2663,7 @@
             "4": "Enable S3 server access logging and create a lifecycle policy to move the data to Amazon S3 Glacier in 90 days."
         },
         "correct_answers": [
-            "options.3"
+            "options.4"
         ],
         "description": "",
         "source_url": ""
@@ -2740,7 +2740,7 @@
         },
         "correct_answers": [
             "options.3",
-            "options.4"
+            "options.5"
         ],
         "description": "",
         "source_url": ""
@@ -2785,7 +2785,7 @@
             "4": "Use multicast to replicate session information."
         },
         "correct_answers": [
-            "options.3"
+            "options.2"
         ],
         "description": "",
         "source_url": ""
@@ -2825,7 +2825,7 @@
         "question": "A Developer uses Amazon S3 buckets for static website hosting. The Developer creates one S3 bucket for the code and another S3 bucket for the assets, such as image and video files. Access is denied when a user attempts to access the assets bucket from the code bucket, with the website application showing a 403 error. How should the Developer solve this issue?",
         "options": {
             "1": "Create an IAM role and apply it to the assets bucket for the code bucket to be granted access.",
-            "2": "Edit the bucket policy of the assets bucket to open access to all principals.",
+            "2": "Edit the bucket policy of the assets bucket to allow access from the code bucket.",
             "3": "Edit the bucket policy of the assets bucket to open access to all principals.",
             "4": "Change the code bucket to use AWS Lambda functions instead of static website hosting."
         },
@@ -2953,8 +2953,8 @@
             "5": "Amazon SQS."
         },
         "correct_answers": [
-            "options.2",
-            "options.4"
+            "options.1",
+            "options.3"
         ],
         "description": "",
         "source_url": ""
@@ -3092,7 +3092,7 @@
             "5": "Store the application&#x27;s static content in Amazon S3."
         },
         "correct_answers": [
-            "options.3",
+            "options.4",
             "options.5"
         ],
         "description": "",
@@ -3123,7 +3123,7 @@
             "4": "Deploy the function with its memory allocation set to the maximum amount."
         },
         "correct_answers": [
-            "options.3"
+            "options.4"
         ],
         "description": "",
         "source_url": ""
@@ -3183,7 +3183,7 @@
             "4": "Implement an Amazon Cognito authorizer that references the DynamoDB authentication table."
         },
         "correct_answers": [
-            "options.4"
+            "options.1"
         ],
         "description": "",
         "source_url": ""
@@ -3260,7 +3260,7 @@
             "4": "Deploy the API versions as unique stages with unique endpoints and use stage variables to provide further context."
         },
         "correct_answers": [
-            "options.3"
+            "options.4"
         ],
         "description": "",
         "source_url": ""
@@ -3351,7 +3351,7 @@
             "5": "100 per IAM user."
         },
         "correct_answers": [
-            "options.1"
+            "options.3"
         ],
         "description": "",
         "source_url": ""
@@ -3611,7 +3611,7 @@
             "4": "Prewarm the table by updating all items."
         },
         "correct_answers": [
-            "options.3"
+            "options.1"
         ],
         "description": "",
         "source_url": ""
@@ -3622,7 +3622,7 @@
         "options": {
             "1": "Attach the volume to an instance using EC2&#x27;s SSL interface.",
             "2": "Write the data randomly instead of sequentially.",
-            "3": "Use an encrypted file system on top of the BBS volume.",
+            "3": "Use an encrypted file system on top of the EBS volume.",
             "4": "Encrypt the volume using the S3 server-side encryption service.",
             "5": "Encrypt the volume using the S3 server-side encryption service."
         },
@@ -3679,7 +3679,7 @@
         },
         "correct_answers": [
             "options.2",
-            "options.4"
+            "options.3"
         ],
         "description": "",
         "source_url": ""
@@ -4074,7 +4074,7 @@
             "4": "Messages will be delivered one or more times and message delivery order is indeterminate."
         },
         "correct_answers": [
-            "options.3"
+            "options.4"
         ],
         "description": "",
         "source_url": ""
@@ -4198,7 +4198,7 @@
             "4": "Contact AWS Support to increase the concurrent execution limits."
         },
         "correct_answers": [
-            "options.2"
+            "options.4"
         ],
         "description": "",
         "source_url": ""
@@ -4228,7 +4228,7 @@
             "4": "A large write operation is being performed against another table."
         },
         "correct_answers": [
-            "options.4"
+            "options.1"
         ],
         "description": "",
         "source_url": ""
@@ -4258,7 +4258,7 @@
             "4": "Increase the maximum execution time (timeout) setting of the Lambda function."
         },
         "correct_answers": [
-            "options.1"
+            "options.2"
         ],
         "description": "",
         "source_url": ""
@@ -4350,7 +4350,7 @@
             "4": "Invoke the GenerateDataKey API to retrieve the plaintext version of the data encryption key to encrypt the data."
         },
         "correct_answers": [
-            "options.1"
+            "options.4"
         ],
         "description": "",
         "source_url": ""
@@ -4366,7 +4366,7 @@
             "5": "Count."
         },
         "correct_answers": [
-            "options.1",
+            "options.2",
             "options.4"
         ],
         "description": "",
@@ -4489,7 +4489,7 @@
             "4": "Properties."
         },
         "correct_answers": [
-            "options.4"
+            "options.3"
         ],
         "description": "",
         "source_url": ""
@@ -4504,7 +4504,7 @@
             "4": "Amazon RDS read replica."
         },
         "correct_answers": [
-            "options.1"
+            "options.3"
         ],
         "description": "",
         "source_url": ""
@@ -4564,7 +4564,7 @@
             "4": "Increase the allocated memory for the Lambda function."
         },
         "correct_answers": [
-            "options.3"
+            "options.4"
         ],
         "description": "",
         "source_url": ""
@@ -4596,7 +4596,7 @@
             "4": "Use Cognito events."
         },
         "correct_answers": [
-            "options.1"
+            "options.3"
         ],
         "description": "",
         "source_url": ""
@@ -4611,7 +4611,7 @@
             "4": "The createUsagePlanKey method must be called to associate the newly created API key with the correct usage plan."
         },
         "correct_answers": [
-            "options.3"
+            "options.4"
         ],
         "description": "",
         "source_url": ""
@@ -4716,7 +4716,7 @@
             "4": "Create a custom alarm with a unique metric name for each application."
         },
         "correct_answers": [
-            "options.2"
+            "options.1"
         ],
         "description": "",
         "source_url": ""
@@ -4731,7 +4731,7 @@
             "4": "Amazon Cognito user pools and identity pools."
         },
         "correct_answers": [
-            "options.2"
+            "options.4"
         ],
         "description": "",
         "source_url": ""
@@ -4806,7 +4806,7 @@
             "4": "Store and retrieve credentials from AWS CodeCommit."
         },
         "correct_answers": [
-            "options.3"
+            "options.2"
         ],
         "description": "",
         "source_url": ""
@@ -4821,7 +4821,7 @@
             "4": "Push callback data to Amazon CloudWatch as a custom metric and use the CloudWatch alerting mechanisms to alert System Administrators."
         },
         "correct_answers": [
-            "options.3"
+            "options.4"
         ],
         "description": "",
         "source_url": ""
@@ -4851,7 +4851,7 @@
             "4": "Use Amazon ElastiCache in front of the primary database to cache data."
         },
         "correct_answers": [
-            "options.2"
+            "options.4"
         ],
         "description": "",
         "source_url": ""
@@ -4896,7 +4896,7 @@
             "4": "Hard code the database secrets in the application code itself."
         },
         "correct_answers": [
-            "options.1"
+            "options.2"
         ],
         "description": "",
         "source_url": ""
@@ -4943,7 +4943,7 @@
             "4": "Modify the execution role of the Lambda function to allow S3 access permission to the deployment package .ZIP file."
         },
         "correct_answers": [
-            "options.4"
+            "options.2"
         ],
         "description": "",
         "source_url": ""
@@ -5022,7 +5022,7 @@
             "4": "Disable the CloudFront distribution and enable it again to update all the edge locations."
         },
         "correct_answers": [
-            "options.1"
+            "options.3"
         ],
         "description": "",
         "source_url": ""
@@ -5038,8 +5038,8 @@
             "5": "Upload the function code to a private Git repository, then add a reference to it in an AWS::Lambda::Function resource in the template."
         },
         "correct_answers": [
-            "options.2",
-            "options.4"
+            "options.1",
+            "options.2"
         ],
         "description": "",
         "source_url": ""
@@ -5054,7 +5054,7 @@
             "4": "Modify the function runtime to include the necessary library."
         },
         "correct_answers": [
-            "options.4"
+            "options.2"
         ],
         "description": "",
         "source_url": ""
@@ -5071,7 +5071,7 @@
         },
         "correct_answers": [
             "options.2",
-            "options.4"
+            "options.5"
         ],
         "description": "",
         "source_url": ""
@@ -5086,7 +5086,7 @@
             "4": "Create a ZIP file with the source code and a buildspec.yaml file that installs the dependent libraries on AWS Lambda."
         },
         "correct_answers": [
-            "options.2"
+            "options.1"
         ],
         "description": "",
         "source_url": ""
@@ -5101,7 +5101,7 @@
             "4": "Use Elastic Load Balancer connection draining to stop sending requests to failing instances."
         },
         "correct_answers": [
-            "options.1"
+            "options.3"
         ],
         "description": "",
         "source_url": ""
@@ -5176,7 +5176,7 @@
             "4": "Use Amazon Cognito to associate unauthenticated users with an IAM role that has limited access to resources."
         },
         "correct_answers": [
-            "options.3"
+            "options.4"
         ],
         "description": "",
         "source_url": ""
@@ -5193,7 +5193,7 @@
         },
         "correct_answers": [
             "options.1",
-            "options.5"
+            "options.2"
         ],
         "description": "",
         "source_url": ""
@@ -5463,7 +5463,7 @@
             "4": "Create an IAM role, attach the AmazonS3FullAccess managed policy to it, and assign the role to the Lambda function as its execution role."
         },
         "correct_answers": [
-            "options.3"
+            "options.2"
         ],
         "description": "",
         "source_url": ""
@@ -5479,7 +5479,7 @@
             "5": "Enable the CloudFront option Restrict Viewer Access."
         },
         "correct_answers": [
-            "options.3",
+            "options.2",
             "options.4"
         ],
         "description": "",
@@ -5634,7 +5634,7 @@
             "4": "Recreate a new Elastic Beanstalk environment without Amazon RDS."
         },
         "correct_answers": [
-            "options.3"
+            "options.4"
         ],
         "description": "",
         "source_url": ""
@@ -5650,8 +5650,8 @@
             "5": "AWS CodePipeline does not have permissions to access AWS CodeCommit."
         },
         "correct_answers": [
-            "options.2",
-            "options.3"
+            "options.1",
+            "options.2"
         ],
         "description": "",
         "source_url": ""
@@ -5666,7 +5666,7 @@
             "4": "Use the push synchronization feature with the appropriate IAM role."
         },
         "correct_answers": [
-            "options.3"
+            "options.4"
         ],
         "description": "",
         "source_url": ""
@@ -5802,7 +5802,7 @@
             "4": "Create a new Amazon EMR cluster to get all the metadata about Amazon S3 objects; persist the metadata into DynamoDB. Have the web application poll the DynamoDB table to reflect this change."
         },
         "correct_answers": [
-            "options.1"
+            "options.2"
         ],
         "description": "",
         "source_url": ""
@@ -5834,7 +5834,7 @@
             "4": "Create an S3 event notification to an SQS Queue. Create a scheduled Lambda function that processes the queue, and generates and stores thumbnails."
         },
         "correct_answers": [
-            "options.1"
+            "options.3"
         ],
         "description": "",
         "source_url": ""

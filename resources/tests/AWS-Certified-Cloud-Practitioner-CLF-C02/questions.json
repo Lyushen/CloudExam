@@ -2476,7 +2476,7 @@
             "4": "AWS CloudFormation."
         },
         "correct_answers": [
-            "options.2"
+            "options.3"
         ],
         "description": "",
         "source_url": ""
@@ -2662,7 +2662,7 @@
             "4": "Amazon CloudWatch."
         },
         "correct_answers": [
-            "options.2"
+            "options.3"
         ],
         "description": "",
         "source_url": ""
@@ -2824,7 +2824,7 @@
             "4": "Amazon EC2 offers scalable computing."
         },
         "correct_answers": [
-            "options.2"
+            "options.1"
         ],
         "description": "",
         "source_url": ""
@@ -3400,7 +3400,7 @@
             "5": "File system encryption."
         },
         "correct_answers": [
-            "options.1",
+            "options.4",
             "options.5"
         ],
         "description": "",
@@ -3769,7 +3769,7 @@
             "4": "Running EC2 instances in parallel."
         },
         "correct_answers": [
-            "options.2"
+            "options.4"
         ],
         "description": "",
         "source_url": ""
@@ -5869,8 +5869,8 @@
             "5": "Provides software solutions that run on AWS or any other Cloud vendor."
         },
         "correct_answers": [
-            "options.1",
-            "options.4"
+            "options.2",
+            "options.5"
         ],
         "description": "",
         "source_url": ""
@@ -6393,8 +6393,8 @@
             "5": "High availability."
         },
         "correct_answers": [
-            "options.3",
-            "options.4"
+            "options.2",
+            "options.3"
         ],
         "description": "",
         "source_url": ""
@@ -6486,7 +6486,7 @@
             "4": "Encryption."
         },
         "correct_answers": [
-            "options.1"
+            "options.3"
         ],
         "description": "",
         "source_url": ""
@@ -6595,7 +6595,7 @@
             "4": "Increased reliability in the underlying hardware of Amazon EC2 instances."
         },
         "correct_answers": [
-            "options.3"
+            "options.1"
         ],
         "description": "",
         "source_url": ""
@@ -6617,17 +6617,17 @@
     },
     {
         "id": "427",
-        "question": "Which AWS services provide a way to extend an on-premises architecture to the aws cloud? (Select TWO)",
+        "question": "Which AWS services provide a way to extend an on-premises architecture to the AWS cloud? (Select TWO)",
         "options": {
             "1": "Amazon EBS.",
             "2": "Amazon Connect.",
-            "3": "AWS Storage Gateway AWS CLOUD PRACTITIONER DUMPS.",
+            "3": "AWS Storage Gateway.",
             "4": "Amazon CloudFront.",
             "5": "AWS Direct Connect."
         },
         "correct_answers": [
-            "options.2",
-            "options.4"
+            "options.3",
+            "options.5"
         ],
         "description": "",
         "source_url": ""
@@ -6689,7 +6689,7 @@
         },
         "correct_answers": [
             "options.1",
-            "options.3"
+            "options.5"
         ],
         "description": "",
         "source_url": ""
@@ -6800,7 +6800,7 @@
         },
         "correct_answers": [
             "options.2",
-            "options.5"
+            "options.4"
         ],
         "description": "",
         "source_url": ""
@@ -6845,7 +6845,7 @@
             "4": "Software development."
         },
         "correct_answers": [
-            "options.1"
+            "options.3"
         ],
         "description": "",
         "source_url": ""
@@ -7108,7 +7108,7 @@
             "4": "AWS Shield."
         },
         "correct_answers": [
-            "options.1"
+            "options.2"
         ],
         "description": "",
         "source_url": ""
@@ -7422,7 +7422,7 @@
             "5": "Amazon CloudWatch."
         },
         "correct_answers": [
-            "options.1",
+            "options.3",
             "options.5"
         ],
         "description": "",
@@ -7887,7 +7887,7 @@
             "4": "Download the AWS Management Console for the new Region."
         },
         "correct_answers": [
-            "options.2"
+            "options.3"
         ],
         "description": "",
         "source_url": ""
@@ -7902,7 +7902,7 @@
             "4": "They automatically adjust capacity. They are provided at no charge to users."
         },
         "correct_answers": [
-            "options.2"
+            "options.3"
         ],
         "description": "",
         "source_url": ""
@@ -8236,7 +8236,7 @@
             "4": "Amazon Connect."
         },
         "correct_answers": [
-            "options.4"
+            "options.3"
         ],
         "description": "",
         "source_url": ""
@@ -8360,7 +8360,7 @@
             "4": "AWS Migration Hub."
         },
         "correct_answers": [
-            "options.3"
+            "options.1"
         ],
         "description": "",
         "source_url": ""
@@ -8623,7 +8623,7 @@
             "4": "AWS manages user applications in the AWS Cloud."
         },
         "correct_answers": [
-            "options.1"
+            "options.2"
         ],
         "description": "",
         "source_url": ""
@@ -8700,7 +8700,7 @@
         },
         "correct_answers": [
             "options.3",
-            "options.5"
+            "options.4"
         ],
         "description": "",
         "source_url": ""
@@ -9040,7 +9040,7 @@
         },
         "correct_answers": [
             "options.2",
-            "options.3"
+            "options.5"
         ],
         "description": "",
         "source_url": ""
@@ -9151,7 +9151,7 @@
             "4": "AWS Shield."
         },
         "correct_answers": [
-            "options.2"
+            "options.4"
         ],
         "description": "",
         "source_url": ""

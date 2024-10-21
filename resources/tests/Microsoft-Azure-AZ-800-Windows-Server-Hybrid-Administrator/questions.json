@@ -224,7 +224,7 @@
         "id": "16",
         "question": "Fabrikam, Inc is a manufacturing company that has a main office in New York and a branch office in Seattle. The on-premises network contains servers that run Windows Server as shown in the following table. DC1 hosts all the operation master roles. VM1 and VM2 are connected to the internet. WEB1 and WEB2 run an Internet Information Services (IIS) web app named Webapp1. The New York and Seattle offices are connected by using redundant WAN links. The client computers in each office get IP addresses from their local DHCP server. DHCP1 contains a scope named Scope1 that has addresses for the New York office, DHCP2 contains a scope named Scope2 that has addresses for the Seattle office. The network contains a single on-premises Active Directory Domain Services (AD DS) domain named corp.falbrikam.com. Currently, all the service accounts use individual domain user accounts. All domain controllers have the DNS Server role installed and host a copy of the Active Directory integrated DNS zone of corp.fabrikam.com. The corp.fabrikam.com AD DS domain syncs with an Azure Active Directory (Azure AD) tenant. The corp.fabrikam.com domain contains the organizational units (OUs) and custom Group Policy Objects (GPOs) shown in the following table. Fabrikam identifies the following planned changes: Create a single Azure subscription named Sub1 that will contain a single Azure virtual network named Vnet1. Replace the WAN links between the Seattle and New York offices by using Azure Virtual WAN and FxpressRoute. Both on premises offices will be connected to Vnet1 by using ExpressRoute. Create three Azure file shares named newyorkfiles, seattlefiles, and companyfiles. Create a domain controller named dc3.corp.fabrikam.com in Vnet1. Deploy an Azure Virtual Desktop host pool to Vnet1. The Azure Virtual Desktop session hosts will be hybrid Azure AD-joined. License all servers for Microsoft Defender for servers. Use Azure Policy to enforce configuration management policies on the servers in Azure and on-premises. Fabrikam identifies the following networking requirements: Implement Virtual WAN and ensure that all the network traffic between the sites uses Virtual WAN. All communications must occur over ExpressRoute. If a DHCP server fails, ensure that the client computers can continue to receive their dynamic IP address and renew their existing lease. Ensure that the resources in Vnet1 can resolve the names of the on-premises servers in the corp.fabrikam.com domain. Fabrikam identifies the following security requirements: Apply GPO4 to the Azure Virtual Desktop session hosts. Ensure that Azure Virtual Desktop user sessions lock after being idle for 10 minutes. Users must be able to control the lockout time manually from their client computer. Ensure that server administrators request approval before they can establish a Remote Desktop connection to an Azure virtual machine. If the request is approved, the connection must be established within two hours. Prevent user passwords from containing all or part of words that are based on the company name, such as Fab, f@br1kAm or fabr!|. Ensure that all instances of Webapp1 use the same service account. The password of the service account must change automatically every 30 days. Prevent domain controllers from directly contacting hosts on the internet. You need to configure the synchronization of Azure files to meet the following requirements: Ensure that seattlefiles syncs to FS2. Ensure that newyorkfiles syncs to FS1. Ensure that companyfiles syncs to both FS1 and FS2. What should you implement for the deployment of DC3?  <br><img src='resources\\tests\\Microsoft-Azure-AZ-800-Windows-Server-Hybrid-Administrator\\images\\question7_16_17_19_22_29_45_1.jpg' alt='Question 16 part 1'> <br><img src='resources\\tests\\Microsoft-Azure-AZ-800-Windows-Server-Hybrid-Administrator\\images\\question7_16_17_19_22_29_45_2.jpg' alt='Question 16 part 2'>",
         "options": {
-            "1": "Azure Active Directory Domain Services (Azure AD DS}.",
+            "1": "Azure Active Directory Domain Services (Azure AD DS).",
             "2": "Azure AD Application Proxy.",
             "3": "Azure virtual machine.",
             "4": "Azure AD administrative unit."
@@ -260,7 +260,7 @@
             "4": "Folder1, Folder2, App1, and volume E."
         },
         "correct_answers": [
-            "options.2"
+            "options.4"
         ],
         "description": "",
         "source_url": ""
@@ -290,7 +290,7 @@
             "4": "Server1: Start-Service. Server4: Enable-PSRemoting."
         },
         "correct_answers": [
-            "options.3"
+            "options.4"
         ],
         "description": "",
         "source_url": ""
@@ -685,6 +685,381 @@
             "options.2",
             "options.5"
         ],
+        "description": "",
+        "source_url": ""
+    },
+    {
+        "id": "47",
+        "question": "Your network contains an Active Directory Domain Services (AD DS) domain. The domain contains the domain controllers shown in the following table. You need to configure DC3 to be the authoritative time server for the domain. Which operations master role should you transfer to DC3, and which console should you use?  <br><img src='resources\\tests\\Microsoft-Azure-AZ-800-Windows-Server-Hybrid-Administrator\\images\\question47.png' alt='Question 47'>  Role:",
+        "options": {
+            "1": "Domain master",
+            "2": "Infrastructure master",
+            "3": "PCD emulator",
+            "4": "RID master",
+            "5": "Schema master  Console:",
+            "6": "Active Directory Admin",
+            "7": "Active Directory Domain",
+            "8": "Active Directory Sites and Services",
+            "9": "Active Directory Users and Computers"
+        },
+        "correct_answers": [
+            "options.3",
+            "options.9"
+        ],
+        "description": "",
+        "source_url": ""
+    },
+    {
+        "id": "48",
+        "question": "You have an on premises Active Directory Domain Services (AD DS) domain that syncs with an Azure Active Directory (Azure AD) tenant. The domain contains two servers named Server1 and Server2. A user named Admin1 is a member of the local Administrators group on Server1 and Server2. You plan to manage Server1 and Server2 by using Azure Arc. Azure Arc objects will be added to a resource group named RG1. You need to ensure that Admin1 can configure Server1 and Server2 to be managed by using Azure Arc. What should you do first?",
+        "options": {
+            "1": "From the Azure portal, generate a new onboarding script.",
+            "2": "Assign Admin1 the Azure Connected Machine Onboarding role for RG1.",
+            "3": "Hybrid Azure AD join Server1 and Server2.",
+            "4": "Create an Azure cloud-only account for Admin1."
+        },
+        "correct_answers": [
+            "options.2"
+        ],
+        "description": "",
+        "source_url": ""
+    },
+    {
+        "id": "49",
+        "question": "Your network contains an Active Directory Domain Services (AD DS) forest. The forest contains three Active Directory sites named Site1, Site2, and Site3. Each site contains two domain controllers. The sites are connected by using DEFAULTIPSITELINK. You open a new branch office that contains only client computers. You need to ensure that the client computers in the new office are primarily authenticated by the domain controllers in Site1. Solution: You create a new subnet object that is associated to Site1. Does this meet the goal?",
+        "options": {
+            "1": "Yes.",
+            "2": "No."
+        },
+        "correct_answers": [
+            "options.2"
+        ],
+        "description": "",
+        "source_url": ""
+    },
+    {
+        "id": "50",
+        "question": "You have an Azure virtual machine named VM1 that runs Windows Server and has the following configurations: \u2711 Size: D2s_v4 \u2711 Operating system disk: 127-GiB standard SSD \u2711 Data disk 128-GiB standard SSD \u2711 Virtual machine generation: Gen 2 You plan to perform the following changes to VM1: \u2711 Change the virtual machine size to D4s_v4. \u2711 Detach the data disk. \u2711 Add a new standard SSD. Which changes require downtime for VM1?",
+        "options": {
+            "1": "Detaching the data disk only and adding a new standard SSD.",
+            "2": "Detaching the data disk only.",
+            "3": "Changing the virtual machine size only.",
+            "4": "Adding a new standard SSD only."
+        },
+        "correct_answers": [
+            "options.3"
+        ],
+        "description": "",
+        "source_url": ""
+    },
+    {
+        "id": "51",
+        "question": "Your network contains an Active Directory Domain Services (AD DS) domain named contoso.com. The domain contains two servers named Server1 and Server2. Server1 contains a disk named Disk2. Disk2 contains a folder named UserData. UserData is shared to the Domain Users group. Disk2 is configured for deduplication. Server1 is protected by using Azure Backup. Server1 fails. You connect Disk2 to Server2. You need to ensure that you can access all the files on Disk2 as quickly as possible. What should you do?",
+        "options": {
+            "1": "Create a storage pool.",
+            "2": "Restore files from Azure Backup.",
+            "3": "Install the File Server Resource Manager server role.",
+            "4": "Install the Data Deduplication server role."
+        },
+        "correct_answers": [
+            "options.4"
+        ],
+        "description": "",
+        "source_url": ""
+    },
+    {
+        "id": "52",
+        "question": "Your network contains an Active Directory Domain Services (AD DS) domain named contoso.com. You need to identify which server is the PDC emulator for the domain. Solution: From a command prompt, you run netdom.exe query fsmo. Does this meet the goal?",
+        "options": {
+            "1": "Yes.",
+            "2": "No."
+        },
+        "correct_answers": [
+            "options.1"
+        ],
+        "description": "",
+        "source_url": ""
+    },
+    {
+        "id": "53",
+        "question": "You have an Azure virtual machine named Server1 that runs a network management application. Server1 has the following network configuration. * Network interface.Nic1 * IP address 10.1.1.1/24 * Connected to: Vnet1/Subnet1 You need connect Server1 to an additional subnet named Vnet1/Subnet2. What should you do?",
+        "options": {
+            "1": "Create a private endpoint on Subnet2",
+            "2": "Add a network interface to server1.",
+            "3": "Modify the IP configurations of Nic1.",
+            "4": "Add an IP configuration to Nic1."
+        },
+        "correct_answers": [
+            "options.1"
+        ],
+        "description": "",
+        "source_url": ""
+    },
+    {
+        "id": "54",
+        "question": "Your network contains a two-domain on-premises Active Directory Domain Services (AD DS) forest named Contoso.com. The forest contains the domain controllers shown in the following table. You create an Active Directory site named Site3. Site1, Site2 and Site3 each has a dedicated site link to the Hub site. In Site3, you install a new server named Server1. You need to promote Server1 to an ROOC in child.contoso.com by using the install from Media (IFM) option. The solution must minimize network traffic. What should you do?  <br><img src='resources\\tests\\Microsoft-Azure-AZ-800-Windows-Server-Hybrid-Administrator\\images\\question48.png' alt='Question 48'>  Server to use to create the IFM source:",
+        "options": {
+            "1": "DC1",
+            "2": "DC2",
+            "3": "Server1",
+            "4": "RODC3  Tool to use to create the IFM source:",
+            "5": "Azure Backup",
+            "6": "Dcdiag.exe",
+            "7": "Ntdsutil.exe",
+            "8": "Repadmin.exe",
+            "9": "Windows Server Backup"
+        },
+        "correct_answers": [
+            "options.1",
+            "options.6"
+        ],
+        "description": "",
+        "source_url": ""
+    },
+    {
+        "id": "55",
+        "question": "You have a server named Server1 that runs Windows Server and contains three volumes named C, D, and E. Files are stored on Server1 as shown in the following table. For volume D, Data Deduplication is enabled and set to General purpose file server. You perform the following actions: \u2022 Move File1 to volume D. \u2022 Copy File2 to volume D and name the copy File4. \u2022 Move File3 to volume E. For each of the following statements, select Yes if the statement is true. Otherwise, select No.  <br><img src='resources\\tests\\Microsoft-Azure-AZ-800-Windows-Server-Hybrid-Administrator\\images\\question49.png' alt='Question 49'>  File1 is deduplicated after the deduplication job runs:",
+        "options": {
+            "1": "Yes.",
+            "2": "No.  File3 is deduplicated after the deduplication job runs:",
+            "3": "Yes.",
+            "4": "No.  File4 is deduplicated after the deduplication job runs:",
+            "5": "Yes.",
+            "6": "No."
+        },
+        "correct_answers": [
+            "options.2",
+            "options.4",
+            "options.5"
+        ],
+        "description": "",
+        "source_url": ""
+    },
+    {
+        "id": "56",
+        "question": "You have an Azure subscription that contains a virtual machine named VM1 as shown in the following exhibit. The subscription has the disks shown in the following table. Which disks can you attach as data disks to VM1?  <br><img src='resources\\tests\\Microsoft-Azure-AZ-800-Windows-Server-Hybrid-Administrator\\images\\question50_1.jpg' alt='Question 50 part 1'> <br><img src='resources\\tests\\Microsoft-Azure-AZ-800-Windows-Server-Hybrid-Administrator\\images\\question50_2.jpg' alt='Question 50 part 2'>",
+        "options": {
+            "1": "Disk2 only",
+            "2": "Disk4 only",
+            "3": "Disk1 and Disk2 only",
+            "4": "Disk2 and Disk4 only",
+            "5": "Disk1, Disk3, and Disk4 only",
+            "6": "Disk1, Disk2, Disk3. and Disk4"
+        },
+        "correct_answers": [
+            "options.3"
+        ],
+        "description": "",
+        "source_url": ""
+    },
+    {
+        "id": "57",
+        "question": "Your network contains an Active Directory Domain Services (AD DS) forest named contoso.com. The root domain contains the domain controllers shown in the following table. A failure of which domain controller will prevent you from creating application partitions?  <br><img src='resources\\tests\\Microsoft-Azure-AZ-800-Windows-Server-Hybrid-Administrator\\images\\question51.jpg' alt='Question 51'>",
+        "options": {
+            "1": "DC1",
+            "2": "DC2",
+            "3": "DC3",
+            "4": "DC4",
+            "5": "DC5"
+        },
+        "correct_answers": [
+            "options.1"
+        ],
+        "description": "",
+        "source_url": ""
+    },
+    {
+        "id": "58",
+        "question": "You are planning the deployment of DNS to a new network. You have three internal DNS servers as shown in the following table. The contoso.local zone contains zone delegations for east.conloso.local and west.contoso.local. All the DNS servers use root hints. You need to ensure that all the DNS servers can resolve the names of all the internal namespaces and internet hosts. Solution: On Server2 and Server3, you configure a conditional forwarder for contoso.local. Does this meet the goal?  <br><img src='resources\\tests\\Microsoft-Azure-AZ-800-Windows-Server-Hybrid-Administrator\\images\\question52.jpg' alt='Question 52'>",
+        "options": {
+            "1": "Yes.",
+            "2": "No."
+        },
+        "correct_answers": [
+            "options.2"
+        ],
+        "description": "",
+        "source_url": ""
+    },
+    {
+        "id": "59",
+        "question": "You have an on-premises server named Server1 that runs Windows Server. You have an Azure virtual network that contains an Azure virtual network gateway. You need to connect only Server1 to the Azure virtual network. What should you use?",
+        "options": {
+            "1": "Azure Network Adapter",
+            "2": "a Site-to-SiteVPN",
+            "3": "an ExpressRoute circuit",
+            "4": "Azure Extended Network"
+        },
+        "correct_answers": [
+            "options.1"
+        ],
+        "description": "",
+        "source_url": ""
+    },
+    {
+        "id": "60",
+        "question": "Your network contains an on -premises Active Directory Domain Services (AD DS) domain named contoso.com. The domain contains the objects shown in the following table. You plan to sync contoso.com with an Azure Active Directory (Azure AD) tenant by using Azure AD Connect. You need to ensure that all the objects can be used in Conditional Access policies. What should you do?  <br><img src='resources\\tests\\Microsoft-Azure-AZ-800-Windows-Server-Hybrid-Administrator\\images\\question53.jpg' alt='Question 53'>",
+        "options": {
+            "1": "Change the scope of Group2 to Universal",
+            "2": "Clear the Configure device writeback option.",
+            "3": "Change the scope o\u2019 Group1 and Group2 to Global",
+            "4": "Select the Configure Hybrid Azure AD join option."
+        },
+        "correct_answers": [
+            "options.4"
+        ],
+        "description": "",
+        "source_url": ""
+    },
+    {
+        "id": "61",
+        "question": "Your network contains a multi-site Active Directory Domain Services (AD DS) forest. Each Active Directory site is connected by using manually configured site links and automatically generated connections. You need to minimize the convergence time for changes to Active Directory. What should you do?",
+        "options": {
+            "1": "For each site link, modify the options attribute.",
+            "2": "For each site link, modify the site link costs.",
+            "3": "For each site link, modify the replication schedule.",
+            "4": "Create a site link bridge that contains all the site links."
+        },
+        "correct_answers": [
+            "options.3"
+        ],
+        "description": "",
+        "source_url": ""
+    },
+    {
+        "id": "62",
+        "question": "Your company has a main office and a branch office. The two offices are connected by using a WAN link. Each office contains a firewall that filters WAN traffic. The network in the branch office contains 10 servers that run Windows Server. All servers are administered from the main office only. You plan to manage the servers in the branch office by using a Windows Admin Center gateway. On a server in the branch office, you install the Windows Admin Center gateway by using the defaults settings. You need to configure the firewall in the branch office to allow the required inbound connection to the Windows Admin Center gateway. Which inbound TCP port should you allow?",
+        "options": {
+            "1": "443",
+            "2": "3389",
+            "3": "5985",
+            "4": "6516"
+        },
+        "correct_answers": [
+            "options.1"
+        ],
+        "description": "",
+        "source_url": ""
+    },
+    {
+        "id": "63",
+        "question": "Your network contains an Active Directory Domain Services (AD DS) domain- The domain contains 10 servers that run Windows Server. The servers have static IP addresses. You plan to use DHCP to assign IP addresses to the servers. You need to ensure that each server always receives the same IP address. Which type of identifier should you use to create a DHCP reservation for each server?",
+        "options": {
+            "1": "universally unique identifier (UUID)",
+            "2": "fully qualified domain name (FQDN)",
+            "3": "NetBIOS name",
+            "4": "MAC address"
+        },
+        "correct_answers": [
+            "options.4"
+        ],
+        "description": "",
+        "source_url": ""
+    },
+    {
+        "id": "64",
+        "question": "You have an Azure virtual machine named VM1 that has a private IP address only. You configure the Windows Admin Center extension on VM1. You have an on-premises computer that runs Windows 11. You use the computer for server management. You need to ensure that you can use Windows Admin Center from the Azure portal to manage VM1. What should you configure?",
+        "options": {
+            "1": "an Azure Bastion host on the virtual network that contains VM1.",
+            "2": "a VPN connection to the virtual network that contains VM1.",
+            "3": "a network security group 1NSG) rule that allows inbound traffic on port 443.",
+            "4": "a private endpoint on the virtual network that contains VM1."
+        },
+        "correct_answers": [
+            "options.2"
+        ],
+        "description": "",
+        "source_url": ""
+    },
+    {
+        "id": "65",
+        "question": "You have a server that runs Windows Server and has the DHCP Server role installed. The server has a scope named Scope! that has the following configurations: \u2022 Address range: 192.168.0.2 to 192.16B.1.2M. Mask 255.255.254.0 \u2022 Router: 192.168.0.1 \u2022 Lease duration: 3 days \u2022 DNS server 172.16.0.254 You have 50 Microsoft Teams Phone devices from the same vendor. All the devices have MAC addresses within the same range. You need to ensure that all the Teams Phone devices that receive a lease from Scope1 have IP addresses in the range of 192.168.1.100 to 192.168.1.200. The solution must NOT affect other DHCP clients that receive IP configurations from Scope1. What should you create?",
+        "options": {
+            "1": "a policy",
+            "2": "a scope",
+            "3": "a fitter",
+            "4": "scope options"
+        },
+        "correct_answers": [
+            "options.1"
+        ],
+        "description": "",
+        "source_url": ""
+    },
+    {
+        "id": "66",
+        "question": "You have an Azure subscription that contains the following resources: \u2022 An Azure Log Analytics workspace \u2022 An Azure Automation account \u2022 Azure Arc. You have an on-premises server named Server1 that is onboaraed to Azure Arc You need to manage Microsoft updates on Server! by using Azure Arc Which two actions should you perform? Each correct answer presents part of the solution.",
+        "options": {
+            "1": "Add Microsoft Sentinel to the Log Analytics workspace",
+            "2": "On Server1, install the Azure Monitor agent",
+            "3": "From the Automation account, enable Update Management for Server1.",
+            "4": "From the Virtual machines data source of the Log Analytics workspace, connect Server1."
+        },
+        "correct_answers": [
+            "options.2",
+            "options.3"
+        ],
+        "description": "",
+        "source_url": ""
+    },
+    {
+        "id": "67",
+        "question": "Your network contains two VLANs for client computers and one VLAN for a datacenter Each VLAN is assigned an IPv4 subnet Currently, all the client computers use static IP addresses. You plan to deploy a DHCP server to the VLAN in the datacenter. You need to use the DHCP server to provide IP configurations to all the client computers. What is the minimum number of scopes and DHCP relays you should create?  <br><img src='resources\\tests\\Microsoft-Azure-AZ-800-Windows-Server-Hybrid-Administrator\\images\\question54.png' alt='Question 54'>  DHCP scopes:",
+        "options": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4  DHCP relays:",
+            "5": "1",
+            "6": "2",
+            "7": "3",
+            "8": "4"
+        },
+        "correct_answers": [
+            "options.3",
+            "options.5"
+        ],
+        "description": "",
+        "source_url": ""
+    },
+    {
+        "id": "68",
+        "question": "You have an on premises Active Directory Domain Services (AD DS) domain that syncs with an Azure Active Directory (Azure AD) tenant. You plan to implement self-service password reset (SSPR) in Azure AD. You need to ensure that users that reset their passwords by using SSPR can use the new password resources in the AD DS domain. What should you do?",
+        "options": {
+            "1": "Deploy the Azure AD Password Protection proxy service to the on premises network.",
+            "2": "Run the Microsoft Azure Active Directory Connect wizard and select Password writeback.",
+            "3": "Grant the Change password permission for the domain to the Azure AD Connect service account.",
+            "4": "Grant the impersonate a client after authentication user right to the Azure AD Connect service account."
+        },
+        "correct_answers": [
+            "options.2"
+        ],
+        "description": "",
+        "source_url": ""
+    },
+    {
+        "id": "69",
+        "question": "You have an Azure Active Directory Domain Services (Azure AD DS) domain named contoso.com. You need to provide an administrator with the ability to manage Group Policy Objects (GPOs). The solution must use the principle of least privilege. To which group should you add the administrator?",
+        "options": {
+            "1": "AAD DC Administrators",
+            "2": "Domain Admins",
+            "3": "Schema Admins",
+            "4": "Enterprise Admins",
+            "5": "Group Policy Creator Owners"
+        },
+        "correct_answers": [
+            "options.2"
+        ],
+        "description": "",
+        "source_url": ""
+    },
+    {
+        "id": "70",
+        "question": "You have an Azure subscription named sub1 and 500 on-premises virtual machines that run Windows Server. You plan to onboard the on-premises virtual machines to Azure Arc by running the Azure Arc deployment script You need to create an identity that mil be used by the script to authenticate access to sub1. The solution must use the principle of least privilege. How should you complete the command?  <br><img src='resources\\tests\\Microsoft-Azure-AZ-800-Windows-Server-Hybrid-Administrator\\images\\question55.jpg' alt='Question 55'>",
+        "options": {
+            "1": "New-AzADAppCredential. - [x] New-AZADServicePrincipal. - [ ] New-AZUserAssignedIdentity. -DisplayName &#x27;Arc-for-servers&#x27; -Role - [ ] Azure Connected Machine Onboarding. - [x] Virtual Machine Contributor. - [ ] Virtual Machine User Login."
+        },
+        "correct_answers": [],
         "description": "",
         "source_url": ""
     }
