@@ -12,11 +12,20 @@ export function initializeSwipeHandling() {
         sensitivity = visualViewport.width * sens_percent_value;
     });
 
+    const disableTextSelection = () => {
+        document.body.classList.add('non-selectable');
+    };
+
+    const enableTextSelection = () => {
+        document.body.classList.remove('non-selectable');
+    };
+
     const onStart = (startX) => {
         startCoord = startX;
         currentQuestionIndex = appSettings.currentQuestion; // Capture the current question at start
         isSwiping = true;
         changeMade = false;  // Reset change tracking on new gesture start
+        disableTextSelection();  // Disable text selection on swipe start
     };
 
     const onMove = (event) => {
@@ -51,6 +60,7 @@ export function initializeSwipeHandling() {
 
     const onEnd = () => {
         isSwiping = false;
+        enableTextSelection();  // Re-enable text selection after swipe ends
     };
 
     // Touch Event Handlers
