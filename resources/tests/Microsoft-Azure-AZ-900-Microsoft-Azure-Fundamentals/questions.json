@@ -174,7 +174,7 @@
     },
     {
         "id": "13",
-        "question": "A team is currently planning on using Azure for hosting resources. They are going to create users which would have access to the Azure resources. The want to implement Multi-Factor authentication for the users. Is it required to deploy a federated solution to implement Multi-Factor authentication?",
+        "question": "A team is currently planning on using Azure for hosting resources. They are going to create users which would have access to the Azure resources. They want to implement Multi-Factor authentication for the users. Is it required to deploy a federated solution to implement Multi-Factor authentication?",
         "options": {
             "1": "Yes.",
             "2": "No."
