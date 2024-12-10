@@ -117,7 +117,7 @@
             "3": "If you have workloads that are not sensitive to consistent performance."
         },
         "correct_answers": [
-            "options.1"
+            "options.2"
         ],
         "description": "",
         "source_url": ""
@@ -5521,9 +5521,9 @@
             "6": "Storing large amounts of infrequently accessed data."
         },
         "correct_answers": [
+            "options.2",
             "options.3",
-            "options.5",
-            "options.6"
+            "options.4"
         ],
         "description": "",
         "source_url": ""
