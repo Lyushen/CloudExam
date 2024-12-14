@@ -13,8 +13,8 @@
 </head>
 <body>
     <header>
-        <div id="menu-toggle" class="menu-button">☰</div>
-        <div id="menu" class="menu">
+        <div id="menu-toggle" class="menu-button" aria-hidden="true">☰</div>
+        <div id="menu" class="menu" aria-hidden="true">
             <div class="menu-item fullscreen-mode">Fullscreen</div>
             <div class="menu-item theme-switcher">Theme ☼</div>
             <div class="menu-item shuffle-questions-flag">Shuffle Q</div>
@@ -26,7 +26,7 @@
     <article>
         <div class="question-box">
             <p id="question-text"></p>
-            <div id="options-container"></div>
+            <div id="options-container" aria-hidden="true"></div>
             <div id="explanations-container"></div>
         </div>
     </article>
@@ -35,7 +35,7 @@
             <button id="prev-button">&lt;</button>
             <div id="question-navigator">
                 <input type="number" id="question-number">
-                <span id="total-questions">/</span>
+                <label for="question-number" id="total-questions" aria-hidden="true"></label>
             </div>
             <button id="next-button">&gt;</button>
         </div>
