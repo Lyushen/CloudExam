@@ -2,11 +2,24 @@
 
 ![Promotional image](images/promotional.png)
 
-## Udemy & Etsy
+## ❣️ Support
 
-❣️ Please support us by purchasing this course on Udemy in an interactive version with the [discounted link](https://www.udemy.com/course/developing-solutions-for-azure-az-204-practice-test-exams/?referralCode=94E823A45873B0E39FE3). If you're working for a company, you could most probably easily claim this expense during preparation for your exam. For us, it's to be, or not to be, in the game.
+There are many ways to support us; in exchange, you'll get this material in a proper format:
 
-🛍️ Alternatively, you can buy the PDF with those questions on [Etsy](https://ditectrev.etsy.com/listing/1506993824).
+- ❤️ [shop.ditectrev.com, in EPUB or PDF formats, with answers marked](https://shop.ditectrev.com/product/microsoft-azure-az-204-developing-solutions-for-azure-practice-tests-exams-questions-answers),
+- ❤️ [shop.ditectrev.com, in EPUB or PDF formats, without answers marked](https://shop.ditectrev.com/product/microsoft-azure-az-204-developing-solutions-for-azure-practice-tests-exams-questions-no-answers),
+- 📖 [Udemy is the only one to have explanations for questions](https://www.udemy.com/course/developing-solutions-for-azure-az-204-practice-test-exams/?referralCode=94E823A45873B0E39FE3),
+- 📚 [Google Play Books, in PDF format, with answers marked](https://play.google.com/store/books/details?id=vvwcEQAAQBAJ),
+- 📚 [Google Play Books, in PDF format, without answers marked](https://play.google.com/store/books/details?id=wPwcEQAAQBAJ),
+- 🛍️ [Etsy, in PDF format, with answers marked](https://ditectrev.etsy.com/listing/1506993824),
+- 🛍️ [Etsy, in PDF format, without answers marked](https://ditectrev.etsy.com/listing/1521177797),
+- 🛒 [eBay, in PDF format, with answers marked](https://www.ebay.com/itm/404899852791?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=_ptbuk3gqdw&sssrc=2524149&ssuid=_ptbuk3gqdw&widget_ver=artemis&media=COPY),
+- 🛒 [eBay, in PDF format, without answers marked](https://www.ebay.com/itm/405079754203?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=_ptbuk3gqdw&sssrc=2524149&ssuid=_ptbuk3gqdw&widget_ver=artemis&media=COPY),
+- 🔄 [Patreon subscription allows you to get access to all of the materials in EPUB and PDF formats. You can also buy separate items on Patreon, but the subscription technically allows us to include all updates for EPUB and PDF formats. Hence, you get EPUB and PDF updates when you subscribe to Patreon](https://patreon.com/Ditectrev?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink).
+
+💰 If you work for a company, you could probably easily claim this expense while preparing for your exam. For us, it's about being in the game or not.
+
+⭐ Good ratings & reviews help us to survive. Please don't forget to leave a nice one when you purchase an item.
 
 ## ✨ This course is unlike any Microsoft Azure AZ-204 (Developing Solutions for Azure) course you will find online.
 
@@ -72,6 +85,14 @@
 **[v1.1.1](../../releases/tag/v1.1.1): February 4, 2024.**
 
 - Update 1 question with deprecated answer.
+
+**[v1.1.1](../../releases/tag/v1.1.1): August 6, 2024.**
+
+- AI-generated explanations (only paid [Udemy](https://www.udemy.com/course/developing-solutions-for-azure-az-204-practice-test-exams/?referralCode=94E823A45873B0E39FE3)).
+
+**[v1.1.2](../../releases/tag/v1.1.2): November 11, 2024.**
+
+- Fix 4 wrong answers.
 
 ## 🙋‍♀️ & 🙋‍♂️ Contribution
 
@@ -656,8 +677,8 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### You develop and deploy an Azure App Service API app to a Windows-hosted deployment slot named Development. You create additional deployment slots named Testing and Production. You enable auto swap on the Production deployment slot. You need to ensure that scripts run and resources are available before a swap operation occurs. Solution: Update the app with a method named statuscheck to run the scripts. Update the app settings for the app. Set the WEBSITE_SWAP_WARMUP_PING_PATH and WEBSITE_SWAP_WARMUP_PING_STATUSES with a path to the new method and appropriate response codes. Does the solution meet the goal?
 
-- [ ] Yes.
-- [x] No.
+- [x] Yes.
+- [ ] No.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -1666,9 +1687,9 @@ specified personnel if the temperature is outside of those thresholds.
 ### You are developing applications for a company. You plan to host the applications on Azure App Services. The company has the following requirements: Every five minutes verify that the websites are responsive. Verify that the websites respond within a specified time threshold. Dependent requests such as images and JavaScript files must load properly. Generate alerts if a website is experiencing issues. If a website fails to load, the system must attempt to reload the site three more times. You need to implement this process with the least amount of effort. What should you do?
 
 - [ ] Create a Selenium web test and configure it to run from your workstation as a scheduled task.
-- [ ] Set up a URL ping test to query the home page.
+- [x] Set up a URL ping test to query the home page.
 - [ ] Create an Azure function to query the home page.
-- [x] Create a multi-step web test to query the home page.
+- [ ] Create a multi-step web test to query the home page.
 - [ ] Create a Custom Track Availability Test to query the home page.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -1684,9 +1705,9 @@ specified personnel if the temperature is outside of those thresholds.
 
 ### You are developing an e-commerce solution that uses a microservice architecture. You need to design a communication backplane for communicating transactional messages between various parts of the solution. Messages must be communicated in first-in-first-out (FIFO) order. What should you use?
 
-- [x] Azure Storage Queue.
+- [ ] Azure Storage Queue.
 - [ ] Azure Event Hub.
-- [ ] Azure Service Bus.
+- [x] Azure Service Bus.
 - [ ] Azure Event Grid.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -1977,9 +1998,9 @@ specified personnel if the temperature is outside of those thresholds.
 ### You are developing an application to transfer data between on-premises file servers and Azure Blob storage. The application stores keys, secrets, and certificates in Azure Key Vault and makes use of the Azure Key Vault APIs. You want to configure the application to allow recovery of an accidental deletion of the key vault or key vault objects for 90 days after deletion. What should you do?
 
 - [ ] Run the Add-AzKeyVaultKey cmdlet.
-- [ ] Run the az keyvault update --enable-soft-delete true --enable-purge-protection true CLI.
+- [x] Run the az keyvault update --enable-soft-delete true --enable-purge-protection true CLI.
 - [ ] Implement virtual network service endpoints for Azure Key Vault.
-- [x] Run the az keyvault update --enable-soft-delete false CLI.
+- [ ] Run the az keyvault update --enable-soft-delete false CLI.
 
 **[⬆ Back to Top](#table-of-contents)**
 

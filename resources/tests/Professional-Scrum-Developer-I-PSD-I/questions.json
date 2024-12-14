@@ -930,7 +930,7 @@
         "options": {
             "1": "The Scrum Master.",
             "2": "The Scrum Team.",
-            "3": "The Development Team.",
+            "3": "The Developers.",
             "4": "The Product Owner."
         },
         "correct_answers": [
@@ -1163,7 +1163,7 @@
     },
     {
         "id": "73",
-        "question": "What are two good ways for the Development Team to make a non-functional requirements visible?",
+        "question": "What are two good ways for the Developers to make a non-functional requirements visible?",
         "options": {
             "1": "Put them on a separate list on the Scrum board, available for all to see.",
             "2": "Add them to the Product Backlog and keep the Product Owner posted on the expected effort.",
@@ -1199,7 +1199,7 @@
             "1": "Ensure the Scrum Team members have compatible personalities.",
             "2": "Introduce a bonus system for the top performers in the team.",
             "3": "Ensure the team understands they need a Definition of Done.",
-            "4": "Have the development managers for each Development Team member introduce their direct reports and go over their responsibilities on the Scrum Team.",
+            "4": "Have the development managers for each Developers member introduce their direct reports and go over their responsibilities on the Scrum Team.",
             "5": "Ask the Product Owner to discuss the Product, its vision, history, goals, and context, as well as answer questions."
         },
         "correct_answers": [
@@ -1226,12 +1226,12 @@
     },
     {
         "id": "77",
-        "question": "What are two responsibilities of Testers in a Development Team? (choose the best two answers)",
+        "question": "What are two responsibilities of Testers in the Developers? (choose the best two answers)",
         "options": {
             "1": "Verifying the work of programmers.",
             "2": "Scrum has no &quot;Tester&quot; role.",
             "3": "Finding bugs.",
-            "4": "Everyone in the Development Team is responsible for quality.",
+            "4": "Everyone in the Developers is responsible for quality.",
             "5": "Tracking quality metrics."
         },
         "correct_answers": [
@@ -1243,12 +1243,12 @@
     },
     {
         "id": "78",
-        "question": "How do you know that a Development Team is cross-functional?\u00a0(choose the best answer)",
+        "question": "How do you know that the Developers are cross-functional?\u00a0(choose the best answer)",
         "options": {
-            "1": "A few of the Development Team members pair program and do Test Driven Development.",
-            "2": "Development Team has all the skills to create a potentially releasable increment by the end of every Sprint.",
-            "3": "Every member of the Development Team is able to perform every task.",
-            "4": "There are no conflicts within the Development Team."
+            "1": "A few of the Developers members pair program and do Test Driven Development.",
+            "2": "The Developers have all the skills to create a potentially releasable increment by the end of every Sprint.",
+            "3": "Every member of the Developers is able to perform every task.",
+            "4": "There are no conflicts within the Developers."
         },
         "correct_answers": [
             "options.2"
@@ -1274,16 +1274,16 @@
     },
     {
         "id": "80",
-        "question": "Which three behaviors demonstrate that a team is self-organizing? (choose the best three answers)",
+        "question": "Which three behaviors demonstrate that a team is self-managing? (choose the best three answers)",
         "options": {
-            "1": "The Development Team inviting external people to the Sprint Planning to ask them how to turn a Product Backlog Item into an Increment via a complete and detailed Sprint Backlog.",
-            "2": "The Development Team members are working within the boundaries of their functional description and nicely handing off work from analyst to Developer to Tester to integration.",
+            "1": "The Developers inviting external people to the Sprint Planning to ask them how to turn a Product Backlog Item into an Increment via a complete and detailed Sprint Backlog.",
+            "2": "The Developers members are working within the boundaries of their functional description and nicely handing off work from analyst to Developer to Tester to integration.",
             "3": "The Product Owner doesn&#x27;t need to be at Sprint Retrospectives.",
             "4": "Stakeholders walking in at the Daily Scrum to check progress and work with the\u00a0Scrum Master to optimize the functional scope for the Sprint.",
-            "5": "Development Team members collaboratively selecting their own work during the\u00a0Sprint.",
+            "5": "The Developers members collaboratively selecting their own work during the\u00a0Sprint.",
             "6": "The Scrum Master is no longer needed.",
-            "7": "The Development Team has all the skills needed to create a releasable Increment.",
-            "8": "The Development Team creating their own Sprint Backlog, reflecting all work that is part of the Definition of Done."
+            "7": "The Developers have all the skills needed to create a releasable Increment.",
+            "8": "The Developers creating their own Sprint Backlog, reflecting all work that is part of the Definition of Done."
         },
         "correct_answers": [
             "options.5",
@@ -1325,7 +1325,7 @@
         "id": "83",
         "question": "Which statement best describes the Sprint Backlog as outcome of the Sprint Planning?\u00a0(choose the best answer)",
         "options": {
-            "1": "It is the Development Team&#x27;s plan for the Sprint.",
+            "1": "It is the Developers plan for the Sprint.",
             "2": "Every item has a designated owner.",
             "3": "It is a complete list of all work to be done in a Sprint.",
             "4": "Each task is estimated in hours.",
@@ -1339,10 +1339,10 @@
     },
     {
         "id": "84",
-        "question": "A Development Team selects a set of Product Backlog Items for a Sprint Backlog with the intent to\u00a0get the selected items &quot;Done&quot; by the end of the Sprint. Which three phrases best describe the\u00a0purpose of a Definition of Done? (choose the best three answers)",
+        "question": "The Developers selects a set of Product Backlog Items for a Sprint Backlog with the intent to\u00a0get the selected items &quot;Done&quot; by the end of the Sprint. Which three phrases best describe the\u00a0purpose of a Definition of Done? (choose the best three answers)",
         "options": {
             "1": "It provides a template for elements that need to be included in the technical\u00a0documentation.",
-            "2": "It guides the Development Team in creating a forecast at the Sprint Planning.",
+            "2": "It guides the Developers in creating a forecast at the Sprint Planning.",
             "3": "It controls whether the Developers have performed their tasks.",
             "4": "It creates transparency over the work inspected at the Sprint Review.",
             "5": "It defines what it takes for an Increment to be ready for release.",
@@ -1358,7 +1358,7 @@
     },
     {
         "id": "85",
-        "question": "Which output from Sprint Planning provides the Development Team with a target and overarching direction for the Sprint? (choose the best answer)",
+        "question": "Which output from Sprint Planning provides the Developers with a target and overarching direction for the Sprint? (choose the best answer)",
         "options": {
             "1": "The Sprint Goal.",
             "2": "Sprint Review minutes.",
@@ -1373,7 +1373,7 @@
     },
     {
         "id": "86",
-        "question": "The Product Owner determines how many Product Backlog Items the Development Team selects\u00a0for a Sprint. (choose the best answer)",
+        "question": "The Product Owner determines how many Product Backlog Items the Developers selects\u00a0for a Sprint. (choose the best answer)",
         "options": {
             "1": "True, but only after confirmation by the resource manager that the Team has\u00a0enough capacity.",
             "2": "False, capacity and commitment are the Project Manager&#x27;s responsibility.",
@@ -1394,7 +1394,7 @@
         "options": {
             "1": "The Scrum Team.",
             "2": "The Scrum Master.",
-            "3": "The Development Team.",
+            "3": "The Developers.",
             "4": "The Product Owner."
         },
         "correct_answers": [
@@ -1422,9 +1422,9 @@
         "id": "89",
         "question": "Which two of the following are true about the Scrum Master role? (choose the best two answers)",
         "options": {
-            "1": "The Scrum Master teaches the Development Team to keep the Scrum meetings\u00a0to their time-box.",
+            "1": "The Scrum Master teaches the Developers to keep the Scrum meetings\u00a0to their time-box.",
             "2": "The Scrum Master is responsible for updating the Sprint Burndown.",
-            "3": "The Scrum Master assigns tasks to Development Team members when they\u00a0need work.",
+            "3": "The Scrum Master assigns tasks to Developers when they\u00a0need work.",
             "4": "The Scrum Master helps those outside the team interact with the Scrum Team.",
             "5": "At the Sprint Review, the Scrum Master identifies what has been &quot;Done&quot; and what has not been &quot;Done&quot;."
         },
@@ -1466,7 +1466,7 @@
     },
     {
         "id": "92",
-        "question": "When is it most appropriate for a Development Team to change the Definition of Done? (choose the best answer)",
+        "question": "When is it most appropriate for a Scrum Team to change the Definition of Done? (choose the best answer)",
         "options": {
             "1": "During Sprint Planning.",
             "2": "Prior to starting a new project.",
@@ -1481,7 +1481,7 @@
     },
     {
         "id": "93",
-        "question": "The Product Owner is not collaborating with the Development Team during the Sprint. What are\u00a0two valuable actions for a Scrum Master to take? (choose the best two answers)",
+        "question": "The Product Owner is not collaborating with the Developers during the Sprint. What are\u00a0two valuable actions for a Scrum Master to take? (choose the best two answers)",
         "options": {
             "1": "Nominate a proxy Product Owner.",
             "2": "Coach the Product Owner in the values of Scrum and incremental delivery.",
@@ -1498,12 +1498,12 @@
     },
     {
         "id": "94",
-        "question": "A Scrum Master is working with a Development Team that has members in different physical locations. The Development Team meets in a variety of meeting rooms and has much to do\u00a0logistically (for example, set up conference calls) before the Daily Scrum. What action should the\u00a0Scrum Master take? (choose the best answer)",
+        "question": "A Scrum Master is working with the Developers that has members in different physical locations. The Developers meets in a variety of meeting rooms and has much to do\u00a0logistically (for example, set up conference calls) before the Daily Scrum. What action should the\u00a0Scrum Master take? (choose the best answer)",
         "options": {
-            "1": "Ask the Development Team members to alternate who is responsible for meeting\u00a0setup.",
-            "2": "Set up the meeting and tell the Development Team that is how it will be done.",
+            "1": "Ask the Developers members to alternate who is responsible for meeting\u00a0setup.",
+            "2": "Set up the meeting and tell the Developers that is how it will be done.",
             "3": "Inform Management and ask them to solve it.",
-            "4": "Allow the Development Team to self-manage and determine for itself what to do."
+            "4": "Allow the Developers to self-manage and determine for itself what to do."
         },
         "correct_answers": [
             "options.4"
@@ -1513,7 +1513,7 @@
     },
     {
         "id": "95",
-        "question": "Five new Scrum Teams have been created to build one Product. A few of the Developers on one of\u00a0the Development Teams ask the Scrum Master how to coordinate their work with the other teams.\u00a0What should the Scrum Master do?",
+        "question": "Five new Scrum Teams have been created to build one Product. A few of the Developers on one of\u00a0the Developers ask the Scrum Master how to coordinate their work with the other teams.\u00a0What should the Scrum Master do?",
         "options": {
             "1": "Teach the Product Owner to work with the Lead Developers on ordering Product Backlog in a way to avoid too much technical and development overlap during a\u00a0Sprint.",
             "2": "Collect the Sprint tasks from the teams at the end of their Sprint Planning and merge that into a consolidated plan for the entire Sprint.",
@@ -1541,12 +1541,12 @@
     },
     {
         "id": "97",
-        "question": "In the Sprint Planning meeting, the Product Owner and the Development Team were unable to reach a clear understanding about the highest order Product Backlog Items. Because of this, the Development Team couldn&#x27;t figure out how many Product Backlog Items it could forecast for the upcoming Sprint. They were able to agree on a Sprint Goal, however. Which of the following two actions should the Scrum Master support?\u00a0(choose the best two answers)",
+        "question": "In the Sprint Planning meeting, the Product Owner and the Developers were unable to reach a clear understanding about the highest order Product Backlog Items. Because of this, the Developers couldn&#x27;t figure out how many Product Backlog Items it could forecast for the upcoming Sprint. They were able to agree on a Sprint Goal, however. Which of the following two actions should the Scrum Master support?\u00a0(choose the best two answers)",
         "options": {
             "1": "Ask everyone to take as much time as needed to analyze the Product Backlog\u00a0first, and then reconvene another Sprint Planning meeting.",
             "2": "Cancel the Sprint. Send the entire team to an advanced Scrum training and then\u00a0start a new Sprint.",
             "3": "Forecast the most likely Product Backlog Items to meet the goal and create a Sprint Backlog based on a likely initial design and plan. Once the time-box for\u00a0the Sprint Planning meeting is over, start the Sprint and continue to analyze,\u00a0decompose, and create additional functionality during the Sprint.",
-            "4": "Continue the Sprint Planning meeting past its time-box until an adequate number\u00a0of Product Backlog Items are well enough understood for the Development Team\u00a0to make a complete forecast. Then start the Sprint.",
+            "4": "Continue the Sprint Planning meeting past its time-box until an adequate number\u00a0of Product Backlog Items are well enough understood for the Developers\u00a0to make a complete forecast. Then start the Sprint.",
             "5": "Discuss in the upcoming Sprint Retrospective why this happened and what\u00a0changes will make it less likely to recur."
         },
         "correct_answers": [
@@ -1558,7 +1558,7 @@
     },
     {
         "id": "98",
-        "question": "A member of the Development Team takes the Scrum Master aside to express his concerns about\u00a0data security issues. What should the Scrum Master do? (choose the best answer)",
+        "question": "A member of the Developers takes the Scrum Master aside to express his concerns about\u00a0data security issues. What should the Scrum Master do? (choose the best answer)",
         "options": {
             "1": "Create a Product Backlog Item for security.",
             "2": "Ask the person to share the issue with the team as soon as possible.",
@@ -1590,13 +1590,13 @@
     },
     {
         "id": "100",
-        "question": "What are three ways Scrum promotes self-organization? (choose three)",
+        "question": "What are three ways Scrum promotes self-management? (choose three)",
         "options": {
             "1": "By preventing Stakeholders from entering the development room.",
-            "2": "By removing titles for Development Team members.",
+            "2": "By removing titles for Developers members.",
             "3": "By not allowing documentation.",
             "4": "By being a lightweight framework.",
-            "5": "By the Development Team deciding what work to do in a Sprint."
+            "5": "By the Developers deciding what work to do in a Sprint."
         },
         "correct_answers": [
             "options.2",
@@ -1621,7 +1621,7 @@
     },
     {
         "id": "102",
-        "question": "What are three benefits of self-organization? (choose three)",
+        "question": "What are three benefits of self-management? (choose three)",
         "options": {
             "1": "Increased accuracy of estimates.",
             "2": "Increased rule compliance.",
@@ -1639,10 +1639,10 @@
     },
     {
         "id": "103",
-        "question": "Why does a Development Team need a Sprint Goal?",
+        "question": "Why does a Scrum Team need a Sprint Goal?",
         "options": {
             "1": "A Sprint Goal ensures that all of the Product Backlog Items selected for the Sprint are implemented.",
-            "2": "The Development Team is more focused with a common yet specific goal.",
+            "2": "The Scrum Team is more focused with a common yet specific goal.",
             "3": "Sprint Goals are not valuable. Everything is known from the Product Backlog.",
             "4": "A Sprint Goal only gives purpose to Sprint 0."
         },
@@ -1657,7 +1657,7 @@
         "question": "How should Product Backlog Items be chosen when multiple Scrum Teams work from the same Product Backlog?",
         "options": {
             "1": "The Product Owner should provide each team with its own Product Backlog.",
-            "2": "The Development Teams pull in work in agreement with the Product Owner.",
+            "2": "The Developers pull in work in agreement with the Product Owner.",
             "3": "Each Scrum Team takes an equal numbers of items.",
             "4": "The Scrum Team with the highest velocity pulls Product Backlog Items first.",
             "5": "The Product Owner decides."
@@ -1782,16 +1782,14 @@
     },
     {
         "id": "112",
-        "question": "When do the Developers participate in Product Backlog Refinement? (choose the best answer)",
+        "question": "PLACEHOLDER",
         "options": {
-            "1": "Anytime during the Sprint.",
-            "2": "Never. It is the sole responsibility of the Product Owner to refine the Product Backlog.",
-            "3": "Only during Refinement sessions planned by the Product Owner.",
-            "4": "As Part 1 of Sprint Planning."
+            "1": "PLACEHOLDER.",
+            "2": "PLACEHOLDER.",
+            "3": "PLACEHOLDER.",
+            "4": "PLACEHOLDER."
         },
-        "correct_answers": [
-            "options.1"
-        ],
+        "correct_answers": [],
         "description": "",
         "source_url": ""
     },
@@ -2324,7 +2322,7 @@
             "1": "Product Owner.",
             "2": "Project Manager.",
             "3": "Scrum Master.",
-            "4": "Development Team."
+            "4": "Developers."
         },
         "correct_answers": [
             "options.4"
@@ -2368,7 +2366,7 @@
         "question": "SCRUM stands for:",
         "options": {
             "1": "Super Creative Really Useful Method.",
-            "2": "Self organising Collaborative &amp; Reflective Universal Method.",
+            "2": "Self Organising Collaborative &amp; Reflective Universal Method.",
             "3": "Safe Controlled Response Under Management.",
             "4": "Nothing. Its not an acronym."
         },
@@ -2714,9 +2712,9 @@
         "question": "What does cross-functionality mean in a Scrum Team?",
         "options": {
             "1": "Each Developer who has a special skill and works with all Scrum Teams of the organization is cross-functional.",
-            "2": "The Development Team should collaborate with all other functional departments of the organization.",
-            "3": "The Development Team should have all required skills to create potentially releasable Increments without any dependency to others outside the team.",
-            "4": "Each Development Team member should have all required skills to create potentially releasable Increments without any dependency to others outside the team."
+            "2": "The Developers should collaborate with all other functional departments of the organization.",
+            "3": "The Developers should have all required skills to create potentially releasable Increments without any dependency to others outside the team.",
+            "4": "Each Developers member should have all required skills to create potentially releasable Increments without any dependency to others outside the team."
         },
         "correct_answers": [
             "options.3"
@@ -2726,7 +2724,7 @@
     },
     {
         "id": "174",
-        "question": "What is the proper reaction of the Development Team in the middle of the Sprint when they found they have over committed?",
+        "question": "What is the proper reaction of the Developers in the middle of the Sprint when they found they have over committed?",
         "options": {
             "1": "They should ask the Product Owner to cancel the Sprint.",
             "2": "They extend the Sprint duration.",
@@ -2786,7 +2784,7 @@
         "id": "178",
         "question": "Who is responsible for writing tests in a Scrum Team?",
         "options": {
-            "1": "The Development Team.",
+            "1": "The Developers.",
             "2": "The programmer.",
             "3": "The QA specialist.",
             "4": "The Tester."
@@ -2801,10 +2799,10 @@
         "id": "179",
         "question": "Who are the participants of the Daily Scrum?",
         "options": {
-            "1": "The Development Team and the Scrum Master.",
-            "2": "The Development Team and the Product Owner.",
+            "1": "The Developers and the Scrum Master.",
+            "2": "The Developers and the Product Owner.",
             "3": "The Scrum Team.",
-            "4": "The Development Team."
+            "4": "The Developers."
         },
         "correct_answers": [
             "options.4"
@@ -2831,7 +2829,7 @@
         "id": "181",
         "question": "Who is responsible for the documentation?",
         "options": {
-            "1": "Development Team.",
+            "1": "Developers.",
             "2": "Tech Lead.",
             "3": "Document Writer.",
             "4": "Scrum Master."
@@ -2876,7 +2874,7 @@
         "question": "Who makes the decision for the architecture in a Scrum Team?",
         "options": {
             "1": "Tech Lead.",
-            "2": "Development Team.",
+            "2": "Developers.",
             "3": "Chief Architect.",
             "4": "CTO (Chief Technology Officer).",
             "5": "Scrum Master."
@@ -2909,7 +2907,7 @@
             "1": "The Product Owner.",
             "2": "The Project Manager.",
             "3": "The Scrum Master.",
-            "4": "The Development Team."
+            "4": "The Developers."
         },
         "correct_answers": [
             "options.1",
@@ -2952,12 +2950,12 @@
     },
     {
         "id": "189",
-        "question": "When the Product Owner can see the Development Team work?",
+        "question": "When the Product Owner can see the Developers work?",
         "options": {
             "1": "Just at the Sprint Review.",
-            "2": "Whenever the Development Team is ready.",
+            "2": "Whenever the Developers are ready.",
             "3": "Anytime the Product Owner asks.",
-            "4": "When the Tech Lead allows the Development Team to show their work."
+            "4": "When the Tech Lead allows the Developers to show their work."
         },
         "correct_answers": [
             "options.3"
@@ -3052,15 +3050,14 @@
         },
         "correct_answers": [
             "options.1",
-            "options.2",
-            "options.3"
+            "options.2"
         ],
         "description": "",
         "source_url": ""
     },
     {
         "id": "196",
-        "question": "What is the recommended size of the Development Team?",
+        "question": "What is the recommended size of the Scrum Team?",
         "options": {
             "1": "7 \u00b1 2.",
             "2": "5 \u00b1 4.",
@@ -3075,7 +3072,7 @@
     },
     {
         "id": "197",
-        "question": "What are the duties of the Development Team in a Scrum Team?",
+        "question": "What are the duties of the Developers in a Scrum Team?",
         "options": {
             "1": "Removing impediments.",
             "2": "Making technical decisions.",
@@ -3213,9 +3210,9 @@
         "id": "206",
         "question": "Who are responsible for monitoring the progress over the Project and Sprint?",
         "options": {
-            "1": "Project Progress: the Product Owner, Sprint Progress: the Development Team.",
-            "2": "Project Progress: the Scrum Master, Sprint Progress: the Development Team.",
-            "3": "Project Progress: the Development Team, Sprint Progress: the Product Owner.",
+            "1": "Project Progress: the Product Owner, Sprint Progress: the Developers.",
+            "2": "Project Progress: the Scrum Master, Sprint Progress: the Developers.",
+            "3": "Project Progress: the Developers, Sprint Progress: the Product Owner.",
             "4": "Project Progress: the Product Owner, Sprint Progress: the Scrum Master."
         },
         "correct_answers": [
@@ -3301,7 +3298,7 @@
     },
     {
         "id": "212",
-        "question": "What does the Development Team should do when the CEO assign them an unplanned work in the middle of the Sprint?",
+        "question": "What the Developers should do when the CEO assign them an unplanned work in the middle of the Sprint?",
         "options": {
             "1": "Inform the Scrum Master to work with his/her.",
             "2": "Reject it because they are independent.",
@@ -3316,7 +3313,7 @@
     },
     {
         "id": "213",
-        "question": "When the Development Team can change their practices, tools or techniques?",
+        "question": "When the Developers can change their practices, tools or techniques?",
         "options": {
             "1": "Whenever needed.",
             "2": "At the end of each release.",
@@ -3415,7 +3412,7 @@
             "1": "The Scrum Master.",
             "2": "The Product Owner.",
             "3": "The Scrum Team.",
-            "4": "The Development Team."
+            "4": "The Developers."
         },
         "correct_answers": [
             "options.4"
@@ -3440,7 +3437,7 @@
     },
     {
         "id": "221",
-        "question": "True or False: The Development Team has immediately resolved a bug, which is found in the current Sprint and belongs to an Increment that has already been delivered to the market. Is it a proper behavior?",
+        "question": "True or False: The developers have immediately resolved a bug, which is found in the current Sprint and belongs to an Increment that has already been delivered to the market. Is it a proper behavior?",
         "options": {
             "1": "False.",
             "2": "True."
@@ -3517,10 +3514,10 @@
         "id": "226",
         "question": "Which is true about the Sprint Backlog?",
         "options": {
-            "1": "It is a list of selected Product Backlog Items that the Development Team has committed for the Sprint.",
+            "1": "It is a list of selected Product Backlog Items that the developers have committed for the Sprint.",
             "2": "It contains all Product Backlog Items and requirements that could be implemented for the project.",
             "3": "It is created one Sprint ahead the current Sprint.",
-            "4": "It is a plan for the Development Team to realize the Sprint Goal."
+            "4": "It is a plan for the Developers to realize the Sprint Goal."
         },
         "correct_answers": [
             "options.4"
@@ -3567,7 +3564,7 @@
     },
     {
         "id": "229",
-        "question": "True or False: In an impediment case, the Scrum Master can intervene to help the Development Team to remove a member from the Development Team.",
+        "question": "True or False: In an impediment case, the Scrum Master can intervene to help the Developers to remove a member from the Developers.",
         "options": {
             "1": "False.",
             "2": "True."
@@ -3584,7 +3581,7 @@
         "options": {
             "1": "It is a feedback loop.",
             "2": "All Scrum Team members should participate in it.",
-            "3": "The Development Team monitors Sprint progress toward the Sprint Goal.",
+            "3": "The Developers monitors Sprint progress toward the Sprint Goal.",
             "4": "It is a 15 minutes time-box event."
         },
         "correct_answers": [
@@ -3618,7 +3615,7 @@
         "id": "232",
         "question": "Who knows best about how to create usable and releasable Increments?",
         "options": {
-            "1": "The Development Team.",
+            "1": "The Developers.",
             "2": "The Scrum Master.",
             "3": "The Technical Manager.",
             "4": "The Product Owner."
@@ -3649,7 +3646,7 @@
             "1": "The Product Owner.",
             "2": "The Scrum Master.",
             "3": "The Project Manager.",
-            "4": "The Development Team."
+            "4": "The Developers."
         },
         "correct_answers": [
             "options.4"
@@ -3674,12 +3671,12 @@
     },
     {
         "id": "236",
-        "question": "What should the Development Team do when there is no standard contract to create a releasable Product?",
+        "question": "What should the Developers do when there is no standard contract to create a releasable Product?",
         "options": {
             "1": "Ask the Product Owner to make a Definition of Done.",
             "2": "Ask Project Manager to help them.",
             "3": "Define a list of satisfactory tests for each PBI.",
-            "4": "The Development Team should define a Definition of Done."
+            "4": "The Developers should define a Definition of Done."
         },
         "correct_answers": [
             "options.4"
@@ -3735,7 +3732,7 @@
     },
     {
         "id": "240",
-        "question": "Which Scrum events can use more time rather than their time-box if there are 9 Developers (the maximum Development Team size) in the Team?",
+        "question": "Which Scrum events can use more time rather than their time-box if there are 9 Developers (the maximum Developers size) in the Team?",
         "options": {
             "1": "The Daily Scrum.",
             "2": "The Sprint Retrospective.",
@@ -3753,8 +3750,8 @@
         "question": "Product Backlog Items are refined by:",
         "options": {
             "1": "The Business Analyst and the Product Owner.",
-            "2": "The Development Team.",
-            "3": "The Development Team and the Product Owner.",
+            "2": "The Developers.",
+            "3": "The Developers and the Product Owner.",
             "4": "The Product Owner solely."
         },
         "correct_answers": [
@@ -3790,7 +3787,7 @@
             "2": "If the Architect requires it.",
             "3": "If they are part of the Definition of Done.",
             "4": "Never.",
-            "5": "They must be provided to the Development Team as part of the user specifications documents."
+            "5": "They must be provided to the Developers as part of the user specifications documents."
         },
         "correct_answers": [
             "options.3"
@@ -3800,7 +3797,7 @@
     },
     {
         "id": "244",
-        "question": "The Definition of Done describes the work that must be completed for every Product Backlog Item before it can be deemed releasable. What should the Development Team do when, during the Sprint, it finds out that a problem outside of their control blocks them from doing all this work?",
+        "question": "The Definition of Done describes the work that must be completed for every Product Backlog Item before it can be deemed releasable. What should the Developers do when, during the Sprint, it finds out that a problem outside of their control blocks them from doing all this work?",
         "options": {
             "1": "Cancel the Sprint.",
             "2": "Complete the work that can be done on as much scope as possible and complete the rest during the &quot;hardening&quot; Sprints at the end of the release.",
@@ -3911,13 +3908,13 @@
     },
     {
         "id": "251",
-        "question": "What are ways a Development Team can ensure a good Application Architecture? (choose the best two answers)",
+        "question": "What are ways the Developers can ensure a good Application Architecture? (choose the best two answers)",
         "options": {
-            "1": "A Development Team doesn&#x27;t need an architecture model in Scrum and should focus on adding functionality. The architecture will come into place without fail as the Development Team adds functionality.",
-            "2": "The Development Team plans a Sprint 0 at the beginning of a project with the objective of developing an architecture model used during the following Sprints.",
-            "3": "The Development Team plans some time each Sprint to discuss the architecture needed for the features planned in that Sprint.",
-            "4": "The Development Team should assign someone to the role of Software Architect whose job it is to make sure a consistent architecture is developed.",
-            "5": "The Development Team should have a set of guiding architecture principles that every Development Team member understands and follows when writing code."
+            "1": "The Developers don&#x27;t need an architecture model in Scrum and should focus on adding functionality. The architecture will come into place without fail as the Developers adds functionality.",
+            "2": "The Developers plans a Sprint 0 at the beginning of a project with the objective of developing an architecture model used during the following Sprints.",
+            "3": "The Developers plans some time each Sprint to discuss the architecture needed for the features planned in that Sprint.",
+            "4": "The Developers should assign someone to the role of Software Architect whose job it is to make sure a consistent architecture is developed.",
+            "5": "The Developers should have a set of guiding architecture principles that every Developers member understands and follows when writing code."
         },
         "correct_answers": [
             "options.3",
@@ -4009,7 +4006,7 @@
         "options": {
             "1": "A Developer and a Tester work together to write and test code.",
             "2": "Managers doing performance reviews by comparing one programmer&#x27;s code to another&#x27;s.",
-            "3": "The Scrum Team is divided into several two-person Development Teams that consolidate work in a Scrum of Scrums.",
+            "3": "The Scrum Team is divided into several two-person Developers groups that consolidate work in a Scrum of Scrums.",
             "4": "Two Developers writing code together, providing constant peer review.",
             "5": "Two programmers write code separately. A third programmer integrates the work."
         },
@@ -4054,7 +4051,7 @@
         "question": "What relationship does Scrum have to technical practices?",
         "options": {
             "1": "All technical practices must be used to support Scrum.",
-            "2": "Scrum Development Teams with excellent technical practices will likely be more successful.",
+            "2": "Developers with excellent technical practices will likely be more successful.",
             "3": "Scrum requires specific technical practices or it isn&#x27;t Scrum.",
             "4": "None."
         },
@@ -4081,7 +4078,7 @@
     },
     {
         "id": "262",
-        "question": "When does the Development Team participate in Product Backlog Refinement?",
+        "question": "When do the Developers participate in Product Backlog Refinement?",
         "options": {
             "1": "Anytime during the Sprint.",
             "2": "As Part 1 of the Sprint Planning meeting.",
@@ -4100,8 +4097,8 @@
         "options": {
             "1": "In the beginning of the project, during Sprint 0.",
             "2": "It is designed along with the vision, before the first Sprint.",
-            "3": "Throughout the project, as understanding emerges and the Development Team learns more about the project.",
-            "4": "Whenever the assigned Architect can join the Development Team."
+            "3": "Throughout the project, as understanding emerges and the Developers learns more about the project.",
+            "4": "Whenever the assigned Architect can join the Developers."
         },
         "correct_answers": [
             "options.3"
@@ -4218,8 +4215,8 @@
         "options": {
             "1": "A Software Development practice that continuously integrates feedback from users into Software Design.",
             "2": "A Software Development practice used by Integration Teams to create Best Practice branching and merging strategies.",
-            "3": "A Software Development practice where members of a development team all work on the same computer to ensure a common code base.",
-            "4": "A Software Development practice where members of a development team integrate and verify their work frequently, often multiple times each day, to detect integration errors as quickly as possible."
+            "3": "A Software Development practice where members of the Developers all work on the same computer to ensure a common code base.",
+            "4": "A Software Development practice where members of the Developers integrate and verify their work frequently, often multiple times each day, to detect integration errors as quickly as possible."
         },
         "correct_answers": [
             "options.4"
@@ -4231,7 +4228,7 @@
         "id": "271",
         "question": "Which of the following describe an Architecture Spike?",
         "options": {
-            "1": "A decision made by a Systems Architect to settle disagreement within a Development Team.",
+            "1": "A decision made by a Systems Architect to settle disagreement within the Developers.",
             "2": "A fundamental architectural problem found in an existing application.",
             "3": "A small development activity to learn about technical elements of a proposed solution.",
             "4": "The result of an exhaustive architectural planning effort."
@@ -4262,7 +4259,7 @@
         "question": "Which statement describes Test First Development (TFD)?",
         "options": {
             "1": "Designing tests before satisfying them.",
-            "2": "Having the Tester in the Development Team write the test plans before coding.",
+            "2": "Having the Tester in the Developers write the test plans before coding.",
             "3": "Testing existing code before adding more code to it.",
             "4": "The continuous restructuring of Software to retain flexibility."
         },
@@ -4309,9 +4306,9 @@
         "id": "276",
         "question": "Who is responsible for the System Architecture of a Product being developed using Scrum?",
         "options": {
-            "1": "The Architect chosen by the Development Team.",
+            "1": "The Architect chosen by the Developers.",
             "2": "The Corporate Architect.",
-            "3": "The Development Team.",
+            "3": "The Developers.",
             "4": "The Software Architect."
         },
         "correct_answers": [
@@ -4326,9 +4323,9 @@
         "options": {
             "1": "Anyone who wants to attend.",
             "2": "No one is required, anyone who wishes to attend is welcome.",
-            "3": "The Development Team.",
+            "3": "The Developers.",
             "4": "The entire Scrum Team.",
-            "5": "The Scrum Master and the Development Team."
+            "5": "The Scrum Master and the Developers."
         },
         "correct_answers": [
             "options.3"
@@ -4340,8 +4337,8 @@
         "id": "278",
         "question": "Who should be present during Product Backlog Refinement? (choose all that apply)",
         "options": {
-            "1": "Only the most senior people from the Development Team.",
-            "2": "The Development Team.",
+            "1": "Only the most senior people from the Developers.",
+            "2": "The Developers.",
             "3": "The external Business Analysts that have prepared the functional details.",
             "4": "The integration architects from the release department.",
             "5": "The Product Owner.",
@@ -4753,19 +4750,11 @@
         "question": "True or False: The more code a Developer writes the better.",
         "options": {
             "1": "True.",
-            "2": "False.   #"
+            "2": "False."
         },
         "correct_answers": [
             "options.2"
         ],
-        "description": "",
-        "source_url": ""
-    },
-    {
-        "id": "306",
-        "question": "Legal Information and Disclaimer  *Scrum.org \u2022 Professional Scrum \u2022 Applying Professional Scrum \u2022 Professional Scrum Foundations \u2022 Professional Scrum Master \u2022 Professional Scrum Product Owner \u2022 Professional Scrum Developer \u2022 Scaled Professional Scrum \u2022 Professional Agile Leadership \u2022 Professional Agile Leadership - Essentials \u2022 Professional Scrum with Kanban \u2022 Professional Scrum with User Experience \u2022 Professional Scrum Facilitation Skills \u2022 Professional Scrum Product Backlog Management Skills \u2022 Professional Scrum Trainer \u2022 Professional Training Network \u2022 Evidence Based Management \u2022 Guided Learning Platform \u2022 Professional Scrum Guide \u2022 Scrum Pulse \u2022 ScrumPulse \u2022 Scrum Tapas \u2022 PSF \u2022 APS \u2022 PSM \u2022 PSPO \u2022 PSD \u2022 SPS \u2022 PAL-E \u2022 PSK \u2022 PSU \u2022 PSF Skills \u2022 PSPBM Skills \u2022 PST \u2022 PSG \u2022 GLP \u2022 PTN \u2022 EBM \u2022 EBMngt along with respective Design Marks, are protected brands of Scrum.org. This course is neither endorsed nor affiliated with Scrum.org.*",
-        "options": {},
-        "correct_answers": [],
         "description": "",
         "source_url": ""
     }

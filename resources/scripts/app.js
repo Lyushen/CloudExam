@@ -90,7 +90,7 @@ export async function getAndParseInitialQuestions() {
 }
 
 // Fetch and parse questions one by one to save memory
-async function fetchAndParseQuestions(db) {
+/* async function fetchAndParseQuestions(db) {
     try {
         const response = await fetch(appSettings.source);
         if (!response.ok) throw new Error('Failed to fetch');
@@ -107,6 +107,73 @@ async function fetchAndParseQuestions(db) {
                 break;
             }
         }
+        appSettings.dbQCount = json.length;
+        localStorage.setItem('questions_count', json.length);
+        localStorage.setItem('source', appSettings.source);
+        localStorage.setItem('lastSource', appSettings.source);
+        localStorage.setItem('dbQCount', appSettings.dbQCount);
+    } catch (error) {
+        showPopup('Fetch error: ' + error.message);
+    }
+} */
+
+async function fetchAndParseQuestions(db) {
+    try {
+        // Fetch main questions file
+        const response = await fetch(appSettings.source);
+        if (!response.ok) throw new Error('Failed to fetch main questions');
+        const json = await response.json();
+
+        // Construct corrections file path
+        const correctionPath = appSettings.source.replace(/[^/]+\.json$/, 'corrections.json');
+
+        // Fetch corrections file
+        let corrections = [];
+        try {
+            const correctionResponse = await fetch(correctionPath);
+            if (correctionResponse.ok) {
+                corrections = await correctionResponse.json();
+            }
+        } catch (correctionError) {
+            console.warn('No corrections file found or error fetching:', correctionError);
+        }
+
+        // Create a corrections map for quick lookup
+        const correctionsMap = corrections.reduce((map, correction) => {
+            map[correction.id] = correction;
+            return map;
+        }, {});
+
+        // Process questions one by one
+        for (let i = 0; i < json.length; i++) {
+            try {
+                // Get the original question
+                let processedQuestion = { ...json[i] };
+                
+                // Check if there's a correction for this question
+                const correction = correctionsMap[json[i].id];
+                
+                // Apply corrections if they exist
+                if (correction) {
+                    // Dynamically update only the fields that exist in the correction
+                    for (const key in correction) {
+                        if (key !== 'id') {
+                            processedQuestion[key] = correction[key];
+                        }
+                    }
+                }
+
+                // Save the processed question
+                await saveQuestion(db, processedQuestion, i);
+            } catch (error) {
+                const errorMessage = 'Error saving question: ' + error.message;
+                console.error(errorMessage);
+                showPopup(errorMessage);
+                break;
+            }
+        }
+
+        // Update local storage
         appSettings.dbQCount = json.length;
         localStorage.setItem('questions_count', json.length);
         localStorage.setItem('source', appSettings.source);
@@ -201,7 +268,6 @@ async function shuffleQuestions(shouldShuffle) {
     updateQuestionDisplay(0); // Start from the first question in the new order
 }
 
-
 // Toggle shuffle state for answers within a question
 export function toggleShuffleAnswers() {
     appSettings.shuffleAnswers = appSettings.shuffleAnswers === 'true' ? 'false' : 'true';
@@ -209,7 +275,6 @@ export function toggleShuffleAnswers() {
     updateQuestionDisplay(); // Redisplay with new shuffle state
     toggleMenu(); // Deselect menu if open
 } 
-
 
 // Display the specified question in the UI
 function displayQuestion(question) {

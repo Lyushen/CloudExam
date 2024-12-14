@@ -29,12 +29,18 @@ body {
 
 .selectable {
     user-select: text;
+    -webkit-user-select: text; /* Safari */
+    -ms-user-select: text; /* Internet Explorer/Edge */
 }
 .non-selectable {
     user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* Internet Explorer/Edge */
 }
 .all-selectable {
     user-select: all;
+    -webkit-user-select: all; /* Safari */
+    -ms-user-select: all; /* Internet Explorer/Edge */
 }
 
 /* Menu CSS */

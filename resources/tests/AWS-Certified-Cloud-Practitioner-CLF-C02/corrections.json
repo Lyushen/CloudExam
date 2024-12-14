@@ -1,0 +1,195 @@
+
+[
+    {
+        "id": "2",
+        "options": {
+            "2": "Increasing the compute capacity of a single EC&lt; instance to address the growing demands of an application."
+        }
+    },
+    {
+        "id": "22",
+        "options": {
+            "2": "All IAM users should have at least the necessary permissions to access the core AWS services."
+        }
+    },
+    {
+        "id": "160",
+        "correct_answers": [
+            "options.2"
+        ]
+    },
+    {
+        "id": "172",
+        "correct_answers": [
+            "options.2"
+        ]
+    },
+    {
+        "id": "182",
+        "correct_answers": [
+            "options.2"
+        ]
+    },
+    {
+        "id": "219",
+        "correct_answers": [
+            "options.1",
+            "options.5"
+        ]
+    },
+    {
+        "id": "243",
+        "correct_answers": [
+            "options.2"
+        ]
+    },
+    {
+        "id": "348",
+        "options": {
+            "5": "Store media assets in S3 and use CloudFront to distribute these assets."
+        }
+    },
+    {
+        "id": "361",
+        "options": {
+            "3": "Use CloudWatch Alarms to monitor the CPU and alert when the CPU usage is &gt;= 60%.",
+            "4": "Use SNS to monitor the utilization of the server."
+        }
+    },
+    {
+        "id": "378",
+        "correct_answers": [
+            "options.1",
+            "options.4"
+        ]
+    },
+    {
+        "id": "425",
+        "correct_answers": [
+            "options.3"
+        ]
+    },
+    {
+        "id": "427",
+        "question": "Which AWS services provide a way to extend an on-premises architecture to the aws cloud? (Select TWO)"
+    },
+    {
+        "id": "435",
+        "options": {
+            "2": "Increased capital expenditure (CapEx).",
+            "3": "Reduced operational expenditure (OpEx)."
+        },
+        "correct_answers": [
+            "options.1",
+            "options.3"
+        ]
+    },
+    {
+        "id": "438",
+        "correct_answers": [
+            "options.2",
+            "options.5"
+        ]
+    },
+    {
+        "id": "441",
+        "question": "What costs are included when comparing AWS Total Cost of Ownership (TCO) with on-premises TCO? (Select TWO)",
+        "correct_answers": [
+            "options.2",
+            "options.3"
+        ]
+    },
+    {
+        "id": "454",
+        "correct_answers": [
+            "options.1"
+        ]
+    },
+    {
+        "id": "472",
+        "question": "Which AWS tools assist with estimating costs? (Select THREE)"
+    },
+    {
+        "id": "475",
+        "question": "Access keys in AWS Identity and Access Management (IAM) are used to:"
+    },
+    {
+        "id": "491",
+        "correct_answers": [
+            "options.4"
+        ]
+    },
+    {
+        "id": "493",
+        "question": "What time-saving advantage is offered with the use of Amazon Rekognition?"
+    },
+    {
+        "id": "495",
+        "correct_answers": [
+            "options.2"
+        ]
+    },
+    {
+        "id": "503",
+        "question": "Which of the following will enhance the security of access to the AWS Management Console? (Select TWO)"
+    },
+    {
+        "id": "509",
+        "options": {
+            "1": "They allow for the conversion from Application Load Balancers to Classic Load Balancers.",
+            "2": "They are capable of handling constant changes in network traffic patterns.",
+            "3": "They automatically adjust capacity.",
+            "4": "They are provided at no charge to users."
+        },
+        "correct_answers": [
+            "options.2",
+            "options.3"
+        ]
+    },
+    {
+        "id": "510",
+        "correct_answers": [
+            "options.2"
+        ]
+    },
+    {
+        "id": "528",
+        "options": {
+            "3": "There will be better coverage as Availability Zones are geographical distant and can serve a wider area."
+        }
+    },
+    {
+        "id": "537",
+        "options": {
+            "1": "API Gateway."
+        }
+    },
+    {
+        "id": "542",
+        "correct_answers": [
+            "options.4"
+        ]
+    },
+    {
+        "id": "577",
+        "question": "Which AWS service would a customer use with a static website to achieve lower latency and high transfer speeds?"
+    },
+    {
+        "id": "578",
+        "options": {
+            "1": "They automatically add more instances across multiple AWS Regions based on global demand for the application.",
+            "3": "They enable the application&#x27;s static content to reside closer to end users."
+        },
+        "correct_answers": [
+            "options.1"
+        ]
+    },
+    {
+        "id": "585",
+        "question": "Which AWS services provide a way to extend an on-premises architecture to the AWS Cloud? (Select TWO)"
+    },
+    {
+        "id": "590",
+        "question": "Which AWS security service protects applications from Distributed Denial Of Service (DDOS) attacks with always-on detection and automatic inline mitigations?"
+    }
+]

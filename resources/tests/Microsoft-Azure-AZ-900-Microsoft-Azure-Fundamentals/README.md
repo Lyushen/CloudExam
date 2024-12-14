@@ -2,11 +2,23 @@
 
 ![Promotional image](images/promotional.png)
 
-## Udemy & Etsy
+## ❣ Support
 
-❣️ Please support us by purchasing this course on Udemy in an interactive version with the [discounted link](https://www.udemy.com/course/microsoft-azure-fundamentals-az-900-practice-tests-exams/?referralCode=C4B47B7C9ABC33DAF4C3). If you're working for a company, you could most probably easily claim this expense during preparation for your exam. For us, it's to be, or not to be, in the game.
+There are many ways to support us; in exchange, you'll get this material in a proper format:
+- ❤️ [shop.ditectrev.com, in EPUB or PDF formats, with answers marked](https://shop.ditectrev.com/product/microsoft-azure-az-900-microsoft-azure-fundamentals-practice-tests-exams-questions-answers),
+- ❤️ [shop.ditectrev.com, in EPUB or PDF formats, without answers marked](https://shop.ditectrev.com/product/microsoft-azure-az-900-microsoft-azure-fundamentals-practice-tests-exams-questions-no-answers),
+- 📖 [Udemy is the only one to have explanations for questions](https://www.udemy.com/course/microsoft-azure-fundamentals-az-900-practice-tests-exams/?referralCode=C4B47B7C9ABC33DAF4C3),
+- 📚 [Google Play Books, in PDF format, with answers marked](https://play.google.com/store/books/details?id=cx_7EAAAQBAJ),
+- 📚 [Google Play Books, in PDF format, without answers marked](https://play.google.com/store/books/details?id=dR_7EAAAQBAJ),
+- 🛍️ [Etsy, in PDF format, with answers marked](https://ditectrev.etsy.com/listing/1343709791),
+- 🛍️ [Etsy, in PDF format, without answers marked](https://ditectrev.etsy.com/listing/1502357913),
+- 🛒 [eBay, in PDF format, with answers marked](https://www.ebay.com/itm/404898798741?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=_ptbuk3gqdw&sssrc=2524149&ssuid=_ptbuk3gqdw&widget_ver=artemis&media=COPY),
+- 🛒 [eBay, in PDF format, without answers marked](https://www.ebay.com/itm/405079754307?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=_ptbuk3gqdw&sssrc=2524149&ssuid=_ptbuk3gqdw&widget_ver=artemis&media=COPY),
+- 🔄 [Patreon subscription allows you to get access to all of the materials in EPUB and PDF formats. You can also buy separate items on Patreon, but the subscription technically allows us to include all updates for EPUB and PDF formats. Hence, you get EPUB and PDF updates when you subscribe to Patreon](https://patreon.com/Ditectrev?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink).
 
-🛍️ Alternatively, you can buy the PDF with those questions on [Etsy](https://ditectrev.etsy.com/listing/1343709791) or [Google Play Books](https://play.google.com/store/books/details?id=cx_7EAAAQBAJ).
+💰 If you work for a company, you could probably easily claim this expense while preparing for your exam. For us, it's about being in the game or not.
+
+⭐ Good ratings & reviews help us to survive. Please don't forget to leave a nice one when you purchase an item. 
 
 ## ✨ This course is unlike any Microsoft Azure AZ-900 (Microsoft Azure Fundamentals) course you will find online.
 
@@ -103,6 +115,10 @@
 **[v1.2.0](../../releases/tag/v1.2.0): March 14, 2024.**
 
 - Fix several questions with wrong answers, delete obsolete questions related to Enterprise Agreement (EA) & Premier support plan, and 4 new questions.
+
+**[v1.2.0](../../releases/tag/v1.2.0): August 22, 2024.**
+
+- AI-generated explanations (only paid [Udemy](https://www.udemy.com/course/microsoft-azure-fundamentals-az-900-practice-tests-exams/?referralCode=C4B47B7C9ABC33DAF4C3)).
 
 ## 🙋‍♀️ & 🙋‍♂️ Contribution
 
@@ -3392,8 +3408,8 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### If your company uses an Azure free account, you will only be able to use a subset of Azure services.
 
-- [ ] Yes.
-- [x] No.
+- [x] Yes.
+- [] No.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -4168,8 +4184,8 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### You need to create a new Azure virtual machine from an Android laptop. Solution: You use Bash in Azure Cloud Shell. Does this meet the goal?
 
-- [ ] Yes.
-- [x] No.
+- [x] Yes.
+- [ ] No.
 
 **[⬆ Back to Top](#table-of-contents)**
 
