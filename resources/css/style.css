@@ -169,7 +169,10 @@ footer {
     margin-right: 5px;
     margin-left: 5px;
 }
-
+#question-text img {
+    width: 100%;
+    max-width: 100%;
+}
 #explanations-container{
     font-size: 3vh;
 }
