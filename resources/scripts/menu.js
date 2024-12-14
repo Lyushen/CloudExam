@@ -10,19 +10,6 @@ export function menuInitialization() {
     document.querySelector('.fullscreen-mode').addEventListener('click', toggleFullscreen);
 }
 
-// Toggle the menu visibility
-function toggleMenu2() {
-    var menu = document.getElementById('menu');
-    if (menu.style.maxHeight !== '0px' && menu.style.maxHeight) {
-        // If maxHeight is not '0px' and not empty, close the menu
-        menu.style.maxHeight = '0px'; // Close the menu
-        menu.style.borderColor = 'transparent'; // Hide border
-    } else {
-        // If maxHeight is '0px' or empty, open the menu
-        menu.style.maxHeight = menu.scrollHeight + 'px'; // Set maxHeight to enable transition
-        menu.style.borderColor = '#ccc'; // Show border
-    }
-}
 function toggleMenu() {
     var menu = document.getElementById('menu');
     if (menu.classList.contains('open')) {
@@ -31,7 +18,6 @@ function toggleMenu() {
         menu.classList.add('open'); // Open the menu
     }
 }
-
 
 // Toggle between dark and light themes
 function toggleTheme() {

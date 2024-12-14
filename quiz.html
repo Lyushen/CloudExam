@@ -12,36 +12,38 @@
     <script type="module" src="./resources/scripts/manager.js"></script>
 </head>
 <body>
-    <header>
-        <div id="menu-toggle" class="menu-button" aria-hidden="true">☰</div>
-        <div id="menu" class="menu" aria-hidden="true">
-            <div class="menu-item fullscreen-mode">Fullscreen</div>
-            <div class="menu-item theme-switcher">Theme ☼</div>
-            <div class="menu-item shuffle-questions-flag">Shuffle Q</div>
-            <div class="menu-item shuffle-answers-flag">Shuffle A</div>
-            <div class="menu-item reset-cache">Reset Cache</div>
-            <div class="menu-item home-page">Home</div>
-        </div>
-    </header>
     <article>
         <div class="question-box">
-            <p id="question-text"></p>
+            <p id="question-text" class="selectable"></p>
             <div id="options-container" aria-hidden="true"></div>
             <div id="explanations-container"></div>
         </div>
     </article>
+    <div id="popup" class="popup selectable">
+        <p id="popup-message"></p>
+    </div>
     <footer>
-        <div class="controls non-selectable">
-            <button id="prev-button">&lt;</button>
-            <div id="question-navigator">
+        <div class="footer-container non-selectable" aria-hidden="true">
+            <div id="menu-toggle" class="menu-button">☰</div>
+            <div id="menu" class="menu">
+                <div class="menu-item fullscreen-mode">Fullscreen</div>
+                <div class="menu-item theme-switcher">Theme ☼</div>
+                <div class="menu-item shuffle-questions-flag">Shuffle Q</div>
+                <div class="menu-item shuffle-answers-flag">Shuffle A</div>
+                <div class="menu-item reset-cache">Reset Cache</div>
+                <div class="menu-item home-page">Home</div>
+            </div>
+            
+            <div class="question-navigator">
                 <input type="number" id="question-number">
                 <label for="question-number" id="total-questions" aria-hidden="true"></label>
             </div>
-            <button id="next-button">&gt;</button>
+            
+            <div class="navigation-buttons">
+                <button id="prev-button">&lt;</button>
+                <button id="next-button">&gt;</button>
+            </div>
         </div>
     </footer>
-    <div id="popup" class="popup">
-        <p id="popup-message"></p>
-    </div>
 </body>
 </html>

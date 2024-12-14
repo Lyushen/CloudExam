@@ -198,7 +198,6 @@ async function loadQuestionFromStorage(index) {
 // Update question display based on the selected index
 export async function updateQuestionDisplay(index = appSettings.currentQuestion) {
     try {
-        const db = await openDB();
         if (index < 0 || index >= appSettings.dbQCount) return;
         appSettings.currentQuestion = index;
         let currentQuestion = await loadQuestionFromStorage(index);

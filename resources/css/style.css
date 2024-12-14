@@ -5,7 +5,7 @@
     --button-hover-fill: #c0c0c0;
     --correct-color: #4CAF50;
     --wrong-color: #F44336;
-    --font-family: 'Arial', sans-serif;
+    --font-family: 'Tahoma', sans-serif;
     --button-border: 1px solid rgba(0, 0, 0, 0.229);
 }
 
@@ -27,6 +27,114 @@ body {
     width: 100%; /* Ensure the body takes up the full viewport width */
 }
 
+/* Footer Layout */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1000;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Menu Button */
+.menu-button {
+    cursor: pointer;
+    padding: 7px 10px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+    color: var(--text-color);
+    background-color: var(--button-fill);
+    border: var(--button-border);
+}
+
+.menu {
+    position: absolute;
+    bottom: 60px;
+    left: 10px;
+    background-color: transparent;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    max-height: 0;
+    border-color: transparent;
+}
+
+.menu.open {
+    max-height: 500px;
+    border-color: #ccc;
+}
+
+.menu-item {
+    padding: 10px;
+    color: var(--text-color);
+    background-color: var(--button-fill);
+    transition: background-color 0.2s;
+    cursor: pointer;
+    border: var(--button-border);
+    border-radius: 4px;
+    margin-bottom: 2px;
+}
+
+/* Read Button */
+/* .read-button {
+    background-color: var(--button-fill);
+    color: var(--text-color);
+    border: var(--button-border);
+    padding: 7px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+ */
+/* Question Navigator */
+.question-navigator {
+    display: flex;
+    align-items: center;
+}
+
+#question-number {
+    width: 40px;
+    padding: 2px;
+    margin: 0 5px;
+    border: 2px solid var(--button-fill);
+    border-radius: 4px;
+    text-align: center;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+/* Navigation Buttons */
+.navigation-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.navigation-buttons button {
+    background-color: var(--button-fill);
+    color: var(--text-color);
+    border: var(--button-border);
+    padding: 7px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.navigation-buttons button:hover,
+.menu-button:hover,
+.menu-item:hover {
+    background-color: var(--button-hover-fill);
+}
+
 .selectable {
     user-select: text;
     -webkit-user-select: text; /* Safari */
@@ -43,54 +151,6 @@ body {
     -ms-user-select: all; /* Internet Explorer/Edge */
 }
 
-/* Menu CSS */
-.menu-button {
-    cursor: pointer;
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    padding: 7px;
-    border-radius: 4px;
-    transition: background-color 0.2s;
-    color: var(--text-color);
-    background-color: var(--button-fill);
-    border: var(--button-border);
-}
-
-.menu {
-    position: absolute;
-    top: 47px;
-    right: 5px;
-    background-color: transparent;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in-out, border-color 0.3s ease-in-out;
-    max-height: 0;
-    border-color: transparent; /* Ensure border is transparent when closed */
-}
-
-.menu.open {
-    max-height: 500px; /* Adjust this value based on the total height of your menu items */
-    border-color: #ccc; /* Visible border when menu is open */
-}
-
-.menu-button:hover {
-    background-color: var(--button-hover-fill);
-}
-
-.menu-item {
-    padding: 10px;
-    color: var(--text-color);
-    background-color: var(--button-fill);
-    transition: background-color 0.2s;
-    cursor: pointer;
-    border: var(--button-border);
-    border-radius: 4px;
-    margin-bottom: 2px;
-}
-
-.menu-item:hover {
-    background-color: var(--button-hover-fill);
-}
 
 /* Question Section */
 .question-box {
@@ -104,57 +164,16 @@ body {
     margin-top:2px;
 }
 
-.question-navigator {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5px 0;
-}
-
-#question-number {
-    width: 40px;
-    padding: 0px;
-    margin-right: 5px;
-    border: 2px solid var(--button-fill);
-    border-radius: 4px;
-    text-align: center;
-    background-color: var(--input-background-color); /* Use variable for background */
-    color: var(--input-text-color); /* Use variable for text color */
-    transition: background-color 0.2s, color 0.2s, border-color 0.2s; /* Add transitions for smooth effect */
-}
-
 #question-text {
     margin-top:0px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 #explanations-container{
     font-size: 3vh;
 }
 
-/* Bottom bar <> Controls and Question-Number Box */
-.controls {
-    position: fixed;
-    bottom: 10px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 10px;
-    box-sizing: border-box;
-}
-
-.controls button {
-    background-color: var(--button-fill);
-    color: var(--text-color);
-    border: var(--button-border);
-    padding: 3px 35px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.2s;
-}
-
-.controls button:hover {
-    background-color: var(--button-hover-fill);
-}
 
 .option-button {
     display: block;
