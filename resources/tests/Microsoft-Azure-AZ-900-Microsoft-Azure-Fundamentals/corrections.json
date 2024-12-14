@@ -14,5 +14,21 @@
         "correct_answers": [
             "options.2"
         ]
+    },
+    {
+        "id": "421",
+        "correct_answers": [
+            "options.1"
+        ]
+    },
+    {
+        "id": "440",
+        "options": {
+            "3": "Azure Resource Manager (ARM) provides."
+        }
+    },
+    {
+        "id": "455",
+        "question": "Your company plans to purchase an Azure subscription. The company support policy states that the Azure environment must provide an option to access support engineers by phone or email. You need to recommend which support plan meets the support policy requirement. Solution: Recommend a Standard support plan. Does this meet the goal?"
     }
 ]
